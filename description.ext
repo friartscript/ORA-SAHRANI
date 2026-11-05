@@ -1,0 +1,160 @@
+// ============================================================================
+// MISSION: ORA - Air Force (Sahrani)
+// DESCRIPTION: Fichier de configuration principal de la mission
+// ============================================================================
+
+author          = "ORA Command";
+onLoadName      = "$STR_ORA_Mission_Title";
+onLoadMission   = "$STR_ORA_Mission_Subtitle";
+overviewText    = "$STR_ORA_Mission_Desc";
+
+briefing        = 1;
+debriefing      = 1;
+saving          = 1;
+
+// Configuration Solo
+respawn         = 0;
+respawnTemplates[] = {"None"};
+disabledAI      = 1;
+enableDebugConsole = 1;
+
+class Header
+{
+    gameType    = Single;
+    minPlayers  = 1;
+    maxPlayers  = 1;
+};
+
+// ============================================================================
+// LIBRAIRIE MODULAIRE DE FONCTIONS (CfgFunctions)
+// ============================================================================
+class CfgFunctions
+{
+    class ORA
+    {
+        tag = "ORA";
+
+        class Core
+        {
+            file = "Functions\Core";
+            class initMission       { compileFinal = 1; };
+            class radioMsg          { compileFinal = 1; };
+        };
+
+        class Flight
+        {
+            file = "Functions\Flight";
+            class flightEffects     { compileFinal = 1; };
+            class ejectionSystem    { compileFinal = 1; };
+        };
+
+        class Player
+        {
+            file = "Functions\Player";
+            class initLocal         { compileFinal = 1; };
+            class setupBriefing     { compileFinal = 1; };
+            class cockpitImmersion  { compileFinal = 1; };
+            class initLoadout       { compileFinal = 1; };
+            class applyLoadout      { compileFinal = 1; };
+            class initIdentity      { compileFinal = 1; };
+        };
+
+        class Briefing
+        {
+            file = "Functions\Briefing";
+            class initBriefing      { compileFinal = 1; };
+            class initContext       { compileFinal = 1; };
+        };
+
+        class Environment
+        {
+            file = "Functions\Environment";
+            class randomWeather     { compileFinal = 1; };
+            class initSkills        { compileFinal = 1; };
+        };
+
+        class UI
+        {
+            file = "Functions\UI";
+            class mainMenu          { compileFinal = 1; };
+        };
+    };
+};
+
+// ============================================================================
+// INSIGNES ET PATCHES MILITAIRES (CfgUnitInsignia)
+// ============================================================================
+class CfgUnitInsignia
+{
+    class RACS_Badge
+    {
+        displayName = "Royal Army Corps of Sahrani";
+        author      = "ORA Air Force";
+        texture     = "Images\racs_badge_ca.paa";
+        textureVehicle = "";
+    };
+};
+
+// ============================================================================
+// DIALOGUES ET INTERFACES GRAPHIQUES (GUI)
+// ============================================================================
+#include "Dialogs\main_menu.hpp"
+
+// ============================================================================
+// SONS PERSONNALISÉS (CfgSounds)
+// ============================================================================
+class CfgSounds
+{
+    sounds[] = {};
+
+    class ORA_Radio_Click
+    {
+        name = "ORA_Radio_Click";
+        sound[] = {"\A3\Sounds_F\sfx\radio\click.wss", 1.2, 1};
+        titles[] = {};
+    };
+
+    class ORA_Warning_Beep
+    {
+        name = "ORA_Warning_Beep";
+        sound[] = {"\A3\Sounds_F\sfx\alarm_car.wss", 1.0, 1.2};
+        titles[] = {};
+    };
+};
+
+// ============================================================================
+// DÉBRIEFINGS ET FINS DE MISSION (CfgDebriefing)
+// ============================================================================
+class CfgDebriefing
+{
+    class EndSuccess
+    {
+        title       = "$STR_ORA_Debrief_Success_Title";
+        subtitle    = "$STR_ORA_Debrief_Success_Subtitle";
+        description = "$STR_ORA_Debrief_Success_Desc";
+        pictureBackground = "";
+        picture     = "b_air";
+        pictureColor[] = {0.0, 0.6, 0.0, 1};
+    };
+
+    class EndKilled
+    {
+        title       = "$STR_ORA_Debrief_Killed_Title";
+        subtitle    = "$STR_ORA_Debrief_Killed_Subtitle";
+        description = "$STR_ORA_Debrief_Killed_Desc";
+        pictureBackground = "";
+        picture     = "KIA";
+        pictureColor[] = {0.8, 0.0, 0.0, 1};
+    };
+
+    class EndPlaneLost
+    {
+        title       = "$STR_ORA_Debrief_Lost_Title";
+        subtitle    = "$STR_ORA_Debrief_Lost_Subtitle";
+        description = "$STR_ORA_Debrief_Lost_Desc";
+        pictureBackground = "";
+        picture     = "o_air";
+        pictureColor[] = {0.8, 0.4, 0.0, 1};
+    };
+};
+

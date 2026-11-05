@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_LOADOUT_APPLIED_SUCCESS">
+        <Original>Standard air superiority pilot loadout configured successfully.</Original>
+        <English>Standard air superiority pilot loadout configured successfully.</English>
+        <French>Dotation pilote de chasse configurée avec succès.</French>
+        <Spanish>Equipamiento estándar de piloto configurado con éxito.</Spanish>
+        <German>Standard-Pilotenbewaffnung erfolgreich zugewiesen.</German>
+        <Italian>Equipaggiamento standard da pilota configurato con successo.</Italian>
+        <Polish>Standardowe wyposażenie pilota myśliwskiego załadowane pomyślnie.</Polish>
+        <Portuguese>Dotação padrão de piloto de caça configurada com sucesso.</Portuguese>
+        <Russian>Стандартная экипировка боевого пилота успешно настроена.</Russian>
+        <Czech>Standardní výstroj stíhacího pilota úspěšně nakonfigurována.</Czech>
+        <Korean>공대공 전투 조종사 표준 무장 장착 완료.</Korean>
+        <Japanese>制空戦闘パイロットの標準装備が正常に構成されました。</Japanese>
+        <Chinese>制空戰鬥飛行員標準裝備配置成功。</Chinese>
+        <Chinesesimp>制空战斗飞行员标准装备配置成功。</Chinesesimp>
+        <Turkish>Standart hava üstünlüğü pilot donanımı başarıyla yapılandırıldı.</Turkish>
+    </Key>
+</Keys>
+

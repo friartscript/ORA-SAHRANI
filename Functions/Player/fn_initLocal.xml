@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <!-- Strings pour fn_initLocal (déléguées aux modules spécialisés fn_setupBriefing, fn_initContext et fn_initIdentity) -->
+</Keys>

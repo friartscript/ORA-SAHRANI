@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_LOADOUT_PILOT_READY">
+        <Original>Flight equipment ready. Helmet visor sealed, survival gear secured.</Original>
+        <English>Flight equipment ready. Helmet visor sealed, survival gear secured.</English>
+        <French>Équipement de vol opérationnel. Visière verrouillée, kit de survie arrimé.</French>
+        <Spanish>Equipo de vuelo listo. Visera del casco sellada, equipo de supervivencia asegurado.</Spanish>
+        <German>Flugausrüstung einsatzbereit. Helmvisier geschlossen, Überlebensausrüstung gesichert.</German>
+        <Italian>Equipaggiamento di volo pronto. Visiera sigillata, kit di sopravvivenza fissato.</Italian>
+        <Polish>Kombinezon lotniczy gotowy. Wizjer zablokowany, zestaw przetrwania zabezpieczony.</Polish>
+        <Portuguese>Equipamento de voo pronto. Viseira selada, kit de sobrevivência fixado.</Portuguese>
+        <Russian>Летное снаряжение готово. Светофильтр опущен, аварийный запас закреплен.</Russian>
+        <Czech>Letecká výstroj připravena. Hledí přilby uzavřeno, nouzová výbava zajištěna.</Czech>
+        <Korean>비행 장비 장착 완료. 헬멧 바이저 밀폐, 생존 키트 확인.</Korean>
+        <Japanese>飛行装備の準備完了。ヘルメットバイザー閉鎖、生存キット固定。</Japanese>
+        <Chinese>飛行裝備就緒。頭盔面罩已密封，求生裝備已固定。</Chinese>
+        <Chinesesimp>飞行装备就绪。头盔面罩已密封，求生装备已固定。</Chinesesimp>
+        <Turkish>Uçuş teçhizatı hazır. Kask vizörü kapatıldı, hayatta kalma kiti sabitlendi.</Turkish>
+    </Key>
+</Keys>
+

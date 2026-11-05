@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_Flight_Mach">
+        <Original>Transonic barrier crossed.</Original>
+        <English>Transonic barrier crossed.</English>
+        <French>Franchissement du mur du son.</French>
+        <Spanish>Barrera transónica superada.</Spanish>
+        <German>Schallmauer durchbrochen.</German>
+        <Italian>Barriera del suono superata.</Italian>
+        <Polish>Przekroczono barierę dźwięku.</Polish>
+        <Portuguese>Barreira do som ultrapassada.</Portuguese>
+        <Russian>Преодолен звуковой барьер.</Russian>
+        <Czech>Překonána zvuková bariéra.</Czech>
+        <Korean>음속 돌파.</Korean>
+        <Japanese>音速突破。</Japanese>
+        <Chinese>突破音障。</Chinese>
+        <Chinesesimp>突破音障。</Chinesesimp>
+        <Turkish>Ses duvarı aşıldı.</Turkish>
+    </Key>
+</Keys>
+

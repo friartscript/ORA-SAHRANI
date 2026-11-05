@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Radio_Speaker_Drone">
+        <Original>Drone Operator</Original>
+        <English>Drone Operator</English>
+        <French>Opérateur Drone</French>
+        <Spanish>Operador de Dron</Spanish>
+        <German>Drohnen-Bediener</German>
+        <Italian>Operatore Drone</Italian>
+        <Polish>Operator drona</Polish>
+        <Portuguese>Operador de Drone</Portuguese>
+        <Russian>Оператор БПЛА</Russian>
+        <Czech>Operátor dronu</Czech>
+        <Korean>드론 운용관</Korean>
+        <Japanese>ドローン オペレーター</Japanese>
+        <Chinese>無人機操作員</Chinese>
+        <Chinesesimp>无人机操作员</Chinesesimp>
+        <Turkish>İHA Operatörü</Turkish>
+    </Key>
+    <Key ID="STR_LL_Radio_Speaker_AirSupport">
+        <Original>Air Support</Original>
+        <English>Air Support</English>
+        <French>Appui Aérien</French>
+        <Spanish>Apoyo Aéreo</Spanish>
+        <German>Luftunterstützung</German>
+        <Italian>Supporto Aereo</Italian>
+        <Polish>Wsparcie lotnicze</Polish>
+        <Portuguese>Apoio Aéreo</Portuguese>
+        <Russian>Авиаподдержка</Russian>
+        <Czech>Letecká podpora</Czech>
+        <Korean>공중 지원</Korean>
+        <Japanese>近接航空支援</Japanese>
+        <Chinese>空中支援</Chinese>
+        <Chinesesimp>空中支援</Chinesesimp>
+        <Turkish>Hava Desteği</Turkish>
+    </Key>
+    <Key ID="STR_LL_Radio_Speaker_HQ">
+        <Original>HQ</Original>
+        <English>HQ</English>
+        <French>QG</French>
+        <Spanish>CG</Spanish>
+        <German>HQ</German>
+        <Italian>QG</Italian>
+        <Polish>Sztab</Polish>
+        <Portuguese>QG</Portuguese>
+        <Russian>Штаб</Russian>
+        <Czech>Velitelství</Czech>
+        <Korean>사령부</Korean>
+        <Japanese>司令部</Japanese>
+        <Chinese>作戰總部</Chinese>
+        <Chinesesimp>作战总部</Chinesesimp>
+        <Turkish>Karargah</Turkish>
+    </Key>
+    <Key ID="STR_Drone_Jammed">
+        <Original>Radio jamming detected. Unable to reach drone.</Original>
+        <English>Radio jamming detected. Unable to reach drone.</English>
+        <French>Brouillage radio détecté. Impossible de contacter le drone.</French>
+        <Spanish>Interferencia de radio detectada. No se puede contactar con el dron.</Spanish>
+        <German>Funkstörung erkannt. Drohne kann nicht erreicht werden.</German>
+        <Italian>Rilevato disturbo radio. Impossibile contattare il drone.</Italian>
+        <Polish>Wykryto zakłócenia radiowe. Nie można połączyć się z dronem.</Polish>
+        <Portuguese>Interferência de rádio detectada. Impossível contactar o drone.</Portuguese>
+        <Russian>Обнаружены радиопомехи. Связь с БПЛА невозможна.</Russian>
+        <Czech>Zjištěno rušení rádia. S dronem se nelze spojit.</Czech>
+        <Korean>전파 방해가 감지되었습니다. 드론과 통신할 수 없습니다.</Korean>
+        <Japanese>通信妨害を感知。ドローンとの交信不能。</Japanese>
+        <Chinese>偵測到無線電干擾，無法聯繫無人機。</Chinese>
+        <Chinesesimp>检测到无线电干扰，无法联系无人机。</Chinesesimp>
+        <Turkish>Telsiz karıştırması tespit edildi. İHA ile iletişim kurulamıyor.</Turkish>
+    </Key>
+</Keys>

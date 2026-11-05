@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_Alert_MissileInbound">
+        <Original>WARNING: MISSILE LAUNCH DETECTED! DEPLOY COUNTERMEASURES!</Original>
+        <English>WARNING: MISSILE LAUNCH DETECTED! DEPLOY COUNTERMEASURES!</English>
+        <French>ALERTE : DÉPART MISSILE DÉTECTÉ ! DÉPLOYEZ CONTRE-MESURES !</French>
+        <Spanish>¡ALERTA: DISPARO DE MISIL DETECTADO! ¡DESPLIEGUE CONTRAMEDIDAS!</Spanish>
+        <German>WARNUNG: RAKETENSTART ERKANNT! TÄUSCHKÖRPER AUSSTOSSEN!</German>
+        <Italian>ALLARME: LANCIO MISSILE RILEVATO! LANCIARE CONTROMISURE!</Italian>
+        <Polish>OSTRZEŻENIE: WYKRYTO ODPALENIE POCISKU! WYRZUĆ FLARY!</Polish>
+        <Portuguese>ALERTA: DISPARO DE MÍSSIL DETETADO! LANÇAR CONTRAMEDIDAS!</Portuguese>
+        <Russian>ВНИМАНИЕ: ОБНАРУЖЕН ПУСК РАКЕТЫ! ПРИМЕНИТЬ ЛОВУШКИ!</Russian>
+        <Czech>VAROVÁNÍ: DETEKOVÁN ODPAL RAKETY! VYSTŘELTE KLAMNÉ CÍLE!</Czech>
+        <Korean>경고: 미사일 발사 감지! 대응책(플레어)을 사출하십시오!</Korean>
+        <Japanese>警告：ミサイル発射を探知！チャフ・フレアを展開せよ！</Japanese>
+        <Chinese>警告：偵測到飛彈發射！立即投放干擾彈！</Chinese>
+        <Chinesesimp>警告：侦测到导弹发射！立即投放干扰弹！</Chinesesimp>
+        <Turkish>UYARI: FÜZE ATEŞLEMESİ TESPİT EDİLDİ! KARŞI TEDBİRLERİ BIRAKIN!</Turkish>
+    </Key>
+    <Key ID="STR_ORA_Radio_CockpitReady">
+        <Original>Pilot on board. Systems linked to Sahrani ATC. Ready for flight.</Original>
+        <English>Pilot on board. Systems linked to Sahrani ATC. Ready for flight.</English>
+        <French>Pilote à bord. Systèmes reliés au contrôle Sahrani. Paré pour le vol.</French>
+        <Spanish>Piloto a bordo. Sistemas conectados con la torre de Sahrani. Listo para volar.</Spanish>
+        <German>Pilot an Bord. Systeme mit Tower Sahrani verbunden. Startklar.</German>
+        <Italian>Pilota a bordo. Sistemi collegati alla torre di Sahrani. Pronto al volo.</Italian>
+        <Polish>Pilot na pokładzie. Systemy połączone z wieżą Sahrani. Gotowość do lotu.</Polish>
+        <Portuguese>Piloto a bordo. Sistemas ligados à torre de Sahrani. Pronto para o voo.</Portuguese>
+        <Russian>Пилот на борту. Бортовые системы на связи с вышкой Сахрани. Готов к вылету.</Russian>
+        <Czech>Pilot na palubě. Systémy propojeny s řízením Sahrani. Připraven k letu.</Czech>
+        <Korean>조종사 탑승 완료. 시스템이 사라니 관제탑과 연결되었습니다. 비행 준비 완료.</Korean>
+        <Japanese>パイロット搭乗。システムがサフラニ管制とリンクしました。飛行準備完了。</Japanese>
+        <Chinese>飛行員已登機。機載系統已連線至薩赫拉尼塔台。準備起飛。</Chinese>
+        <Chinesesimp>飞行员已登机。机载系统已连线至萨赫拉尼塔台。准备起飞。</Chinesesimp>
+        <Turkish>Pilot kokpitte. Sistemler Sahrani kulesine bağlandı. Uçuşa hazır.</Turkish>
+    </Key>
+</Keys>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_Radio_Scramble">
+        <Original>All units, scramble! Immediate departure authorized. Cleared for takeoff runway 0-9.</Original>
+        <English>All units, scramble! Immediate departure authorized. Cleared for takeoff runway 0-9.</English>
+        <French>Toutes unités, alerte scramble ! Départ immédiat autorisé. Alignement et décollage piste 0-9.</French>
+        <Spanish>¡Todas las unidades, despegue inmediato autorizado! Autorizado para despegar pista 0-9.</Spanish>
+        <German>Alle Einheiten, Alarmstart! Sofortiger Start autorisiert. Start frei Piste 0-9.</German>
+        <Italian>Tutte le unità, scramble immediato! Decollo immediato autorizzato pista 0-9.</Italian>
+        <Polish>Wszystkie jednostki, natychmiastowy start! Zgoda na start z pasa 0-9.</Polish>
+        <Portuguese>Todas as unidades, descolagem imediata! Autorizada a descolagem na pista 0-9.</Portuguese>
+        <Russian>Всем бортам, боевая тревога! Немедленный взлет разрешен с полосы 0-9.</Russian>
+        <Czech>Všechny jednotky, okamžitý vzlet! Povolení ke vzletu z dráhy 0-9.</Czech>
+        <Korean>전 기체 긴급 출격! 즉시 이륙이 허가되었습니다. 0-9 활주로 이륙 허가.</Korean>
+        <Japanese>全機、緊急発進！即時離陸を許可。滑走路0-9からの離陸を許可する。</Japanese>
+        <Chinese>所有單位，緊急起飛！立即出動已獲批准。跑道 0-9 允許起飛。</Chinese>
+        <Chinesesimp>所有单位，紧急起飞！立即出动已获批准。跑道 0-9 允许起飞。</Chinesesimp>
+        <Turkish>Tüm birimler, acil kalkış! Derhal kalkış onaylandı. Pist 0-9 kalkış serbest.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_Radio_Bingo">
+        <Original>Bingo Fuel! RTB immediately to Sahrani Airbase.</Original>
+        <English>Bingo Fuel! RTB immediately to Sahrani Airbase.</English>
+        <French>Bingo Carburant ! Retour base immédiat (RTB) vers la base de Sahrani.</French>
+        <Spanish>¡Combustible Bingo! Regrese a la base de inmediato hacia Sahrani.</Spanish>
+        <German>Bingo Fuel! Sofortige Rückkehr zur Basis Sahrani.</German>
+        <Italian>Bingo Fuel! Rientro immediato alla base di Sahrani.</Italian>
+        <Polish>Stan Bingo! Natychmiastowy powrót do bazy lotniczej Sahrani.</Polish>
+        <Portuguese>Combustível Bingo! Regresso imediato à base aérea de Sahrani.</Portuguese>
+        <Russian>Остаток топлива на исходе (Bingo)! Немедленно возвращайтесь на базу Сахрани.</Russian>
+        <Czech>Stav Bingo! Okamžitý návrat na leteckou základnu Sahrani.</Czech>
+        <Korean>빙고 퓨얼(연료 한계)! 즉시 사라니 공군기지로 복귀하십시오.</Korean>
+        <Japanese>ビンゴ・フューエル（燃料限界）！直ちにサフラニ基地へ帰投せよ。</Japanese>
+        <Chinese>達到燃油底限（Bingo Fuel）！立即返回薩赫拉尼空軍基地。</Chinese>
+        <Chinesesimp>达到燃油底限（Bingo Fuel）！立即返回萨赫拉尼空军基地。</Chinesesimp>
+        <Turkish>Bingo Yakıt! Derhal Sahrani Hava Üssüne geri dönün.</Turkish>
+    </Key>
+</Keys>
+

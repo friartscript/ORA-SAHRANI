@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_Alert_CriticalDamage">
+        <Original>CRITICAL DAMAGE DETECTED! ENGINE COMPROMISED - EJECT! EJECT!</Original>
+        <English>CRITICAL DAMAGE DETECTED! ENGINE COMPROMISED - EJECT! EJECT!</English>
+        <French>DÉGÂTS CRITIQUES DÉTECTÉS ! RÉACTEUR COMPROMIS - ÉJECTION ! ÉJECTION !</French>
+        <Spanish>¡DAÑOS CRÍTICOS DETECTADOS! MOTOR COMPROMETIDO - ¡EYECCIÓN! ¡EYECCIÓN!</Spanish>
+        <German>KRITISCHER SCHADEN ERKANNT! TRIEBWERK BESCHÄDIGT - AUSSTIEG! AUSSTIEG!</German>
+        <Italian>DANNO CRITICO RILEVATO! MOTORE COMPROMESSO - EIETTI! EIETTI!</Italian>
+        <Polish>WYKRYTO KRYTYCZNE USZKODZENIA! SILNIK ZNISZCZONY - KATAPULTUJ SIĘ!</Polish>
+        <Portuguese>DANOS CRÍTICOS DETETADOS! MOTOR COMPROMETIDO - EJETAR! EJETAR!</Portuguese>
+        <Russian>ОБНАРУЖЕНЫ КРИТИЧЕСКИЕ ПОВРЕЖДЕНИЯ! ДВИГАТЕЛЬ ПОВРЕЖДЕН - КАТАПУЛЬТИРУЙТЕСЬ!</Russian>
+        <Czech>DETEKOVÁNO KRITICKÉ POŠKOZENÍ! MOTOR OHROŽEN - KATAPULTUJTE SE!</Czech>
+        <Korean>심각한 기체 손상 감지! 엔진 고장 - 즉시 탈출하십시오!</Korean>
+        <Japanese>致命的な損傷を探知！エンジン破損 - ベイルアウト！緊急脱出せよ！</Japanese>
+        <Chinese>偵測到嚴重損傷！發動機故障 - 彈射！彈射！</Chinese>
+        <Chinesesimp>侦测到严重损伤！发动机故障 - 弹射！弹射！</Chinesesimp>
+        <Turkish>KRİTİK HASAR TESPİT EDİLDİ! MOTOR HASAR GÖRDÜ - ATLA! ATLA!</Turkish>
+    </Key>
+    <Key ID="STR_ORA_Radio_EjectedSafe">
+        <Original>Mayday beacon received! Pilot is down. Search and Rescue team (CSAR) dispatched.</Original>
+        <English>Mayday beacon received! Pilot is down. Search and Rescue team (CSAR) dispatched.</English>
+        <French>Balise de détresse captée ! Pilote au sol. L'équipe de récupération (CSAR) est en route.</French>
+        <Spanish>¡Baliza de socorro recibida! Piloto en tierra. Equipo de rescate (CSAR) desplegado.</Spanish>
+        <German>Mayday-Funkbake empfangen! Pilot am Boden. Rettungsteam (CSAR) entsandt.</German>
+        <Italian>Segnale di emergenza ricevuto! Pilota a terra. Squadra di recupero (CSAR) inviata.</Italian>
+        <Polish>Odebrano sygnał ratunkowy! Pilot na ziemi. Zespół poszukiwawczo-ratowniczy (CSAR) w drodze.</Polish>
+        <Portuguese>Sinal de emergência captado! Piloto no solo. Equipa de resgate (CSAR) enviada.</Portuguese>
+        <Russian>Получен сигнал бедствия! Пилот на земле. Поисково-спасательная группа (CSAR) выслана.</Russian>
+        <Czech>Přijat nouzový signál! Pilot je na zemi. Záchranný tým (CSAR) byl vyslán.</Czech>
+        <Korean>메이데이 비상 신호 수신! 조종사 탈출 확인. 전투탐색구조팀(CSAR)이 급파되었습니다.</Korean>
+        <Japanese>メーデー信号を受信！パイロット脱出確認。戦闘捜索救難隊（CSAR）を派遣しました。</Japanese>
+        <Chinese>收到求救信號！飛行員已墜地。搜救小組（CSAR）已出動。</Chinese>
+        <Chinesesimp>收到求救信号！飞行员已坠地。搜救小组（CSAR）已出动。</Chinesesimp>
+        <Turkish>İmdat sinyali alındı! Pilot yerde. Muharebe Arama Kurtarma timi (CSAR) sevk edildi.</Turkish>
+    </Key>
+</Keys>
+

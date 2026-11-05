@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_CONTEXT_TAB">
+        <Original>Tactical Context</Original>
+        <English>Tactical Context</English>
+        <French>Contexte Tactique</French>
+        <Spanish>Contexto Táctico</Spanish>
+        <German>Taktischer Kontext</German>
+        <Italian>Contesto Tattico</Italian>
+        <Polish>Kontekst taktyczny</Polish>
+        <Portuguese>Contexto Tático</Portuguese>
+        <Russian>Тактическая обстановка</Russian>
+        <Czech>Taktický kontext</Czech>
+        <Korean>전술적 배경</Korean>
+        <Japanese>戦術的背景</Japanese>
+        <Chinese>戰術背景</Chinese>
+        <Chinesesimp>战术背景</Chinesesimp>
+        <Turkish>Taktik Bağlam</Turkish>
+    </Key>
+    <Key ID="STR_ORA_CONTEXT_THEATER_TITLE">
+        <Original>1. Sahrani Defense Campaign (AAF Invasion)</Original>
+        <English>1. Sahrani Defense Campaign (AAF Invasion)</English>
+        <French>1. Campagne de Défense de Sahrani (Invasion AAF)</French>
+        <Spanish>1. Campaña de Defensa de Sahrani (Invasión AAF)</Spanish>
+        <German>1. Sahrani-Verteidigungskampagne (AAF-Invasion)</German>
+        <Italian>1. Campagna di Difesa di Sahrani (Invasione AAF)</Italian>
+        <Polish>1. Kampania Obrony Sahrani (Inwazja AAF)</Polish>
+        <Portuguese>1. Campanha de Defesa de Sahrani (Invasão AAF)</Portuguese>
+        <Russian>1. Оборонительная кампания Сахрани (Вторжение AAF)</Russian>
+        <Czech>1. Kampaň na obranu Sahrani (Invaze AAF)</Czech>
+        <Korean>1. 사라니 방어 전역 (AAF 침공)</Korean>
+        <Japanese>1. サフラニ防衛作戦 (AAF侵攻作戦)</Japanese>
+        <Chinese>1. 薩赫拉尼保衛戰（AAF 全面入侵）</Chinese>
+        <Chinesesimp>1. 萨赫拉尼保卫战（AAF 全面入侵）</Chinesesimp>
+        <Turkish>1. Sahrani Savunma Harekâtı (AAF İstirası)</Turkish>
+    </Key>
+    <Key ID="STR_ORA_CONTEXT_THEATER_TEXT">
+        <Original>&lt;font color='#00d0ff' size='14'&gt;OPERATION ROYAL ALLIANCE (ORA) - CAMPAIGN BRIEF&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The sovereign territory of the Kingdom of Sahrani is under surprise attack. The Altis Armed Forces (AAF) have initiated a full-scale military invasion to annex the island chain, deploying combined maritime landing waves and airborne echelons.&lt;br/&gt;&lt;br/&gt;Hostile forces breached coastal detection lines at dawn, landing mechanized units along Southern and Eastern beaches. Their strategic objective is the rapid seizure of the central airfields and coastal road network to partition Sahrani forces.&lt;br/&gt;&lt;br/&gt;The Royal Command has designated the ORA Air Wing as the emergency spearhead. Flying plane_0, your tactical mission is to eliminate hostile spearheads, suppress enemy incursions, and maintain air superiority over national territory.</Original>
+        <English>&lt;font color='#00d0ff' size='14'&gt;OPERATION ROYAL ALLIANCE (ORA) - CAMPAIGN BRIEF&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The sovereign territory of the Kingdom of Sahrani is under surprise attack. The Altis Armed Forces (AAF) have initiated a full-scale military invasion to annex the island chain, deploying combined maritime landing waves and airborne echelons.&lt;br/&gt;&lt;br/&gt;Hostile forces breached coastal detection lines at dawn, landing mechanized units along Southern and Eastern beaches. Their strategic objective is the rapid seizure of the central airfields and coastal road network to partition Sahrani forces.&lt;br/&gt;&lt;br/&gt;The Royal Command has designated the ORA Air Wing as the emergency spearhead. Flying plane_0, your tactical mission is to eliminate hostile spearheads, suppress enemy incursions, and maintain air superiority over national territory.</English>
+        <French>&lt;font color='#00d0ff' size='14'&gt;OPÉRATION ROYAL ALLIANCE (ORA) - POINT STRATÉGIQUE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Le territoire souverain du Royaume de Sahrani subit une attaque surprise d'envergure. Les forces armées d'Altis (AAF) ont déclenché une invasion militaire interarmées totale visant à annexer l'archipel, engageant simultanément des vagues de débarquement naval et des assauts aéroportés.&lt;br/&gt;&lt;br/&gt;Les forces ennemies ont percé les réseaux de détection côtiers à l'aube, débarquant de puissants détachements mécanisés sur les plages sud et est. Leur objectif stratégique est la capture éclair des bases aériennes et des axes routiers pour couper Sahrani en deux.&lt;br/&gt;&lt;br/&gt;Le Commandement Royal a désigné l'escadre aérienne ORA comme fer de lance de la riposte. Aux commandes de plane_0, votre mission consiste à briser l'élan de l'AAF, soutenir nos garnisons sous le feu et verrouiller la supériorité aérienne au-dessus de notre patrie.</French>
+        <Spanish>&lt;font color='#00d0ff' size='14'&gt;OPERACIÓN ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;El territorio soberano del Reino de Sahrani sufre una invasión a gran escala por parte de la AAF. Unidades mecanizadas enemigas han desembarcado en las costas sur y este con el objetivo de capturar aeródromos clave.&lt;br/&gt;&lt;br/&gt;A bordo de plane_0, su misión es quebrar las puntas de lanza invasoras y defender el territorio patrio.</Spanish>
+        <German>&lt;font color='#00d0ff' size='14'&gt;OPERATION ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Das Hoheitsgebiet des Königreichs Sahrani wird von den Streitkräften von Altis (AAF) mit einer großangelegten Invasion angegriffen. Feindliche Truppen landeten an den Südküsten.&lt;br/&gt;&lt;br/&gt;Als Chefpilot von plane_0 müssen Sie die vorrückenden AAF-Einheiten zerschlagen und die Lufthoheit über Sahrani sichern.</German>
+        <Italian>&lt;font color='#00d0ff' size='14'&gt;OPERAZIONE ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Il Regno di Sahrani è sotto attacco: le forze armate di Altis (AAF) hanno lanciato una massiccia invasione marittima e aerea. Truppe nemiche avanzano dalle spiagge.&lt;br/&gt;&lt;br/&gt;Ai comandi di plane_0, il suo compito è respingere gli invasori e proteggere le truppe alleate.</Italian>
+        <Polish>&lt;font color='#00d0ff' size='14'&gt;OPERACJA ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Terytorium Królestwa Sahrani zostało zaatakowane przez Siły Zbrojne Altis (AAF). Wróg przeprowadził masowy desant i dąży do przejęcia lotnisk.&lt;br/&gt;&lt;br/&gt;W kokpicie myśliwca plane_0 Twoim zadaniem jest powstrzymanie najeźdźców i obrona przestrzeni powietrznej.</Polish>
+        <Portuguese>&lt;font color='#00d0ff' size='14'&gt;OPERAÇÃO ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;O território do Reino de Sahrani está sob ataque da AAF, que lançou uma invasão anfíbia e aérea em grande escala para anexar a ilha.&lt;br/&gt;&lt;br/&gt;Como piloto de plane_0, sua missão primordial é repelir o avanço inimigo e salvar as guarnições aliadas.</Portuguese>
+        <Russian>&lt;font color='#00d0ff' size='14'&gt;ОПЕРАЦИЯ ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Суверенная территория Королевства Сахрани подверглась внезапному вторжению сил AAF. Враг высадил бронетехнику и пытается захватить авиабазы.&lt;br/&gt;&lt;br/&gt;Пилотируя plane_0, ваша боевая задача — сломить наступление противника и восстановить контроль над небом Сахрани.</Russian>
+        <Czech>&lt;font color='#00d0ff' size='14'&gt;OPERACE ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Království Sahrani čelí rozsáhlé invazi sil AAF. Nepřítel provedl výsadek na jihu a snaží se odříznout spojenecká letiště.&lt;br/&gt;&lt;br/&gt;Jako pilot letounu plane_0 máte za úkol zastavit postup útočníků a zajistit vzdušný prostor.</Czech>
+        <Korean>&lt;font color='#00d0ff' size='14'&gt;로열 얼라이언스 작전 (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;사라니 왕국 영토가 AAF 군의 전면적인 기습 침공을 받았습니다. 적 기갑 및 상륙 부대가 해안을 통해 침투했습니다.&lt;br/&gt;&lt;br/&gt;plane_0을 조종하여 적 침공 선봉대를 격멸하고 본토 제공권을 탈환하십시오.</Korean>
+        <Japanese>&lt;font color='#00d0ff' size='14'&gt;ロイヤル・アライアンス作戦 (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;サフラニ王国領土はAAF軍による大規模な奇襲侵略攻撃に直面しています。敵は海岸部から上陸し、飛行場の制圧を図っています。&lt;br/&gt;&lt;br/&gt;plane_0の操縦桿を握り、敵の侵攻を阻止して同盟空域を防衛せよ。</Japanese>
+        <Chinese>&lt;font color='#00d0ff' size='14'&gt;皇家聯盟行動 (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;薩赫拉尼王國領土正遭受 AAF 突襲入侵。敵軍發動海空協同登陸，企圖強佔島上機場並分割戰場。&lt;br/&gt;&lt;br/&gt;駕駛 plane_0 戰機，您的戰略任務是徹底粉碎敵軍攻勢並掌控空域制空權。</Chinese>
+        <Chinesesimp>&lt;font color='#00d0ff' size='14'&gt;皇家联盟行动 (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;萨赫拉尼王国领土正遭受 AAF 突袭入侵。敌军发动海空协同登陆，企图强占岛上机场并分割战场。&lt;br/&gt;&lt;br/&gt;驾驶 plane_0 战机，您的战略任务是彻底粉碎敌军攻势并掌控空域制空权。</Chinesesimp>
+        <Turkish>&lt;font color='#00d0ff' size='14'&gt;ROYAL ALLIANCE HAREKÂTI (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Sahrani Krallığı AAF güçlerinin geniş çaplı ani istilasına uğramıştır. Düşman güney sahillerinden ilerleyerek hava üslerini hedeflemektedir.&lt;br/&gt;&lt;br/&gt;plane_0 uçağında düşman öncü kollarını durdurmak ve hava sahasını savunmakla görevlendirildiniz.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_CONTEXT_THREAT_TITLE">
+        <Original>2. AAF Invasion Task Force &amp; Weapons Grid</Original>
+        <English>2. AAF Invasion Task Force &amp; Weapons Grid</English>
+        <French>2. Forces d'Invasion AAF &amp; Réseau Sol-Air</French>
+        <Spanish>2. Fuerza de Invasión de la AAF y Red Antiaérea</Spanish>
+        <German>2. AAF-Invasionskräfte &amp; Flugabwehrnetz</German>
+        <Italian>2. Forza d'Invasione AAF e Rete Contraerea</Italian>
+        <Polish>2. Siły Inwazyjne AAF i Siatka Obrony Przeciwlotniczej</Polish>
+        <Portuguese>2. Força Invasora da AAF e Rede Antiaérea</Portuguese>
+        <Russian>2. Группировка вторжения AAF и система ПВО</Russian>
+        <Czech>2. Invazní síly AAF a síť protivzdušné obrany</Czech>
+        <Korean>2. AAF 침공 기동부대 및 대공망 현황</Korean>
+        <Japanese>2. AAF侵攻機動部隊および対空防衛網</Japanese>
+        <Chinese>2. AAF 入侵特遣部隊與防空作戰網絡</Chinese>
+        <Chinesesimp>2. AAF 入侵特遣部队与防空作战网络</Chinesesimp>
+        <Turkish>2. AAF İstila Görev Kuvveti ve Hava Savunma Ağı</Turkish>
+    </Key>
+    <Key ID="STR_ORA_CONTEXT_THREAT_TEXT">
+        <Original>&lt;font color='#ff6666'&gt;AAF BATTLE ORDER &amp; THREAT ENVELOPE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Air Superiority &amp; Strike:&lt;/b&gt; AAF operates A-143 Buzzard light attack jets equipped with radar/infrared missiles, alongside WY-55 Hellcat gunships providing tactical close support.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Mechanized &amp; Armor:&lt;/b&gt; Main battle line spearheaded by MBT-52 Kuma tanks, AFV-4 Mora infantry fighting vehicles with 30mm autocannons, and MSE-3 Marid armored carriers.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Integrated Air Defense:&lt;/b&gt; Mobile radar SPAAG Cheetah platforms (twin 35mm radar cannons and short-range missiles) deployed with advance echelons. Forward infantry squads carry Titan MANPADS launchers.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Tactical Doctrine:&lt;/b&gt; Low-altitude flight recommended when crossing radar horizons; immediately dispense flare salvos when break lock is detected.</Original>
+        <English>&lt;font color='#ff6666'&gt;AAF BATTLE ORDER &amp; THREAT ENVELOPE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Air Superiority &amp; Strike:&lt;/b&gt; AAF operates A-143 Buzzard light attack jets equipped with radar/infrared missiles, alongside WY-55 Hellcat gunships providing tactical close support.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Mechanized &amp; Armor:&lt;/b&gt; Main battle line spearheaded by MBT-52 Kuma tanks, AFV-4 Mora infantry fighting vehicles with 30mm autocannons, and MSE-3 Marid armored carriers.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Integrated Air Defense:&lt;/b&gt; Mobile radar SPAAG Cheetah platforms (twin 35mm radar cannons and short-range missiles) deployed with advance echelons. Forward infantry squads carry Titan MANPADS launchers.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Tactical Doctrine:&lt;/b&gt; Low-altitude flight recommended when crossing radar horizons; immediately dispense flare salvos when break lock is detected.</English>
+        <French>&lt;font color='#ff6666'&gt;ORDRE DE BATAILLE AAF &amp; ÉVENTAIL DES MENACES :&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Composante Aérienne :&lt;/b&gt; Chasseurs d'attaque légers A-143 Buzzard équipés de missiles air-air radar/infrarouge et hélicoptères d'attaque WY-55 Hellcat opérant en appui rapproché.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Blindés &amp; Mécanisés :&lt;/b&gt; Chars de combat MBT-52 Kuma, véhicules de combat d'infanterie AFV-4 Mora armés de canons de 30mm et blindés amphibies MSE-3 Marid.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Défense Sol-Air Intégrée :&lt;/b&gt; Blindés antiaériens Cheetah bitubes de 35mm guidés par radar accompagnant les colonnes. Équipes d'infanterie équipées de lanceurs sol-air portatifs Titan (MANPADS).&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Recommandation Pilote :&lt;/b&gt; Évoluez en suivi de relief sous les lobes radar et saturez la zone de leurres thermiques en cas d'alerte départ missile.</French>
+        <Spanish>&lt;font color='#ff6666'&gt;ORDEN DE BATALLA DE LA AAF:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Cazas A-143 Buzzard y helicópteros Hellcat. Blindados Kuma y Mora. Defensa antiaérea Cheetah con cañones guiados por radar y misiles antiaéreos portátiles Titan. Utilice vuelo a muy baja cota y contramedidas térmicas.</Spanish>
+        <German>&lt;font color='#ff6666'&gt;AAF-KAMPFVERBAND &amp; BEDROHUNGEN:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;A-143 Buzzard Jets und Hellcat Kampfhubschrauber. Kuma-Kampfpanzer und Mora-Schützenpanzer. Cheetah-Flugabwehrpanzer und tragbare Titan-Luftabwehrraketen. Tiefflug und Leuchtkörper zwingend erforderlich.</German>
+        <Italian>&lt;font color='#ff6666'&gt;ORDINE DI BATTAGLIA AAF:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Caccia leggeri A-143 Buzzard ed elicotteri Hellcat. Carri armati Kuma e blindati Mora. Semoventi antiaerei Cheetah con radar e missili terra-aria spalleggiabili Titan. Volare sotto la quota radar ed erogare flare.</Italian>
+        <Polish>&lt;font color='#ff6666'&gt;SIŁY I ZAGROŻENIA AAF:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Myśliwce A-143 Buzzard i śmigłowce bojowe Hellcat. Czołgi Kuma i bwp Mora. Przeciwlotnicze działa radarowe Cheetah oraz wyrzutnie Titan MANPADS. Zalecany lot koszący i wyrzut flar.</Polish>
+        <Portuguese>&lt;font color='#ff6666'&gt;ORDEM DE BATALHA DA AAF:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Caças A-143 Buzzard e helicópteros Hellcat. Carros Kuma e blindados Mora. Sistemas antiaéreos Cheetah com radar e mísseis portáteis Titan. Mantenha voo a baixa altitude e use despistadores.</Portuguese>
+        <Russian>&lt;font color='#ff6666'&gt;БОЕВОЙ СОСТАВ AAF И УГРОЗЫ:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Легкие штурмовики A-143 Buzzard и ударные вертолеты Hellcat. Танки Kuma и БМП Mora. ЗСУ Cheetah с радарным наведением и расчеты ПЗРК Titan. Рекомендуется полет на сверхмалых высотах и отстрел ловушек.</Russian>
+        <Czech>&lt;font color='#ff6666'&gt;BOJOVÁ SESTAVA AAF A HROZBY:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Útočné letouny A-143 Buzzard a vrtulníky Hellcat. Tanky Kuma a vozidla Mora. Protiletadlové komplety Cheetah a přenosné rakety Titan. Doporučuje se přízemní let a včasné odpalování klamných cílů.</Czech>
+        <Korean>&lt;font color='#ff6666'&gt;AAF 전투 서열 및 위협 요소:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;A-143 버자드 경전투기 및 헬캣 공격 헬기. 쿠마 전차와 모라 보병전투장갑차. 레이더 연동 치타 대공포 및 타이탄 휴대용 대공 미사일. 저고도 침투 비행과 선제적 플레어 투하를 권장합니다.</Korean>
+        <Japanese>&lt;font color='#ff6666'&gt;AAF戦闘序列および脅威度:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;A-143バザード軽攻撃機およびヘルキャット攻撃ヘリ。クマ主力戦車とモラ装甲戦闘車。レーダー誘導式チーター対空自走砲およびタイタン携帯式地対空ミサイル。超低空飛行とフレア投下を推奨。</Japanese>
+        <Chinese>&lt;font color='#ff6666'&gt;AAF 戰鬥序列與威脅陣列：&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;配備雷達/紅外線飛彈的 A-143 禿鷹輕型攻擊機與地獄貓武裝直升機。庫瑪主戰坦克與莫拉裝步戰車。獵豹雷達導引防空砲與泰坦便攜防空飛彈。建議維持低空突防並隨時投放熱誘彈。</Chinese>
+        <Chinesesimp>&lt;font color='#ff6666'&gt;AAF 战斗序列与威胁阵列：&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;配备雷达/红外导弹的 A-143 秃鹰轻型攻击机与地狱猫武装直升机。库玛主战坦克与莫拉装步战车。猎豹雷达导引防空炮与泰坦便携防空导弹。建议维持低空突防并随时投放热诱弹。</Chinesesimp>
+        <Turkish>&lt;font color='#ff6666'&gt;AAF MUHAREBE DÜZENİ VE TEHDİTLER:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;A-143 Buzzard taarruz uçakları ve Hellcat helikopterleri. Kuma tankları ve Mora zırhlıları. Cheetah kule radarlı uçaksavarlar ve Titan omuzdan atılan füzeler. Alçak uçuş ve sürekli flare kullanımı tavsiye edilir.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_CONTEXT_ALLIES_TITLE">
+        <Original>3. RACS Sovereign Forces &amp; Air Wing</Original>
+        <English>3. RACS Sovereign Forces &amp; Air Wing</English>
+        <French>3. Forces Souveraines RACS &amp; Escadre ORA</French>
+        <Spanish>3. Fuerzas Soberanas del RACS y Ala Aérea ORA</Spanish>
+        <German>3. RACS-Heimatstreitkräfte &amp; ORA-Geschwader</German>
+        <Italian>3. Forze Sovrane del RACS e Stormo Aereo ORA</Italian>
+        <Polish>3. Siły Suwerenne RACS i Skrzydło ORA</Polish>
+        <Portuguese>3. Forças Soberanas do RACS e Ala Aérea ORA</Portuguese>
+        <Russian>3. Войска Королевства RACS и авиакрыло ORA</Russian>
+        <Czech>3. Síly Království RACS a letecké křídlo ORA</Czech>
+        <Korean>3. RACS 왕국 방위군 및 ORA 비행대</Korean>
+        <Japanese>3. RACS王国防衛軍およびORA航空団</Japanese>
+        <Chinese>3. RACS 王國衛隊與 ORA 航空作戰聯隊</Chinese>
+        <Chinesesimp>3. RACS 王国卫队与 ORA 航空作战联队</Chinesesimp>
+        <Turkish>3. RACS Krallık Birlikleri ve ORA Hava Filosu</Turkish>
+    </Key>
+    <Key ID="STR_ORA_CONTEXT_ALLIES_TEXT">
+        <Original>&lt;font color='#00ff88'&gt;ALLIED FORCES IN DEFENSE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Royal Army Corps of Sahrani (RACS):&lt;/b&gt; Territorial garrisons holding perimeter checkpoints, coastal artillery bunkers, and radar stations across the island. They are heavily outgunned and reliant on our CAS.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Air Base Infrastructure:&lt;/b&gt; Active hardened shelter and rearming pads supporting plane_0. Protected by perimeter RACS security detachments.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Command Directive:&lt;/b&gt; No RACS unit is expendable. Every soldier defended strengthens Sahrani's resolve to push the invaders into the sea.</Original>
+        <English>&lt;font color='#00ff88'&gt;ALLIED FORCES IN DEFENSE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Royal Army Corps of Sahrani (RACS):&lt;/b&gt; Territorial garrisons holding perimeter checkpoints, coastal artillery bunkers, and radar stations across the island. They are heavily outgunned and reliant on our CAS.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Air Base Infrastructure:&lt;/b&gt; Active hardened shelter and rearming pads supporting plane_0. Protected by perimeter RACS security detachments.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Command Directive:&lt;/b&gt; No RACS unit is expendable. Every soldier defended strengthens Sahrani's resolve to push the invaders into the sea.</English>
+        <French>&lt;font color='#00ff88'&gt;FORCES ALLIÉES EN POSTURE DÉFENSIVE :&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Royal Army Corps of Sahrani (RACS) :&lt;/b&gt; Garnisons territoriales tenant les postes avancés, blockhaus côtiers et stations radar à travers tout l'archipel. Lourdement surclassées en puissance de feu, leur survie dépend exclusivement de votre appui aérien.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Infrastructures de la Base :&lt;/b&gt; Aérodrome opérationnel avec alvéoles de réarmement et de ravitaillement pour plane_0, sécurisé par le détachement de protection RACS.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Directive du Commandement :&lt;/b&gt; Aucune unité RACS n'est sacrifiable. Chaque section sauvée renforce la résistance de Sahrani pour rejeter l'envahisseur à la mer.</French>
+        <Spanish>&lt;font color='#00ff88'&gt;FUERZAS ALIADAS EN DEFENSA:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;El cuerpo militar RACS sostiene puestos fortificados y radares en toda la isla. Dependen por completo de nuestro apoyo aéreo para no ser aniquilados. Ninguna unidad aliada es prescindible.</Spanish>
+        <German>&lt;font color='#00ff88'&gt;VERBÜNDETE VERTEIDIGUNGSKRÄFTE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS-Garnisonen halten befestigte Stellungen und Radarstationen auf ganz Sahrani. Ihr Überleben hängt von unserer Luftunterstützung ab. Jede verbündete Einheit muss verteidigt werden.</German>
+        <Italian>&lt;font color='#00ff88'&gt;FORZE ALLEATE IN DIFESA:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;I reparti RACS presidiano fortificazioni e stazioni radar sull'isola. La loro salvezza dipende unicamente dal nostro supporto aereo ravvicinato. Nessuna unità alleata è sacrificabile.</Italian>
+        <Polish>&lt;font color='#00ff88'&gt;SIŁY SOJUSZNICZE W DEFENSYWIE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Garnizony RACS utrzymują punkty oporu i stacje radarowe na całej wyspie. Ich przetrwanie zależy bezpośrednio od Twojego wsparcia z powietrza. Każdy żołnierz RACS jest bezcenny.</Polish>
+        <Portuguese>&lt;font color='#00ff88'&gt;FORÇAS ALIADAS EM DEFESA:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;As guarnições territoriais do RACS defendem posições costeiras e radares. A sobrevivência das tropas em terra depende diretamente do nosso suporte aéreo.</Portuguese>
+        <Russian>&lt;font color='#00ff88'&gt;СОЮЗНЫЕ ОБОРОНИТЕЛЬНЫЕ СИЛЫ:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Гарнизоны RACS удерживают укрепленные посты, береговые бункеры и радары. Их выживание напрямую зависит от вашей поддержки с воздуха. Ни одно подразделение RACS не подлежит сдаче.</Russian>
+        <Czech>&lt;font color='#00ff88'&gt;SPOJENECKÉ OBRANNÉ SÍLY:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Posádky RACS brání opěrné body a radarová stanoviště po celém ostrově. Jejich přežití závisí na naší letecké podpoře. Žádná spojenecká jednotka nesmí padnout.</Czech>
+        <Korean>&lt;font color='#00ff88'&gt;방어 중인 아군 전력:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS 수비대가 섬 전역의 검문소, 해안 진지, 레이더 기지를 사수하고 있습니다. 지상군의 생존은 조종사의 근접 지원에 달려 있습니다. 아군 부대를 끝까지 엄호하십시오.</Korean>
+        <Japanese>&lt;font color='#00ff88'&gt;防衛に就く友軍戦力:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS守備隊は全島の拠点、海岸陣地、レーダー基地を死守しています。彼らの生存は貴官の航空支援にかかっています。友軍を救い侵略者を海へ追い落とせ。</Japanese>
+        <Chinese>&lt;font color='#00ff88'&gt;防禦作戰中的友軍部隊：&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS 守備部隊正堅守全島各陣地、海岸防禦碉堡與雷達站。地面部隊的生死存亡完全仰賴我方的近接空中掩護。絕不放棄任何一支友軍部隊。</Chinese>
+        <Chinesesimp>&lt;font color='#00ff88'&gt;防御作战中的友军部队：&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS 守备部队正坚守全岛各阵地、海岸防御碉堡与雷达站。地面部队的生死存亡完全仰赖我方的近接空中掩护。绝不放弃任何一支友军部队。</Chinesesimp>
+        <Turkish>&lt;font color='#00ff88'&gt;SAVUNMADAKİ DOST BİRLİKLER:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS birlikleri ada genelindeki tahkimatları ve radarları savunmaktadır. Karadaki askerlerin hayatta kalması hava desteğinize bağlıdır. Hiçbir dost unsur feda edilemez.</Turkish>
+    </Key>
+</Keys>

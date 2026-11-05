@@ -1,0 +1,1618 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project name="Mission">
+    <Package name="Briefing">
+        <Key ID="STR_ORA_MANUAL_TAB">
+            <Original>Flight &amp; Combat Manual</Original>
+            <English>Flight &amp; Combat Manual</English>
+            <French>Manuel de Vol &amp; Combat</French>
+            <Spanish>Manual de Vuelo y Combate</Spanish>
+            <German>Flug- &amp; Kampfhandbuch</German>
+            <Italian>Manuale di Volo e Combattimento</Italian>
+            <Polish>Podręcznik lotu i walki</Polish>
+            <Portuguese>Manual de Voo e Combate</Portuguese>
+            <Russian>Летное и боевое руководство</Russian>
+            <Czech>Letecký a bojový manuál</Czech>
+            <Korean>비행 및 전투 교범</Korean>
+            <Japanese>飛行・戦闘マニュアル</Japanese>
+            <Chinese>飛行與空戰手冊</Chinese>
+            <Chinesesimp>飞行与空战手册</Chinesesimp>
+            <Turkish>Uçuş ve Muharebe El Kitabı</Turkish>
+        </Key>
+        <Key ID="STR_ORA_MANUAL_AVIONICS_TITLE">
+            <Original>1. Avionics, Radar &amp; RWR</Original>
+            <English>1. Avionics, Radar &amp; RWR</English>
+            <French>1. Avionique, Radar &amp; RWR</French>
+            <Spanish>1. Aviónica, Radar y RWR</Spanish>
+            <German>1. Avionik, Radar &amp; RWR</German>
+            <Italian>1. Avionica, Radar e RWR</Italian>
+            <Polish>1. Awionika, Radar i RWR</Polish>
+            <Portuguese>1. Aviônica, Radar e RWR</Portuguese>
+            <Russian>1. Авионика, РЛС и СПО (RWR)</Russian>
+            <Czech>1. Avionika, Radar a RWR</Czech>
+            <Korean>1. 항공 전자 장비, 레이더 및 RWR</Korean>
+            <Japanese>1. アビオニクス、レーダーおよびRWR</Japanese>
+            <Chinese>1. 航電系統、雷達與 RWR</Chinese>
+            <Chinesesimp>1. 航电系统、雷达与 RWR</Chinesesimp>
+            <Turkish>1. Aviyonik, Radar ve RWR</Turkish>
+        </Key>
+        <Key ID="STR_ORA_MANUAL_AVIONICS_TEXT">
+            <Original>&lt;font color='#00d0ff' size='14'&gt;AIRCRAFT SENSORS &amp; THREAT WARNINGS&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Radar Range:&lt;/font&gt; Air-to-air sweep active up to 16km. Use sensor mode to filter air/ground targets.&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR Audio Alert:&lt;/font&gt; Continuous high-pitch tone signifies active hostile radar lock. A double-tone beep indicates an inbound missile. Dispense flares immediately and execute high-G break turn.</Original>
+            <English>&lt;font color='#00d0ff' size='14'&gt;AIRCRAFT SENSORS &amp; THREAT WARNINGS&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Radar Range:&lt;/font&gt; Air-to-air sweep active up to 16km. Use sensor mode to filter air/ground targets.&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR Audio Alert:&lt;/font&gt; Continuous high-pitch tone signifies active hostile radar lock. A double-tone beep indicates an inbound missile. Dispense flares immediately and execute high-G break turn.</English>
+            <French>&lt;font color='#00d0ff' size='14'&gt;CAPTEURS ET ALERTES MENACES&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Portée Radar :&lt;/font&gt; Balayage air-air actif jusqu'à 16 km. Utilisez les modes de capteurs pour filtrer cibles aériennes et terrestres.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Alerte RWR :&lt;/font&gt; Une tonalité continue signale un verrouillage radar ennemi. Un bip double indique un missile en approche. Déployez immédiatement vos leurres et effectuez un virage de dégagement sous facteur de charge.</French>
+            <Spanish>&lt;font color='#00d0ff' size='14'&gt;SENSORES Y ALERTAS DE AMENAZA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Alcance del Radar:&lt;/font&gt; Barrido aire-aire activo hasta 16km.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Alerta RWR:&lt;/font&gt; Un tono continuo indica bloqueo de radar hostil. Un pitido doble indica un misil en aproximación. Despliegue bengalas de inmediato.</Spanish>
+            <German>&lt;font color='#00d0ff' size='14'&gt;SENSOREN &amp; BEDROHUNGSWARNUNG&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Radar-Reichweite:&lt;/font&gt; Luft-Luft-Erfassung bis 16km aktiv.&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR-Warnung:&lt;/font&gt; Dauerton signalisiert feindliche Radarerfassung. Doppelton meldet anfliegende Rakete. Täuschkörper ausstoßen.</German>
+            <Italian>&lt;font color='#00d0ff' size='14'&gt;SENSORI E ALLERTI DI MINACCIA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Portata Radar:&lt;/font&gt; Scansione aria-aria attiva fino a 16km.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Allarme RWR:&lt;/font&gt; Tono continuo indica aggancio radar. Doppio bip segnala missile in arrivo. Rilasciare contromisure.</Italian>
+            <Polish>&lt;font color='#00d0ff' size='14'&gt;CZUJNIKI I OSTRZEŻENIA O ZAGROŻENIU&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Zasięg Radaru:&lt;/font&gt; Skanowanie powietrze-powietrze do 16 km.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Alarm RWR:&lt;/font&gt; Ciągły dźwięk oznacza namierzenie radarem. Podwójny sygnał oznacza nadlatujący pocisk.</Polish>
+            <Portuguese>&lt;font color='#00d0ff' size='14'&gt;SENSORES E ALERTAS DE AMEAÇA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Alcance do Radar:&lt;/font&gt; Varredura ar-ar ativa até 16km.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Alerta RWR:&lt;/font&gt; Tom contínuo indica travamento de radar hostil. Bip duplo indica míssil em aproximação.</Portuguese>
+            <Russian>&lt;font color='#00d0ff' size='14'&gt;ДАТЧИКИ И ОПОВЕЩЕНИЯ ОБ УГРОЗАХ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Дальность РЛС:&lt;/font&gt; Обзор воздух-воздух до 16 км.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Сигнал СПО (RWR):&lt;/font&gt; Непрерывный тон означает захват радаром. Двойной сигнал означает пуск ракеты. Примените ловушки.</Russian>
+            <Czech>&lt;font color='#00d0ff' size='14'&gt;SENZORY A VÝSTRAHY&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Dosah radaru:&lt;/font&gt; Vzdušný přehled aktivní do 16 km.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Varování RWR:&lt;/font&gt; Trvalý tón značí zaměření radarem. Dvojitý tón signalizuje blížící se raketu.</Czech>
+            <Korean>&lt;font color='#00d0ff' size='14'&gt;센서 및 위협 경보&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;레이더 탐지 거리:&lt;/font&gt; 공대공 탐색 최대 16km 활성화.&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR 경보:&lt;/font&gt; 지속적인 경보음은 적 레이더 록온을 의미하며, 이중 비프음은 미사일 접근을 나타냅니다.</Korean>
+            <Japanese>&lt;font color='#00d0ff' size='14'&gt;センサーと脅威警告&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;レーダー探知距離:&lt;/font&gt; 空対空走査最大16km有効。&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR警報:&lt;/font&gt; 連続音は敵レーダーのロックオンを示し、2重ビープ音は接近するミサイルを示します。</Japanese>
+            <Chinese>&lt;font color='#00d0ff' size='14'&gt;傳感器與威脅告警&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;雷達範圍：&lt;/font&gt;空對空掃描最大達 16 公里。&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR 告警：&lt;/font&gt;持續蜂鳴聲代表被敵方雷達鎖定，雙重嗶嗶聲代表飛彈來襲。請立即施放干擾彈。</Chinese>
+            <Chinesesimp>&lt;font color='#00d0ff' size='14'&gt;传感器与威胁告警&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;雷达范围：&lt;/font&gt;空对空扫描最大达 16 公里。&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR 告警：&lt;/font&gt;持续蜂鸣声代表被敌方雷达锁定，双重哔哔声代表飞弹来袭。请立即施放干扰弹。</Chinesesimp>
+            <Turkish>&lt;font color='#00d0ff' size='14'&gt;SENSÖRLER VE TEHDİT İKAZLARI&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Radar Menzili:&lt;/font&gt; 16 km'ye kadar hava-hava taraması faal.&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR İkazı:&lt;/font&gt; Sürekli ses düşman radar kilitlenmesini belirtir. Çift bip sesi yaklaşan füzeyi gösterir.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_MANUAL_WEAPONS_TITLE">
+            <Original>2. Weapons &amp; Brevity Codes</Original>
+            <English>2. Weapons &amp; Brevity Codes</English>
+            <French>2. Armement &amp; Brevity Codes</French>
+            <Spanish>2. Armamento y Brevity Codes</Spanish>
+            <German>2. Bewaffnung &amp; Brevity Codes</German>
+            <Italian>2. Armamento e Brevity Codes</Italian>
+            <Polish>2. Uzbrojenie i Kody Brevity</Polish>
+            <Portuguese>2. Armamento e Brevity Codes</Portuguese>
+            <Russian>2. Вооружение и краткие радиокоды</Russian>
+            <Czech>2. Výzbroj a zkrácené kódy</Czech>
+            <Korean>2. 무장 및 간략 부호 (Brevity Codes)</Korean>
+            <Japanese>2. 兵装および簡略通信コード</Japanese>
+            <Chinese>2. 武器與戰術簡語 (Brevity Codes)</Chinese>
+            <Chinesesimp>2. 武器与战术简语 (Brevity Codes)</Chinesesimp>
+            <Turkish>2. Silahlar ve Kısa Telsiz Kodları</Turkish>
+        </Key>
+        <Key ID="STR_ORA_MANUAL_WEAPONS_TEXT">
+            <Original>&lt;font color='#00d0ff' size='14'&gt;ORDNANCE RELEASE PROTOCOLS&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 2:&lt;/font&gt; Infrared-guided short-range missile (heat seeker). Best employed in rear-aspect close dogfights.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 3:&lt;/font&gt; Active radar beyond-visual-range (BVR) missile. Fire upon positive AWACS hostile vector.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Pickle:&lt;/font&gt; Air-to-ground guided bomb or rocket salvo release.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Guns:&lt;/font&gt; 20mm/30mm high-rate rotary cannon fire.</Original>
+            <English>&lt;font color='#00d0ff' size='14'&gt;ORDNANCE RELEASE PROTOCOLS&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 2:&lt;/font&gt; Infrared-guided short-range missile (heat seeker). Best employed in rear-aspect close dogfights.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 3:&lt;/font&gt; Active radar beyond-visual-range (BVR) missile. Fire upon positive AWACS hostile vector.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Pickle:&lt;/font&gt; Air-to-ground guided bomb or rocket salvo release.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Guns:&lt;/font&gt; 20mm/30mm high-rate rotary cannon fire.</English>
+            <French>&lt;font color='#00d0ff' size='14'&gt;PROTOCOLES DE DÉPENSE D'ARMEMENT&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 2 :&lt;/font&gt; Missile courte portée à guidage infrarouge. Privilégier les tirs en secteur arrière en combat rapproché.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 3 :&lt;/font&gt; Missile BVR (Beyond Visual Range) à guidage radar actif sur vecteur AWACS confirmé.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Pickle :&lt;/font&gt; Déclenchement de bombe guidée ou roquette air-sol.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Guns :&lt;/font&gt; Tir au canon automatique bitube / rotatif.</French>
+            <Spanish>&lt;font color='#00d0ff' size='14'&gt;PROTOCOLOS DE DISPARO DE ARMAS&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Misil infrarrojo de corto alcance.&lt;br/&gt;- Fox 3: Misil guiado por radar activo BVR.&lt;br/&gt;- Pickle: Lanzamiento de armamento aire-tierra.&lt;br/&gt;- Guns: Fuego de cañón rotativo.</Spanish>
+            <German>&lt;font color='#00d0ff' size='14'&gt;WAFFENEINSATZPROTOKOLLE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Kurzstrecken-Infrarotrakete.&lt;br/&gt;- Fox 3: Aktiv radargelenkte BVR-Rakete.&lt;br/&gt;- Pickle: Abwurf von Luft-Boden-Munition.&lt;br/&gt;- Guns: Bordkanonenfeuer.</German>
+            <Italian>&lt;font color='#00d0ff' size='14'&gt;PROTOCOLLI D'IMPIEGO DEGLI ARMAMENTI&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Missile a infrarossi a corto raggio.&lt;br/&gt;- Fox 3: Missile a guida radar attiva BVR.&lt;br/&gt;- Pickle: Sgancio ordigni aria-terra.&lt;br/&gt;- Guns: Fuoco con cannone di bordo.</Italian>
+            <Polish>&lt;font color='#00d0ff' size='14'&gt;PROCEDURY UŻYCIA UZBROJENIA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Pocisk krótkiego zasięgu naprowadzany termicznie.&lt;br/&gt;- Fox 3: Pocisk naprowadzany radarem BVR.&lt;br/&gt;- Pickle: Zrzut uzbrojenia powietrze-ziemia.&lt;br/&gt;- Guns: Ogień z działka pokładowego.</Polish>
+            <Portuguese>&lt;font color='#00d0ff' size='14'&gt;PROTOCOLOS DE EMPREGO DE ARMAMENTO&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Míssil ar-ar de curto alcance por infravermelho.&lt;br/&gt;- Fox 3: Míssil ar-ar de longo alcance BVR com radar ativo.&lt;br/&gt;- Pickle: Disparo de bomba ou foguete ar-solo.&lt;br/&gt;- Guns: Disparo de canhão de bordo.</Portuguese>
+            <Russian>&lt;font color='#00d0ff' size='14'&gt;ПРОТОКОЛЫ ПРИМЕНЕНИЯ ВООРУЖЕНИЯ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Ракета ближнего боя с тепловым наведением.&lt;br/&gt;- Fox 3: Ракета средней дальности с активной РЛС (BVR).&lt;br/&gt;- Pickle: Сброс бомб или пуск НАР по земле.&lt;br/&gt;- Guns: Стрельба из курсовой авиапушки.</Russian>
+            <Czech>&lt;font color='#00d0ff' size='14'&gt;PROTOKOLY NASAZENÍ VÝZBROJE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Tepelně naváděná raketa krátkého dosahu.&lt;br/&gt;- Fox 3: Aktivně radarově naváděná raketa dlouhého dosahu.&lt;br/&gt;- Pickle: Odhoz pumy či odpal neřízené rakety.&lt;br/&gt;- Guns: Střelba z palubního kanónu.</Czech>
+            <Korean>&lt;font color='#00d0ff' size='14'&gt;무장 발사 규정&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: 단거리 열추적 적외선 미사일.&lt;br/&gt;- Fox 3: 능동 레이더 유도 가시거리 밖(BVR) 미사일.&lt;br/&gt;- Pickle: 공대지 폭탄 또는 로켓 투하.&lt;br/&gt;- Guns: 기총 사격.</Korean>
+            <Japanese>&lt;font color='#00d0ff' size='14'&gt;兵装発射プロトコル&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: 赤外線誘導短距離ミサイル。&lt;br/&gt;- Fox 3: アクティブレーダー誘導視程外(BVR)ミサイル。&lt;br/&gt;- Pickle: 空対地爆弾またはロケット投下。&lt;br/&gt;- Guns: 機銃射撃。</Japanese>
+            <Chinese>&lt;font color='#00d0ff' size='14'&gt;武器投放協議&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2：紅外線導引短程飛彈。&lt;br/&gt;- Fox 3：主動雷達導引超視距 (BVR) 飛彈。&lt;br/&gt;- Pickle：投放空對地炸彈或火箭。&lt;br/&gt;- Guns：航砲射擊。</Chinese>
+            <Chinesesimp>&lt;font color='#00d0ff' size='14'&gt;武器投放协议&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2：红外线导引短程导弹。&lt;br/&gt;- Fox 3：主动雷达导引超视距 (BVR) 导弹。&lt;br/&gt;- Pickle：投放空对地炸弹或火箭。&lt;br/&gt;- Guns：航炮射击。</Chinesesimp>
+            <Turkish>&lt;font color='#00d0ff' size='14'&gt;MÜHİMMAT BIRAKMA PROTOKOLLERİ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Kızılötesi güdümlü kısa menzilli füze.&lt;br/&gt;- Fox 3: Aktif radar güdümlü görüş ötesi (BVR) füze.&lt;br/&gt;- Pickle: Hava-yer mühimmat bırakma.&lt;br/&gt;- Guns: Dahili top atışı.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_MANUAL_GFORCE_TITLE">
+            <Original>3. G-Force &amp; Human Factors</Original>
+            <English>3. G-Force &amp; Human Factors</English>
+            <French>3. Facteurs de Charge (G-Force)</French>
+            <Spanish>3. Fuerza G y Factores Humanos</Spanish>
+            <German>3. G-Kräfte &amp; Physiologie</German>
+            <Italian>3. Forza G e Fattori Umani</Italian>
+            <Polish>3. Przeciążenia G i Fizjologia</Polish>
+            <Portuguese>3. Fatores de Carga (Força G)</Portuguese>
+            <Russian>3. Перегрузки (G-Force) и физиология</Russian>
+            <Czech>3. Přetížení G a lidské faktory</Czech>
+            <Korean>3. 중력가속도(G-Force) 및 생체 요인</Korean>
+            <Japanese>3. Gフォースと身体的影響</Japanese>
+            <Chinese>3. G力與人體生理因素</Chinese>
+            <Chinesesimp>3. G力与人体生理因素</Chinesesimp>
+            <Turkish>3. G Kuvveti ve İnsan Faktörü</Turkish>
+        </Key>
+        <Key ID="STR_ORA_MANUAL_GFORCE_TEXT">
+            <Original>&lt;font color='#00d0ff' size='14'&gt;PHYSIOLOGICAL DYNAMICS UNDER LOAD&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Blackout (Positive G):&lt;/font&gt; Pulling hard sustained climbs or tight turns pushes blood away from the head. Tunnel vision and camera shake will trigger above 5G.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Redout (Negative G):&lt;/font&gt; Pushing the flight stick downward forces blood into the eyes, causing redout.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Oxygen Mask:&lt;/font&gt; Heavy breathing will automatically intensify under combat stress and aggressive maneuvering.</Original>
+            <English>&lt;font color='#00d0ff' size='14'&gt;PHYSIOLOGICAL DYNAMICS UNDER LOAD&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Blackout (Positive G):&lt;/font&gt; Pulling hard sustained climbs or tight turns pushes blood away from the head. Tunnel vision and camera shake will trigger above 5G.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Redout (Negative G):&lt;/font&gt; Pushing the flight stick downward forces blood into the eyes, causing redout.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Oxygen Mask:&lt;/font&gt; Heavy breathing will automatically intensify under combat stress and aggressive maneuvering.</English>
+            <French>&lt;font color='#00d0ff' size='14'&gt;DYNAMIQUE PHYSIOLOGIQUE SOUS CHARGE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Voile Noir (G Positifs) :&lt;/font&gt; Tirer violemment sur le manche draine le sang vers le bas du corps. Vision tunnel et tremblements de cockpit se déclenchent au-delà de 5G.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Voile Rouge (G Négatifs) :&lt;/font&gt; Pousser le manche vers l'avant projette le sang vers la tête.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Masque à Oxygène :&lt;/font&gt; Le rythme respiratoire s'accélère automatiquement sous contrainte et facteurs de charge élevés.</French>
+            <Spanish>&lt;font color='#00d0ff' size='14'&gt;DINÁMICA FISIOLÓGICA BAJO CARGA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Visión de túnel y oscurecimiento al sobrepasar 5G.&lt;br/&gt;- Respiración acelerada en maniobras agresivas.</Spanish>
+            <German>&lt;font color='#00d0ff' size='14'&gt;PHYSIOLOGISCHE BELASTUNG&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Blackout bei hohen positiven G-Kräften über 5G.&lt;br/&gt;- Redout bei negativen G-Kräften.&lt;br/&gt;- Atmung intensiviert sich bei extremen Manövern.</German>
+            <Italian>&lt;font color='#00d0ff' size='14'&gt;DINAMICA FISIOLOGICA SOTTO CARICO&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Visione a tunnel e blackout sopra i 5G.&lt;br/&gt;- Respirazione sotto maschera a ossigeno intensificata in manovra.</Italian>
+            <Polish>&lt;font color='#00d0ff' size='14'&gt;OBCIĄŻENIA FIZJOLOGICZNE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Zawężenie pola widzenia i utrata przytomności powyżej 5G.&lt;br/&gt;- Przyspieszony oddech w masce tlenowej podczas ciasnych zakrętów.</Polish>
+            <Portuguese>&lt;font color='#00d0ff' size='14'&gt;DINÂMICA FISIOLÓGICA SOB CARGA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Visão em túnel e blackout acima de 5G.&lt;br/&gt;- Respiração sob máscara intensificada em combate.</Portuguese>
+            <Russian>&lt;font color='#00d0ff' size='14'&gt;ФИЗИОЛОГИЧЕСКИЕ НАГРУЗКИ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Потеря сознания (Blackout) при перегрузках свыше 5G.&lt;br/&gt;- Учащенное дыхание под кислородной маской при виражах.</Russian>
+            <Czech>&lt;font color='#00d0ff' size='14'&gt;FYZIOLOGICKÁ ZÁTĚŽ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Ztráta vědomí a tunelové vidění při přetížení nad 5G.&lt;br/&gt;- Zrychlené dýchání v kyslíkové masce při manévrování.</Czech>
+            <Korean>&lt;font color='#00d0ff' size='14'&gt;중력가속도 생리 반응&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 5G 이상 지속 선회 시 시야 좁아짐 및 블랙아웃 발생.&lt;br/&gt;- 격렬한 기동 시 산소마스크 호흡음 증가.</Korean>
+            <Japanese>&lt;font color='#00d0ff' size='14'&gt;高G下の生理的反応&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 5Gを超える旋回で視界狭窄およびブラックアウトが発生。&lt;br/&gt;- 機動戦闘時に酸素マスクの呼吸が激しくなります。</Japanese>
+            <Chinese>&lt;font color='#00d0ff' size='14'&gt;高 G 力生理動態&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 超過 5G 的持續機動會引發視野狹窄及黑視。&lt;br/&gt;- 激烈纏鬥時氧氣面罩呼吸聲會自動增強。</Chinese>
+            <Chinesesimp>&lt;font color='#00d0ff' size='14'&gt;高 G 力生理动态&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 超过 5G 的持续机动会引发视野狭窄及黑视。&lt;br/&gt;- 激烈缠斗时氧气面罩呼吸声会自动增强。</Chinesesimp>
+            <Turkish>&lt;font color='#00d0ff' size='14'&gt;YÜKSEK G KUVVETİ REAKSİYONLARI&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 5G üzerindeki manevralarda tünel görüşü ve kararma başlar.&lt;br/&gt;- İt dalaşı sırasında oksijen maskesi solunumu sıklaşır.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_MANUAL_EMERGENCY_TITLE">
+            <Original>4. Emergency &amp; Ejection (CSAR)</Original>
+            <English>4. Emergency &amp; Ejection (CSAR)</English>
+            <French>4. Procédure d'Avarie &amp; Éjection (CSAR)</French>
+            <Spanish>4. Emergencia y Eyección (CSAR)</Spanish>
+            <German>4. Notfall &amp; Schleudersitz (CSAR)</German>
+            <Italian>4. Emergenza ed Espulsione (CSAR)</Italian>
+            <Polish>4. Awaria i Katapultowanie (CSAR)</Polish>
+            <Portuguese>4. Emergência e Ejeção (CSAR)</Portuguese>
+            <Russian>4. Аварийная ситуация и катапультирование (CSAR)</Russian>
+            <Czech>4. Nouzový stav a katapultace (CSAR)</Czech>
+            <Korean>4. 비상 상황 및 조종사 탈출 (CSAR)</Korean>
+            <Japanese>4. 緊急事態と緊急脱出 (CSAR)</Japanese>
+            <Chinese>4. 緊急狀況與彈射跳傘 (CSAR)</Chinese>
+            <Chinesesimp>4. 紧急状况与弹射跳伞 (CSAR)</Chinesesimp>
+            <Turkish>4. Acil Durum ve Fırlatma Koltuğu (CSAR)</Turkish>
+        </Key>
+        <Key ID="STR_ORA_MANUAL_EMERGENCY_TEXT">
+            <Original>&lt;font color='#00d0ff' size='14'&gt;CRITICAL DAMAGE &amp; PILOT SURVIVAL&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ff3333'&gt;Master Caution Alarm:&lt;/font&gt; When structural damage exceeds 80%, immediate engine cutoff or aerodynamic failure is imminent.&lt;br/&gt;- &lt;font color='#ff3333'&gt;Emergency Ejection:&lt;/font&gt; Use the emergency eject action to deploy the parachute immediately.&lt;br/&gt;- &lt;font color='#ff3333'&gt;CSAR Recovery:&lt;/font&gt; Once on the ground, ignite your smoke grenades (Green/Orange) to guide the rescue chopper.</Original>
+            <English>&lt;font color='#00d0ff' size='14'&gt;CRITICAL DAMAGE &amp; PILOT SURVIVAL&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ff3333'&gt;Master Caution Alarm:&lt;/font&gt; When structural damage exceeds 80%, immediate engine cutoff or aerodynamic failure is imminent.&lt;br/&gt;- &lt;font color='#ff3333'&gt;Emergency Ejection:&lt;/font&gt; Use the emergency eject action to deploy the parachute immediately.&lt;br/&gt;- &lt;font color='#ff3333'&gt;CSAR Recovery:&lt;/font&gt; Once on the ground, ignite your smoke grenades (Green/Orange) to guide the rescue chopper.</English>
+            <French>&lt;font color='#00d0ff' size='14'&gt;AVARIE CRITIQUE ET SURVIE PILOTE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ff3333'&gt;Alarme Master Caution :&lt;/font&gt; Lorsque les dégâts dépassent 80%, l'extinction réacteur ou la rupture aérodynamique est imminente.&lt;br/&gt;- &lt;font color='#ff3333'&gt;Éjection d'Urgence :&lt;/font&gt; Actionnez la commande d'éjection pour ouvrir votre parachute de secours.&lt;br/&gt;- &lt;font color='#ff3333'&gt;Récupération CSAR :&lt;/font&gt; Une fois au sol, allumez vos fumigènes de détresse (Vert/Orange) pour guider l'hélicoptère de sauvetage.</French>
+            <Spanish>&lt;font color='#00d0ff' size='14'&gt;DAÑO CRÍTICO Y SUPERVIVENCIA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Alarma crítica cuando el daño supera el 80%.&lt;br/&gt;- Active la eyección para abrir el paracaídas.&lt;br/&gt;- Al aterrizar, encienda granadas de humo para guiar al equipo CSAR.</Spanish>
+            <German>&lt;font color='#00d0ff' size='14'&gt;KRITISCHER SCHADEN &amp; RETTUNG&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Master-Caution bei über 80% Strukturschaden.&lt;br/&gt;- Notausstieg betätigen, um Fallschirm zu öffnen.&lt;br/&gt;- Am Boden Rauchgranaten zünden für CSAR-Rettung.</German>
+            <Italian>&lt;font color='#00d0ff' size='14'&gt;DANNO CRITICO E SOPRAVVIVENZA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Allarme Master Caution oltre l'80% di danno.&lt;br/&gt;- Azionare l'espulsione d'emergenza.&lt;br/&gt;- A terra, accendere fumogeni per la squadra CSAR.</Italian>
+            <Polish>&lt;font color='#00d0ff' size='14'&gt;USZKODZENIA KRYTYCZNE I PRZETRWANIE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Alarm główny przy uszkodzeniach powyżej 80%.&lt;br/&gt;- Użyj procedury katapultowania.&lt;br/&gt;- Na ziemi użyj granatów dymnych do naprowadzania śmigłowca CSAR.</Polish>
+            <Portuguese>&lt;font color='#00d0ff' size='14'&gt;DANO CRÍTICO E SOBREVIVÊNCIA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Alarme crítico acima de 80% de danos.&lt;br/&gt;- Acione a ejeção de emergência para abrir o paraquedas.&lt;br/&gt;- No solo, utilize fumaça verde/laranja para guiar a equipa CSAR.</Portuguese>
+            <Russian>&lt;font color='#00d0ff' size='14'&gt;КРИТИЧЕСКИЕ ПОВРЕЖДЕНИЯ И СПАСЕНИЕ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Аварийный сигнал при повреждениях свыше 80%.&lt;br/&gt;- Выполните аварийное катапультирование.&lt;br/&gt;- На земле зажгите дымовые шашки для группы ПСС (CSAR).</Russian>
+            <Czech>&lt;font color='#00d0ff' size='14'&gt;KRITICKÉ POŠKOZENÍ A PŘEŽITÍ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Výstraha Master Caution při poškození nad 80%.&lt;br/&gt;- Proveďte nouzovou katapultaci.&lt;br/&gt;- Na zemi odpalte dýmovnice pro navedení týmu CSAR.</Czech>
+            <Korean>&lt;font color='#00d0ff' size='14'&gt;치명적 기체 손상 및 생존&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 기체 손상 80% 초과 시 마스터 경보 발령.&lt;br/&gt;- 비상 탈출을 실행하여 낙하산 전개.&lt;br/&gt;- 착지 후 녹색/주황 연막탄을 점화하여 CSAR 구조 헬기 유도.</Korean>
+            <Japanese>&lt;font color='#00d0ff' size='14'&gt;致命的な損傷と生存手順&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 機体損傷80%超過でマスターコーション警報発令。&lt;br/&gt;- 緊急脱出を実行しパラシュートを展開。&lt;br/&gt;- 着地後は発煙筒(緑/橙)を着火してCSAR救難機を誘導。</Japanese>
+            <Chinese>&lt;font color='#00d0ff' size='14'&gt;嚴重受損與飛行員求生&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 機體受損超過 80% 時發出主要警戒警報。&lt;br/&gt;- 執行緊急彈射並開啟降落傘。&lt;br/&gt;- 落地後點燃綠色/橙色煙霧彈引導搜救小組 (CSAR) 直升機。</Chinese>
+            <Chinesesimp>&lt;font color='#00d0ff' size='14'&gt;严重受损与飞行员求生&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 机体受损超过 80% 时发出主要警戒警报。&lt;br/&gt;- 执行紧急弹射并开启降落伞。&lt;br/&gt;- 落地后点燃绿色/橙色烟雾弹引导搜救小组 (CSAR) 直升机。</Chinesesimp>
+            <Turkish>&lt;font color='#00d0ff' size='14'&gt;KRİTİK HASAR VE PİLOTUN SAĞ KALIMI&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Yapısal hasar %80'i aştığında Ana Uyarı alarmı çalar.&lt;br/&gt;- Fırlatma koltuğunu kullanarak paraşütü açın.&lt;br/&gt;- İniş yaptıktan sonra CSAR arama kurtarma helikopteri için sis yakın.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_CONTEXT_TAB">
+            <Original>Tactical Context</Original>
+            <English>Tactical Context</English>
+            <French>Contexte Tactique</French>
+            <Spanish>Contexto Táctico</Spanish>
+            <German>Taktischer Kontext</German>
+            <Italian>Contesto Tattico</Italian>
+            <Polish>Kontekst taktyczny</Polish>
+            <Portuguese>Contexto Tático</Portuguese>
+            <Russian>Тактическая обстановка</Russian>
+            <Czech>Taktický kontext</Czech>
+            <Korean>전술적 배경</Korean>
+            <Japanese>戦術的背景</Japanese>
+            <Chinese>戰術背景</Chinese>
+            <Chinesesimp>战术背景</Chinesesimp>
+            <Turkish>Taktik Bağlam</Turkish>
+        </Key>
+        <Key ID="STR_ORA_CONTEXT_THEATER_TITLE">
+            <Original>1. Sahrani Defense Campaign (AAF Invasion)</Original>
+            <English>1. Sahrani Defense Campaign (AAF Invasion)</English>
+            <French>1. Campagne de Défense de Sahrani (Invasion AAF)</French>
+            <Spanish>1. Campaña de Defensa de Sahrani (Invasión AAF)</Spanish>
+            <German>1. Sahrani-Verteidigungskampagne (AAF-Invasion)</German>
+            <Italian>1. Campagna di Difesa di Sahrani (Invasione AAF)</Italian>
+            <Polish>1. Kampania Obrony Sahrani (Inwazja AAF)</Polish>
+            <Portuguese>1. Campanha de Defesa de Sahrani (Invasão AAF)</Portuguese>
+            <Russian>1. Оборонительная кампания Сахрани (Вторжение AAF)</Russian>
+            <Czech>1. Kampaň na obranu Sahrani (Invaze AAF)</Czech>
+            <Korean>1. 사라니 방어 전역 (AAF 침공)</Korean>
+            <Japanese>1. サフラニ防衛作戦 (AAF侵攻作戦)</Japanese>
+            <Chinese>1. 薩赫拉尼保衛戰（AAF 全面入侵）</Chinese>
+            <Chinesesimp>1. 萨赫拉尼保卫战（AAF 全面入侵）</Chinesesimp>
+            <Turkish>1. Sahrani Savunma Harekâtı (AAF İstirası)</Turkish>
+        </Key>
+        <Key ID="STR_ORA_CONTEXT_THEATER_TEXT">
+            <Original>&lt;font color='#00d0ff' size='14'&gt;OPERATION ROYAL ALLIANCE (ORA) - CAMPAIGN BRIEF&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The sovereign territory of the Kingdom of Sahrani is under surprise attack. The Altis Armed Forces (AAF) have initiated a full-scale military invasion to annex the island chain, deploying combined maritime landing waves and airborne echelons.&lt;br/&gt;&lt;br/&gt;Hostile forces breached coastal detection lines at dawn, landing mechanized units along Southern and Eastern beaches. Their strategic objective is the rapid seizure of the central airfields and coastal road network to partition Sahrani forces.&lt;br/&gt;&lt;br/&gt;The Royal Command has designated the ORA Air Wing as the emergency spearhead. Flying plane_0, your tactical mission is to eliminate hostile spearheads, suppress enemy incursions, and maintain air superiority over national territory.</Original>
+            <English>&lt;font color='#00d0ff' size='14'&gt;OPERATION ROYAL ALLIANCE (ORA) - CAMPAIGN BRIEF&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The sovereign territory of the Kingdom of Sahrani is under surprise attack. The Altis Armed Forces (AAF) have initiated a full-scale military invasion to annex the island chain, deploying combined maritime landing waves and airborne echelons.&lt;br/&gt;&lt;br/&gt;Hostile forces breached coastal detection lines at dawn, landing mechanized units along Southern and Eastern beaches. Their strategic objective is the rapid seizure of the central airfields and coastal road network to partition Sahrani forces.&lt;br/&gt;&lt;br/&gt;The Royal Command has designated the ORA Air Wing as the emergency spearhead. Flying plane_0, your tactical mission is to eliminate hostile spearheads, suppress enemy incursions, and maintain air superiority over national territory.</English>
+            <French>&lt;font color='#00d0ff' size='14'&gt;OPÉRATION ROYAL ALLIANCE (ORA) - POINT STRATÉGIQUE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Le territoire souverain du Royaume de Sahrani subit une attaque surprise d'envergure. Les forces armées d'Altis (AAF) ont déclenché une invasion militaire interarmées totale visant à annexer l'archipel, engageant simultanément des vagues de débarquement naval et des assauts aéroportés.&lt;br/&gt;&lt;br/&gt;Les forces ennemies ont percé les réseaux de détection côtiers à l'aube, débarquant de puissants détachements mécanisés sur les plages sud et est. Leur objectif stratégique est la capture éclair des bases aériennes et des axes routiers pour couper Sahrani en deux.&lt;br/&gt;&lt;br/&gt;Le Commandement Royal a désigné l'escadre aérienne ORA comme fer de lance de la riposte. Aux commandes de plane_0, votre mission consiste à briser l'élan de l'AAF, soutenir nos garnisons sous le feu et verrouiller la supériorité aérienne au-dessus de notre patrie.</French>
+            <Spanish>&lt;font color='#00d0ff' size='14'&gt;OPERACIÓN ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;El territorio soberano del Reino de Sahrani sufre una invasión a gran escala por parte de la AAF. Unidades mecanizadas enemigas han desembarcado en las costas sur y este con el objetivo de capturar aeródromos clave.&lt;br/&gt;&lt;br/&gt;A bordo de plane_0, su misión es quebrar las puntas de lanza invasoras y defender el territorio patrio.</Spanish>
+            <German>&lt;font color='#00d0ff' size='14'&gt;OPERATION ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Das Hoheitsgebiet des Königreichs Sahrani wird von den Streitkräften von Altis (AAF) mit einer großangelegten Invasion angegriffen. Feindliche Truppen landeten an den Südküsten.&lt;br/&gt;&lt;br/&gt;Als Chefpilot von plane_0 müssen Sie die vorrückenden AAF-Einheiten zerschlagen und die Lufthoheit über Sahrani sichern.</German>
+            <Italian>&lt;font color='#00d0ff' size='14'&gt;OPERAZIONE ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Il Regno di Sahrani è sotto attacco: le forze armate di Altis (AAF) hanno lanciato una massiccia invasione marittima e aerea. Truppe nemiche avanzano dalle spiagge.&lt;br/&gt;&lt;br/&gt;Ai comandi di plane_0, il suo compito è respingere gli invasori e proteggere le truppe alleate.</Italian>
+            <Polish>&lt;font color='#00d0ff' size='14'&gt;OPERACJA ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Terytorium Królestwa Sahrani zostało zaatakowane przez Siły Zbrojne Altis (AAF). Wróg przeprowadził masowy desant i dąży do przejęcia lotnisk.&lt;br/&gt;&lt;br/&gt;W kokpicie myśliwca plane_0 Twoim zadaniem jest powstrzymanie najeźdźców i obrona przestrzeni powietrznej.</Polish>
+            <Portuguese>&lt;font color='#00d0ff' size='14'&gt;OPERAÇÃO ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;O território do Reino de Sahrani está sob ataque da AAF, que lançou uma invasão anfíbia e aérea em grande escala para anexar a ilha.&lt;br/&gt;&lt;br/&gt;Como piloto de plane_0, sua missão primordial é repelir o avanço inimigo e salvar as guarnições aliadas.</Portuguese>
+            <Russian>&lt;font color='#00d0ff' size='14'&gt;ОПЕРАЦИЯ ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Суверенная территория Королевства Сахрани подверглась внезапному вторжению сил AAF. Враг высадил бронетехнику и пытается захватить авиабазы.&lt;br/&gt;&lt;br/&gt;Пилотируя plane_0, ваша боевая задача — сломить наступление противника и восстановить контроль над небом Сахрани.</Russian>
+            <Czech>&lt;font color='#00d0ff' size='14'&gt;OPERACE ROYAL ALLIANCE (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Království Sahrani čelí rozsáhlé invazi sil AAF. Nepřítel provedl výsadek na jihu a snaží se odříznout spojenecká letiště.&lt;br/&gt;&lt;br/&gt;Jako pilot letounu plane_0 máte za úkol zastavit postup útočníků a zajistit vzdušný prostor.</Czech>
+            <Korean>&lt;font color='#00d0ff' size='14'&gt;로열 얼라이언스 작전 (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;사라니 왕국 영토가 AAF 군의 전면적인 기습 침공을 받았습니다. 적 기갑 및 상륙 부대가 해안을 통해 침투했습니다.&lt;br/&gt;&lt;br/&gt;plane_0을 조종하여 적 침공 선봉대를 격멸하고 본토 제공권을 탈환하십시오.</Korean>
+            <Japanese>&lt;font color='#00d0ff' size='14'&gt;ロイヤル・アライアンス作戦 (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;サフラニ王国領土はAAF軍による大規模な奇襲侵略攻撃に直面しています。敵は海岸部から上陸し、飛行場の制圧を図っています。&lt;br/&gt;&lt;br/&gt;plane_0の操縦桿を握り、敵の侵攻を阻止して同盟空域を防衛せよ。</Japanese>
+            <Chinese>&lt;font color='#00d0ff' size='14'&gt;皇家聯盟行動 (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;薩赫拉尼王國領土正遭受 AAF 突襲入侵。敵軍發動海空協同登陸，企圖強佔島上機場並分割戰場。&lt;br/&gt;&lt;br/&gt;駕駛 plane_0 戰機，您的戰略任務是徹底粉碎敵軍攻勢並掌控空域制空權。</Chinese>
+            <Chinesesimp>&lt;font color='#00d0ff' size='14'&gt;皇家联盟行动 (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;萨赫拉尼王国领土正遭受 AAF 突袭入侵。敌军发动海空协同登陆，企图强占岛上机场并分割战场。&lt;br/&gt;&lt;br/&gt;驾驶 plane_0 战机，您的战略任务是彻底粉碎敌军攻势并掌控空域制空权。</Chinesesimp>
+            <Turkish>&lt;font color='#00d0ff' size='14'&gt;ROYAL ALLIANCE HAREKÂTI (ORA)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Sahrani Krallığı AAF güçlerinin geniş çaplı ani istilasına uğramıştır. Düşman güney sahillerinden ilerleyerek hava üslerini hedeflemektedir.&lt;br/&gt;&lt;br/&gt;plane_0 uçağında düşman öncü kollarını durdurmak ve hava sahasını savunmakla görevlendirildiniz.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_CONTEXT_THREAT_TITLE">
+            <Original>2. AAF Invasion Task Force &amp; Weapons Grid</Original>
+            <English>2. AAF Invasion Task Force &amp; Weapons Grid</English>
+            <French>2. Forces d'Invasion AAF &amp; Réseau Sol-Air</French>
+            <Spanish>2. Fuerza de Invasión de la AAF y Red Antiaérea</Spanish>
+            <German>2. AAF-Invasionskräfte &amp; Flugabwehrnetz</German>
+            <Italian>2. Forza d'Invasione AAF e Rete Contraerea</Italian>
+            <Polish>2. Siły Inwazyjne AAF i Siatka Obrony Przeciwlotniczej</Polish>
+            <Portuguese>2. Força Invasora da AAF e Rede Antiaérea</Portuguese>
+            <Russian>2. Группировка вторжения AAF и система ПВО</Russian>
+            <Czech>2. Invazní síly AAF a síť protivzdušné obrany</Czech>
+            <Korean>2. AAF 침공 기동부대 및 대공망 현황</Korean>
+            <Japanese>2. AAF侵攻機動部隊および対空防衛網</Japanese>
+            <Chinese>2. AAF 入侵特遣部隊與防空作戰網絡</Chinese>
+            <Chinesesimp>2. AAF 入侵特遣部队与防空作战网络</Chinesesimp>
+            <Turkish>2. AAF İstila Görev Kuvveti ve Hava Savunma Ağı</Turkish>
+        </Key>
+        <Key ID="STR_ORA_CONTEXT_THREAT_TEXT">
+            <Original>&lt;font color='#ff6666'&gt;AAF BATTLE ORDER &amp; THREAT ENVELOPE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Air Superiority &amp; Strike:&lt;/b&gt; AAF operates A-143 Buzzard light attack jets equipped with radar/infrared missiles, alongside WY-55 Hellcat gunships providing tactical close support.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Mechanized &amp; Armor:&lt;/b&gt; Main battle line spearheaded by MBT-52 Kuma tanks, AFV-4 Mora infantry fighting vehicles with 30mm autocannons, and MSE-3 Marid armored carriers.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Integrated Air Defense:&lt;/b&gt; Mobile radar SPAAG Cheetah platforms (twin 35mm radar cannons and short-range missiles) deployed with advance echelons. Forward infantry squads carry Titan MANPADS launchers.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Tactical Doctrine:&lt;/b&gt; Low-altitude flight recommended when crossing radar horizons; immediately dispense flare salvos when break lock is detected.</Original>
+            <English>&lt;font color='#ff6666'&gt;AAF BATTLE ORDER &amp; THREAT ENVELOPE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Air Superiority &amp; Strike:&lt;/b&gt; AAF operates A-143 Buzzard light attack jets equipped with radar/infrared missiles, alongside WY-55 Hellcat gunships providing tactical close support.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Mechanized &amp; Armor:&lt;/b&gt; Main battle line spearheaded by MBT-52 Kuma tanks, AFV-4 Mora infantry fighting vehicles with 30mm autocannons, and MSE-3 Marid armored carriers.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Integrated Air Defense:&lt;/b&gt; Mobile radar SPAAG Cheetah platforms (twin 35mm radar cannons and short-range missiles) deployed with advance echelons. Forward infantry squads carry Titan MANPADS launchers.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Tactical Doctrine:&lt;/b&gt; Low-altitude flight recommended when crossing radar horizons; immediately dispense flare salvos when break lock is detected.</English>
+            <French>&lt;font color='#ff6666'&gt;ORDRE DE BATAILLE AAF &amp; ÉVENTAIL DES MENACES :&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Composante Aérienne :&lt;/b&gt; Chasseurs d'attaque légers A-143 Buzzard équipés de missiles air-air radar/infrarouge et hélicoptères d'attaque WY-55 Hellcat opérant en appui rapproché.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Blindés &amp; Mécanisés :&lt;/b&gt; Chars de combat MBT-52 Kuma, véhicules de combat d'infanterie AFV-4 Mora armés de canons de 30mm et blindés amphibies MSE-3 Marid.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Défense Sol-Air Intégrée :&lt;/b&gt; Blindés antiaériens Cheetah bitubes de 35mm guidés par radar accompagnant les colonnes. Équipes d'infanterie équipées de lanceurs sol-air portatifs Titan (MANPADS).&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Recommandation Pilote :&lt;/b&gt; Évoluez en suivi de relief sous les lobes radar et saturez la zone de leurres thermiques en cas d'alerte départ missile.</French>
+            <Spanish>&lt;font color='#ff6666'&gt;ORDEN DE BATALLA DE LA AAF:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Cazas A-143 Buzzard y helicópteros Hellcat. Blindados Kuma y Mora. Defensa antiaérea Cheetah con cañones guiados por radar y misiles antiaéreos portátiles Titan. Utilice vuelo a muy baja cota y contramedidas térmicas.</Spanish>
+            <German>&lt;font color='#ff6666'&gt;AAF-KAMPFVERBAND &amp; BEDROHUNGEN:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;A-143 Buzzard Jets und Hellcat Kampfhubschrauber. Kuma-Kampfpanzer und Mora-Schützenpanzer. Cheetah-Flugabwehrpanzer und tragbare Titan-Luftabwehrraketen. Tiefflug und Leuchtkörper zwingend erforderlich.</German>
+            <Italian>&lt;font color='#ff6666'&gt;ORDINE DI BATTAGLIA AAF:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Caccia leggeri A-143 Buzzard ed elicotteri Hellcat. Carri armati Kuma e blindati Mora. Semoventi antiaerei Cheetah con radar e missili terra-aria spalleggiabili Titan. Volare sotto la quota radar ed erogare flare.</Italian>
+            <Polish>&lt;font color='#ff6666'&gt;SIŁY I ZAGROŻENIA AAF:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Myśliwce A-143 Buzzard i śmigłowce bojowe Hellcat. Czołgi Kuma i bwp Mora. Przeciwlotnicze działa radarowe Cheetah oraz wyrzutnie Titan MANPADS. Zalecany lot koszący i wyrzut flar.</Polish>
+            <Portuguese>&lt;font color='#ff6666'&gt;ORDEM DE BATALHA DA AAF:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Caças A-143 Buzzard e helicópteros Hellcat. Carros Kuma e blindados Mora. Sistemas antiaéreos Cheetah com radar e mísseis portáteis Titan. Mantenha voo a baixa altitude e use despistadores.</Portuguese>
+            <Russian>&lt;font color='#ff6666'&gt;БОЕВОЙ СОСТАВ AAF И УГРОЗЫ:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Легкие штурмовики A-143 Buzzard и ударные вертолеты Hellcat. Танки Kuma и БМП Mora. ЗСУ Cheetah с радарным наведением и расчеты ПЗРК Titan. Рекомендуется полет на сверхмалых высотах и отстрел ловушек.</Russian>
+            <Czech>&lt;font color='#ff6666'&gt;BOJOVÁ SESTAVA AAF A HROZBY:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Útočné letouny A-143 Buzzard a vrtulníky Hellcat. Tanky Kuma a vozidla Mora. Protiletadlové komplety Cheetah a přenosné rakety Titan. Doporučuje se přízemní let a včasné odpalování klamných cílů.</Czech>
+            <Korean>&lt;font color='#ff6666'&gt;AAF 전투 서열 및 위협 요소:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;A-143 버자드 경전투기 및 헬캣 공격 헬기. 쿠마 전차와 모라 보병전투장갑차. 레이더 연동 치타 대공포 및 타이탄 휴대용 대공 미사일. 저고도 침투 비행과 선제적 플레어 투하를 권장합니다.</Korean>
+            <Japanese>&lt;font color='#ff6666'&gt;AAF戦闘序列および脅威度:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;A-143バザード軽攻撃機およびヘルキャット攻撃ヘリ。クマ主力戦車とモラ装甲戦闘車。レーダー誘導式チーター対空自走砲およびタイタン携帯式地対空ミサイル。超低空飛行とフレア投下を推奨。</Japanese>
+            <Chinese>&lt;font color='#ff6666'&gt;AAF 戰鬥序列與威脅陣列：&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;配備雷達/紅外線飛彈的 A-143 禿鷹輕型攻擊機與地獄貓武裝直升機。庫瑪主戰坦克與莫拉裝步戰車。獵豹雷達導引防空砲與泰坦便攜防空飛彈。建議維持低空突防並隨時投放熱誘彈。</Chinese>
+            <Chinesesimp>&lt;font color='#ff6666'&gt;AAF 战斗序列与威胁阵列：&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;配备雷达/红外导弹的 A-143 秃鹰轻型攻击机与地狱猫武装直升机。库玛主战坦克与莫拉装步战车。猎豹雷达导引防空炮与泰坦便携防空导弹。建议维持低空突防并随时投放热诱弹。</Chinesesimp>
+            <Turkish>&lt;font color='#ff6666'&gt;AAF MUHAREBE DÜZENİ VE TEHDİTLER:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;A-143 Buzzard taarruz uçakları ve Hellcat helikopterleri. Kuma tankları ve Mora zırhlıları. Cheetah kule radarlı uçaksavarlar ve Titan omuzdan atılan füzeler. Alçak uçuş ve sürekli flare kullanımı tavsiye edilir.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_CONTEXT_ALLIES_TITLE">
+            <Original>3. RACS Sovereign Forces &amp; Air Wing</Original>
+            <English>3. RACS Sovereign Forces &amp; Air Wing</English>
+            <French>3. Forces Souveraines RACS &amp; Escadre ORA</French>
+            <Spanish>3. Fuerzas Soberanas del RACS y Ala Aérea ORA</Spanish>
+            <German>3. RACS-Heimatstreitkräfte &amp; ORA-Geschwader</German>
+            <Italian>3. Forze Sovrane del RACS e Stormo Aereo ORA</Italian>
+            <Polish>3. Siły Suwerenne RACS i Skrzydło ORA</Polish>
+            <Portuguese>3. Forças Soberanas do RACS e Ala Aérea ORA</Portuguese>
+            <Russian>3. Войска Королевства RACS и авиакрыло ORA</Russian>
+            <Czech>3. Síly Království RACS a letecké křídlo ORA</Czech>
+            <Korean>3. RACS 왕국 방위군 및 ORA 비행대</Korean>
+            <Japanese>3. RACS王国防衛軍およびORA航空団</Japanese>
+            <Chinese>3. RACS 王國衛隊與 ORA 航空作戰聯隊</Chinese>
+            <Chinesesimp>3. RACS 王国卫队与 ORA 航空作战联队</Chinesesimp>
+            <Turkish>3. RACS Krallık Birlikleri ve ORA Hava Filosu</Turkish>
+        </Key>
+        <Key ID="STR_ORA_CONTEXT_ALLIES_TEXT">
+            <Original>&lt;font color='#00ff88'&gt;ALLIED FORCES IN DEFENSE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Royal Army Corps of Sahrani (RACS):&lt;/b&gt; Territorial garrisons holding perimeter checkpoints, coastal artillery bunkers, and radar stations across the island. They are heavily outgunned and reliant on our CAS.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Air Base Infrastructure:&lt;/b&gt; Active hardened shelter and rearming pads supporting plane_0. Protected by perimeter RACS security detachments.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Command Directive:&lt;/b&gt; No RACS unit is expendable. Every soldier defended strengthens Sahrani's resolve to push the invaders into the sea.</Original>
+            <English>&lt;font color='#00ff88'&gt;ALLIED FORCES IN DEFENSE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Royal Army Corps of Sahrani (RACS):&lt;/b&gt; Territorial garrisons holding perimeter checkpoints, coastal artillery bunkers, and radar stations across the island. They are heavily outgunned and reliant on our CAS.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Air Base Infrastructure:&lt;/b&gt; Active hardened shelter and rearming pads supporting plane_0. Protected by perimeter RACS security detachments.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Command Directive:&lt;/b&gt; No RACS unit is expendable. Every soldier defended strengthens Sahrani's resolve to push the invaders into the sea.</English>
+            <French>&lt;font color='#00ff88'&gt;FORCES ALLIÉES EN POSTURE DÉFENSIVE :&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Royal Army Corps of Sahrani (RACS) :&lt;/b&gt; Garnisons territoriales tenant les postes avancés, blockhaus côtiers et stations radar à travers tout l'archipel. Lourdement surclassées en puissance de feu, leur survie dépend exclusivement de votre appui aérien.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Infrastructures de la Base :&lt;/b&gt; Aérodrome opérationnel avec alvéoles de réarmement et de ravitaillement pour plane_0, sécurisé par le détachement de protection RACS.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Directive du Commandement :&lt;/b&gt; Aucune unité RACS n'est sacrifiable. Chaque section sauvée renforce la résistance de Sahrani pour rejeter l'envahisseur à la mer.</French>
+            <Spanish>&lt;font color='#00ff88'&gt;FUERZAS ALIADAS EN DEFENSA:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;El cuerpo militar RACS sostiene puestos fortificados y radares en toda la isla. Dependen por completo de nuestro apoyo aéreo para no ser aniquilados. Ninguna unidad aliada es prescindible.</Spanish>
+            <German>&lt;font color='#00ff88'&gt;VERBÜNDETE VERTEIDIGUNGSKRÄFTE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS-Garnisonen halten befestigte Stellungen und Radarstationen auf ganz Sahrani. Ihr Überleben hängt von unserer Luftunterstützung ab. Jede verbündete Einheit muss verteidigt werden.</German>
+            <Italian>&lt;font color='#00ff88'&gt;FORZE ALLEATE IN DIFESA:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;I reparti RACS presidiano fortificazioni e stazioni radar sull'isola. La loro salvezza dipende unicamente dal nostro supporto aereo ravvicinato. Nessuna unità alleata è sacrificabile.</Italian>
+            <Polish>&lt;font color='#00ff88'&gt;SIŁY SOJUSZNICZE W DEFENSYWIE:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Garnizony RACS utrzymują punkty oporu i stacje radarowe na całej wyspie. Ich przetrwanie zależy bezpośrednio od Twojego wsparcia z powietrza. Każdy żołnierz RACS jest bezcenny.</Polish>
+            <Portuguese>&lt;font color='#00ff88'&gt;FORÇAS ALIADAS EM DEFESA:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;As guarnições territoriais do RACS defendem posições costeiras e radares. A sobrevivência das tropas em terra depende diretamente do nosso suporte aéreo.</Portuguese>
+            <Russian>&lt;font color='#00ff88'&gt;СОЮЗНЫЕ ОБОРОНИТЕЛЬНЫЕ СИЛЫ:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Гарнизоны RACS удерживают укрепленные посты, береговые бункеры и радары. Их выживание напрямую зависит от вашей поддержки с воздуха. Ни одно подразделение RACS не подлежит сдаче.</Russian>
+            <Czech>&lt;font color='#00ff88'&gt;SPOJENECKÉ OBRANNÉ SÍLY:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Posádky RACS brání opěrné body a radarová stanoviště po celém ostrově. Jejich přežití závisí na naší letecké podpoře. Žádná spojenecká jednotka nesmí padnout.</Czech>
+            <Korean>&lt;font color='#00ff88'&gt;방어 중인 아군 전력:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS 수비대가 섬 전역의 검문소, 해안 진지, 레이더 기지를 사수하고 있습니다. 지상군의 생존은 조종사의 근접 지원에 달려 있습니다. 아군 부대를 끝까지 엄호하십시오.</Korean>
+            <Japanese>&lt;font color='#00ff88'&gt;防衛に就く友軍戦力:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS守備隊は全島の拠点、海岸陣地、レーダー基地を死守しています。彼らの生存は貴官の航空支援にかかっています。友軍を救い侵略者を海へ追い落とせ。</Japanese>
+            <Chinese>&lt;font color='#00ff88'&gt;防禦作戰中的友軍部隊：&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS 守備部隊正堅守全島各陣地、海岸防禦碉堡與雷達站。地面部隊的生死存亡完全仰賴我方的近接空中掩護。絕不放棄任何一支友軍部隊。</Chinese>
+            <Chinesesimp>&lt;font color='#00ff88'&gt;防御作战中的友军部队：&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS 守备部队正坚守全岛各阵地、海岸防御碉堡与雷达站。地面部队的生死存亡完全仰赖我方的近接空中掩护。绝不放弃任何一支友军部队。</Chinesesimp>
+            <Turkish>&lt;font color='#00ff88'&gt;SAVUNMADAKİ DOST BİRLİKLER:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;RACS birlikleri ada genelindeki tahkimatları ve radarları savunmaktadır. Karadaki askerlerin hayatta kalması hava desteğinize bağlıdır. Hiçbir dost unsur feda edilemez.</Turkish>
+        </Key>
+    </Package>
+    <Package name="Core">
+        <Key ID="STR_ORA_Radio_Scramble">
+            <Original>All units, scramble! Immediate departure authorized. Cleared for takeoff runway 0-9.</Original>
+            <English>All units, scramble! Immediate departure authorized. Cleared for takeoff runway 0-9.</English>
+            <French>Toutes unités, alerte scramble ! Départ immédiat autorisé. Alignement et décollage piste 0-9.</French>
+            <Spanish>¡Todas las unidades, despegue inmediato autorizado! Autorizado para despegar pista 0-9.</Spanish>
+            <German>Alle Einheiten, Alarmstart! Sofortiger Start autorisiert. Start frei Piste 0-9.</German>
+            <Italian>Tutte le unità, scramble immediato! Decollo immediato autorizzato pista 0-9.</Italian>
+            <Polish>Wszystkie jednostki, natychmiastowy start! Zgoda na start z pasa 0-9.</Polish>
+            <Portuguese>Todas as unidades, descolagem imediata! Autorizada a descolagem na pista 0-9.</Portuguese>
+            <Russian>Всем бортам, боевая тревога! Немедленный взлет разрешен с полосы 0-9.</Russian>
+            <Czech>Všechny jednotky, okamžitý vzlet! Povolení ke vzletu z dráhy 0-9.</Czech>
+            <Korean>전 기체 긴급 출격! 즉시 이륙이 허가되었습니다. 0-9 활주로 이륙 허가.</Korean>
+            <Japanese>全機、緊急発進！即時離陸を許可。滑走路0-9からの離陸を許可する。</Japanese>
+            <Chinese>所有單位，緊急起飛！立即出動已獲批准。跑道 0-9 允許起飛。</Chinese>
+            <Chinesesimp>所有单位，紧急起飞！立即出动已获批准。跑道 0-9 允许起飞。</Chinesesimp>
+            <Turkish>Tüm birimler, acil kalkış! Derhal kalkış onaylandı. Pist 0-9 kalkış serbest.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Radio_Bingo">
+            <Original>Bingo Fuel! RTB immediately to Sahrani Airbase.</Original>
+            <English>Bingo Fuel! RTB immediately to Sahrani Airbase.</English>
+            <French>Bingo Carburant ! Retour base immédiat (RTB) vers la base de Sahrani.</French>
+            <Spanish>¡Combustible Bingo! Regrese a la base de inmediato hacia Sahrani.</Spanish>
+            <German>Bingo Fuel! Sofortige Rückkehr zur Basis Sahrani.</German>
+            <Italian>Bingo Fuel! Rientro immediato alla base di Sahrani.</Italian>
+            <Polish>Stan Bingo! Natychmiastowy powrót do bazy lotniczej Sahrani.</Polish>
+            <Portuguese>Combustível Bingo! Regresso imediato à base aérea de Sahrani.</Portuguese>
+            <Russian>Остаток топлива на исходе (Bingo)! Немедленно возвращайтесь на базу Сахрани.</Russian>
+            <Czech>Stav Bingo! Okamžitý návrat na leteckou základnu Sahrani.</Czech>
+            <Korean>빙고 퓨얼(연료 한계)! 즉시 사라니 공군기지로 복귀하십시오.</Korean>
+            <Japanese>ビンゴ・フューエル（燃料限界）！直ちにサフラニ基地へ帰投せよ。</Japanese>
+            <Chinese>達到燃油底限（Bingo Fuel）！立即返回薩赫拉尼空軍基地。</Chinese>
+            <Chinesesimp>达到燃油底限（Bingo Fuel）！立即返回萨赫拉尼空军基地。</Chinesesimp>
+            <Turkish>Bingo Yakıt! Derhal Sahrani Hava Üssüne geri dönün.</Turkish>
+        </Key>
+    </Package>
+    <Package name="Flight">
+        <Key ID="STR_ORA_Alert_CriticalDamage">
+            <Original>CRITICAL DAMAGE DETECTED! ENGINE COMPROMISED - EJECT! EJECT!</Original>
+            <English>CRITICAL DAMAGE DETECTED! ENGINE COMPROMISED - EJECT! EJECT!</English>
+            <French>DÉGÂTS CRITIQUES DÉTECTÉS ! RÉACTEUR COMPROMIS - ÉJECTION ! ÉJECTION !</French>
+            <Spanish>¡DAÑOS CRÍTICOS DETECTADOS! MOTOR COMPROMETIDO - ¡EYECCIÓN! ¡EYECCIÓN!</Spanish>
+            <German>KRITISCHER SCHADEN ERKANNT! TRIEBWERK BESCHÄDIGT - AUSSTIEG! AUSSTIEG!</German>
+            <Italian>DANNO CRITICO RILEVATO! MOTORE COMPROMESSO - EIETTI! EIETTI!</Italian>
+            <Polish>WYKRYTO KRYTYCZNE USZKODZENIA! SILNIK ZNISZCZONY - KATAPULTUJ SIĘ!</Polish>
+            <Portuguese>DANOS CRÍTICOS DETETADOS! MOTOR COMPROMETIDO - EJETAR! EJETAR!</Portuguese>
+            <Russian>ОБНАРУЖЕНЫ КРИТИЧЕСКИЕ ПОВРЕЖДЕНИЯ! ДВИГАТЕЛЬ ПОВРЕЖДЕН - КАТАПУЛЬТИРУЙТЕСЬ!</Russian>
+            <Czech>DETEKOVÁNO KRITICKÉ POŠKOZENÍ! MOTOR OHROŽEN - KATAPULTUJTE SE!</Czech>
+            <Korean>심각한 기체 손상 감지! 엔진 고장 - 즉시 탈출하십시오!</Korean>
+            <Japanese>致命的な損傷を探知！エンジン破損 - ベイルアウト！緊急脱出せよ！</Japanese>
+            <Chinese>偵測到嚴重損傷！發動機故障 - 彈射！彈射！</Chinese>
+            <Chinesesimp>侦测到严重损伤！发动机故障 - 弹射！弹射！</Chinesesimp>
+            <Turkish>KRİTİK HASAR TESPİT EDİLDİ! MOTOR HASAR GÖRDÜ - ATLA! ATLA!</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Radio_EjectedSafe">
+            <Original>Mayday beacon received! Pilot is down. Search and Rescue team (CSAR) dispatched.</Original>
+            <English>Mayday beacon received! Pilot is down. Search and Rescue team (CSAR) dispatched.</English>
+            <French>Balise de détresse captée ! Pilote au sol. L'équipe de récupération (CSAR) est en route.</French>
+            <Spanish>¡Baliza de socorro recibida! Piloto en tierra. Equipo de rescate (CSAR) desplegado.</Spanish>
+            <German>Mayday-Funkbake empfangen! Pilot am Boden. Rettungsteam (CSAR) entsandt.</German>
+            <Italian>Segnale di emergenza ricevuto! Pilota a terra. Squadra di recupero (CSAR) inviata.</Italian>
+            <Polish>Odebrano sygnał ratunkowy! Pilot na ziemi. Zespół poszukiwawczo-ratowniczy (CSAR) w drodze.</Polish>
+            <Portuguese>Sinal de emergência captado! Piloto no solo. Equipa de resgate (CSAR) enviada.</Portuguese>
+            <Russian>Получен сигнал бедствия! Пилот на земле. Поисково-спасательная группа (CSAR) выслана.</Russian>
+            <Czech>Přijat nouzový signál! Pilot je na zemi. Záchranný tým (CSAR) byl vyslán.</Czech>
+            <Korean>메이데이 비상 신호 수신! 조종사 탈출 확인. 전투탐색구조팀(CSAR)이 급파되었습니다.</Korean>
+            <Japanese>メーデー信号を受信！パイロット脱出確認。戦闘捜索救難隊（CSAR）を派遣しました。</Japanese>
+            <Chinese>收到求救信號！飛行員已墜地。搜救小組（CSAR）已出動。</Chinese>
+            <Chinesesimp>收到求救信号！飞行员已坠地。搜救小组（CSAR）已出动。</Chinesesimp>
+            <Turkish>İmdat sinyali alındı! Pilot yerde. Muharebe Arama Kurtarma timi (CSAR) sevk edildi.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Flight_Mach">
+            <Original>Transonic barrier crossed.</Original>
+            <English>Transonic barrier crossed.</English>
+            <French>Franchissement du mur du son.</French>
+            <Spanish>Barrera transónica superada.</Spanish>
+            <German>Schallmauer durchbrochen.</German>
+            <Italian>Barriera del suono superata.</Italian>
+            <Polish>Przekroczono barierę dźwięku.</Polish>
+            <Portuguese>Barreira do som ultrapassada.</Portuguese>
+            <Russian>Преодолен звуковой барьер.</Russian>
+            <Czech>Překonána zvuková bariéra.</Czech>
+            <Korean>음속 돌파.</Korean>
+            <Japanese>音速突破。</Japanese>
+            <Chinese>突破音障。</Chinese>
+            <Chinesesimp>突破音障。</Chinesesimp>
+            <Turkish>Ses duvarı aşıldı.</Turkish>
+        </Key>
+    </Package>
+    <Package name="Player">
+        <Key ID="STR_LL_HealAction_Title">
+            <Original>&lt;t color='#FFFFFF'&gt;[ESCOUADE] Soins&lt;/t&gt;</Original>
+            <English>&lt;t color='#FFFFFF'&gt;[SQUAD] Heal&lt;/t&gt;</English>
+            <French>&lt;t color='#FFFFFF'&gt;[ESCOUADE] Soins&lt;/t&gt;</French>
+            <Turkish>&lt;t color='#FFFFFF'&gt;[MANGA] İyileştir&lt;/t&gt;</Turkish>
+            <Korean>&lt;t color='#FFFFFF'&gt;[분대] 치료&lt;/t&gt;</Korean>
+            <Spanish>&lt;t color='#FFFFFF'&gt;[ESCUADRÓN] Curar&lt;/t&gt;</Spanish>
+            <Japanese>&lt;t color='#FFFFFF'&gt;[分隊] 治療&lt;/t&gt;</Japanese>
+            <Chinese>&lt;t color='#FFFFFF'&gt;[小队] 治疗&lt;/t&gt;</Chinese>
+            <Russian>&lt;t color='#FFFFFF'&gt;[ОТРЯД] Лечение&lt;/t&gt;</Russian>
+            <German>&lt;t color='#FFFFFF'&gt;[TRUPP] Heilen&lt;/t&gt;</German>
+            <Italian>&lt;t color='#FFFFFF'&gt;[SQUADRA] Cura&lt;/t&gt;</Italian>
+            <Polish>&lt;t color='#FFFFFF'&gt;[DRUŻYNA] Leczenie&lt;/t&gt;</Polish>
+        </Key>
+        <Key ID="STR_LL_HealAction_NoKits">
+            <Original> Personne ne possède de kit de soin.</Original>
+            <English> No one has a medkit.</English>
+            <French> Personne ne possède de kit de soin.</French>
+            <Turkish> Kimsede ilk yardım çantası yok.</Turkish>
+            <Korean> 구급상자를 가진 사람이 없습니다.</Korean>
+            <Spanish> Nadie tiene un botiquín.</Spanish>
+            <Japanese> 誰も医療キットを持っていません。</Japanese>
+            <Chinese> 没有人有医疗包。</Chinese>
+            <Russian> Ни у кого нет аптечки.</Russian>
+            <German> Niemand hat ein Medikit.</German>
+            <Italian> Nessuno ha un kit medico.</Italian>
+            <Polish> Nikt nie ma apteczki.</Polish>
+        </Key>
+        <Key ID="STR_LL_HealAction_NoWounded">
+            <Original> Aucun blessé nécessitant des soins.</Original>
+            <English> No wounded requiring healing.</English>
+            <French> Aucun blessé nécessitant des soins.</French>
+            <Turkish> İyileşmesi gereken yaralı yok.</Turkish>
+            <Korean> 치료가 필요한 부상자가 없습니다.</Korean>
+            <Spanish> No hay heridos que requieran curación.</Spanish>
+            <Japanese> 治療が必要な負傷者はいません。</Japanese>
+            <Chinese> 没有需要治疗的伤员。</Chinese>
+            <Russian> Нет раненых, нуждающихся в лечении.</Russian>
+            <German> Keine Verwundeten, die geheilt werden müssen.</German>
+            <Italian> Nessun ferito che richieda cure.</Italian>
+            <Polish> Brak rannych wymagających leczenia.</Polish>
+        </Key>
+        <Key ID="STR_LL_HealAction_Healing">
+            <Original> %1 homme(s) en cours de soins...</Original>
+            <English>... %1 man(men) being healed...</English>
+            <French> %1 homme(s) en cours de soins...</French>
+            <Turkish>... %1 adam iyileştiriliyor...</Turkish>
+            <Korean>... %1명이 치료받고 있습니다...</Korean>
+            <Spanish>... %1 hombre(s) siendo curado(s)...</Spanish>
+            <Japanese>... %1人が治療中です...</Japanese>
+            <Chinese>... %1 人正在接受治疗...</Chinese>
+            <Russian>... %1 человек(а) лечат...</Russian>
+            <German>... %1 Mann (Männer) werden geheilt...</German>
+            <Italian>... %1 uomo(i) in cura...</Italian>
+            <Polish>... %1 żołnierz(y) jest leczonych...</Polish>
+        </Key>
+        <Key ID="STR_ORA_LOADOUT_APPLIED_SUCCESS">
+            <Original>Standard air superiority pilot loadout configured successfully.</Original>
+            <English>Standard air superiority pilot loadout configured successfully.</English>
+            <French>Dotation pilote de chasse configurée avec succès.</French>
+            <Spanish>Equipamiento estándar de piloto configurado con éxito.</Spanish>
+            <German>Standard-Pilotenbewaffnung erfolgreich zugewiesen.</German>
+            <Italian>Equipaggiamento standard da pilota configurato con successo.</Italian>
+            <Polish>Standardowe wyposażenie pilota myśliwskiego załadowane pomyślnie.</Polish>
+            <Portuguese>Dotação padrão de piloto de caça configurada com sucesso.</Portuguese>
+            <Russian>Стандартная экипировка боевого пилота успешно настроена.</Russian>
+            <Czech>Standardní výstroj stíhacího pilota úspěšně nakonfigurována.</Czech>
+            <Korean>공대공 전투 조종사 표준 무장 장착 완료.</Korean>
+            <Japanese>制空戦闘パイロットの標準装備が正常に構成されました。</Japanese>
+            <Chinese>制空戰鬥飛行員標準裝備配置成功。</Chinese>
+            <Chinesesimp>制空战斗飞行员标准装备配置成功。</Chinesesimp>
+            <Turkish>Standart hava üstünlüğü pilot donanımı başarıyla yapılandırıldı.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Alert_MissileInbound">
+            <Original>WARNING: MISSILE LAUNCH DETECTED! DEPLOY COUNTERMEASURES!</Original>
+            <English>WARNING: MISSILE LAUNCH DETECTED! DEPLOY COUNTERMEASURES!</English>
+            <French>ALERTE : DÉPART MISSILE DÉTECTÉ ! DÉPLOYEZ CONTRE-MESURES !</French>
+            <Spanish>¡ALERTA: DISPARO DE MISIL DETECTADO! ¡DESPLIEGUE CONTRAMEDIDAS!</Spanish>
+            <German>WARNUNG: RAKETENSTART ERKANNT! TÄUSCHKÖRPER AUSSTOSSEN!</German>
+            <Italian>ALLARME: LANCIO MISSILE RILEVATO! LANCIARE CONTROMISURE!</Italian>
+            <Polish>OSTRZEŻENIE: WYKRYTO ODPALENIE POCISKU! WYRZUĆ FLARY!</Polish>
+            <Portuguese>ALERTA: DISPARO DE MÍSSIL DETETADO! LANÇAR CONTRAMEDIDAS!</Portuguese>
+            <Russian>ВНИМАНИЕ: ОБНАРУЖЕН ПУСК РАКЕТЫ! ПРИМЕНИТЬ ЛОВУШКИ!</Russian>
+            <Czech>VAROVÁNÍ: DETEKOVÁN ODPAL RAKETY! VYSTŘELTE KLAMNÉ CÍLE!</Czech>
+            <Korean>경고: 미사일 발사 감지! 대응책(플레어)을 사출하십시오!</Korean>
+            <Japanese>警告：ミサイル発射を探知！チャフ・フレアを展開せよ！</Japanese>
+            <Chinese>警告：偵測到飛彈發射！立即投放干擾彈！</Chinese>
+            <Chinesesimp>警告：侦测到导弹发射！立即投放干扰弹！</Chinesesimp>
+            <Turkish>UYARI: FÜZE ATEŞLEMESİ TESPİT EDİLDİ! KARŞI TEDBİRLERİ BIRAKIN!</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Radio_CockpitReady">
+            <Original>Pilot on board. Systems linked to Sahrani ATC. Ready for flight.</Original>
+            <English>Pilot on board. Systems linked to Sahrani ATC. Ready for flight.</English>
+            <French>Pilote à bord. Systèmes reliés au contrôle Sahrani. Paré pour le vol.</French>
+            <Spanish>Piloto a bordo. Sistemas conectados con la torre de Sahrani. Listo para volar.</Spanish>
+            <German>Pilot an Bord. Systeme mit Tower Sahrani verbunden. Startklar.</German>
+            <Italian>Pilota a bordo. Sistemi collegati alla torre di Sahrani. Pronto al volo.</Italian>
+            <Polish>Pilot na pokładzie. Systemy połączone z wieżą Sahrani. Gotowość do lotu.</Polish>
+            <Portuguese>Piloto a bordo. Sistemas ligados à torre de Sahrani. Pronto para o voo.</Portuguese>
+            <Russian>Пилот на борту. Бортовые системы на связи с вышкой Сахрани. Готов к вылету.</Russian>
+            <Czech>Pilot na palubě. Systémy propojeny s řízením Sahrani. Připraven k letu.</Czech>
+            <Korean>조종사 탑승 완료. 시스템이 사라니 관제탑과 연결되었습니다. 비행 준비 완료.</Korean>
+            <Japanese>パイロット搭乗。システムがサフラニ管制とリンクしました。飛行準備完了。</Japanese>
+            <Chinese>飛行員已登機。機載系統已連線至薩赫拉尼塔台。準備起飛。</Chinese>
+            <Chinesesimp>飞行员已登机。机载系统已连线至萨赫拉尼塔台。准备起飞。</Chinesesimp>
+            <Turkish>Pilot kokpitte. Sistemler Sahrani kulesine bağlandı. Uçuşa hazır.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_PILOT_IDENTITY_CONFIRMED">
+            <Original>Tactical Flight Officer identity established: Captain 'Victor-One'.</Original>
+            <English>Tactical Flight Officer identity established: Captain 'Victor-One'.</English>
+            <French>Identité d'officier pilote confirmée : Capitaine 'Victor-One'.</French>
+            <Spanish>Identidad de oficial de vuelo confirmada: Capitán 'Victor-One'.</Spanish>
+            <German>Flugoffiziersidentität bestätigt: Hauptmann 'Victor-One'.</German>
+            <Italian>Identità ufficiale pilota confermata: Capitano 'Victor-One'.</Italian>
+            <Polish>Potwierdzono tożsamość oficera lotnictwa: Kapitan 'Victor-One'.</Polish>
+            <Portuguese>Identidade de oficial de voo confirmada: Capitão 'Victor-One'.</Portuguese>
+            <Russian>Личность боевого пилота подтверждена: Капитан 'Victor-One'.</Russian>
+            <Czech>Identita leteckého důstojníka potvrzena: Kapitán 'Victor-One'.</Czech>
+            <Korean>전술 비행 장교 신원 확인: 대위 'Victor-One'.</Korean>
+            <Japanese>戦術飛行士官の身元確認：大尉 'Victor-One'。</Japanese>
+            <Chinese>戰術飛行軍官身份確認：上尉 'Victor-One'。</Chinese>
+            <Chinesesimp>战术飞行军官身份确认：上尉 'Victor-One'。</Chinesesimp>
+            <Turkish>Taktik Uçuş Subayı kimliği doğrulandı: Yüzbaşı 'Victor-One'.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_LOADOUT_PILOT_READY">
+            <Original>Flight equipment ready. Helmet visor sealed, survival gear secured.</Original>
+            <English>Flight equipment ready. Helmet visor sealed, survival gear secured.</English>
+            <French>Équipement de vol opérationnel. Visière verrouillée, kit de survie arrimé.</French>
+            <Spanish>Equipo de vuelo listo. Visera del casco sellada, equipo de supervivencia asegurado.</Spanish>
+            <German>Flugausrüstung einsatzbereit. Helmvisier geschlossen, Überlebensausrüstung gesichert.</German>
+            <Italian>Equipaggiamento di volo pronto. Visiera sigillata, kit di sopravvivenza fissato.</Italian>
+            <Polish>Kombinezon lotniczy gotowy. Wizjer zablokowany, zestaw przetrwania zabezpieczony.</Polish>
+            <Portuguese>Equipamento de voo pronto. Viseira selada, kit de sobrevivência fixado.</Portuguese>
+            <Russian>Летное снаряжение готово. Светофильтр опущен, аварийный запас закреплен.</Russian>
+            <Czech>Letecká výstroj připravena. Hledí přilby uzavřeno, nouzová výbava zajištěna.</Czech>
+            <Korean>비행 장비 장착 완료. 헬멧 바이저 밀폐, 생존 키트 확인.</Korean>
+            <Japanese>飛行装備の準備完了。ヘルメットバイザー閉鎖、生存キット固定。</Japanese>
+            <Chinese>飛行裝備就緒。頭盔面罩已密封，求生裝備已固定。</Chinese>
+            <Chinesesimp>飞行装备就绪。头盔面罩已密封，求生装备已固定。</Chinesesimp>
+            <Turkish>Uçuş teçhizatı hazır. Kask vizörü kapatıldı, hayatta kalma kiti sabitlendi.</Turkish>
+        </Key>
+        <Key ID="STR_LL_Briefing_Title">
+            <Original>I. SITUATION (AAF INVASION OF SAHRANI)</Original>
+            <English>I. SITUATION (AAF INVASION OF SAHRANI)</English>
+            <French>I. SITUATION (INVASION AAF DE SAHRANI)</French>
+            <Spanish>I. SITUACIÓN (INVASIÓN DE LA AAF EN SAHRANI)</Spanish>
+            <German>I. LAGE (AAF-INVASION AUF SAHRANI)</German>
+            <Italian>I. SITUAZIONE (INVASIONE DELL'AAF A SAHRANI)</Italian>
+            <Polish>I. SYTUACJA (INWAZJA AAF NA SAHRANI)</Polish>
+            <Portuguese>I. SITUAÇÃO (INVASÃO DA AAF EM SAHRANI)</Portuguese>
+            <Russian>I. ОБСТАНОВКА (ВТОРЖЕНИЕ AAF НА САХРАНИ)</Russian>
+            <Czech>I. SITUACE (INVAZE AAF NA SAHRANI)</Czech>
+            <Korean>I. 상황 (AAF의 사라니 침공)</Korean>
+            <Japanese>I. 状況 (AAFによるサフラニ侵攻)</Japanese>
+            <Chinese>I. 戰況（AAF 入侵薩赫拉尼）</Chinese>
+            <Chinesesimp>I. 战况（AAF 入侵萨赫拉尼）</Chinesesimp>
+            <Turkish>I. DURUM (AAF'NİN SAHRANİ İSTİLASI)</Turkish>
+        </Key>
+        <Key ID="STR_LL_Briefing_Text">
+            <Original>&lt;font color='#00d0ff' size='15'&gt;TACTICAL SITUATION - HOMELAND DEFENSE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The Altis Armed Forces (AAF) have launched a massive, unprovoked amphibious and airborne invasion against the sovereign territory of the Kingdom of Sahrani. Hostile landing craft and transport elements have established aggressive beachheads along our coastlines.&lt;br/&gt;&lt;br/&gt;Heavy AAF mechanized columns supported by armor (Kuma MBTs, Mora IFVs) and air defense batteries (Cheetah, Titan AA) are pushing inland to seize critical garrisons and airfields. In the skies, hostile A-143 Buzzards and WY-55 Hellcats are actively contesting air superiority.&lt;br/&gt;&lt;br/&gt;Royal Army Corps of Sahrani (RACS) ground units are desperately defending their homeland under heavy fire. As the lead fighter pilot of plane_0, you represent Sahrani's premier air superiority and strike asset. Analyze the data of your missions and the information given to you, and everything will go smoothly. Every sortie is critical to national survival.</Original>
+            <English>&lt;font color='#00d0ff' size='15'&gt;TACTICAL SITUATION - HOMELAND DEFENSE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The Altis Armed Forces (AAF) have launched a massive, unprovoked amphibious and airborne invasion against the sovereign territory of the Kingdom of Sahrani. Hostile landing craft and transport elements have established aggressive beachheads along our coastlines.&lt;br/&gt;&lt;br/&gt;Heavy AAF mechanized columns supported by armor (Kuma MBTs, Mora IFVs) and air defense batteries (Cheetah, Titan AA) are pushing inland to seize critical garrisons and airfields. In the skies, hostile A-143 Buzzards and WY-55 Hellcats are actively contesting air superiority.&lt;br/&gt;&lt;br/&gt;Royal Army Corps of Sahrani (RACS) ground units are desperately defending their homeland under heavy fire. As the lead fighter pilot of plane_0, you represent Sahrani's premier air superiority and strike asset. Analyze the data of your missions and the information given to you, and everything will go smoothly. Every sortie is critical to national survival.</English>
+            <French>&lt;font color='#00d0ff' size='15'&gt;SITUATION TACTIQUE - DÉFENSE DU TERRITOIRE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Les forces armées d'Altis (AAF) ont lancé une invasion amphibie et aéroportée massive et sans précédent contre le territoire souverain du Royaume de Sahrani. Des chalands de débarquement et des forces d'assaut hostiles ont établi des têtes de pont agressives sur nos côtes.&lt;br/&gt;&lt;br/&gt;De puissantes colonnes mécanisées AAF soutenues par des blindés (chars Kuma, VCI Mora) et une couverture sol-air redoutable (Cheetah, missiles Titan) progressent vers l'intérieur pour capturer nos garnisons et bases aériennes. Dans les airs, des chasseurs A-143 Buzzard et hélicoptères WY-55 Hellcat contestent la supériorité aérienne.&lt;br/&gt;&lt;br/&gt;Les forces terrestres du Royal Army Corps of Sahrani (RACS) luttent héroïquement pour défendre leur patrie sous un feu nourri. En tant que pilote de chasse titulaire sur plane_0, vous êtes le fer de lance de la riposte aérienne. Analyser les données de vos missions et informations qui vous sont données et tout se passera bien. Chaque sortie compte pour la survie du royaume.</French>
+            <Spanish>&lt;font color='#00d0ff' size='15'&gt;SITUACIÓN TÁCTICA - DEFENSA DEL TERRITORIO&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Las Fuerzas Armadas de Altis (AAF) han lanzado una invasión anfibia y aerotransportada masiva contra el territorio soberano del Reino de Sahrani. Fuerzas de asalto enemigas han establecido cabezas de playa agresivas en nuestras costas.&lt;br/&gt;&lt;br/&gt;Columnas mecanizadas de la AAF con carros Kuma, blindados Mora y defensa antiaérea Cheetah avanzan hacia el interior. En el aire, cazas A-143 Buzzard y helicópteros Hellcat disputan la superioridad aérea.&lt;br/&gt;&lt;br/&gt;Las tropas terrestres del RACS defienden su patria bajo intenso fuego. Como piloto al mando de plane_0, usted es la punta de lanza de la defensa. Analice los datos y la información facilitada y todo irá bien. Cada salida es crucial.</Spanish>
+            <German>&lt;font color='#00d0ff' size='15'&gt;TAKTIK - VERTEIDIGUNG DES HEIMATGEBIETES&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Die Streitkräfte von Altis (AAF) haben eine massive amphibische und luftlandegestützte Invasion gegen das Königreich Sahrani gestartet. Feindliche Landungsboote haben Brückenköpfe an unseren Küsten errichtet.&lt;br/&gt;&lt;br/&gt;Schwere mechanisierte Kolonnen der AAF mit Kuma-Panzern, Mora-Schützenpanzern und Cheetah-Flugabwehrpanzern rücken ins Landesinnere vor. Am Himmel fordern feindliche A-143 Buzzard und Hellcat die Luftherrschaft heraus.&lt;br/&gt;&lt;br/&gt;Die RACS-Bodentruppen kämpfen verbissen um jeden Meter Heimatboden. Als Chefpilot auf plane_0 sind Sie der Schlüssel zur Abwehr. Analysieren Sie Ihre Missionsdaten und Anweisungen sorgfältig, dann wird alles gelingen.</German>
+            <Italian>&lt;font color='#00d0ff' size='15'&gt;SITUAZIONE TATTICA - DIFESA NAZIONALE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Le forze armate di Altis (AAF) hanno sferrato un'invasione anfibia e aerotrasportata su vasta scala contro il Regno di Sahrani. Teste di sbarco nemiche sono state stabilite lungo la costa.&lt;br/&gt;&lt;br/&gt;Colonne corazzate nemiche (carri Kuma, VCI Mora, semoventi Cheetah) avanzano per conquistare guarnigioni e basi aeree strategiche. In quota, caccia A-143 Buzzard ed elicotteri Hellcat insidiano lo spazio aereo.&lt;br/&gt;&lt;br/&gt;I reparti a terra del RACS difendono la patria sotto un pesante fuoco nemico. Ai comandi di plane_0, lei rappresenta la punta di diamante della difesa. Analizzi con cura i dati di missione e le istruzioni: ogni sortita è decisiva.</Italian>
+            <Polish>&lt;font color='#00d0ff' size='15'&gt;SYTUACJA TAKTYCZNA - OBRONA OJCZYZNY&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Siły Zbrojne Altis (AAF) rozpoczęły zmasowaną inwazję desantowo-morską i powietrzną na suwerenne terytorium Królestwa Sahrani. Wrogie jednostki zdobyły przyczółki na wybrzeżu.&lt;br/&gt;&lt;br/&gt;Kolumny zmechanizowane AAF z czołgami Kuma, bwp Mora i zestawami Cheetah prą w głąb lądu. W powietrzu myśliwce A-143 Buzzard i śmigłowce Hellcat zagrażają przewadze powietrznej.&lt;br/&gt;&lt;br/&gt;Oddziały lądowe RACS zaciekle bronią ziemi ojczystej. Jako główny pilot myśliwca plane_0 jesteś filarem obrony powietrznej. Dokładnie analizuj dane wywiadowcze i rozkazy – każda misja decyduje o losach kraju.</Polish>
+            <Portuguese>&lt;font color='#00d0ff' size='15'&gt;SITUAÇÃO TÁCTICA - DEFESA DO TERRITÓRIO&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;As Forças Armadas de Altis (AAF) lançaram uma invasão anfíbia e aerotransportada em grande escala contra o Reino de Sahrani. Forças inimigas estabeleceram cabeças de praia agressivas no nosso litoral.&lt;br/&gt;&lt;br/&gt;Colunas blindadas da AAF com blindados Kuma e Mora, cobertos por artilharia antiaérea Cheetah, avançam em direção ao interior. No céu, caças A-143 Buzzard e helicópteros Hellcat disputam o controlo do espaço aéreo.&lt;br/&gt;&lt;br/&gt;As forças terrestres do RACS defendem bravamente a nação. Como piloto de plane_0, você lidera o contra-ataque aéreo. Analise todos os dados e orientações e tudo correrá bem.</Portuguese>
+            <Russian>&lt;font color='#00d0ff' size='15'&gt;ТАКТИЧЕСКАЯ ОБСТАНОВКА - ОБОРОНА САХРАНИ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Вооруженные силы Алтиса (AAF) начали масштабное десантное и воздушное вторжение на территорию Королевства Сахрани. Противник высадился на побережье и сформировал плацдармы.&lt;br/&gt;&lt;br/&gt;Бронетанковые колонны AAF (танки Kuma, БМП Mora, ЗСУ Cheetah) развивают наступление вглубь острова, угрожая ключевым гарнизонам и аэродромам. В воздухе действуют штурмовики A-143 Buzzard и вертолеты Hellcat.&lt;br/&gt;&lt;br/&gt;Сухопутные части RACS ведут тяжелые оборонительные бои. В качестве ведущего пилота истребителя plane_0 вы являетесь главной ударной силой обороны. Анализируйте боевые задачи и вводные: от каждого вылета зависит судьба королевства.</Russian>
+            <Czech>&lt;font color='#00d0ff' size='15'&gt;TAKTICKÁ SITUACE - OBRANA VLASTI&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Ozbrojené síly Altisu (AAF) zahájily masivní obojživelnou a výsadkovou invazi proti Království Sahrani. Nepřítel obsadil pobřežní předmostí.&lt;br/&gt;&lt;br/&gt;Mechanizované kolony AAF s tanky Kuma, BVP Mora a protiletadlovými komplety Cheetah postupují do vnitrozemí. Ve vzduchu operují nepřátelské letouny A-143 Buzzard a vrtulníky Hellcat.&lt;br/&gt;&lt;br/&gt;Pozemní jednotky RACS urputně brání své pozice. Jako pilot stíhače plane_0 jste páteří obrany. Analyzujte letová data a pokyny velení – každý vzlet je klíčový pro přežití ostrova.</Czech>
+            <Korean>&lt;font color='#00d0ff' size='15'&gt;전술 상황 - 본토 방어 작전&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;알티스 군(AAF)이 사라니 왕국의 영토를 상대로 대규모 상륙 및 공수 침공을 개시했습니다. 적 상륙 부대가 해안가에 교두보를 확보했습니다.&lt;br/&gt;&lt;br/&gt;쿠마 전차, 모라 보병전투차, 치타 대공장갑차로 무장한 적 기갑 종대가 내륙 주요 기지로 진격 중입니다. 상공에서는 A-143 버자드와 헬캣 편대가 제공권을 위협하고 있습니다.&lt;br/&gt;&lt;br/&gt;사라니 왕립군(RACS) 지상 부대가 치열한 교전을 벌이며 본토를 사수하고 있습니다. plane_0의 전투기 조종사로서 귀하는 공중 반격의 핵심입니다. 임무 데이터와 지침을 철저히 분석하고 완수하십시오.</Korean>
+            <Japanese>&lt;font color='#00d0ff' size='15'&gt;戦術状況 - 本土防衛作戦&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;アルティス軍(AAF)はサフラニ王国領土に対し、大規模な水陸両用および空挺侵攻を開始しました。敵上陸部隊は海岸線に強固な橋頭堡を築いています。&lt;br/&gt;&lt;br/&gt;クマ主力戦車、モラ歩兵戦闘車、チーター対空自走砲で構成された敵機甲部隊が内陸部へ進撃中。上空ではA-143バザード戦闘機やヘルキャットが航空優勢を脅かしています。&lt;br/&gt;&lt;br/&gt;サフラニ王立軍(RACS)の地上部隊は激しい砲火の中で国土を死守しています。plane_0のパイロットである貴官は迎撃作戦の要です。提示された任務データと情報を精査し、国土を守り抜いてください。</Japanese>
+            <Chinese>&lt;font color='#00d0ff' size='15'&gt;戰術局勢 - 國土保衛作戰&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;阿爾蒂斯武裝部隊（AAF）對薩赫拉尼王國發動了全面無預警的兩棲登陸與空降突襲。敵軍突擊部隊已在沿海建立了灘頭陣地。&lt;br/&gt;&lt;br/&gt;由庫瑪主力戰車、莫拉步兵戰車與獵豹防空車組成的敵裝甲部隊正向內陸要地推進。空域中，AAF 的 A-143 禿鷹戰機與地獄貓直升機嚴重威脅制空權。&lt;br/&gt;&lt;br/&gt;薩赫拉尼王國軍（RACS）地面部隊正在猛烈火力下奮勇抗擊。身為 plane_0 戰機的主力飛行員，您是制空與對地反擊的中流砥柱。詳盡分析任務數據與情報指令，每次出擊都關乎王國存亡。</Chinese>
+            <Chinesesimp>&lt;font color='#00d0ff' size='15'&gt;战术局势 - 国土保卫作战&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;阿尔蒂斯武装部队（AAF）对萨赫拉尼王国发动了全面无预警的两栖登陆与空降突袭。敌军突击部队已在沿海建立了滩头阵地。&lt;br/&gt;&lt;br/&gt;由库玛主力战车、莫拉步兵战车与猎豹防空车组成的敌装甲部队正向内陆要地推进。空域中，AAF 的 A-143 秃鹰战机与地狱猫直升机严重威胁制空权。&lt;br/&gt;&lt;br/&gt;萨赫拉尼王国军（RACS）地面部队正在猛烈火力下奋勇抗击。身为 plane_0 战机的主力飞行员，您是制空与对地反击的中流砥柱。详尽分析任务数据与情报指令，每次出击都关乎王国存亡。</Chinesesimp>
+            <Turkish>&lt;font color='#00d0ff' size='15'&gt;TAKTİK DURUM - VATAN SAVUNMASI&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Altis Silahlı Kuvvetleri (AAF), Sahrani Krallığı topraklarına geniş çaplı amfibi ve hava indirme harekâtı başlatmıştır. Düşman unsurları kıyılarımızda çıkarma başları kurmuştur.&lt;br/&gt;&lt;br/&gt;Kuma tankları, Mora zırhlıları ve Cheetah uçaksavarlarıyla donatılmış AAF zırhlı kolları iç kesimlere doğru ilerlemektedir. Gökyüzünde A-143 Buzzard jetleri hava sahamızı tehdit etmektedir.&lt;br/&gt;&lt;br/&gt;RACS kara unsurları vatanı savunmak için yoğun ateş altında çarpışmaktadır. plane_0 uçağının kıdemli pilotu olarak hava savunmasının omurgasısınız. Verilen talimatları ve bilgileri dikkatle uygulayın.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Briefing_Mission_Title">
+            <Original>II. MISSION &amp; OBJECTIVES</Original>
+            <English>II. MISSION &amp; OBJECTIVES</English>
+            <French>II. MISSION &amp; OBJECTIFS</French>
+            <Spanish>II. MISIÓN Y OBJETIVOS</Spanish>
+            <German>II. AUFTRAG &amp; ZIELE</German>
+            <Italian>II. MISSIONE E OBIETTIVI</Italian>
+            <Polish>II. MISJA I CELE</Polish>
+            <Portuguese>II. MISSÃO E OBJETIVOS</Portuguese>
+            <Russian>II. ЗАДАЧА И ЦЕЛИ</Russian>
+            <Czech>II. ÚKOL A CÍLE</Czech>
+            <Korean>II. 임무 및 목표</Korean>
+            <Japanese>II. 任務および目標</Japanese>
+            <Chinese>II. 任務與目標</Chinese>
+            <Chinesesimp>II. 任务与目标</Chinesesimp>
+            <Turkish>II. GÖREV VE HEDEFLER</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Briefing_Mission_Text">
+            <Original>&lt;font color='#ffcc00' size='14'&gt;OPERATIONAL DIRECTIVES&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. PROTECT RACS FORCES:&lt;/font&gt; Royal Army ground units are engaged in heavy combat. Provide timely Close Air Support (CAS) and interdict hostile forces. Ensure minimal allied casualties.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. AIR &amp; STRIKE DOMINANCE:&lt;/font&gt; Destroy designated AAF invasion targets across randomized sectors as ordered by HQ.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. SURVIVE &amp; RETURN (RTB):&lt;/font&gt; Preserve your aircraft (plane_0) and return alive to friendly airfields.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. CRITICAL PROTOCOL - COCKPIT INTEGRITY:&lt;/font&gt; Pilot egress or cockpit ejection will result in immediate mission forfeiture. You must stay with your aircraft.</Original>
+            <English>&lt;font color='#ffcc00' size='14'&gt;OPERATIONAL DIRECTIVES&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. PROTECT RACS FORCES:&lt;/font&gt; Royal Army ground units are engaged in heavy combat. Provide timely Close Air Support (CAS) and interdict hostile forces. Ensure minimal allied casualties.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. AIR &amp; STRIKE DOMINANCE:&lt;/font&gt; Destroy designated AAF invasion targets across randomized sectors as ordered by HQ.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. SURVIVE &amp; RETURN (RTB):&lt;/font&gt; Preserve your aircraft (plane_0) and return alive to friendly airfields.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. CRITICAL PROTOCOL - COCKPIT INTEGRITY:&lt;/font&gt; Pilot egress or cockpit ejection will result in immediate mission forfeiture. You must stay with your aircraft.</English>
+            <French>&lt;font color='#ffcc00' size='14'&gt;DIRECTIVES OPÉRATIONNELLES&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. PROTÉGER LES UNITÉS RACS :&lt;/font&gt; Les troupes au sol du Royal Army Corps sont violemment engagées. Fournissez un appui aérien rapproché (CAS) chirurgical et détruisez les assaillants. Veillez à ce que la majorité des unités alliées survivent.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. SUPRÉMATIE AÉRIENNE &amp; FRAPPES :&lt;/font&gt; Neutralisez les objectifs d'invasion de l'AAF dans les secteurs aléatoires assignés par le commandement général.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. REVENIR EN VIE (RTB) :&lt;/font&gt; Préservez l'intégrité de votre appareil (plane_0) et atterrissez indemne en base amie.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. PROTOCOLE CRITIQUE - INTÉGRITÉ COCKPIT :&lt;/font&gt; L'extraction du cockpit ou l'éjection fait perdre la mission. Vous devez impérativement rester aux commandes de votre appareil.</French>
+            <Spanish>&lt;font color='#ffcc00' size='14'&gt;DIRECTIVAS OPERACIONALES&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. PROTEGER A LAS UNIDADES RACS:&lt;/font&gt; Proveer apoyo aéreo cercano inmediato y minimizar bajas aliadas.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. NEUTRALIZAR FUERZAS DE LA AAF:&lt;/font&gt; Destruir los objetivos de invasión designados por el CG.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. REGRESAR CON VIDA:&lt;/font&gt; Proteger el avión plane_0 y volver a la base aérea.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. PROTOCOLO CRÍTICO:&lt;/font&gt; La extracción o eyección de la cabina conlleva el fracaso inmediato de la misión.</Spanish>
+            <German>&lt;font color='#ffcc00' size='14'&gt;OPERATIVE RICHTLINIEN&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. RACS-EINHEITEN SCHÜTZEN:&lt;/font&gt; Nahunterstützung für verbündete Truppen leisten und eigene Verluste verhindern.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. AAF-INVASIONSZIELE BEKÄMPFEN:&lt;/font&gt; Zugewiesene Ziele im Sektor laut HQ-Befehl vernichten.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. ÜBERLEBEN UND HEIMKEHREN:&lt;/font&gt; plane_0 intakt halten und sicher landen.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. KRITISCHE VORSCHRIFT:&lt;/font&gt; Verlassen des Cockpits oder Schleudersatzausstieg führt zum sofortigen Scheitern der Mission.</German>
+            <Italian>&lt;font color='#ffcc00' size='14'&gt;DIRETTIVE OPERATIVE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. PROTEGGERE I REPARTI RACS:&lt;/font&gt; Fornire supporto aereo ravvicinato e impedire perdite tra le forze amiche.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. DISTRUGGERE LE FORZE AAF:&lt;/font&gt; Eliminare i bersagli nemici designati dal comando.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. RITORNO ALLA BASE IN VITA:&lt;/font&gt; Preservare il velivolo plane_0 e atterrare in sicurezza.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. PROTOCOLLO RIGIDO:&lt;/font&gt; L'uscita dal cockpit o l'espulsione determina il fallimento immediato della missione.</Italian>
+            <Polish>&lt;font color='#ffcc00' size='14'&gt;DYREKTYWY OPERACYJNE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. OCHRONA SIŁ RACS:&lt;/font&gt; Zapewnij bezpośrednie wsparcie lotnicze i minimalizuj straty sojuszników.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. NEUTRALIZACJA AAF:&lt;/font&gt; Zniszcz wyznaczone cele inwazyjne w przydzielonych sektorach.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. PRZETRWANIE I POWRÓT:&lt;/font&gt; Zachowaj maszynę plane_0 i wróć bezpiecznie do bazy.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. PROTOKÓŁ KOKPITU:&lt;/font&gt; Opuszczenie kokpitu lub katapultowanie skutkuje natychmiastową przegraną misji.</Polish>
+            <Portuguese>&lt;font color='#ffcc00' size='14'&gt;DIRETRIZES OPERACIONAIS&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. PROTEGER FORÇAS DO RACS:&lt;/font&gt; Prestar apoio aéreo aproximado e evitar baixas aliadas.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. NEUTRALIZAR INVASÃO DA AAF:&lt;/font&gt; Destruir os alvos designados nos setores pelo QG.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. SOBREVIVER E RETORNAR:&lt;/font&gt; Preservar o caça plane_0 e pousar em segurança.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. REGRA CRÍTICA:&lt;/font&gt; A ejeção ou saída do cockpit cancela a missão com derrota imediata.</Portuguese>
+            <Russian>&lt;font color='#ffcc00' size='14'&gt;ОПЕРАТИВНЫЕ ДИРЕКТИВЫ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. ЗАЩИТА СИЛ RACS:&lt;/font&gt; Оказывать своевременную непосредственную авиационную поддержку (CAS) и не допустить гибели союзников.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. ПОДАВЛЕНИЕ СИЛ ВТОРЖЕНИЯ AAF:&lt;/font&gt; Уничтожать назначенные штабом цели вторжения в заданных секторах.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. ВЫЖИТЬ И ВЕРНУТЬСЯ (RTB):&lt;/font&gt; Сохранить самолет plane_0 и благополучно совершить посадку.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. КРИТИЧЕСКИЙ ПРОТОКОЛ:&lt;/font&gt; Катапультирование или покидание кабины влечет немедленный провал миссии.</Russian>
+            <Czech>&lt;font color='#ffcc00' size='14'&gt;OPERAČNÍ SMĚRNICE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. OCHRANA JEDNOTEK RACS:&lt;/font&gt; Poskytujte přímou leteckou podporu a minimalizujte ztráty spojenců.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. LIKVIDACE INVAZE AAF:&lt;/font&gt; Zničte určené cíle v sektorech dle rozkazů velitelství.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. PŘEŽÍT A NÁVRAT (RTB):&lt;/font&gt; Udržte letoun plane_0 v provozu a vraťte se na základnu.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. KRITICKÉ PRAVIDLO:&lt;/font&gt; Opuštění kokpitu nebo katapultáž znamená okamžité selhání mise.</Czech>
+            <Korean>&lt;font color='#ffcc00' size='14'&gt;작전 지침&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. RACS 아군 보호:&lt;/font&gt; 근접항공지원(CAS)을 제공하여 아군 지상군의 피해를 최소화하고 생존을 보장하십시오.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. AAF 침공 전력 격멸:&lt;/font&gt; 사령부가 무작위 구역에 지정한 침공 표적을 격파하십시오.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. 생환 및 귀환 (RTB):&lt;/font&gt; 기체(plane_0)를 보존하고 무사히 기지로 복귀하십시오.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. 엄격한 수칙 - 조종석 이탈 금지:&lt;/font&gt; 조종석에서 탈출하거나 사출하면 즉시 임무 실패 처리됩니다.</Korean>
+            <Japanese>&lt;font color='#ffcc00' size='14'&gt;作戦行動指針&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. RACS友軍の防護:&lt;/font&gt; 迅速な近接航空支援(CAS)を実施し、友軍地上部隊の損害を最小限に抑えよ。&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. AAF侵攻戦力の撃滅:&lt;/font&gt; 司令部から指示されたセクター内の侵攻目標を破壊せよ。&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. 生還および基地帰還(RTB):&lt;/font&gt; 機体(plane_0)を保全し生還せよ。&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. 最重要規則 - 機体維持:&lt;/font&gt; コックピットからの脱出・射出は即座に任務失敗となります。機体を放棄してはならない。</Japanese>
+            <Chinese>&lt;font color='#ffcc00' size='14'&gt;作戰指令&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. 保護 RACS 友軍：&lt;/font&gt; 提供精準近接空中支援（CAS），確保友軍部隊最大程度存活。&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. 殲滅 AAF 入侵部隊：&lt;/font&gt; 依司令部指令摧毀各戰術分區內的敵軍目標。&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. 生還返航（RTB）：&lt;/font&gt; 保持戰機 plane_0 完整並平安返回基地。&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. 嚴格規定 - 禁止棄機：&lt;/font&gt; 彈射或離開座艙將直接判定任務失敗。必須全程堅守座艙。</Chinese>
+            <Chinesesimp>&lt;font color='#ffcc00' size='14'&gt;作战指令&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. 保护 RACS 友军：&lt;/font&gt; 提供精准近接空中支援（CAS），确保友军部队最大程度存活。&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. 歼灭 AAF 入侵部队：&lt;/font&gt; 依司令部指令摧毁各战术分区内的敌军目标。&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. 生还返航（RTB）：&lt;/font&gt; 保持战机 plane_0 完整并平安返回基地。&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. 严格规定 - 禁止弃机：&lt;/font&gt; 弹射或离开座舱将直接判定任务失败。必须全程坚守座舱。</Chinesesimp>
+            <Turkish>&lt;font color='#ffcc00' size='14'&gt;HAREKÂT DİREKTİFLERİ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;1. RACS BİRLİKLERİNİ KORUYUN:&lt;/font&gt; Yakın hava desteği sağlayarak dost kayıplarını asgari düzeyde tutun.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;2. AAF İSTİLA GÜÇLERİNİ İMHA EDİN:&lt;/font&gt; Karargâhça belirlenen sektör hedeflerini vurun.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00ff88'&gt;3. SAĞ SALİM ÜSSE DÖNÜŞ (RTB):&lt;/font&gt; plane_0 uçağını koruyun ve üsse inin.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff3333'&gt;4. KRİTİK KURAL:&lt;/font&gt; Kokpitten çıkmak veya fırlatma koltuğunu kullanmak görevin anında başarısızlıkla sonuçlanmasına yol açar.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Briefing_Execution_Title">
+            <Original>III. EXECUTION</Original>
+            <English>III. EXECUTION</English>
+            <French>III. EXÉCUTION</French>
+            <Spanish>III. EJECUCIÓN</Spanish>
+            <German>III. DURCHFÜHRUNG</German>
+            <Italian>III. ESECUZIONE</Italian>
+            <Polish>III. WYKONANIE</Polish>
+            <Portuguese>III. EXECUÇÃO</Portuguese>
+            <Russian>III. ВЫПОЛНЕНИЕ</Russian>
+            <Czech>III. PROVEDENÍ</Czech>
+            <Korean>III. 작전 수행</Korean>
+            <Japanese>III. 作戦実施</Japanese>
+            <Chinese>III. 執行</Chinese>
+            <Chinesesimp>III. 执行</Chinesesimp>
+            <Turkish>III. İCRA</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Briefing_Execution_Text">
+            <Original>1. Complete systems check in plane_0 on runway.&lt;br/&gt;2. Await clearance from Sahrani Control Tower before throttle up.&lt;br/&gt;3. Vector towards target grids provided by HQ radio and AWACS net.&lt;br/&gt;4. Engage AAF landing craft, armored columns, and strike fighters with precision munitions.&lt;br/&gt;5. Monitor fuel state and ordnance reserve; RTB to refuel/rearm when depleted.</Original>
+            <English>1. Complete systems check in plane_0 on runway.&lt;br/&gt;2. Await clearance from Sahrani Control Tower before throttle up.&lt;br/&gt;3. Vector towards target grids provided by HQ radio and AWACS net.&lt;br/&gt;4. Engage AAF landing craft, armored columns, and strike fighters with precision munitions.&lt;br/&gt;5. Monitor fuel state and ordnance reserve; RTB to refuel/rearm when depleted.</English>
+            <French>1. Effectuer le contrôle des systèmes dans plane_0 au sol.&lt;br/&gt;2. Attendre l'autorisation de la tour de Sahrani avant la mise de gaz.&lt;br/&gt;3. Prendre le cap vers les coordonnées transmises par la radio du QG et le réseau AWACS.&lt;br/&gt;4. Engager les barges de débarquement AAF, colonnes blindées et chasseurs ennemis aux armes guidées.&lt;br/&gt;5. Surveiller le pétrole et les munitions ; retour base (RTB) pour réarmement selon besoin.</French>
+            <Spanish>1. Verificar sistemas en plane_0.&lt;br/&gt;2. Esperar autorización de la torre de Sahrani.&lt;br/&gt;3. Dirigirse a las coordenadas facilitadas por radio y AWACS.&lt;br/&gt;4. Neutralizar lanchas de desembarco, blindados y cazas de la AAF.&lt;br/&gt;5. Controlar combustible y munición; RTB según necesidad.</Spanish>
+            <German>1. Systemprüfungen in plane_0 abschließen.&lt;br/&gt;2. Freigabe des Towers von Sahrani vor dem Schubgeben einholen.&lt;br/&gt;3. Auf Zielkoordinaten des HQs und AWACS einschwenken.&lt;br/&gt;4. AAF-Landungsboote, Panzerkolonnen und Kampfflugzeuge präzise bekämpfen.&lt;br/&gt;5. Treibstoff und Bewaffnung überwachen; bei Bedarf RTB zum Nachrüsten.</German>
+            <Italian>1. Completare i controlli dei sistemi a bordo di plane_0.&lt;br/&gt;2. Attendere luce verde dalla torre di controllo di Sahrani.&lt;br/&gt;3. Dirigersi sulle coordinate trasmesse dal QG e dalla rete AWACS.&lt;br/&gt;4. Neutralizzare mezzi da sbarco, carri armati e caccia nemici AAF.&lt;br/&gt;5. Monitorare carburante e armamenti; RTB per rifornimento.</Italian>
+            <Polish>1. Sprawdź systemy pokładowe w plane_0.&lt;br/&gt;2. Oczekuj zgody wieży Sahrani na start.&lt;br/&gt;3. Skieruj maszynę na koordynaty przekazane przez dowództwo i AWACS.&lt;br/&gt;4. Zwalczaj barki desantowe, pancerne kolumny i myśliwce AAF.&lt;br/&gt;5. Kontroluj paliwo i uzbrojenie; wykonaj RTB na przezbrojenie.</Polish>
+            <Portuguese>1. Concluir verificação de sistemas no caça plane_0.&lt;br/&gt;2. Aguardar autorização da torre de Sahrani antes da descolagem.&lt;br/&gt;3. Voar rumo às coordenadas transmitidas pelo QG e AWACS.&lt;br/&gt;4. Engajar embarcações de desembarque, blindados e caças da AAF.&lt;br/&gt;5. Monitorizar combustível e armamento; RTB para reabastecimento.</Portuguese>
+            <Russian>1. Провести проверку систем plane_0 на полосе.&lt;br/&gt;2. Запросить разрешение диспетчера вышки Сахрани на взлет.&lt;br/&gt;3. Взять курс на целеуказание, переданное радиосетью штаба и АВАКС.&lt;br/&gt;4. Поражать десантные катера, колонны бронетехники и истребители AAF высокоточным оружием.&lt;br/&gt;5. Контролировать запас топлива и боекомплект; выполнять RTB для дозаправки.</Russian>
+            <Czech>1. Dokončete kontrolu systémů v plane_0 na dráze.&lt;br/&gt;2. Vyčkejte na povolení ke vzletu od věže Sahrani.&lt;br/&gt;3. Naberte kurz na souřadnice zadané rádiem velitelství a AWACS.&lt;br/&gt;4. Likvidujte výsadková plavidla, obrněné kolony a stíhačky AAF.&lt;br/&gt;5. Sledujte stav paliva a výzbroje; dle potřeby RTB pro doplnění.</Czech>
+            <Korean>1. 활주로 상에서 plane_0 계통 점검 완료.&lt;br/&gt;2. 스로틀 개방 전 사라니 관제탑의 이륙 허가를 대기.&lt;br/&gt;3. 본부 무전 및 AWACS 유도 좌표로 침투.&lt;br/&gt;4. AAF 상륙정, 기갑 종대, 전투기를 정밀 타격.&lt;br/&gt;5. 연료와 무장을 주시하고 소진 시 RTB하여 재보급.</Korean>
+            <Japanese>1. 滑走路上のplane_0で計器点検を完了。&lt;br/&gt;2. スロットルを上げる前にサフラニ管制塔の離陸許可を待機。&lt;br/&gt;3. 司令部無線およびAWACSから提供される目標座標へ変進。&lt;br/&gt;4. AAF上陸用舟艇、機甲部隊、敵戦闘機を精密誘導兵器で撃破。&lt;br/&gt;5. 残燃料と残弾数を常に監視し、消耗時はRTBして再補給。</Japanese>
+            <Chinese>1. 在跑道上完成 plane_0 各項航電與武器自檢。&lt;br/&gt;2. 推油門起飛前等待薩赫拉尼塔台許可。&lt;br/&gt;3. 轉向司令部無線電及預警機通報的目標座標。&lt;br/&gt;4. 使用精確導引武器打擊 AAF 登陸艇、裝甲車隊與敵機。&lt;br/&gt;5. 密切監控燃油與彈藥存量；耗盡時及時返航（RTB）整補。</Chinese>
+            <Chinesesimp>1. 在跑道上完成 plane_0 各项航电与武器自检。&lt;br/&gt;2. 推油门起飞前等待萨赫拉尼塔台许可。&lt;br/&gt;3. 转向司令部无线电及预警机通报的目标坐标。&lt;br/&gt;4. 使用精确导引武器打击 AAF 登陆艇、装甲车队与敌机。&lt;br/&gt;5. 密切监控燃油与弹药存量；耗尽时及时返航（RTB）整补。</Chinesesimp>
+            <Turkish>1. Pistte plane_0 uçak sistem kontrollerini tamamlayın.&lt;br/&gt;2. Gaz kolunu açmadan önce Sahrani Kulesi'nden kalkış izni alın.&lt;br/&gt;3. Karargâh ve AWACS ağından verilen koordinatlara yönelin.&lt;br/&gt;4. AAF çıkarma botlarını, zırhlı kolları ve avcı jetlerini vurun.&lt;br/&gt;5. Yakıt ve mühimmatı takip edin; bittiğinde ikmal için RTB yapın.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Briefing_ROE_Title">
+            <Original>IV. RULES OF ENGAGEMENT &amp; PROTOCOLS</Original>
+            <English>IV. RULES OF ENGAGEMENT &amp; PROTOCOLS</English>
+            <French>IV. RÈGLES D'ENGAGEMENT &amp; SÉCURITÉ</French>
+            <Spanish>IV. REGLAS DE ENFRENTAMIENTO Y PROTOCOLOS</Spanish>
+            <German>IV. EINSATZREGELN &amp; SICHERHEIT</German>
+            <Italian>IV. REGOLE D'INGAGGIO E PROTOCOLLI</Italian>
+            <Polish>IV. ZASADY WALKI I BEZPIECZEŃSTWO</Polish>
+            <Portuguese>IV. REGRAS DE ENGAJAMENTO E PROTOCOLOS</Portuguese>
+            <Russian>IV. ПРАВИЛА ВЕДЕНИЯ БОЯ И БЕЗОПАСНОСТЬ</Russian>
+            <Czech>IV. PRAVIDLA NASAZENÍ A PROTOKOLY</Czech>
+            <Korean>IV. 교전 수칙 및 안전 규정</Korean>
+            <Japanese>IV. 交戦規定および安全プロトコル</Japanese>
+            <Chinese>IV. 交戰規則與安全規範</Chinese>
+            <Chinesesimp>IV. 交战规则与安全规范</Chinesesimp>
+            <Turkish>IV. ANGAJMAN KURALLARI VE PROTOKOLLER</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Briefing_ROE_Text">
+            <Original>&lt;font color='#ff6666'&gt;TARGET DISCRIMINATION:&lt;/font&gt; Positive identification is mandatory before releasing ordnance near RACS forward lines. Fratricide will not be tolerated.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;AIR DEFENSE THREAT (SEAD):&lt;/font&gt; AAF operates Cheetah radar-guided anti-aircraft tanks and Titan MANPADS. Utilize low altitude masking and chaff/flares during high-threat ingress.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;MISSION RETENTION:&lt;/font&gt; Ejection or cockpit abandonment automatically fails the mission. Stay with the aircraft until landed on a secured runway.</Original>
+            <English>&lt;font color='#ff6666'&gt;TARGET DISCRIMINATION:&lt;/font&gt; Positive identification is mandatory before releasing ordnance near RACS forward lines. Fratricide will not be tolerated.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;AIR DEFENSE THREAT (SEAD):&lt;/font&gt; AAF operates Cheetah radar-guided anti-aircraft tanks and Titan MANPADS. Utilize low altitude masking and chaff/flares during high-threat ingress.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;MISSION RETENTION:&lt;/font&gt; Ejection or cockpit abandonment automatically fails the mission. Stay with the aircraft until landed on a secured runway.</English>
+            <French>&lt;font color='#ff6666'&gt;IDENTIFICATION DES CIBLES :&lt;/font&gt; L'identification visuelle ou radar positive est obligatoire avant tout tir à proximité des lignes RACS. Les tirs fratricides sont formellement proscrits.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;MENACE SOL-AIR (SEAD) :&lt;/font&gt; L'AAF déploie des systèmes Cheetah guidés par radar et des missiles portatifs Titan. Exploitez le vol tactique au ras du relief et saturez de leurres thermiques.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;INTÉGRITÉ DU COCKPIT :&lt;/font&gt; L'abandon de l'avion ou l'éjection met fin immédiatement à la mission par un échec. Conservez les commandes jusqu'au poser sécurisé.</French>
+            <Spanish>&lt;font color='#ff6666'&gt;DISCRIMINACIÓN DE BLANCOS:&lt;/font&gt; Identificación positiva obligatoria antes de disparar cerca de tropas del RACS.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;AMENAZA ANTIAÉREA:&lt;/font&gt; Blindados Cheetah y misiles Titan desplegados por la AAF. Vuele a baja cota y use bengalas.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;ABANDONO DE CABINA:&lt;/font&gt; La eyección o salida de la cabina falla la misión de inmediato.</Spanish>
+            <German>&lt;font color='#ff6666'&gt;ZIELIDENTIFIKATION:&lt;/font&gt; Positive Identifikation ist vor jedem Waffeneinsatz nahe verbündeter Linien Pflicht. Eigenbeschuss ist unzulässig.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;FLUGABWEHR-BEDROHUNG:&lt;/font&gt; AAF setzt Cheetah-Radapanzer und Titan-Flugabwehr ein. Tiefflug und Täuschkörper nutzen.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;COCKPIT-VERLASSEN:&lt;/font&gt; Notausstieg oder Ejektion beendet die Mission sofort als Niederlage.</German>
+            <Italian>&lt;font color='#ff6666'&gt;IDENTIFICAZIONE OBIETTIVI:&lt;/font&gt; Identificazione certa obbligatoria prima di ogni sgancio vicino alle posizioni RACS.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;MINACCIA ANTIAEREA:&lt;/font&gt; La AAF impiega semoventi Cheetah e missili Titan. Volo a bassa quota e contromisure.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;ABBANDONO COCKPIT:&lt;/font&gt; L'uscita o l'espulsione dal jet determina il fallimento immediato.</Italian>
+            <Polish>&lt;font color='#ff6666'&gt;IDENTYFIKACJA CELÓW:&lt;/font&gt; Bezwzględna identyfikacja przed zrzutem uzbrojenia w pobliżu sojuszniczych pozycji RACS.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;ZAGROŻENIE PRZECIWLOTNICZE:&lt;/font&gt; AAF operuje działami Cheetah i pociskami Titan. Stosuj maskowanie terenem i flary.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;ZASADA KOKPITU:&lt;/font&gt; Katapultowanie powoduje natychmiastowe zakończenie misji porażką.</Polish>
+            <Portuguese>&lt;font color='#ff6666'&gt;DISCRIMINAÇÃO DE ALVOS:&lt;/font&gt; Identificação positiva obrigatória perto de linhas amigas do RACS.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;AMEAÇA ANTIAÉREA:&lt;/font&gt; A AAF mobilizou sistemas Cheetah e mísseis Titan. Utilize voo rasante e contramedidas.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;PERMANÊNCIA NO COCKPIT:&lt;/font&gt; Abandonar o caça ou ejetar resulta na derrota imediata da missão.</Portuguese>
+            <Russian>&lt;font color='#ff6666'&gt;ОПОЗНАВАНИЕ ЦЕЛЕЙ:&lt;/font&gt; Точное опознавание обязательно перед открытием огня вблизи позиций RACS. Дружественный огонь недопустим.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;ПРОТИВОВОЗДУШНАЯ ОБОРОНА:&lt;/font&gt; Противник использует ЗСУ Cheetah и ПЗРК Titan. Применяйте огибание рельефа и ловушки.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;ОТКАЗ ОТ ЭВАКУАЦИИ:&lt;/font&gt; Катапультирование или выход из кабины ведет к немедленному поражению.</Russian>
+            <Czech>&lt;font color='#ff6666'&gt;IDENTIFIKACE CÍLŮ:&lt;/font&gt; Pozitivní identifikace před útokem v blízkosti jednotek RACS je povinná.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;PROTILETECKÁ HROZBA:&lt;/font&gt; AAF nasazuje systémy Cheetah a střely Titan. Využívejte přízemní let a klamné cíle.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;ZÁKAZ OPUŠTĚNÍ KOKPITU:&lt;/font&gt; Katapultáž znamená okamžitý neúspěch mise.</Czech>
+            <Korean>&lt;font color='#ff6666'&gt;표적 식별:&lt;/font&gt; RACS 전선 인근 타격 시 피아식별이 필수입니다. 아군 오사는 엄벌 대상입니다.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;대공 위협:&lt;/font&gt; AAF는 치타 대공포와 타이탄 휴대용 미사일을 운용 중입니다. 저고도 지형 차폐 및 플레어를 전개하십시오.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;기체 이탈 금지:&lt;/font&gt; 사출 또는 조종석 이탈 시 즉시 패배 처리됩니다.</Korean>
+            <Japanese>&lt;font color='#ff6666'&gt;目標識別:&lt;/font&gt; RACS前線付近での攻撃前には目視またはレーダーによる確実な目標識別が必須です。誤爆は厳禁。&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;防空脅威:&lt;/font&gt; AAFはチーター対空自走砲およびタイタン携帯対空ミサイルを展開中。超低空飛行とフレアを活用せよ。&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;コックピット規律:&lt;/font&gt; 射出またはコックピット離脱は即座に作戦失敗となります。</Japanese>
+            <Chinese>&lt;font color='#ff6666'&gt;目標識別：&lt;/font&gt; 在 RACS 前線附近投放武器前必須明確識別目標，嚴禁誤擊友軍。&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;防空威脅：&lt;/font&gt; AAF 部署了獵豹雷達防空車與泰坦便攜防空飛彈。請利用貼地遮蔽與熱誘彈進行突破。&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;禁止離機：&lt;/font&gt; 彈射跳傘或離開座艙將直接判定任務失敗。</Chinese>
+            <Chinesesimp>&lt;font color='#ff6666'&gt;目标识别：&lt;/font&gt; 在 RACS 前线附近投放武器前必须明确识别目标，严禁误击友军。&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;防空威胁：&lt;/font&gt; AAF 部署了猎豹雷达防空车与泰坦便携防空导弹。请利用贴地遮蔽与热诱弹进行突破。&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;禁止离机：&lt;/font&gt; 弹射跳伞或离开座舱将直接判定任务失败。</Chinesesimp>
+            <Turkish>&lt;font color='#ff6666'&gt;HEDEF TESPİTİ:&lt;/font&gt; RACS hatları yakınında mühimmat bırakmadan önce kesin hedef tespiti şarttır. Dost ateşi affedilmez.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff6666'&gt;HAVA SAVUNMA TEHDİDİ:&lt;/font&gt; AAF Cheetah uçaksavarları ve Titan füzeleri kullanmaktadır. Alçak irtifa uçuşu ve flare kullanın.&lt;br/&gt;&lt;br/&gt;&lt;font color='#ff0000'&gt;KOKPİT BÜTÜNLÜĞÜ:&lt;/font&gt; Uçaktan atlamak veya terk etmek görevin anında başarısız olmasına sebep olur.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Briefing_Signal_Title">
+            <Original>V. SIGNALS &amp; COMMUNICATIONS</Original>
+            <English>V. SIGNALS &amp; COMMUNICATIONS</English>
+            <French>V. SIGNAUX &amp; TRANSMISSIONS</French>
+            <Spanish>V. SEÑALES Y COMUNICACIONES</Spanish>
+            <German>V. FUNK &amp; SIGNALE</German>
+            <Italian>V. SEGNALI E COMUNICAZIONI</Italian>
+            <Polish>V. ŁĄCZNOŚĆ I SYGNAŁY</Polish>
+            <Portuguese>V. SINAIS E COMUNICAÇÕES</Portuguese>
+            <Russian>V. СВЯЗЬ И СИГНАЛЫ</Russian>
+            <Czech>V. SPOJENÍ A SIGNÁLY</Czech>
+            <Korean>V. 통신 및 신호</Korean>
+            <Japanese>V. 通信および信号</Japanese>
+            <Chinese>V. 通訊與信號</Chinese>
+            <Chinesesimp>V. 通讯与信号</Chinesesimp>
+            <Turkish>V. MUHABERE VE SİNYALLER</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Briefing_Signal_Text">
+            <Original>&lt;font color='#00d070'&gt;ATC / Sahrani Airfield Control:&lt;/font&gt; VHF Channel 1&lt;br/&gt;&lt;font color='#00d070'&gt;Tactical AWACS Radar:&lt;/font&gt; Magic-1 (Overlord Net)&lt;br/&gt;&lt;font color='#00d070'&gt;Joint Operations Command (HQ):&lt;/font&gt; High Command Grid Net&lt;br/&gt;&lt;font color='#00d070'&gt;Emergency Distress Beacon:&lt;/font&gt; Guard 243.0 MHz</Original>
+            <English>&lt;font color='#00d070'&gt;ATC / Sahrani Airfield Control:&lt;/font&gt; VHF Channel 1&lt;br/&gt;&lt;font color='#00d070'&gt;Tactical AWACS Radar:&lt;/font&gt; Magic-1 (Overlord Net)&lt;br/&gt;&lt;font color='#00d070'&gt;Joint Operations Command (HQ):&lt;/font&gt; High Command Grid Net&lt;br/&gt;&lt;font color='#00d070'&gt;Emergency Distress Beacon:&lt;/font&gt; Guard 243.0 MHz</English>
+            <French>&lt;font color='#00d070'&gt;Tour de contrôle Sahrani / ATC :&lt;/font&gt; Canal 1 VHF&lt;br/&gt;&lt;font color='#00d070'&gt;AWACS Radar Tactique :&lt;/font&gt; Magic-1 (Réseau Overlord)&lt;br/&gt;&lt;font color='#00d070'&gt;Commandement Interarmées (QG) :&lt;/font&gt; Réseau Opérationnel Grille&lt;br/&gt;&lt;font color='#00d070'&gt;Balise de détresse de secours :&lt;/font&gt; Guard 243.0 MHz</French>
+            <Spanish>&lt;font color='#00d070'&gt;Torre / Control Sahrani:&lt;/font&gt; Canal 1 VHF&lt;br/&gt;&lt;font color='#00d070'&gt;AWACS Táctico:&lt;/font&gt; Magic-1 (Red Overlord)&lt;br/&gt;&lt;font color='#00d070'&gt;Mando Conjunto (QG):&lt;/font&gt; Red Operativa&lt;br/&gt;&lt;font color='#00d070'&gt;Baliza de emergencia:&lt;/font&gt; Guard 243.0 MHz</Spanish>
+            <German>&lt;font color='#00d070'&gt;Tower / Sahrani ATC:&lt;/font&gt; Kanal 1 VHF&lt;br/&gt;&lt;font color='#00d070'&gt;Taktisches AWACS:&lt;/font&gt; Magic-1 (Netz Overlord)&lt;br/&gt;&lt;font color='#00d070'&gt;Oberkommando (HQ):&lt;/font&gt; Führungsnetz&lt;br/&gt;&lt;font color='#00d070'&gt;Notfunkbake:&lt;/font&gt; Guard 243.0 MHz</German>
+            <Italian>&lt;font color='#00d070'&gt;Torre / Controllo Sahrani:&lt;/font&gt; Canale 1 VHF&lt;br/&gt;&lt;font color='#00d070'&gt;AWACS Tattico:&lt;/font&gt; Magic-1 (Rete Overlord)&lt;br/&gt;&lt;font color='#00d070'&gt;Comando Operazioni (HQ):&lt;/font&gt; Rete Tattica&lt;br/&gt;&lt;font color='#00d070'&gt;Faro d'emergenza:&lt;/font&gt; Guard 243.0 MHz</Italian>
+            <Polish>&lt;font color='#00d070'&gt;Wieża / Kontrola Sahrani:&lt;/font&gt; Kanał 1 VHF&lt;br/&gt;&lt;font color='#00d070'&gt;AWACS Taktyczny:&lt;/font&gt; Magic-1 (Sieć Overlord)&lt;br/&gt;&lt;font color='#00d070'&gt;Dowództwo Połączone (HQ):&lt;/font&gt; Sieć Operacyjna&lt;br/&gt;&lt;font color='#00d070'&gt;Nadajnik ratunkowy:&lt;/font&gt; Guard 243.0 MHz</Polish>
+            <Portuguese>&lt;font color='#00d070'&gt;Torre / Controlo Sahrani:&lt;/font&gt; Canal 1 VHF&lt;br/&gt;&lt;font color='#00d070'&gt;AWACS Tático:&lt;/font&gt; Magic-1 (Rede Overlord)&lt;br/&gt;&lt;font color='#00d070'&gt;Comando Conjunto (QG):&lt;/font&gt; Rede Operacional&lt;br/&gt;&lt;font color='#00d070'&gt;Baliza de emergência:&lt;/font&gt; Guard 243.0 MHz</Portuguese>
+            <Russian>&lt;font color='#00d070'&gt;Вышка / Диспетчер Сахрани:&lt;/font&gt; Канал 1 VHF&lt;br/&gt;&lt;font color='#00d070'&gt;Тактический АВАКС:&lt;/font&gt; Magic-1 (Сеть Overlord)&lt;br/&gt;&lt;font color='#00d070'&gt;Объединенный штаб (HQ):&lt;/font&gt; Оперативная сеть&lt;br/&gt;&lt;font color='#00d070'&gt;Аварийный радиомаяк:&lt;/font&gt; Guard 243.0 МГц</Russian>
+            <Czech>&lt;font color='#00d070'&gt;Věž / Řízení Sahrani:&lt;/font&gt; Kanál 1 VHF&lt;br/&gt;&lt;font color='#00d070'&gt;Taktický AWACS:&lt;/font&gt; Magic-1 (Síť Overlord)&lt;br/&gt;&lt;font color='#00d070'&gt;Společné velitelství (HQ):&lt;/font&gt; Operační síť&lt;br/&gt;&lt;font color='#00d070'&gt;Nouzový maják:&lt;/font&gt; Guard 243.0 MHz</Czech>
+            <Korean>&lt;font color='#00d070'&gt;사라니 비행장 관제탑:&lt;/font&gt; VHF 채널 1&lt;br/&gt;&lt;font color='#00d070'&gt;전술 AWACS 조기경보기:&lt;/font&gt; 매직-1 (오버로드 망)&lt;br/&gt;&lt;font color='#00d070'&gt;합동작전사령부 (HQ):&lt;/font&gt; 작전 지휘망&lt;br/&gt;&lt;font color='#00d070'&gt;비상 조난 신호:&lt;/font&gt; 가드 243.0 MHz</Korean>
+            <Japanese>&lt;font color='#00d070'&gt;サフラニ飛行場管制塔:&lt;/font&gt; VHF チャンネル 1&lt;br/&gt;&lt;font color='#00d070'&gt;戦術AWACSレーダー:&lt;/font&gt; マジック-1 (オーヴァーロード網)&lt;br/&gt;&lt;font color='#00d070'&gt;統合作戦司令部 (HQ):&lt;/font&gt; 作戦指揮網&lt;br/&gt;&lt;font color='#00d070'&gt;緊急遭難ビーコン:&lt;/font&gt; ガード 243.0 MHz</Japanese>
+            <Chinese>&lt;font color='#00d070'&gt;薩赫拉尼機場塔台：&lt;/font&gt; VHF 頻道 1&lt;br/&gt;&lt;font color='#00d070'&gt;戰術預警機（AWACS）：&lt;/font&gt; Magic-1（霸王通訊網）&lt;br/&gt;&lt;font color='#00d070'&gt;聯合作戰司令部（HQ）：&lt;/font&gt; 作戰指揮網&lt;br/&gt;&lt;font color='#00d070'&gt;緊急求救信標：&lt;/font&gt; Guard 243.0 MHz</Chinese>
+            <Chinesesimp>&lt;font color='#00d070'&gt;萨赫拉尼机场塔台：&lt;/font&gt; VHF 频道 1&lt;br/&gt;&lt;font color='#00d070'&gt;战术预警机（AWACS）：&lt;/font&gt; Magic-1（霸王通讯网）&lt;br/&gt;&lt;font color='#00d070'&gt;联合作战司令部（HQ）：&lt;/font&gt; 作战指挥网&lt;br/&gt;&lt;font color='#00d070'&gt;紧急求救信标：&lt;/font&gt; Guard 243.0 MHz</Chinesesimp>
+            <Turkish>&lt;font color='#00d070'&gt;Sahrani Meydan Kulesi:&lt;/font&gt; VHF Kanal 1&lt;br/&gt;&lt;font color='#00d070'&gt;Taktik AWACS Radarı:&lt;/font&gt; Magic-1 (Overlord Ağı)&lt;br/&gt;&lt;font color='#00d070'&gt;Müşterek Harekât Komutanlığı (HQ):&lt;/font&gt; Komuta Muhabere Ağı&lt;br/&gt;&lt;font color='#00d070'&gt;Acil İmdat Sinyali:&lt;/font&gt; Guard 243.0 MHz</Turkish>
+        </Key>
+    </Package>
+    <Package name="Spawn">
+        <Key ID="STR_MAIN_MENU_TITLE">
+            <Original>OPERATION ROYAL ALLIANCE — TACTICAL LAUNCH PANEL</Original>
+            <English>OPERATION ROYAL ALLIANCE — TACTICAL LAUNCH PANEL</English>
+            <French>OPERATION ROYAL ALLIANCE — PANNEAU DE COMMANDEMENT</French>
+            <Spanish>OPERATION ROYAL ALLIANCE — PANEL DE CONTROL TÁCTICO</Spanish>
+            <German>OPERATION ROYAL ALLIANCE — TAKTISCHE EINSATZZENTRALE</German>
+            <Italian>OPERATION ROYAL ALLIANCE — PANNELLO DI COMANDO</Italian>
+            <Polish>OPERATION ROYAL ALLIANCE — PANEL DOWODZENIA</Polish>
+            <Portuguese>OPERATION ROYAL ALLIANCE — PAINEL DE COMANDO TÁTICO</Portuguese>
+            <Russian>OPERATION ROYAL ALLIANCE — ПАНЕЛЬ УПРАВЛЕНИЯ</Russian>
+            <Czech>OPERATION ROYAL ALLIANCE — TAKTICKÝ PANEL</Czech>
+            <Korean>OPERATION ROYAL ALLIANCE — 전술 작전 패널</Korean>
+            <Japanese>OPERATION ROYAL ALLIANCE — 作戦パネル</Japanese>
+            <Chinese>OPERATION ROYAL ALLIANCE — 戰術指揮面板</Chinese>
+            <Chinesesimp>OPERATION ROYAL ALLIANCE — 战术指挥面板</Chinesesimp>
+            <Turkish>OPERATION ROYAL ALLIANCE — TAKTİK GÖREV PANELİ</Turkish>
+        </Key>
+        <Key ID="STR_LABEL_VEHICLE_CAM">
+            <Original>VEHICLE CAMERA PREVIEW</Original>
+            <English>VEHICLE CAMERA PREVIEW</English>
+            <French>APERÇU CAMÉRA VÉHICULE</French>
+            <Spanish>VISTA DE CÁMARA DE VEHÍCULO</Spanish>
+            <German>FAHRZEUG KAMERA VORSCHAU</German>
+            <Italian>ANTEPRIMA TELECAMERA VEICOLO</Italian>
+            <Polish>PODGLĄD KAMERY POJAZDU</Polish>
+            <Portuguese>VISUALIZAÇÃO DA CÂMERA DO VEÍCULO</Portuguese>
+            <Russian>ПРЕДПРОСМОТР КАМЕРЫ ТЕХНИКИ</Russian>
+            <Czech>NÁHLED KAMERY VOZIDLA</Czech>
+            <Korean>차량 카메라 미리보기</Korean>
+            <Japanese>車両カメラ プレビュー</Japanese>
+            <Chinese>車輛攝影機預覽</Chinese>
+            <Chinesesimp>车辆摄像机预览</Chinesesimp>
+            <Turkish>ARAÇ KAMERA ÖNİZLEME</Turkish>
+        </Key>
+        <Key ID="STR_LABEL_VEHICLE_SELECT">
+            <Original>VEHICLE SELECTION</Original>
+            <English>VEHICLE SELECTION</English>
+            <French>CHOIX DU VÉHICULE</French>
+            <Spanish>SELECCIÓN DE VEHÍCULO</Spanish>
+            <German>FAHRZEUGAUSWAHL</German>
+            <Italian>SELEZIONE VEICOLO</Italian>
+            <Polish>WYBÓR POJAZDU</Polish>
+            <Portuguese>SELEÇÃO DE VEÍCULO</Portuguese>
+            <Russian>ВЫБОР ТЕХНИКИ</Russian>
+            <Czech>VÝBĚR VOZIDLA</Czech>
+            <Korean>차량 선택</Korean>
+            <Japanese>車両選択</Japanese>
+            <Chinese>車輛選擇</Chinese>
+            <Chinesesimp>车辆选择</Chinesesimp>
+            <Turkish>ARAÇ SEÇİMİ</Turkish>
+        </Key>
+        <Key ID="STR_LABEL_SELECT_MISSION">
+            <Original>SELECT MISSION</Original>
+            <English>SELECT MISSION</English>
+            <French>SÉLECTIONNER LA MISSION</French>
+            <Spanish>SELECCIONAR MISIÓN</Spanish>
+            <German>MISSION AUSWÄHLEN</German>
+            <Italian>SELEZIONA MISSIONE</Italian>
+            <Polish>WYBIERZ MISJĘ</Polish>
+            <Portuguese>SELECIONAR MISSÃO</Portuguese>
+            <Russian>ВЫБРАТЬ МИССИЮ</Russian>
+            <Czech>VYBRAT MISI</Czech>
+            <Korean>임무 선택</Korean>
+            <Japanese>ミッション選択</Japanese>
+            <Chinese>選擇任務</Chinese>
+            <Chinesesimp>选择任务</Chinesesimp>
+            <Turkish>GÖREV SEÇ</Turkish>
+        </Key>
+        <Key ID="STR_LABEL_ENVIRONMENT">
+            <Original>ENVIRONMENT &amp; WEATHER</Original>
+            <English>ENVIRONMENT &amp; WEATHER</English>
+            <French>ENVIRONNEMENT &amp; MÉTÉO</French>
+            <Spanish>ENTORNO Y CLIMA</Spanish>
+            <German>UMGEBUNG &amp; WETTER</German>
+            <Italian>AMBIENTE E METEO</Italian>
+            <Polish>ŚRODOWISKO I POGODA</Polish>
+            <Portuguese>AMBIENTE E CLIMA</Portuguese>
+            <Russian>ОКРУЖЕНИЕ И ПОГОДА</Russian>
+            <Czech>PROSTŘEDÍ A POČASÍ</Czech>
+            <Korean>환경 및 날씨</Korean>
+            <Japanese>環境と天候</Japanese>
+            <Chinese>環境與天候</Chinese>
+            <Chinesesimp>环境与天候</Chinesesimp>
+            <Turkish>ÇEVRE VE HAVA DURUMU</Turkish>
+        </Key>
+        <Key ID="STR_LABEL_TIME">
+            <Original>TIME OF DAY</Original>
+            <English>TIME OF DAY</English>
+            <French>HEURE DE LA JOURNÉE</French>
+            <Spanish>HORA DEL DÍA</Spanish>
+            <German>TAGESZEIT</German>
+            <Italian>ORA DEL GIORNO</Italian>
+            <Polish>PORA DNIA</Polish>
+            <Portuguese>HORA DO DIA</Portuguese>
+            <Russian>ВРЕМЯ СУТОК</Russian>
+            <Czech>DENNÍ DOBA</Czech>
+            <Korean>하루 중 시간</Korean>
+            <Japanese>時間帯</Japanese>
+            <Chinese>一天中的時間</Chinese>
+            <Chinesesimp>一天中的时间</Chinesesimp>
+            <Turkish>GÜNÜN SAATİ</Turkish>
+        </Key>
+        <Key ID="STR_LABEL_CLOUDS">
+            <Original>CLOUD COVER (OVERCAST)</Original>
+            <English>CLOUD COVER (OVERCAST)</English>
+            <French>COUVERTURE NUAGEUSE</French>
+            <Spanish>COBERTURA DE NUBES</Spanish>
+            <German>BEWÖLKUNG</German>
+            <Italian>COPERTURA NUVOLOSA</Italian>
+            <Polish>ZACHMURZENIE</Polish>
+            <Portuguese>COBERTURA DE NUVENS</Portuguese>
+            <Russian>ОБЛАЧНОСТЬ</Russian>
+            <Czech>OBLAČNOST</Czech>
+            <Korean>구름 양 (날씨)</Korean>
+            <Japanese>雲量</Japanese>
+            <Chinese>雲量 (天候)</Chinese>
+            <Chinesesimp>云量 (天候)</Chinesesimp>
+            <Turkish>BULUT ORANI</Turkish>
+        </Key>
+        <Key ID="STR_LABEL_FOG">
+            <Original>FOG DENSITY</Original>
+            <English>FOG DENSITY</English>
+            <French>DENSITÉ DU BROUILLARD</French>
+            <Spanish>DENSIDAD DE LA NIEBLA</Spanish>
+            <German>NEBELDICHTE</German>
+            <Italian>DENSITÀ DELLA NEBBIA</Italian>
+            <Polish>GĘSTOŚĆ MGŁY</Polish>
+            <Portuguese>DENSIDADE DE NEVOEIRO</Portuguese>
+            <Russian>ГУСТОТА ТУМАНА</Russian>
+            <Czech>HUSTOTA MLHY</Czech>
+            <Korean>안개 농도</Korean>
+            <Japanese>霧の濃さ</Japanese>
+            <Chinese>霧氣濃度</Chinese>
+            <Chinesesimp>雾气浓度</Chinesesimp>
+            <Turkish>SIS YOĞUNLUĞU</Turkish>
+        </Key>
+        <Key ID="STR_DEPLOYMENT_SECTOR">
+            <Original>DEPLOYMENT SECTOR</Original>
+            <English>DEPLOYMENT SECTOR</English>
+            <French>SECTEUR DE DÉPLOIEMENT</French>
+            <Spanish>SECTOR DE DESPLIEGUE</Spanish>
+            <German>EINSATZSEKTOR</German>
+            <Italian>SETTORE DI DISPIEGAMENTO</Italian>
+            <Polish>SEKTOR ROZMIESZCZENIA</Polish>
+            <Portuguese>SETOR DE DESLOCAMENTO</Portuguese>
+            <Russian>СЕКТОР РАЗВЕРТЫВАНИЯ</Russian>
+            <Czech>SEKTOR ROZMÍSTĚNÍ</Czech>
+            <Korean>배치 구역</Korean>
+            <Japanese>展開セクター</Japanese>
+            <Chinese>部署區域</Chinese>
+            <Chinesesimp>部署区域</Chinesesimp>
+            <Turkish>SEKTÖR SEÇİMİ</Turkish>
+        </Key>
+        <Key ID="STR_INSERTION_VECTOR">
+            <Original>INSERTION METHOD</Original>
+            <English>INSERTION METHOD</English>
+            <French>VECTEUR D'INSERTION</French>
+            <Spanish>MÉTODO DE INSERCIÓN</Spanish>
+            <German>EINSATZMETHODE</German>
+            <Italian>METODO DI INSERIMENTO</Italian>
+            <Polish>METODA INFILTRACJI</Polish>
+            <Portuguese>MÉTODO DE INSERÇÃO</Portuguese>
+            <Russian>МЕТОД ИНФИЛЬТРАЦИИ</Russian>
+            <Czech>METODA VÝSADKU</Czech>
+            <Korean>침투 방법</Korean>
+            <Japanese>潜入方法</Japanese>
+            <Chinese>滲透方式</Chinese>
+            <Chinesesimp>渗透方式</Chinesesimp>
+            <Turkish>İNTİKAL YÖNTEMİ</Turkish>
+        </Key>
+        <Key ID="STR_LABEL_TACTICAL_DEPLOYMENT">
+            <Original>TACTICAL DEPLOYMENT</Original>
+            <English>TACTICAL DEPLOYMENT</English>
+            <French>DÉPLOIEMENT TACTIQUE</French>
+            <Spanish>DESPLIEGUE TÁCTICO</Spanish>
+            <German>TAKTISCHER EINSATZ</German>
+            <Italian>DISPIEGAMENTO TATTICO</Italian>
+            <Polish>ROZMIESZCZENIE TAKTYCZNE</Polish>
+            <Portuguese>DESLOCAMENTO TÁTICO</Portuguese>
+            <Russian>ТАКТИЧЕСКОЕ РАЗВЕРТЫВАНИЕ</Russian>
+            <Czech>TAKTICKÉ ROZMÍSTĚNÍ</Czech>
+            <Korean>전술 배치</Korean>
+            <Japanese>戦術展開</Japanese>
+            <Chinese>戰術部署</Chinese>
+            <Chinesesimp>战术部署</Chinesesimp>
+            <Turkish>TAKTİK DEPLASMAN</Turkish>
+        </Key>
+        <Key ID="STR_INS_HELI">
+            <Original>Helicopter Insertion (LZ Touchdown)</Original>
+            <English>Helicopter Insertion (LZ Touchdown)</English>
+            <French>Hélicoptère (Dépose LZ)</French>
+            <Spanish>Helicóptero (Toma LZ)</Spanish>
+            <German>Hubschrauber (Landung LZ)</German>
+            <Italian>Elicottero (Sbarco LZ)</Italian>
+            <Polish>Śmigłowiec (Lądowanie LZ)</Polish>
+            <Portuguese>Helicóptero (Pouso LZ)</Portuguese>
+            <Russian>Вертолет (Высадка LZ)</Russian>
+            <Czech>Vrtulník (Výsadek LZ)</Czech>
+            <Korean>헬기 (LZ 강하)</Korean>
+            <Japanese>ヘリ (LZ着陸)</Japanese>
+            <Chinese>直升機 (LZ 降落)</Chinese>
+            <Chinesesimp>直升机 (LZ 降落)</Chinesesimp>
+            <Turkish>Helikopter (LZ İnişi)</Turkish>
+        </Key>
+        <Key ID="STR_INS_AIRDROP">
+            <Original>Airplane (Parachute Drop)</Original>
+            <English>Airplane (Parachute Drop)</English>
+            <French>Avion (Parachutage TAP)</French>
+            <Spanish>Avión (Paracaidismo TAP)</Spanish>
+            <German>Flugzeug (Fallschirmsprung)</German>
+            <Italian>Aereo (Lancio Paracadute)</Italian>
+            <Polish>Samolot (Zrzut spadochronowy)</Polish>
+            <Portuguese>Avião (Salto de Paraquedas)</Portuguese>
+            <Russian>Самолет (Парашютный десант)</Russian>
+            <Czech>Letoun (Padákový zoskok)</Czech>
+            <Korean>수송기 (낙하산 강하)</Korean>
+            <Japanese>航空機 (パラシュート降下)</Japanese>
+            <Chinese>運輸機 (傘降)</Chinese>
+            <Chinesesimp>运输机 (伞降)</Chinesesimp>
+            <Turkish>Uçak (Paraşütlü Atlayış)</Turkish>
+        </Key>
+        <Key ID="STR_MAIN_MENU_LAUNCH">
+            <Original>EXECUTE OPERATION</Original>
+            <English>EXECUTE OPERATION</English>
+            <French>LANCER L'OPÉRATION</French>
+            <Spanish>EJECUTAR OPERACIÓN</Spanish>
+            <German>OPERATION STARTEN</German>
+            <Italian>AVVIA OPERAZIONE</Italian>
+            <Polish>ROZPOCZNIJ OPERACJĘ</Polish>
+            <Portuguese>EXECUTAR OPERAÇÃO</Portuguese>
+            <Russian>НАЧАТЬ ОПЕРАЦИЮ</Russian>
+            <Czech>ZAHÁJIT OPERACI</Czech>
+            <Korean>작전 개시</Korean>
+            <Japanese>作戦開始</Japanese>
+            <Chinese>執行任務</Chinese>
+            <Chinesesimp>执行任务</Chinesesimp>
+            <Turkish>OPERASYONU BAŞLAT</Turkish>
+        </Key>
+        <Key ID="STR_FORMAT_SECTOR_GRID">
+            <Original>Sector %1 (Grid %2)</Original>
+            <English>Sector %1 (Grid %2)</English>
+            <French>Secteur %1 (Grille %2)</French>
+            <Spanish>Sector %1 (Cuadrícula %2)</Spanish>
+            <German>Sektor %1 (Gitter %2)</German>
+            <Italian>Settore %1 (Griglia %2)</Italian>
+            <Polish>Sektor %1 (Siatka %2)</Polish>
+            <Portuguese>Setor %1 (Grade %2)</Portuguese>
+            <Russian>Сектор %1 (Сетка %2)</Russian>
+            <Czech>Sektor %1 (Mřížka %2)</Czech>
+            <Korean>구역 %1 (격자 %2)</Korean>
+            <Japanese>セクター %1 (グリッド %2)</Japanese>
+            <Chinese>區域 %1 (網格 %2)</Chinese>
+            <Chinesesimp>区域 %1 (网格 %2)</Chinesesimp>
+            <Turkish>Sektör %1 (Izgara %2)</Turkish>
+        </Key>
+        <Key ID="STR_TASK_1_TITLE">
+            <Original>Mission 1: Tactical Reconnaissance</Original>
+            <English>Mission 1: Tactical Reconnaissance</English>
+            <French>Mission 1 : Reconnaissance Tactique</French>
+            <Spanish>Misión 1: Reconocimiento Táctico</Spanish>
+            <German>Mission 1: Taktische Aufklärung</German>
+            <Italian>Missione 1: Ricognizione Tattica</Italian>
+            <Polish>Misja 1: Rozpoznanie taktyczne</Polish>
+            <Portuguese>Missão 1: Reconhecimento Tático</Portuguese>
+            <Russian>Миссия 1: Тактическая разведка</Russian>
+            <Czech>Mise 1: Taktický průzkum</Czech>
+            <Korean>임무 1: 전술 정찰</Korean>
+            <Japanese>ミッション1: 戦術偵察</Japanese>
+            <Chinese>任務 1: 戰術偵察</Chinese>
+            <Chinesesimp>任务 1: 战术侦察</Chinesesimp>
+            <Turkish>Görev 1: Taktik Keşif</Turkish>
+        </Key>
+        <Key ID="STR_TASK_1_DESC">
+            <Original>Mission 1: Reconnaissance patrol in hostile Takistan territory. Detect enemy militia positions and secure the insertion LZ.</Original>
+            <English>Mission 1: Reconnaissance patrol in hostile Takistan territory. Detect enemy militia positions and secure the insertion LZ.</English>
+            <French>Mission 1 : Patrouille de reconnaissance en territoire ennemi à Takistan. Détecter les positions de la milice et sécuriser la LZ d'insertion.</French>
+            <Spanish>Misión 1: Patrulla de reconocimiento en territorio enemigo en Takistán. Detectar posiciones de las milicias y asegurar la LZ.</Spanish>
+            <German>Mission 1: Aufklärungspatrouille in feindlichem Takistan-Gebiet. Erfassen von Milizpositionen und Sichern der Landezone.</German>
+            <Italian>Missione 1: Pattuglia di ricognizione in territorio nemico a Takistan. Rilevare posizioni milizia e mettere in sicurezza la LZ.</Italian>
+            <Polish>Misja 1: Patrol rozpoznawczy na wrogim terytorium Takistanu. Wykryj pozycje milicji i zabezpiecz strefę lądowania LZ.</Polish>
+            <Portuguese>Missão 1: Patrulha de reconhecimento em território inimigo em Takistan. Detectar posições de milícias e proteger a LZ.</Portuguese>
+            <Russian>Миссия 1: Разведывательный патруль на вражеской территории Такистана. Обнаружить позиции ополчения и обезопасить LZ.</Russian>
+            <Czech>Mise 1: Průzkumná hlídka v nepřátelském terénu Takistánu. Zjistit pozice milicí a zajistit přistávací zónu LZ.</Czech>
+            <Korean>임무 1: 타키스탄 적 영토 내 전술 정찰 정찰대. 적 정찰 진지 탐지 및 강하 구역(LZ) 확보.</Korean>
+            <Japanese>ミッション1: タキスタン敵対地域での偵察パトロール。民兵の配置を検知し、挿入LZを確保せよ。</Japanese>
+            <Chinese>任務 1: 在扎爾加巴德/扎基斯坦敵方領土進行戰術偵察巡邏。偵測民兵陣地並確保降落區 (LZ) 安全。</Chinese>
+            <Chinesesimp>任务 1: 在扎尔加巴德/扎基斯坦敌方领土进行战术侦察巡逻。侦测民兵阵地并确保降落区 (LZ) 安全。</Chinesesimp>
+            <Turkish>Görev 1: Düşman Takistan bölgesinde keşif devriyesi. Milis mevzilerini tespit edin ve iniş bölgesini (LZ) emniyete alın.</Turkish>
+        </Key>
+        <Key ID="STR_TASK_2_TITLE">
+            <Original>Mission 2: Radio Depot Destruction</Original>
+            <English>Mission 2: Radio Depot Destruction</English>
+            <French>Mission 2 : Destruction du Dépôt Radio</French>
+            <Spanish>Misión 2: Destrucción del Depósito de Radio</Spanish>
+            <German>Mission 2: Zerstörung des Funkdepots</German>
+            <Italian>Missione 2: Distruzione Deposito Radio</Italian>
+            <Polish>Misja 2: Zniszczenie składu radiowego</Polish>
+            <Portuguese>Missão 2: Destruição do Depósito de Rádio</Portuguese>
+            <Russian>Миссия 2: Уничтожение радиосклада</Russian>
+            <Czech>Mise 2: Zničení rádiového skladu</Czech>
+            <Korean>임무 2: 무전 통신고 파괴</Korean>
+            <Japanese>ミッション2: 通信デポの破壊</Japanese>
+            <Chinese>任務 2: 摧毀無線電庫</Chinese>
+            <Chinesesimp>任务 2: 摧毁无线电库</Chinesesimp>
+            <Turkish>Görev 2: Telsiz Deposunun İmhası</Turkish>
+        </Key>
+        <Key ID="STR_TASK_2_DESC">
+            <Original>Mission 2: Infiltrate and destroy the enemy radio transmission post and secondary ammo dumps.</Original>
+            <English>Mission 2: Infiltrate and destroy the enemy radio transmission post and secondary ammo dumps.</English>
+            <French>Mission 2 : Infiltration et destruction du poste de transmission radio ennemi et des dépôts de munitions secondaires.</French>
+            <Spanish>Misión 2: Infiltración y destrucción del puesto de transmisión de radio enemigo y depósitos de munición secundarios.</Spanish>
+            <German>Mission 2: Infiltration und Zerstörung des feindlichen Funkübertragungspostens und sekundärer Munitionsdepots.</German>
+            <Italian>Missione 2: Infiltrazione e distruzione del posto di trasmissione radio nemico e dei depositi munizioni secondari.</Italian>
+            <Polish>Misja 2: Infiltracja i zniszczenie wrogiego posterunku radiowego oraz pomocniczych składów amunicji.</Polish>
+            <Portuguese>Missão 2: Infiltração e destruição do posto de transmissão de rádio inimigo e depósitos secundários de munição.</Portuguese>
+            <Russian>Миссия 2: Инфильтрация и уничтожение вражеского радиоузла и вторичных складов боеприпасов.</Russian>
+            <Czech>Mise 2: Infiltrace a zničení nepřátelského rádiového stanoviště a vedlejších skladů munice.</Czech>
+            <Korean>임무 2: 적 무전 통신소 및 부차적 탄약고 침투 및 파괴.</Korean>
+            <Japanese>ミッション2: 敵の無線通信拠点および副次弾薬庫への潜入と破壊。</Japanese>
+            <Chinese>任務 2: 滲透並摧毀敵方無線電中繼站及次級彈藥庫。</Chinese>
+            <Chinesesimp>任务 2: 渗透并摧毁敌方无线电中继站及次级弹药库。</Chinesesimp>
+            <Turkish>Görev 2: Düşman telsiz komuta merkezine ve ikincil mühimmat depolarına sızma ve imha.</Turkish>
+        </Key>
+        <Key ID="STR_TASK_3_TITLE">
+            <Original>Mission 3: HVT Infiltration &amp; Extraction</Original>
+            <English>Mission 3: HVT Infiltration &amp; Extraction</English>
+            <French>Mission 3 : Infiltration &amp; Extraction HVT</French>
+            <Spanish>Misión 3: Infiltración y Extracción de HVT</Spanish>
+            <German>Mission 3: HVT Infiltration &amp; Evakuierung</German>
+            <Italian>Missione 3: Infiltrazione ed Estrazione HVT</Italian>
+            <Polish>Misja 3: Infiltracja i ewakuacja HVT</Polish>
+            <Portuguese>Missão 3: Infiltração e Extração de HVT</Portuguese>
+            <Russian>Миссия 3: Инфильтрация и эвакуация HVT</Russian>
+            <Czech>Mise 3: Infiltrace a evakuace HVT</Czech>
+            <Korean>임무 3: HVT 침투 및 철수</Korean>
+            <Japanese>ミッション3: HVT潜入&amp;抽出</Japanese>
+            <Chinese>任務 3: 高價值目標 (HVT) 滲透與撤離</Chinese>
+            <Chinesesimp>任务 3: 高价值目标 (HVT) 渗透与撤离</Chinesesimp>
+            <Turkish>Görev 3: Yüksek Değerli Hedef (HVT) Sızma ve Tahliye</Turkish>
+        </Key>
+        <Key ID="STR_TASK_3_DESC">
+            <Original>Mission 3: Infiltrate the enemy fortified compound, neutralize the hostile commander, and execute immediate extraction.</Original>
+            <English>Mission 3: Infiltrate the enemy fortified compound, neutralize the hostile commander, and execute immediate extraction.</English>
+            <French>Mission 3 : Infiltrer la zone fortifiée ennemie, neutraliser le commandant adverse et procéder à l'évacuation d'urgence.</French>
+            <Spanish>Misión 3: Infiltrarse en la zona fortificada enemiga, neutralizar al comandante hostil y proceder a la extracción inmediata.</Spanish>
+            <German>Mission 3: Infiltration in die feindliche Befestigung, Ausschalten des feindlichen Kommandanten und sofortige Evakuierung.</German>
+            <Italian>Missione 3: Infiltrarsi nella zona fortificata nemica, neutralizzare il comandante avversario e procedere all'estrazione d'emergenza.</Italian>
+            <Polish>Misja 3: Infiltracja umocnionej strefy wroga, neutralizacja dowódcy przeciwnika i natychmiastowa ewakuacja.</Polish>
+            <Portuguese>Missão 3: Infiltrar a área fortificada inimiga, neutralizar o comandante adverso e proceder à extração de emergência.</Portuguese>
+            <Russian>Миссия 3: Проникнуть в укрепленный район противника, ликвидировать вражеского командира и выполнить срочную эвакуацию.</Russian>
+            <Czech>Mise 3: Infiltrace nepřátelské opevněné zóny, neutralizace nepřátelského velitele a okamžitá evakuace.</Czech>
+            <Korean>임무 3: 적 요새화 구역 침투, 적 지휘관 무력화 및 즉각 철수 실행.</Korean>
+            <Japanese>ミッション3: 敵の要塞化地域に潜入し、敵指揮官を無力化して緊急抽出を実施せよ。</Japanese>
+            <Chinese>任務 3: 滲透敵方防禦陣地，中和敵方指揮官並執行緊急撤離。</Chinese>
+            <Chinesesimp>任务 3: 渗透敌方防御阵地，中和敌方指挥官并执行紧急撤离。</Chinesesimp>
+            <Turkish>Görev 3: Düşman müstahkem bölgesine sızın, düşman komutanını etkisiz hale getirin ve acil tahliyeyi gerçekleştirin.</Turkish>
+        </Key>
+        <Key ID="STR_MAIN_MENU_OBJECTIVES">
+            <Original>OPERATIONAL OBJECTIVES</Original>
+            <English>OPERATIONAL OBJECTIVES</English>
+            <French>OBJECTIFS OPÉRATIONNELS</French>
+        </Key>
+        <Key ID="STR_TASK_MAN1">
+            <Original>Proceed to location</Original>
+            <English>Proceed to location</English>
+            <French>Se rendre sur les lieux</French>
+        </Key>
+        <Key ID="STR_TASK_MAN2">
+            <Original>Protect civilian population</Original>
+            <English>Protect civilian population</English>
+            <French>Protéger la population civile</French>
+        </Key>
+        <Key ID="STR_TASK_MAN3">
+            <Original>Safe extraction</Original>
+            <English>Safe extraction</English>
+            <French>Extraction en toute sécurité</French>
+        </Key>
+        <Key ID="STR_TASK_OPT1">
+            <Original>Free a captive</Original>
+            <English>Free a captive</English>
+            <French>Libérer un captif</French>
+        </Key>
+        <Key ID="STR_TASK_OPT2">
+            <Original>Eliminate enemy commander</Original>
+            <English>Eliminate enemy commander</English>
+            <French>Éliminer un commandant ennemi précis</French>
+        </Key>
+        <Key ID="STR_TASK_OPT3">
+            <Original>Defuse explosive charge</Original>
+            <English>Defuse explosive charge</English>
+            <French>Désamorcer une charge explosive</French>
+        </Key>
+        <Key ID="STR_TASK_OPT4">
+            <Original>Destroy transmission stations</Original>
+            <English>Destroy transmission stations</English>
+            <French>Détruire des stations de transmission</French>
+        </Key>
+        <Key ID="STR_TASK_OPT5">
+            <Original>Secure chemical tank</Original>
+            <English>Secure chemical tank</English>
+            <French>Sécuriser une citerne chimique</French>
+        </Key>
+        <Key ID="STR_TASK_OPT6">
+            <Original>Extract HVT via helicopter</Original>
+            <English>Extract HVT via helicopter</English>
+            <French>Embarquer l'HVT à bord de l'hélico</French>
+        </Key>
+        <Key ID="STR_TASK_OPT7">
+            <Original>Recover documents</Original>
+            <English>Recover documents</English>
+            <French>Récupérer des documents</French>
+        </Key>
+        <Key ID="STR_TASK_OPT8">
+            <Original>Destroy a Tigris AA</Original>
+            <English>Destroy a Tigris AA</English>
+            <French>Détruire un DCA Tigris</French>
+        </Key>
+        <Key ID="STR_TASK_OPT9">
+            <Original>Arrest militia leader</Original>
+            <English>Arrest militia leader</English>
+            <French>Arrêter un chef de milice ennemi</French>
+        </Key>
+        <Key ID="STR_ERR_NO_TASK">
+            <Original>YOU MUST SELECT AT LEAST ONE OPTIONAL OBJECTIVE!</Original>
+            <English>YOU MUST SELECT AT LEAST ONE OPTIONAL OBJECTIVE!</English>
+            <French>VOUS DEVEZ SÉLECTIONNER AU MOINS UN OBJECTIF OPTIONNEL !</French>
+        </Key>
+        <Key ID="STR_MAIN_MENU_RULES">
+            <Original>&lt;t color='#FFFF00' size='0.85'&gt;TACTICAL DIRECTIVES:&lt;br/&gt;- Choose 1 to 3 missions maximum.&lt;br/&gt;- You must call for extraction manually via Support (0-8-3).&lt;br/&gt;- Manage your squad's Rules of Engagement via the action menu (scroll wheel).&lt;br/&gt;- Without hostage escort, Command may assign an emergency tasking during operations.&lt;/t&gt;</Original>
+            <English>&lt;t color='#FFFF00' size='0.85'&gt;TACTICAL DIRECTIVES:&lt;br/&gt;- Choose 1 to 3 missions maximum.&lt;br/&gt;- You must call for extraction manually via Support (0-8-3).&lt;br/&gt;- Manage your squad's Rules of Engagement via the action menu (scroll wheel).&lt;br/&gt;- Without hostage escort, Command may assign an emergency tasking during operations.&lt;/t&gt;</English>
+            <French>&lt;t color='#FFFF00' size='0.85'&gt;DIRECTIVES TACTIQUES :&lt;br/&gt;- Choisissez 1 à 3 missions maximum.&lt;br/&gt;- L'extraction est manuelle : appelez le support (0-8-3).&lt;br/&gt;- Gérez l'engagement de votre escouade via le menu molette.&lt;br/&gt;- Sans prise en charge d'otage, le commandement peut vous assigner une mission d'urgence en cours d'opération.&lt;/t&gt;</French>
+            <Spanish>&lt;t color='#FFFF00' size='0.85'&gt;DIRECTIVAS TÁCTICAS:&lt;br/&gt;- Elige de 1 a 3 misiones máximo.&lt;br/&gt;- Debes solicitar la extracción manualmente (0-8-3).&lt;br/&gt;- Gestiona las reglas de combate de tu escuadrón a través del menú de acción.&lt;br/&gt;- Sin escolta de rehén, el mando puede asignarle una misión de emergencia durante la operación.&lt;/t&gt;</Spanish>
+            <Italian>&lt;t color='#FFFF00' size='0.85'&gt;DIRETTIVE TATTICHE:&lt;br/&gt;- Scegli da 1 a 3 missioni al massimo.&lt;br/&gt;- L'estrazione va richiesta manualmente tramite Supporto (0-8-3).&lt;br/&gt;- Gestisci le regole di ingaggio della squadra dal menu azioni.&lt;br/&gt;- Senza scorta di ostaggio, il comando può assegnare una missione di emergenza durante l'operazione.&lt;/t&gt;</Italian>
+            <German>&lt;t color='#FFFF00' size='0.85'&gt;TAKTISCHE DIREKTIVEN:&lt;br/&gt;- Wähle maximal 1 bis 3 Missionen.&lt;br/&gt;- Evakuierung muss manuell angefordert werden (0-8-3).&lt;br/&gt;- Verwalte die Einsatzregeln deines Trupps über das Aktionsmenü.&lt;br/&gt;- Ohne Geiselbegleitung kann das Kommando während des Einsatzes eine Noteinsatzmission zuweisen.&lt;/t&gt;</German>
+            <Polish>&lt;t color='#FFFF00' size='0.85'&gt;WYTYCZNE TAKTYCZNE:&lt;br/&gt;- Wybierz od 1 do 3 misji maksymalnie.&lt;br/&gt;- Ewakuację należy wezwać ręcznie przez menu wsparcia (0-8-3).&lt;br/&gt;- Zarządzaj zasadami zaangażowania drużyny przez menu akcji.&lt;br/&gt;- Bez eskorty zakładnika dowództwo może przydzielić misję alarmową w trakcie operacji.&lt;/t&gt;</Polish>
+            <Russian>&lt;t color='#FFFF00' size='0.85'&gt;ТАКТИЧЕСКИЕ ДИРЕКТИВЫ:&lt;br/&gt;- Выберите от 1 до 3 миссий.&lt;br/&gt;- Эвакуация вызывается вручную через меню поддержки (0-8-3).&lt;br/&gt;- Управляйте правилами ведения боя отряда через меню действий.&lt;br/&gt;- Без сопровождения заложника командование может назначить экстренную задачу в ходе операции.&lt;/t&gt;</Russian>
+            <Turkish>&lt;t color='#FFFF00' size='0.85'&gt;TAKTİK DİREKTİFLER:&lt;br/&gt;- En fazla 1 ila 3 görev seçin.&lt;br/&gt;- Tahliyeyi Destek menüsünden (0-8-3) manuel çağırmalısınız.&lt;br/&gt;- Manga angajman kurallarını aksiyon menüsünden yönetin.&lt;br/&gt;- Rehine eskortu yoksa, komuta harekat sırasında acil bir görev atayabilir.&lt;/t&gt;</Turkish>
+            <Japanese>&lt;t color='#FFFF00' size='0.85'&gt;戦術指示:&lt;br/&gt;- 最大1〜3つのミッションを選択。&lt;br/&gt;- 脱出はサポート(0-8-3)から手動で要請する必要があります。&lt;br/&gt;- アクションメニューから分隊の交戦規定を管理してください。&lt;br/&gt;- 人質護送がない場合、作戦中に司令部から緊急任務が割り当てられる可能性があります。&lt;/t&gt;</Japanese>
+            <Korean>&lt;t color='#FFFF00' size='0.85'&gt;전술 지침:&lt;br/&gt;- 최대 1~3개의 임무를 선택하세요.&lt;br/&gt;- 탈출은 지원 메뉴(0-8-3)를 통해 수동으로 요청해야 합니다.&lt;br/&gt;- 액션 메뉴를 통해 분대의 교전 수칙을 관리하세요.&lt;br/&gt;- 인질 호송이 없을 경우, 작전 중 사령부로부터 긴급 임무가 하달될 수 있습니다.&lt;/t&gt;</Korean>
+            <Chinese>&lt;t color='#FFFF00' size='0.85'&gt;战术指令：&lt;br/&gt;- 最多选择1至3个任务。&lt;br/&gt;- 必须通过支援菜单（0-8-3）手动呼叫撤离。&lt;br/&gt;- 通过操作菜单管理小队的交战规则。&lt;br/&gt;- 若无人质护送，指挥部可能会在行动期间指派紧急作战任务。&lt;/t&gt;</Chinese>
+            <Chinesesimp>&lt;t color='#FFFF00' size='0.85'&gt;战术指令：&lt;br/&gt;- 最多选择1至3个任务。&lt;br/&gt;- 必须通过支援菜单（0-8-3）手动呼叫撤离。&lt;br/&gt;- 通过操作菜单管理小队的交战规则。&lt;br/&gt;- 若无人质护送，指挥部可能会在行动期间指派紧急作战任务。&lt;/t&gt;</Chinesesimp>
+        </Key>
+        <Key ID="STR_OPTION_REBEL_AMBUSH">
+            <Original>Insurgent Threat (Rare civilian ambushes)</Original>
+            <English>Insurgent Threat (Rare civilian ambushes)</English>
+            <French>Menace insurgée (Rares embuscades civiles)</French>
+            <Spanish>Amenaza insurgente (Raras emboscadas civiles)</Spanish>
+            <German>Aufständischen-Bedrohung (Seltene Zivilisten-Hinterhalte)</German>
+            <Italian>Minaccia ribelle (Rare imboscate civili)</Italian>
+            <Polish>Zagrożenie powstańcze (Rzadkie zasadzki cywilne)</Polish>
+            <Portuguese>Ameaça insurgente (Raras emboscadas civis)</Portuguese>
+            <Russian>Угроза повстанцев (Редкие засады в гражданском)</Russian>
+            <Czech>Povstalecká hrozba (Vzácné léčky civilistů)</Czech>
+            <Korean>반군 위협 (드문 민간인 위장 매복)</Korean>
+            <Japanese>反乱軍の脅威 (民間人に偽装した奇襲)</Japanese>
+            <Chinese>叛軍威脅 (罕見的平民偽裝伏擊)</Chinese>
+            <Chinesesimp>叛军威胁 (罕见的平民伪装伏击)</Chinesesimp>
+            <Turkish>İsyancı Tehdidi (Nadir sivil pusuları)</Turkish>
+        </Key>
+        <Key ID="STR_MAIN_MENU_EXTRACTION_ALERT">
+            <Original>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ EXTRACTION NOTICE:&lt;br/&gt;Extraction is strictly MANUAL via radio Support (0-8-3), NEVER automatic! You can call it at any time.&lt;/t&gt;</Original>
+            <English>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ EXTRACTION NOTICE:&lt;br/&gt;Extraction is strictly MANUAL via radio Support (0-8-3), NEVER automatic! You can call it at any time.&lt;/t&gt;</English>
+            <French>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ AVIS D'EXTRACTION :&lt;br/&gt;L'extraction est strictement MANUELLE via le menu Support (0-8-3), JAMAIS automatique ! Vous pouvez l'appeler à tout moment.&lt;/t&gt;</French>
+            <Spanish>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ AVISO DE EXTRACCIÓN:&lt;br/&gt;¡La extracción es estrictamente MANUAL a través del menú Soporte (0-8-3), NUNCA automática! Puede solicitarla en cualquier momento.&lt;/t&gt;</Spanish>
+            <German>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ EVAKUIERUNGSHINWEIS:&lt;br/&gt;Die Evakuierung erfolgt ausschließlich MANUELL über das Funkmenü Support (0-8-3), NIEMALS automatisch! Sie kann jederzeit angefordert werden.&lt;/t&gt;</German>
+            <Italian>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ AVVISO DI ESTRAZIONE:&lt;br/&gt;L'estrazione è rigorosamente MANUALE tramite la radio Supporto (0-8-3), MAI automatica! Puoi richiederla in qualsiasi momento.&lt;/t&gt;</Italian>
+            <Polish>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ UWAGA DOTYCZĄCA EWAKUACJI:&lt;br/&gt;Ewakuacja jest wyłącznie RĘCZNA przez menu Wsparcia (0-8-3), NIGDY automatyczna! Możesz ją wezwać w dowolnym momencie.&lt;/t&gt;</Polish>
+            <Portuguese>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ AVISO DE EXTRAÇÃO:&lt;br/&gt;A extração é estritamente MANUAL através do menu Suporte (0-8-3), NUNCA automática! Pode solicitá-la a qualquer momento.&lt;/t&gt;</Portuguese>
+            <Russian>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ ВАЖНОЕ ПРЕДУПРЕЖДЕНИЕ:&lt;br/&gt;Эвакуация вызывается исключительно ВРУЧНУЮ через меню Поддержки (0-8-3), а НЕ автоматически! Вы можете запросить её в любой момент.&lt;/t&gt;</Russian>
+            <Czech>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ UPOZORNĚNÍ K EVAKUACI:&lt;br/&gt;Evakuace je striktně MANUÁLNÍ přes menu Podpory (0-8-3), NIKDY automatická! Můžete ji povolat kdykoliv.&lt;/t&gt;</Czech>
+            <Turkish>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ TAHLİYE UYARISI:&lt;br/&gt;Tahliye kesinlikle Destek menüsünden (0-8-3) MANUEL olarak çağrılır, ASLA otomatik gerçekleşmez! İstediğiniz an tahliye çağırabilirsiniz.&lt;/t&gt;</Turkish>
+            <Japanese>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ 脱出に関する重要警告:&lt;br/&gt;脱出はサポートメニュー(0-8-3)からの完全手動要請であり、自動では絶対に発生しません！いつでも好きなタイミングで要請可能です。&lt;/t&gt;</Japanese>
+            <Korean>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ 탈출 관련 중요 안내:&lt;br/&gt;탈출은 지원 메뉴(0-8-3)를 통해 100% 수동으로 요청해야 하며, 자동으로 진행되지 않습니다! 언제든지 원할 때 요청할 수 있습니다.&lt;/t&gt;</Korean>
+            <Chinese>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ 撤離重要提示：&lt;br/&gt;撤離行動必須由玩家透過支援選單 (0-8-3) 手動呼叫，絕非自動觸發！您可以在行動中隨時呼叫撤離。&lt;/t&gt;</Chinese>
+            <Chinesesimp>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ 撤离重要提示：&lt;br/&gt;撤离行动必须由玩家通过支援菜单 (0-8-3) 手动呼叫，绝非自动触发！您可以在行动中随时呼叫撤离。&lt;/t&gt;</Chinesesimp>
+        </Key>
+    </Package>
+    <Package name="UI">
+        <Key ID="STR_ORA_MENU_TITLE">
+            <Original>OPERATION ROYAL ALLIANCE — AIR FORCE COMMAND PANEL</Original>
+            <English>OPERATION ROYAL ALLIANCE — AIR FORCE COMMAND PANEL</English>
+            <French>OPERATION ROYAL ALLIANCE — PANNEAU DE COMMANDEMENT AÉRIEN</French>
+            <Spanish>OPERATION ROYAL ALLIANCE — PANEL DE MANDO DE LA FUERZA AÉREA</Spanish>
+            <German>OPERATION ROYAL ALLIANCE — LUFTWAFFEN-EINSATZZENTRALE</German>
+            <Italian>OPERATION ROYAL ALLIANCE — PANNELLO DI COMANDO AEREO</Italian>
+            <Polish>OPERATION ROYAL ALLIANCE — PANEL DOWODZENIA SIŁ POWIETRZNYCH</Polish>
+            <Portuguese>OPERATION ROYAL ALLIANCE — PAINEL DE COMANDO AÉREO</Portuguese>
+            <Russian>OPERATION ROYAL ALLIANCE — ПАНЕЛЬ УПРАВЛЕНИЯ ВВС</Russian>
+            <Czech>OPERATION ROYAL ALLIANCE — VELITELSKÝ PANEL LETECTVA</Czech>
+            <Korean>OPERATION ROYAL ALLIANCE — 공군 작전 지휘 패널</Korean>
+            <Japanese>OPERATION ROYAL ALLIANCE — 空軍作戦指揮パネル</Japanese>
+            <Chinese>OPERATION ROYAL ALLIANCE — 空軍作戰指揮面板</Chinese>
+            <Chinesesimp>OPERATION ROYAL ALLIANCE — 空军作战指挥面板</Chinesesimp>
+            <Turkish>OPERATION ROYAL ALLIANCE — HAVA KUVVETLERİ HAREKÂT PANELİ</Turkish>
+        </Key>
+        <Key ID="STR_ORA_HEADER_OBJECTIVES">
+            <Original>PRIMARY OPERATIONAL OBJECTIVES</Original>
+            <English>PRIMARY OPERATIONAL OBJECTIVES</English>
+            <French>OBJECTIFS OPÉRATIONNELS PRINCIPAUX</French>
+            <Spanish>OBJETIVOS OPERACIONALES PRINCIPALES</Spanish>
+            <German>PRIMÄRE EINSATZZIELE</German>
+            <Italian>OBIETTIVI OPERATIVI PRINCIPALI</Italian>
+            <Polish>GŁÓWNE CELE OPERACYJNE</Polish>
+            <Portuguese>OBJETIVOS OPERACIONAIS PRINCIPAIS</Portuguese>
+            <Russian>ОСНОВНЫЕ БОЕВЫЕ ЗАДАЧИ</Russian>
+            <Czech>HLAVNÍ OPERAČNÍ CÍLE</Czech>
+            <Korean>주요 작전 목표</Korean>
+            <Japanese>主要作戦目標</Japanese>
+            <Chinese>主要作戰目標</Chinese>
+            <Chinesesimp>主要作战目标</Chinesesimp>
+            <Turkish>BİRİNCİL HAREKÂT HEDEFLERİ</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TASK_PROTECT_RACS">
+            <Original>Protect RACS allied units</Original>
+            <English>Protect RACS allied units</English>
+            <French>Protéger les unités alliées RACS</French>
+            <Spanish>Proteger a las unidades aliadas RACS</Spanish>
+            <German>Verbündete RACS-Einheiten schützen</German>
+            <Italian>Proteggere le unità alleate RACS</Italian>
+            <Polish>Chroń sojusznicze jednostki RACS</Polish>
+            <Portuguese>Proteger as unidades aliadas RACS</Portuguese>
+            <Russian>Защитить союзные подразделения RACS</Russian>
+            <Czech>Chránit spojenecké jednotky RACS</Czech>
+            <Korean>RACS 아군 부대 보호</Korean>
+            <Japanese>RACS同盟部隊の防衛</Japanese>
+            <Chinese>保護 RACS 盟軍部隊</Chinese>
+            <Chinesesimp>保护 RACS 盟军部队</Chinesesimp>
+            <Turkish>Müttefik RACS unsurlarını koruyun</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TASK_SURVIVE_RTB">
+            <Original>Survive and return to base (RTB)</Original>
+            <English>Survive and return to base (RTB)</English>
+            <French>Revenir en vie à la base (RTB)</French>
+            <Spanish>Sobrevivir y regresar a la base (RTB)</Spanish>
+            <German>Überleben und zur Basis zurückkehren (RTB)</German>
+            <Italian>Sopravvivere e rientrare alla base (RTB)</Italian>
+            <Polish>Przetrwaj i powróć do bazy (RTB)</Polish>
+            <Portuguese>Sobreviver e regressar à base (RTB)</Portuguese>
+            <Russian>Выжить и вернуться на базу (RTB)</Russian>
+            <Czech>Přežít a vrátit se na základnu (RTB)</Czech>
+            <Korean>생존 후 기지 귀환 (RTB)</Korean>
+            <Japanese>生存して基地へ帰投 (RTB)</Japanese>
+            <Chinese>生存並返回基地 (RTB)</Chinese>
+            <Chinesesimp>生存并返回基地 (RTB)</Chinesesimp>
+            <Turkish>Hayatta kalın ve üsse geri dönün (RTB)</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TASK_ZERO_CASUALTIES">
+            <Original>Zero friendly casualties</Original>
+            <English>Zero friendly casualties</English>
+            <French>Aucune unité ne meurt</French>
+            <Spanish>Ninguna baja aliada</Spanish>
+            <German>Keine alliierten Verluste</German>
+            <Italian>Nessuna perdita alleata</Italian>
+            <Polish>Brak strat sojuszniczych</Polish>
+            <Portuguese>Zero baixas aliadas</Portuguese>
+            <Russian>Никаких потерь среди своих</Russian>
+            <Czech>Žádné vlastní ztráty</Czech>
+            <Korean>아군 사망자 0명</Korean>
+            <Japanese>味方戦死者ゼロ</Japanese>
+            <Chinese>友軍零傷亡</Chinese>
+            <Chinesesimp>友军零伤亡</Chinesesimp>
+            <Turkish>Dost birliklerde sıfır kayıp</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TASK_MAJORITY_SURVIVE">
+            <Original>Majority of friendly forces survive</Original>
+            <English>Majority of friendly forces survive</English>
+            <French>La majorité des unités sont en vie</French>
+            <Spanish>La mayoría de las unidades aliadas sobreviven</Spanish>
+            <German>Die Mehrheit der alliierten Einheiten überlebt</German>
+            <Italian>La maggioranza delle unità alleate sopravvive</Italian>
+            <Polish>Większość jednostek sojuszniczych przeżyje</Polish>
+            <Portuguese>A maioria das unidades aliadas sobrevive</Portuguese>
+            <Russian>Большинство союзных сил должно выжить</Russian>
+            <Czech>Většina spojeneckých jednotek přežije</Czech>
+            <Korean>아군 부대 과반수 생존</Korean>
+            <Japanese>味方部隊の大半が生還</Japanese>
+            <Chinese>友軍主力部隊生還</Chinese>
+            <Chinesesimp>友军主力部队生还</Chinesesimp>
+            <Turkish>Dost kuvvetlerin çoğunluğu hayatta kalmalı</Turkish>
+        </Key>
+        <Key ID="STR_ORA_HEADER_MISSION_COUNT">
+            <Original>SORTIES COUNT (1 CHOICE ONLY)</Original>
+            <English>SORTIES COUNT (1 CHOICE ONLY)</English>
+            <French>NOMBRE DE MISSIONS (1 SEUL CHOIX)</French>
+            <Spanish>NÚMERO DE MISIONES (1 SOLA ELECCIÓN)</Spanish>
+            <German>ANZAHL DER EINSÄTZE (NUR 1 WAHL)</German>
+            <Italian>NUMERO DI MISSIONI (SOLO 1 SCELTA)</Italian>
+            <Polish>LICZBA MISJI (TYLKO 1 WYBÓR)</Polish>
+            <Portuguese>NÚMERO DE MISSÕES (APENAS 1 ESCOLHA)</Portuguese>
+            <Russian>КОЛИЧЕСТВО ВЫЛЕТОВ (ТОЛЬКО 1 ВЫБОР)</Russian>
+            <Czech>POČET MISÍ (POUZE 1 VOLBA)</Czech>
+            <Korean>출격 횟수 (단일 선택)</Korean>
+            <Japanese>出撃ミッション数 (1つのみ選択)</Japanese>
+            <Chinese>出擊架次數量 (僅限單選)</Chinese>
+            <Chinesesimp>出击架次数量 (仅限单选)</Chinesesimp>
+            <Turkish>GÖREV SAYISI (YALNIZCA 1 SEÇİM)</Turkish>
+        </Key>
+        <Key ID="STR_ORA_COUNT_5">
+            <Original>1 to 5 missions</Original>
+            <English>1 to 5 missions</English>
+            <French>1 à 5 missions</French>
+            <Spanish>1 a 5 misiones</Spanish>
+            <German>1 bis 5 Missionen</German>
+            <Italian>1 a 5 missioni</Italian>
+            <Polish>Od 1 do 5 misji</Polish>
+            <Portuguese>1 a 5 missões</Portuguese>
+            <Russian>От 1 до 5 вылетов</Russian>
+            <Czech>1 až 5 misí</Czech>
+            <Korean>1 ~ 5개 임무</Korean>
+            <Japanese>1〜5 ミッション</Japanese>
+            <Chinese>1 至 5 次任務</Chinese>
+            <Chinesesimp>1 至 5 次任务</Chinesesimp>
+            <Turkish>1 ila 5 görev</Turkish>
+        </Key>
+        <Key ID="STR_ORA_COUNT_10">
+            <Original>1 to 10 missions</Original>
+            <English>1 to 10 missions</English>
+            <French>1 à 10 missions</French>
+            <Spanish>1 a 10 misiones</Spanish>
+            <German>1 bis 10 Missionen</German>
+            <Italian>1 a 10 missioni</Italian>
+            <Polish>Od 1 do 10 misji</Polish>
+            <Portuguese>1 a 10 missões</Portuguese>
+            <Russian>От 1 до 10 вылетов</Russian>
+            <Czech>1 až 10 misí</Czech>
+            <Korean>1 ~ 10개 임무</Korean>
+            <Japanese>1〜10 ミッション</Japanese>
+            <Chinese>1 至 10 次任務</Chinese>
+            <Chinesesimp>1 至 10 次任务</Chinesesimp>
+            <Turkish>1 ila 10 görev</Turkish>
+        </Key>
+        <Key ID="STR_ORA_COUNT_15">
+            <Original>1 to 15 missions</Original>
+            <English>1 to 15 missions</English>
+            <French>1 à 15 missions</French>
+            <Spanish>1 a 15 misiones</Spanish>
+            <German>1 bis 15 Missionen</German>
+            <Italian>1 a 15 missioni</Italian>
+            <Polish>Od 1 do 15 misji</Polish>
+            <Portuguese>1 a 15 missões</Portuguese>
+            <Russian>От 1 до 15 вылетов</Russian>
+            <Czech>1 à 15 misí</Czech>
+            <Korean>1 ~ 15개 임무</Korean>
+            <Japanese>1〜15 ミッション</Japanese>
+            <Chinese>1 至 15 次任務</Chinese>
+            <Chinesesimp>1 至 15 次任务</Chinesesimp>
+            <Turkish>1 ila 15 görev</Turkish>
+        </Key>
+        <Key ID="STR_ORA_COUNT_20">
+            <Original>1 to 20 missions</Original>
+            <English>1 to 20 missions</English>
+            <French>1 à 20 missions</French>
+            <Spanish>1 a 20 misiones</Spanish>
+            <German>1 bis 20 Missionen</German>
+            <Italian>1 a 20 missioni</Italian>
+            <Polish>Od 1 do 20 misji</Polish>
+            <Portuguese>1 a 20 missões</Portuguese>
+            <Russian>От 1 до 20 вылетов</Russian>
+            <Czech>1 až 20 misí</Czech>
+            <Korean>1 ~ 20개 임무</Korean>
+            <Japanese>1〜20 ミッション</Japanese>
+            <Chinese>1 至 20 次任務</Chinese>
+            <Chinesesimp>1 至 20 次任务</Chinesesimp>
+            <Turkish>1 ila 20 görev</Turkish>
+        </Key>
+        <Key ID="STR_ORA_HEADER_TACTICAL_OPTIONS">
+            <Original>TACTICAL OPTIONS</Original>
+            <English>TACTICAL OPTIONS</English>
+            <French>OPTIONS TACTIQUES</French>
+            <Spanish>OPCIONES TÁCTICAS</Spanish>
+            <German>TAKTIK-OPTIONEN</German>
+            <Italian>OPZIONI TATTICHE</Italian>
+            <Polish>OPCJE TAKTYCZNE</Polish>
+            <Portuguese>OPÇÕES TÁTICAS</Portuguese>
+            <Russian>ТАКТИЧЕСКИЕ НАСТРОЙКИ</Russian>
+            <Czech>TAKTICKÉ MOŽNOSTI</Czech>
+            <Korean>전술 옵션</Korean>
+            <Japanese>戦術オプション</Japanese>
+            <Chinese>戰術選項</Chinese>
+            <Chinesesimp>战术选项</Chinesesimp>
+            <Turkish>TAKTİK SEÇENEKLER</Turkish>
+        </Key>
+        <Key ID="STR_ORA_OPT_GUIDANCE">
+            <Original>Weapon guidance assist (Aide de tir)</Original>
+            <English>Weapon guidance assist (Aide de tir)</English>
+            <French>Téléguidage des tirs (Aide de tir)</French>
+            <Spanish>Asistencia de guiado de armas</Spanish>
+            <German>Waffen-Zielhilfesystem (Zielführung)</German>
+            <Italian>Assistenza di guida al tiro</Italian>
+            <Polish>Wspomaganie naprowadzania ognia</Polish>
+            <Portuguese>Assistência de guiamento de armas</Portuguese>
+            <Russian>Помощь в наведении вооружения</Russian>
+            <Czech>Asistence navádění střelby</Czech>
+            <Korean>유도 무기 조준 보조</Korean>
+            <Japanese>兵装誘導アシスト (射撃支援)</Japanese>
+            <Chinese>武器導引輔助 (射擊輔助)</Chinese>
+            <Chinesesimp>武器导引辅助 (射击辅助)</Chinesesimp>
+            <Turkish>Güdümlü atış desteği</Turkish>
+        </Key>
+        <Key ID="STR_ORA_OPT_ALLIES">
+            <Original>Additional allied presence</Original>
+            <English>Additional allied presence</English>
+            <French>Autres présences alliées</French>
+            <Spanish>Presencia aliada adicional</Spanish>
+            <German>Zusätzliche alliierte Einheiten</German>
+            <Italian>Ulteriore presenza alleata</Italian>
+            <Polish>Dodatkowa obecność sojuszników</Polish>
+            <Portuguese>Presença aliada adicional</Portuguese>
+            <Russian>Дополнительное союзное присутствие</Russian>
+            <Czech>Další spojenecká přítomnost</Czech>
+            <Korean>추가 아군 전력 배치</Korean>
+            <Japanese>追加の同盟軍部隊</Japanese>
+            <Chinese>額外友軍部署</Chinese>
+            <Chinesesimp>额外友军部署</Chinesesimp>
+            <Turkish>Ek müttefik kuvvet varlığı</Turkish>
+        </Key>
+        <Key ID="STR_ORA_OPT_NO_EJECT">
+            <Original>COCKPIT EGRESS FORFEITS MISSION</Original>
+            <English>COCKPIT EGRESS FORFEITS MISSION</English>
+            <French>L'EXTRACTION DU COCKPIT FAIT PERDRE LA MISSION</French>
+            <Spanish>LA SALIDA DE LA CABINA HACE PERDER LA MISIÓN</Spanish>
+            <German>VERLASSEN DES COCKPITS BEENDET DIE MISSION ALS VERLOREN</German>
+            <Italian>L'USCITA DALL'ABITACOLO COMPORTA LA SCONFITTA</Italian>
+            <Polish>OPUSZCZENIE KOKPITU OZNACZA PRZEGRANĄ</Polish>
+            <Portuguese>SAIR DO COCKPIT RESULTA EM DERROTA</Portuguese>
+            <Russian>ВЫХОД ИЗ КАБИНЫ ВЕДЕТ К ПРОВАЛУ МИССИИ</Russian>
+            <Czech>OPUŠTĚNÍ KOKPITU ZNAMENÁ PROHRU MISE</Czech>
+            <Korean>조종석 이탈 시 즉시 임무 실패</Korean>
+            <Japanese>コックピットからの脱出・離脱は作戦失敗</Japanese>
+            <Chinese>離開座艙直接判定任務失敗</Chinese>
+            <Chinesesimp>离开座舱直接判定任务失败</Chinesesimp>
+            <Turkish>KOKPİTTEN ÇIKMAK GÖREVİN KAYBEDİLMESİNE YOL AÇAR</Turkish>
+        </Key>
+        <Key ID="STR_ORA_ALERT_NO_EJECT_INFO">
+            <Original>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ CRITICAL RESTRICTION:&lt;br/&gt;Bailing out, ejecting or leaving the aircraft cockpit will immediately cause mission failure.&lt;/t&gt;</Original>
+            <English>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ CRITICAL RESTRICTION:&lt;br/&gt;Bailing out, ejecting or leaving the aircraft cockpit will immediately cause mission failure.&lt;/t&gt;</English>
+            <French>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ RESTRICTION CRITIQUE :&lt;br/&gt;S'éjecter ou quitter le cockpit de l'avion entraînera immédiatement l'échec de la mission.&lt;/t&gt;</French>
+            <Spanish>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ RESTRICCIÓN CRÍTICA:&lt;br/&gt;Eyectarse o abandonar la cabina causará el fracaso inmediato de la misión.&lt;/t&gt;</Spanish>
+            <German>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ KRITISCHE BESCHRÄNKUNG:&lt;br/&gt;Ein Notausstieg oder das Verlassen des Cockpits führt zum sofortigen Missionsabbruch.&lt;/t&gt;</German>
+            <Italian>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ RESTRIZIONE CRITICA:&lt;br/&gt;Eiettarsi o lasciare l'abitacolo provocherà il fallimento immediato della missione.&lt;/t&gt;</Italian>
+            <Polish>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ KRYTYCZNE OBOSTRZENIE:&lt;br/&gt;Katapultowanie lub opuszczenie maszyny natychmiast kończy misję porażką.&lt;/t&gt;</Polish>
+            <Portuguese>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ RESTRIÇÃO CRÍTICA:&lt;br/&gt;Ejetar-se ou sair da cabine causará a derrota imediata na missão.&lt;/t&gt;</Portuguese>
+            <Russian>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ КРИТИЧЕСКОЕ ОГРАНИЧЕНИЕ:&lt;br/&gt;Катапультирование или выход из кабины приведет к немедленному провалу.&lt;/t&gt;</Russian>
+            <Czech>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ KRITICKÉ OMEZENÍ:&lt;br/&gt;Katapultace nebo opuštění kokpitu způsobí okamžité selhání mise.&lt;/t&gt;</Czech>
+            <Korean>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ 필수 제한 규정:&lt;br/&gt;조종석을 이탈하거나 비상 탈출할 경우 즉시 임무 실패로 처리됩니다.&lt;/t&gt;</Korean>
+            <Japanese>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ 厳格な制限:&lt;br/&gt;緊急脱出または機体からの離脱は直ちに作戦失敗となります。&lt;/t&gt;</Japanese>
+            <Chinese>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ 關鍵限制：&lt;br/&gt;彈射逃生或離開座艙將立即導致任務失敗。&lt;/t&gt;</Chinese>
+            <Chinesesimp>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ 关键限制：&lt;br/&gt;弹射逃生或离开座舱将立即导致任务失败。&lt;/t&gt;</Chinesesimp>
+            <Turkish>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ KRİTİK KISITLAMA:&lt;br/&gt;Uçaktan atlamak veya kokpitten çıkmak derhal görevin başarısızlığına neden olur.&lt;/t&gt;</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TACTICAL_DIRECTIVES_AIR">
+            <Original>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL FLIGHT DIRECTIVES:&lt;br/&gt;- Insertion takes place directly seated in plane_0.&lt;br/&gt;- Mission sectors are randomized dynamically in flight.&lt;br/&gt;- AWACS Overlord will vector you to priority targets.&lt;/t&gt;</Original>
+            <English>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL FLIGHT DIRECTIVES:&lt;br/&gt;- Insertion takes place directly seated in plane_0.&lt;br/&gt;- Mission sectors are randomized dynamically in flight.&lt;br/&gt;- AWACS Overlord will vector you to priority targets.&lt;/t&gt;</English>
+            <French>&lt;t color='#00d0ff' size='0.85'&gt;DIRECTIVES DE VOL TACTIQUES :&lt;br/&gt;- L'insertion s'effectue directement aux commandes de plane_0.&lt;br/&gt;- Les secteurs d'engagement sont assignés aléatoirement en vol.&lt;br/&gt;- L'AWACS Overlord assurera votre guidage vers les cibles prioritaires.&lt;/t&gt;</French>
+            <Spanish>&lt;t color='#00d0ff' size='0.85'&gt;DIRECTIVAS DE VUELO:&lt;br/&gt;- La inserción se realiza directamente en la cabina de plane_0.&lt;br/&gt;- Los sectores de combate se asignan aleatoriamente en vuelo.&lt;br/&gt;- El AWACS Overlord le guiará hacia los objetivos prioritarios.&lt;/t&gt;</Spanish>
+            <German>&lt;t color='#00d0ff' size='0.85'&gt;FLUGDIREKTIVEN:&lt;br/&gt;- Der Einsatz beginnt direkt im Cockpit von plane_0.&lt;br/&gt;- Einsatzsektoren werden dynamisch während des Fluges zugewiesen.&lt;br/&gt;- AWACS Overlord leitet Sie zu Prioritätszielen.&lt;/t&gt;</German>
+            <Italian>&lt;t color='#00d0ff' size='0.85'&gt;DIRETTIVE DI VOLO:&lt;br/&gt;- L'inserimento avviene direttamente nell'abitacolo di plane_0.&lt;br/&gt;- I settori vengono assegnati casualmente in volo.&lt;br/&gt;- L'AWACS Overlord guiderà sui bersagli prioritari.&lt;/t&gt;</Italian>
+            <Polish>&lt;t color='#00d0ff' size='0.85'&gt;WYTYCZNE LOTU:&lt;br/&gt;- Infiltracja odbywa się bezpośrednio za sterami plane_0.&lt;br/&gt;- Sektory misji są przydzielane losowo w trakcie lotu.&lt;br/&gt;- AWACS Overlord poprowadzi cię na cele priorytetowe.&lt;/t&gt;</Polish>
+            <Portuguese>&lt;t color='#00d0ff' size='0.85'&gt;DIRETIVAS DE VOO:&lt;br/&gt;- A inserção é feita diretamente no cockpit de plane_0.&lt;br/&gt;- Os setores de missão são atribuídos aleatoriamente em voo.&lt;br/&gt;- O AWACS Overlord fornecerá vetores para os alvos prioritários.&lt;/t&gt;</Portuguese>
+            <Russian>&lt;t color='#00d0ff' size='0.85'&gt;ПОЛЕТНЫЕ УКАЗАНИЯ:&lt;br/&gt;- Начало операции сразу в кабине plane_0.&lt;br/&gt;- Секторы боевых задач назначаются динамически в воздухе.&lt;br/&gt;- АВАКС Overlord обеспечит наведение на приоритетные цели.&lt;/t&gt;</Russian>
+            <Czech>&lt;t color='#00d0ff' size='0.85'&gt;LETOVÉ POKYNY:&lt;br/&gt;- Výsadek probíhá přímo v kokpitu letounu plane_0.&lt;br/&gt;- Bojové sektory jsou přiřazovány náhodně za letu.&lt;br/&gt;- AWACS Overlord zajistí navádění na prioritní cíle.&lt;/t&gt;</Czech>
+            <Korean>&lt;t color='#00d0ff' size='0.85'&gt;전술 비행 지침:&lt;br/&gt;- 작전 시작 시 plane_0 조종석에 즉시 탑승합니다.&lt;br/&gt;- 비행 중 작전 구역이 무작위로 동적 할당됩니다.&lt;br/&gt;- AWACS Overlord가 최우선 목표로 유도합니다.&lt;/t&gt;</Korean>
+            <Japanese>&lt;t color='#00d0ff' size='0.85'&gt;戦術飛行指示:&lt;br/&gt;- plane_0のコックピットに着席した状態で即座に作戦開始。&lt;br/&gt;- 作戦セクターは飛行中に動的かつランダムに割り当てられます。&lt;br/&gt;- AWACS Overlordが優先目標へと誘導します。&lt;/t&gt;</Japanese>
+            <Chinese>&lt;t color='#00d0ff' size='0.85'&gt;戰術飛行指令：&lt;br/&gt;- 行動開始時直接就位在 plane_0 座艙內。&lt;br/&gt;- 作戰區域在飛行中由系統動態隨機指派。&lt;br/&gt;- 預警機 Overlord 將引導您攻擊高優先級目標。&lt;/t&gt;</Chinese>
+            <Chinesesimp>&lt;t color='#00d0ff' size='0.85'&gt;战术飞行指令：&lt;br/&gt;- 行动开始时直接就位在 plane_0 座舱内。&lt;br/&gt;- 作战区域在飞行中由系统动态随机指派。&lt;br/&gt;- 预警机 Overlord 将引导您攻击高优先级目标。&lt;/t&gt;</Chinesesimp>
+            <Turkish>&lt;t color='#00d0ff' size='0.85'&gt;TAKTIK UÇUŞ TALİMATLARI:&lt;br/&gt;- İntikal doğrudan plane_0 kokpitinde başlar.&lt;br/&gt;- Görev sektörleri uçuş sırasında rastgele atanır.&lt;br/&gt;- AWACS Overlord sizi öncelikli hedeflere yönlendirecektir.&lt;/t&gt;</Turkish>
+        </Key>
+        <Key ID="STR_ORA_HEADER_AIRCRAFT_PREVIEW">
+            <Original>ASSIGNED VECTOR (PLANE_0)</Original>
+            <English>ASSIGNED VECTOR (PLANE_0)</English>
+            <French>VECTEUR ASSIGNÉ (PLANE_0)</French>
+            <Spanish>VECTOR ASIGNADO (PLANE_0)</Spanish>
+            <German>ZUGEWIESENES FLUGZEUG (PLANE_0)</German>
+            <Italian>VETTORE ASSEGNATO (PLANE_0)</Italian>
+            <Polish>PRZYDZIELONA MASZYNA (PLANE_0)</Polish>
+            <Portuguese>VETOR ATRIBUÍDO (PLANE_0)</Portuguese>
+            <Russian>НАЗНАЧЕННЫЙ БОРТ (PLANE_0)</Russian>
+            <Czech>PŘIŘAZENÝ LETOUN (PLANE_0)</Czech>
+            <Korean>지정 기체 (PLANE_0)</Korean>
+            <Japanese>配備戦闘機 (PLANE_0)</Japanese>
+            <Chinese>指定座機 (PLANE_0)</Chinese>
+            <Chinesesimp>指定座机 (PLANE_0)</Chinesesimp>
+            <Turkish>TAHSİS EDİLEN UÇAK (PLANE_0)</Turkish>
+        </Key>
+        <Key ID="STR_ORA_HEADER_THEATER_MAP">
+            <Original>OPERATIONAL THEATER — SAHRANI</Original>
+            <English>OPERATIONAL THEATER — SAHRANI</English>
+            <French>THÉÂTRE D'OPÉRATIONS — SAHRANI</French>
+            <Spanish>TEATRO DE OPERACIONES — SAHRANI</Spanish>
+            <German>EINSATZGEBIET — SAHRANI</German>
+            <Italian>TEATRO DI OPERAZIONI — SAHRANI</Italian>
+            <Polish>TEATR DZIAŁAŃ — SAHRANI</Polish>
+            <Portuguese>TEATRO DE OPERAÇÕES — SAHRANI</Portuguese>
+            <Russian>ТЕАТР ВОЕННЫХ ДЕЙСТВИЙ — САХРАНИ</Russian>
+            <Czech>BOJIŠTĚ — SAHRANI</Czech>
+            <Korean>작전 전구 — 사라니</Korean>
+            <Japanese>作戦区域 — サフラニ</Japanese>
+            <Chinese>作戰戰區 — 薩赫拉尼</Chinese>
+            <Chinesesimp>作战战区 — 萨赫拉尼</Chinesesimp>
+            <Turkish>HAREKÂT ALANI — SAHRANI</Turkish>
+        </Key>
+        <Key ID="STR_ORA_MAP_DYNAMIC_NOTICE">
+            <Original>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL MAP:&lt;/t&gt;&lt;br/&gt;Mission sectors are randomized dynamically across the theater during combat operations.</Original>
+            <English>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL MAP:&lt;/t&gt;&lt;br/&gt;Mission sectors are randomized dynamically across the theater during combat operations.</English>
+            <French>&lt;t color='#00d0ff' size='0.85'&gt;CARTE TACTIQUE :&lt;/t&gt;&lt;br/&gt;Les secteurs de combat seront attribués aléatoirement par le QG sur l'archipel en cours de vol.</French>
+            <Spanish>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TÁCTICO:&lt;/t&gt;&lt;br/&gt;Los sectores de misión se asignan aleatoriamente durante el combate.</Spanish>
+            <German>&lt;t color='#00d0ff' size='0.85'&gt;TAKTIKKARTE:&lt;/t&gt;&lt;br/&gt;Einsatzsektoren werden dynamisch über das gesamte Einsatzgebiet verteilt.</German>
+            <Italian>&lt;t color='#00d0ff' size='0.85'&gt;MAPPA TATTICA:&lt;/t&gt;&lt;br/&gt;I settori di missione vengono assegnati casualmente durante le operazioni.</Italian>
+            <Polish>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TAKTYCZNA:&lt;/t&gt;&lt;br/&gt;Sektory operacji są losowane na całym archipelagu w czasie rzeczywistym.</Polish>
+            <Portuguese>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TÁTICO:&lt;/t&gt;&lt;br/&gt;Os setores de missão são gerados aleatoriamente em pleno voo.</Portuguese>
+            <Russian>&lt;t color='#00d0ff' size='0.85'&gt;ТАКТИЧЕСКАЯ КАРТА:&lt;/t&gt;&lt;br/&gt;Секторы операций распределяются случайным образом в ходе боевого вылета.</Russian>
+            <Czech>&lt;t color='#00d0ff' size='0.85'&gt;TAKTICKÁ MAPA:&lt;/t&gt;&lt;br/&gt;Bojové sektory budou náhodně přidělovány velitelstvím během letu.</Czech>
+            <Korean>&lt;t color='#00d0ff' size='0.85'&gt;전술 지도:&lt;/t&gt;&lt;br/&gt;작전 구역은 교전 중 전구 전역에 무작위로 생성됩니다.</Korean>
+            <Japanese>&lt;t color='#00d0ff' size='0.85'&gt;戦術マップ:&lt;/t&gt;&lt;br/&gt;作戦セクターは飛行中に戦域全域へランダムに配分されます。</Japanese>
+            <Chinese>&lt;t color='#00d0ff' size='0.85'&gt;戰術地圖：&lt;/t&gt;&lt;br/&gt;作戰區域將在戰鬥進行時於全島動態隨機生成。</Chinese>
+            <Chinesesimp>&lt;t color='#00d0ff' size='0.85'&gt;战术地图：&lt;br/&gt;作战区域将在战斗进行时于全岛动态随机生成。</Chinesesimp>
+            <Turkish>&lt;t color='#00d0ff' size='0.85'&gt;TAKTİK HARİTA:&lt;/t&gt;&lt;br/&gt;Görev sektörleri muharebe sırasında harekât alanı genelinde rastgele atanır.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_BUTTON_LAUNCH_SORTIE">
+            <Original>SCRAMBLE / LAUNCH SORTIE</Original>
+            <English>SCRAMBLE / LAUNCH SORTIE</English>
+            <French>DÉCOLLER / LANCER LA MISSION</French>
+            <Spanish>DESPEGAR / INICIAR MISIÓN</Spanish>
+            <German>STARTEN / EINSATZ BEGINNEN</German>
+            <Italian>DECOLLO / AVVIA MISSIONE</Italian>
+            <Polish>START / ROZPOCZNIJ WYLOT</Polish>
+            <Portuguese>DESCOLAR / INICIAR MISSÃO</Portuguese>
+            <Russian>НА ВЗЛЕТ / НАЧАТЬ ВЫЛЕТ</Russian>
+            <Czech>VZLET / ZAHÁJIT MISI</Czech>
+            <Korean>긴급 출격 / 작전 개시</Korean>
+            <Japanese>スクランブル発進 / 出撃開始</Japanese>
+            <Chinese>緊急起飛 / 開始出擊</Chinese>
+            <Chinesesimp>紧急起飞 / 开始出击</Chinesesimp>
+            <Turkish>KALKIŞ / GÖREVİ BAŞLAT</Turkish>
+        </Key>
+        <Key ID="STR_ORA_ALERT_EJECT_FAILED_MSG">
+            <Original>PILOT ABANDONED COCKPIT. MISSION FAILED.</Original>
+            <English>PILOT ABANDONED COCKPIT. MISSION FAILED.</English>
+            <French>LE PILOTE A QUITTÉ LE COCKPIT. MISSION ÉCHOUÉE.</French>
+            <Spanish>EL PILOTO ABANDONÓ LA CABINA. MISIÓN FRACASADA.</Spanish>
+            <German>PILOT HAT DAS COCKPIT VERLASSEN. MISSION FEHLGESCHLAGEN.</German>
+            <Italian>IL PILOTA HA ABBANDONATO L'ABITACOLO. MISSIONE FALLITA.</Italian>
+            <Polish>PILOT OPUŚCIŁ KOKPIT. MISJA ZAKOŃCZONA PORAŻKĄ.</Polish>
+            <Portuguese>O PILOTO ABANDONOU O COCKPIT. MISSÃO FALHADA.</Portuguese>
+            <Russian>ПИЛОТ ПОКИНУЛ КАБИНУ. МИССИЯ ПРОВАЛЕНА.</Russian>
+            <Czech>PILOT OPUSTIL KOKPIT. MISE SELHALA.</Czech>
+            <Korean>조종사가 조종석을 이탈했습니다. 임무 실패.</Korean>
+            <Japanese>パイロットがコックピットを放棄しました。作戦失敗。</Japanese>
+            <Chinese>飛行員脫離座艙。任務失敗。</Chinese>
+            <Chinesesimp>飞行员脱离座舱。任务失败。</Chinesesimp>
+            <Turkish>PİLOT KOKPİTİ TERK ETTİ. GÖREV BAŞARISIZ.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_RADIO_MISSION_LAUNCHED">
+            <Original>Victor-One is airborne. Flight plan armed with %1 sorties. Good hunting.</Original>
+            <English>Victor-One is airborne. Flight plan armed with %1 sorties. Good hunting.</English>
+            <French>Victor-One aux commandes. Plan de vol armé pour %1 sorties. Bonne chasse.</French>
+            <Spanish>Victor-One a los mandos. Plan de vuelo activado para %1 salidas. Buena caza.</Spanish>
+            <German>Victor-One startklar. Flugplan mit %1 Einsätzen geladen. Gute Jagd.</German>
+            <Italian>Victor-One ai comandi. Piano di volo attivo con %1 sortite. Buona caccia.</Italian>
+            <Polish>Victor-One za sterami. Plan lotu załadowany: %1 wylotów. Udanych łowów.</Polish>
+            <Portuguese>Victor-One aos comandos. Plano de voo ativado para %1 saídas. Boa caça.</Portuguese>
+            <Russian>Victor-One у штурвала. Полетный план загружен на %1 вылетов. Удачной охоты.</Russian>
+            <Czech>Victor-One u řízení. Letový plán aktivován na %1 vzletů. Lovu zdar.</Czech>
+            <Korean>빅터-원 탑승 확인. %1개 출격 비행 계획 장전. 성공적인 사냥을 기원합니다.</Korean>
+            <Japanese>ヴィクター1、操縦席に着席。%1回の出撃計画を装填。武運を祈る。</Japanese>
+            <Chinese>Victor-One 已就位。已載入 %1 架次飛行計畫。祝獵運亨通。</Chinese>
+            <Chinesesimp>Victor-One 已就位。已载入 %1 架次飞行计划。祝猎运亨通。</Chinesesimp>
+            <Turkish>Victor-One kontrollerde. %1 sorti için uçuş planı devrede. İyi avlar.</Turkish>
+        </Key>
+        <Key ID="STR_LL_Radio_Speaker_Drone">
+            <Original>Drone Operator</Original>
+            <English>Drone Operator</English>
+            <French>Opérateur Drone</French>
+            <Spanish>Operador de Dron</Spanish>
+            <German>Drohnen-Bediener</German>
+            <Italian>Operatore Drone</Italian>
+            <Polish>Operator drona</Polish>
+            <Portuguese>Operador de Drone</Portuguese>
+            <Russian>Оператор БПЛА</Russian>
+            <Czech>Operátor dronu</Czech>
+            <Korean>드론 운용관</Korean>
+            <Japanese>ドローン オペレーター</Japanese>
+            <Chinese>無人機操作員</Chinese>
+            <Chinesesimp>无人机操作员</Chinesesimp>
+            <Turkish>İHA Operatörü</Turkish>
+        </Key>
+        <Key ID="STR_LL_Radio_Speaker_AirSupport">
+            <Original>Air Support</Original>
+            <English>Air Support</English>
+            <French>Appui Aérien</French>
+            <Spanish>Apoyo Aéreo</Spanish>
+            <German>Luftunterstützung</German>
+            <Italian>Supporto Aereo</Italian>
+            <Polish>Wsparcie lotnicze</Polish>
+            <Portuguese>Apoio Aéreo</Portuguese>
+            <Russian>Авиаподдержка</Russian>
+            <Czech>Letecká podpora</Czech>
+            <Korean>공중 지원</Korean>
+            <Japanese>近接航空支援</Japanese>
+            <Chinese>空中支援</Chinese>
+            <Chinesesimp>空中支援</Chinesesimp>
+            <Turkish>Hava Desteği</Turkish>
+        </Key>
+        <Key ID="STR_LL_Radio_Speaker_HQ">
+            <Original>HQ</Original>
+            <English>HQ</English>
+            <French>QG</French>
+            <Spanish>CG</Spanish>
+            <German>HQ</German>
+            <Italian>QG</Italian>
+            <Polish>Sztab</Polish>
+            <Portuguese>QG</Portuguese>
+            <Russian>Штаб</Russian>
+            <Czech>Velitelství</Czech>
+            <Korean>사령부</Korean>
+            <Japanese>司令部</Japanese>
+            <Chinese>作戰總部</Chinese>
+            <Chinesesimp>作战总部</Chinesesimp>
+            <Turkish>Karargah</Turkish>
+        </Key>
+        <Key ID="STR_Drone_Jammed">
+            <Original>Radio jamming detected. Unable to reach drone.</Original>
+            <English>Radio jamming detected. Unable to reach drone.</English>
+            <French>Brouillage radio détecté. Impossible de contacter le drone.</French>
+            <Spanish>Interferencia de radio detectada. No se puede contactar con el dron.</Spanish>
+            <German>Funkstörung erkannt. Drohne kann nicht erreicht werden.</German>
+            <Italian>Rilevato disturbo radio. Impossibile contattare il drone.</Italian>
+            <Polish>Wykryto zakłócenia radiowe. Nie można połączyć się z dronem.</Polish>
+            <Portuguese>Interferência de rádio detectada. Impossível contactar o drone.</Portuguese>
+            <Russian>Обнаружены радиопомехи. Связь с БПЛА невозможна.</Russian>
+            <Czech>Zjištěno rušení rádia. S dronem se nelze spojit.</Czech>
+            <Korean>전파 방해가 감지되었습니다. 드론과 통신할 수 없습니다.</Korean>
+            <Japanese>通信妨害を感知。ドローンとの交信不能。</Japanese>
+            <Chinese>偵測到無線電干擾，無法聯繫無人機。</Chinese>
+            <Chinesesimp>检测到无线电干扰，无法联系无人机。</Chinesesimp>
+            <Turkish>Telsiz karıştırması tespit edildi. İHA ile iletişim kurulamıyor.</Turkish>
+        </Key>
+    </Package>
+</Project>

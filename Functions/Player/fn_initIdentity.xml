@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_PILOT_IDENTITY_CONFIRMED">
+        <Original>Tactical Flight Officer identity established: Captain 'Victor-One'.</Original>
+        <English>Tactical Flight Officer identity established: Captain 'Victor-One'.</English>
+        <French>Identité d'officier pilote confirmée : Capitaine 'Victor-One'.</French>
+        <Spanish>Identidad de oficial de vuelo confirmada: Capitán 'Victor-One'.</Spanish>
+        <German>Flugoffiziersidentität bestätigt: Hauptmann 'Victor-One'.</German>
+        <Italian>Identità ufficiale pilota confermata: Capitano 'Victor-One'.</Italian>
+        <Polish>Potwierdzono tożsamość oficera lotnictwa: Kapitan 'Victor-One'.</Polish>
+        <Portuguese>Identidade de oficial de voo confirmada: Capitão 'Victor-One'.</Portuguese>
+        <Russian>Личность боевого пилота подтверждена: Капитан 'Victor-One'.</Russian>
+        <Czech>Identita leteckého důstojníka potvrzena: Kapitán 'Victor-One'.</Czech>
+        <Korean>전술 비행 장교 신원 확인: 대위 'Victor-One'.</Korean>
+        <Japanese>戦術飛行士官の身元確認：大尉 'Victor-One'。</Japanese>
+        <Chinese>戰術飛行軍官身份確認：上尉 'Victor-One'。</Chinese>
+        <Chinesesimp>战术飞行军官身份确认：上尉 'Victor-One'。</Chinesesimp>
+        <Turkish>Taktik Uçuş Subayı kimliği doğrulandı: Yüzbaşı 'Victor-One'.</Turkish>
+    </Key>
+</Keys>
+

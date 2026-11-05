@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_MANUAL_TAB">
+        <Original>Flight &amp; Combat Manual</Original>
+        <English>Flight &amp; Combat Manual</English>
+        <French>Manuel de Vol &amp; Combat</French>
+        <Spanish>Manual de Vuelo y Combate</Spanish>
+        <German>Flug- &amp; Kampfhandbuch</German>
+        <Italian>Manuale di Volo e Combattimento</Italian>
+        <Polish>Podręcznik lotu i walki</Polish>
+        <Portuguese>Manual de Voo e Combate</Portuguese>
+        <Russian>Летное и боевое руководство</Russian>
+        <Czech>Letecký a bojový manuál</Czech>
+        <Korean>비행 및 전투 교범</Korean>
+        <Japanese>飛行・戦闘マニュアル</Japanese>
+        <Chinese>飛行與空戰手冊</Chinese>
+        <Chinesesimp>飞行与空战手册</Chinesesimp>
+        <Turkish>Uçuş ve Muharebe El Kitabı</Turkish>
+    </Key>
+    <Key ID="STR_ORA_MANUAL_AVIONICS_TITLE">
+        <Original>1. Avionics, Radar &amp; RWR</Original>
+        <English>1. Avionics, Radar &amp; RWR</English>
+        <French>1. Avionique, Radar &amp; RWR</French>
+        <Spanish>1. Aviónica, Radar y RWR</Spanish>
+        <German>1. Avionik, Radar &amp; RWR</German>
+        <Italian>1. Avionica, Radar e RWR</Italian>
+        <Polish>1. Awionika, Radar i RWR</Polish>
+        <Portuguese>1. Aviônica, Radar e RWR</Portuguese>
+        <Russian>1. Авионика, РЛС и СПО (RWR)</Russian>
+        <Czech>1. Avionika, Radar a RWR</Czech>
+        <Korean>1. 항공 전자 장비, 레이더 및 RWR</Korean>
+        <Japanese>1. アビオニクス、レーダーおよびRWR</Japanese>
+        <Chinese>1. 航電系統、雷達與 RWR</Chinese>
+        <Chinesesimp>1. 航电系统、雷达与 RWR</Chinesesimp>
+        <Turkish>1. Aviyonik, Radar ve RWR</Turkish>
+    </Key>
+    <Key ID="STR_ORA_MANUAL_AVIONICS_TEXT">
+        <Original>&lt;font color='#00d0ff' size='14'&gt;AIRCRAFT SENSORS &amp; THREAT WARNINGS&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Radar Range:&lt;/font&gt; Air-to-air sweep active up to 16km. Use sensor mode to filter air/ground targets.&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR Audio Alert:&lt;/font&gt; Continuous high-pitch tone signifies active hostile radar lock. A double-tone beep indicates an inbound missile. Dispense flares immediately and execute high-G break turn.</Original>
+        <English>&lt;font color='#00d0ff' size='14'&gt;AIRCRAFT SENSORS &amp; THREAT WARNINGS&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Radar Range:&lt;/font&gt; Air-to-air sweep active up to 16km. Use sensor mode to filter air/ground targets.&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR Audio Alert:&lt;/font&gt; Continuous high-pitch tone signifies active hostile radar lock. A double-tone beep indicates an inbound missile. Dispense flares immediately and execute high-G break turn.</English>
+        <French>&lt;font color='#00d0ff' size='14'&gt;CAPTEURS ET ALERTES MENACES&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Portée Radar :&lt;/font&gt; Balayage air-air actif jusqu'à 16 km. Utilisez les modes de capteurs pour filtrer cibles aériennes et terrestres.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Alerte RWR :&lt;/font&gt; Une tonalité continue signale un verrouillage radar ennemi. Un bip double indique un missile en approche. Déployez immédiatement vos leurres et effectuez un virage de dégagement sous facteur de charge.</French>
+        <Spanish>&lt;font color='#00d0ff' size='14'&gt;SENSORES Y ALERTAS DE AMENAZA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Alcance del Radar:&lt;/font&gt; Barrido aire-aire activo hasta 16km.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Alerta RWR:&lt;/font&gt; Un tono continuo indica bloqueo de radar hostil. Un pitido doble indica un misil en aproximación. Despliegue bengalas de inmediato.</Spanish>
+        <German>&lt;font color='#00d0ff' size='14'&gt;SENSOREN &amp; BEDROHUNGSWARNUNG&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Radar-Reichweite:&lt;/font&gt; Luft-Luft-Erfassung bis 16km aktiv.&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR-Warnung:&lt;/font&gt; Dauerton signalisiert feindliche Radarerfassung. Doppelton meldet anfliegende Rakete. Täuschkörper ausstoßen.</German>
+        <Italian>&lt;font color='#00d0ff' size='14'&gt;SENSORI E ALLERTI DI MINACCIA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Portata Radar:&lt;/font&gt; Scansione aria-aria attiva fino a 16km.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Allarme RWR:&lt;/font&gt; Tono continuo indica aggancio radar. Doppio bip segnala missile in arrivo. Rilasciare contromisure.</Italian>
+        <Polish>&lt;font color='#00d0ff' size='14'&gt;CZUJNIKI I OSTRZEŻENIA O ZAGROŻENIU&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Zasięg Radaru:&lt;/font&gt; Skanowanie powietrze-powietrze do 16 km.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Alarm RWR:&lt;/font&gt; Ciągły dźwięk oznacza namierzenie radarem. Podwójny sygnał oznacza nadlatujący pocisk.</Polish>
+        <Portuguese>&lt;font color='#00d0ff' size='14'&gt;SENSORES E ALERTAS DE AMEAÇA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Alcance do Radar:&lt;/font&gt; Varredura ar-ar ativa até 16km.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Alerta RWR:&lt;/font&gt; Tom contínuo indica travamento de radar hostil. Bip duplo indica míssil em aproximação.</Portuguese>
+        <Russian>&lt;font color='#00d0ff' size='14'&gt;ДАТЧИКИ И ОПОВЕЩЕНИЯ ОБ УГРОЗАХ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Дальность РЛС:&lt;/font&gt; Обзор воздух-воздух до 16 км.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Сигнал СПО (RWR):&lt;/font&gt; Непрерывный тон означает захват радаром. Двойной сигнал означает пуск ракеты. Примените ловушки.</Russian>
+        <Czech>&lt;font color='#00d0ff' size='14'&gt;SENZORY A VÝSTRAHY&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Dosah radaru:&lt;/font&gt; Vzdušný přehled aktivní do 16 km.&lt;br/&gt;- &lt;font color='#ff4444'&gt;Varování RWR:&lt;/font&gt; Trvalý tón značí zaměření radarem. Dvojitý tón signalizuje blížící se raketu.</Czech>
+        <Korean>&lt;font color='#00d0ff' size='14'&gt;센서 및 위협 경보&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;레이더 탐지 거리:&lt;/font&gt; 공대공 탐색 최대 16km 활성화.&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR 경보:&lt;/font&gt; 지속적인 경보음은 적 레이더 록온을 의미하며, 이중 비프음은 미사일 접근을 나타냅니다.</Korean>
+        <Japanese>&lt;font color='#00d0ff' size='14'&gt;センサーと脅威警告&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;レーダー探知距離:&lt;/font&gt; 空対空走査最大16km有効。&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR警報:&lt;/font&gt; 連続音は敵レーダーのロックオンを示し、2重ビープ音は接近するミサイルを示します。</Japanese>
+        <Chinese>&lt;font color='#00d0ff' size='14'&gt;傳感器與威脅告警&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;雷達範圍：&lt;/font&gt;空對空掃描最大達 16 公里。&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR 告警：&lt;/font&gt;持續蜂鳴聲代表被敵方雷達鎖定，雙重嗶嗶聲代表飛彈來襲。請立即施放干擾彈。</Chinese>
+        <Chinesesimp>&lt;font color='#00d0ff' size='14'&gt;传感器与威胁告警&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;雷达范围：&lt;/font&gt;空对空扫描最大达 16 公里。&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR 告警：&lt;/font&gt;持续蜂鸣声代表被敌方雷达锁定，双重哔哔声代表飞弹来袭。请立即施放干扰弹。</Chinesesimp>
+        <Turkish>&lt;font color='#00d0ff' size='14'&gt;SENSÖRLER VE TEHDİT İKAZLARI&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Radar Menzili:&lt;/font&gt; 16 km'ye kadar hava-hava taraması faal.&lt;br/&gt;- &lt;font color='#ff4444'&gt;RWR İkazı:&lt;/font&gt; Sürekli ses düşman radar kilitlenmesini belirtir. Çift bip sesi yaklaşan füzeyi gösterir.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_MANUAL_WEAPONS_TITLE">
+        <Original>2. Weapons &amp; Brevity Codes</Original>
+        <English>2. Weapons &amp; Brevity Codes</English>
+        <French>2. Armement &amp; Brevity Codes</French>
+        <Spanish>2. Armamento y Brevity Codes</Spanish>
+        <German>2. Bewaffnung &amp; Brevity Codes</German>
+        <Italian>2. Armamento e Brevity Codes</Italian>
+        <Polish>2. Uzbrojenie i Kody Brevity</Polish>
+        <Portuguese>2. Armamento e Brevity Codes</Portuguese>
+        <Russian>2. Вооружение и краткие радиокоды</Russian>
+        <Czech>2. Výzbroj a zkrácené kódy</Czech>
+        <Korean>2. 무장 및 간략 부호 (Brevity Codes)</Korean>
+        <Japanese>2. 兵装および簡略通信コード</Japanese>
+        <Chinese>2. 武器與戰術簡語 (Brevity Codes)</Chinese>
+        <Chinesesimp>2. 武器与战术简语 (Brevity Codes)</Chinesesimp>
+        <Turkish>2. Silahlar ve Kısa Telsiz Kodları</Turkish>
+    </Key>
+    <Key ID="STR_ORA_MANUAL_WEAPONS_TEXT">
+        <Original>&lt;font color='#00d0ff' size='14'&gt;ORDNANCE RELEASE PROTOCOLS&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 2:&lt;/font&gt; Infrared-guided short-range missile (heat seeker). Best employed in rear-aspect close dogfights.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 3:&lt;/font&gt; Active radar beyond-visual-range (BVR) missile. Fire upon positive AWACS hostile vector.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Pickle:&lt;/font&gt; Air-to-ground guided bomb or rocket salvo release.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Guns:&lt;/font&gt; 20mm/30mm high-rate rotary cannon fire.</Original>
+        <English>&lt;font color='#00d0ff' size='14'&gt;ORDNANCE RELEASE PROTOCOLS&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 2:&lt;/font&gt; Infrared-guided short-range missile (heat seeker). Best employed in rear-aspect close dogfights.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 3:&lt;/font&gt; Active radar beyond-visual-range (BVR) missile. Fire upon positive AWACS hostile vector.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Pickle:&lt;/font&gt; Air-to-ground guided bomb or rocket salvo release.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Guns:&lt;/font&gt; 20mm/30mm high-rate rotary cannon fire.</English>
+        <French>&lt;font color='#00d0ff' size='14'&gt;PROTOCOLES DE DÉPENSE D'ARMEMENT&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 2 :&lt;/font&gt; Missile courte portée à guidage infrarouge. Privilégier les tirs en secteur arrière en combat rapproché.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Fox 3 :&lt;/font&gt; Missile BVR (Beyond Visual Range) à guidage radar actif sur vecteur AWACS confirmé.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Pickle :&lt;/font&gt; Déclenchement de bombe guidée ou roquette air-sol.&lt;br/&gt;- &lt;font color='#00ff88'&gt;Guns :&lt;/font&gt; Tir au canon automatique bitube / rotatif.</French>
+        <Spanish>&lt;font color='#00d0ff' size='14'&gt;PROTOCOLOS DE DISPARO DE ARMAS&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Misil infrarrojo de corto alcance.&lt;br/&gt;- Fox 3: Misil guiado por radar activo BVR.&lt;br/&gt;- Pickle: Lanzamiento de armamento aire-tierra.&lt;br/&gt;- Guns: Fuego de cañón rotativo.</Spanish>
+        <German>&lt;font color='#00d0ff' size='14'&gt;WAFFENEINSATZPROTOKOLLE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Kurzstrecken-Infrarotrakete.&lt;br/&gt;- Fox 3: Aktiv radargelenkte BVR-Rakete.&lt;br/&gt;- Pickle: Abwurf von Luft-Boden-Munition.&lt;br/&gt;- Guns: Bordkanonenfeuer.</German>
+        <Italian>&lt;font color='#00d0ff' size='14'&gt;PROTOCOLLI D'IMPIEGO DEGLI ARMAMENTI&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Missile a infrarossi a corto raggio.&lt;br/&gt;- Fox 3: Missile a guida radar attiva BVR.&lt;br/&gt;- Pickle: Sgancio ordigni aria-terra.&lt;br/&gt;- Guns: Fuoco con cannone di bordo.</Italian>
+        <Polish>&lt;font color='#00d0ff' size='14'&gt;PROCEDURY UŻYCIA UZBROJENIA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Pocisk krótkiego zasięgu naprowadzany termicznie.&lt;br/&gt;- Fox 3: Pocisk naprowadzany radarem BVR.&lt;br/&gt;- Pickle: Zrzut uzbrojenia powietrze-ziemia.&lt;br/&gt;- Guns: Ogień z działka pokładowego.</Polish>
+        <Portuguese>&lt;font color='#00d0ff' size='14'&gt;PROTOCOLOS DE EMPREGO DE ARMAMENTO&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Míssil ar-ar de curto alcance por infravermelho.&lt;br/&gt;- Fox 3: Míssil ar-ar de longo alcance BVR com radar ativo.&lt;br/&gt;- Pickle: Disparo de bomba ou foguete ar-solo.&lt;br/&gt;- Guns: Disparo de canhão de bordo.</Portuguese>
+        <Russian>&lt;font color='#00d0ff' size='14'&gt;ПРОТОКОЛЫ ПРИМЕНЕНИЯ ВООРУЖЕНИЯ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Ракета ближнего боя с тепловым наведением.&lt;br/&gt;- Fox 3: Ракета средней дальности с активной РЛС (BVR).&lt;br/&gt;- Pickle: Сброс бомб или пуск НАР по земле.&lt;br/&gt;- Guns: Стрельба из курсовой авиапушки.</Russian>
+        <Czech>&lt;font color='#00d0ff' size='14'&gt;PROTOKOLY NASAZENÍ VÝZBROJE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Tepelně naváděná raketa krátkého dosahu.&lt;br/&gt;- Fox 3: Aktivně radarově naváděná raketa dlouhého dosahu.&lt;br/&gt;- Pickle: Odhoz pumy či odpal neřízené rakety.&lt;br/&gt;- Guns: Střelba z palubního kanónu.</Czech>
+        <Korean>&lt;font color='#00d0ff' size='14'&gt;무장 발사 규정&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: 단거리 열추적 적외선 미사일.&lt;br/&gt;- Fox 3: 능동 레이더 유도 가시거리 밖(BVR) 미사일.&lt;br/&gt;- Pickle: 공대지 폭탄 또는 로켓 투하.&lt;br/&gt;- Guns: 기총 사격.</Korean>
+        <Japanese>&lt;font color='#00d0ff' size='14'&gt;兵装発射プロトコル&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: 赤外線誘導短距離ミサイル。&lt;br/&gt;- Fox 3: アクティブレーダー誘導視程外(BVR)ミサイル。&lt;br/&gt;- Pickle: 空対地爆弾またはロケット投下。&lt;br/&gt;- Guns: 機銃射撃。</Japanese>
+        <Chinese>&lt;font color='#00d0ff' size='14'&gt;武器投放協議&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2：紅外線導引短程飛彈。&lt;br/&gt;- Fox 3：主動雷達導引超視距 (BVR) 飛彈。&lt;br/&gt;- Pickle：投放空對地炸彈或火箭。&lt;br/&gt;- Guns：航砲射擊。</Chinese>
+        <Chinesesimp>&lt;font color='#00d0ff' size='14'&gt;武器投放协议&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2：红外线导引短程导弹。&lt;br/&gt;- Fox 3：主动雷达导引超视距 (BVR) 导弹。&lt;br/&gt;- Pickle：投放空对地炸弹或火箭。&lt;br/&gt;- Guns：航炮射击。</Chinesesimp>
+        <Turkish>&lt;font color='#00d0ff' size='14'&gt;MÜHİMMAT BIRAKMA PROTOKOLLERİ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Fox 2: Kızılötesi güdümlü kısa menzilli füze.&lt;br/&gt;- Fox 3: Aktif radar güdümlü görüş ötesi (BVR) füze.&lt;br/&gt;- Pickle: Hava-yer mühimmat bırakma.&lt;br/&gt;- Guns: Dahili top atışı.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_MANUAL_GFORCE_TITLE">
+        <Original>3. G-Force &amp; Human Factors</Original>
+        <English>3. G-Force &amp; Human Factors</English>
+        <French>3. Facteurs de Charge (G-Force)</French>
+        <Spanish>3. Fuerza G y Factores Humanos</Spanish>
+        <German>3. G-Kräfte &amp; Physiologie</German>
+        <Italian>3. Forza G e Fattori Umani</Italian>
+        <Polish>3. Przeciążenia G i Fizjologia</Polish>
+        <Portuguese>3. Fatores de Carga (Força G)</Portuguese>
+        <Russian>3. Перегрузки (G-Force) и физиология</Russian>
+        <Czech>3. Přetížení G a lidské faktory</Czech>
+        <Korean>3. 중력가속도(G-Force) 및 생체 요인</Korean>
+        <Japanese>3. Gフォースと身体的影響</Japanese>
+        <Chinese>3. G力與人體生理因素</Chinese>
+        <Chinesesimp>3. G力与人体生理因素</Chinesesimp>
+        <Turkish>3. G Kuvveti ve İnsan Faktörü</Turkish>
+    </Key>
+    <Key ID="STR_ORA_MANUAL_GFORCE_TEXT">
+        <Original>&lt;font color='#00d0ff' size='14'&gt;PHYSIOLOGICAL DYNAMICS UNDER LOAD&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Blackout (Positive G):&lt;/font&gt; Pulling hard sustained climbs or tight turns pushes blood away from the head. Tunnel vision and camera shake will trigger above 5G.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Redout (Negative G):&lt;/font&gt; Pushing the flight stick downward forces blood into the eyes, causing redout.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Oxygen Mask:&lt;/font&gt; Heavy breathing will automatically intensify under combat stress and aggressive maneuvering.</Original>
+        <English>&lt;font color='#00d0ff' size='14'&gt;PHYSIOLOGICAL DYNAMICS UNDER LOAD&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Blackout (Positive G):&lt;/font&gt; Pulling hard sustained climbs or tight turns pushes blood away from the head. Tunnel vision and camera shake will trigger above 5G.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Redout (Negative G):&lt;/font&gt; Pushing the flight stick downward forces blood into the eyes, causing redout.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Oxygen Mask:&lt;/font&gt; Heavy breathing will automatically intensify under combat stress and aggressive maneuvering.</English>
+        <French>&lt;font color='#00d0ff' size='14'&gt;DYNAMIQUE PHYSIOLOGIQUE SOUS CHARGE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ffd700'&gt;Voile Noir (G Positifs) :&lt;/font&gt; Tirer violemment sur le manche draine le sang vers le bas du corps. Vision tunnel et tremblements de cockpit se déclenchent au-delà de 5G.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Voile Rouge (G Négatifs) :&lt;/font&gt; Pousser le manche vers l'avant projette le sang vers la tête.&lt;br/&gt;- &lt;font color='#ffd700'&gt;Masque à Oxygène :&lt;/font&gt; Le rythme respiratoire s'accélère automatiquement sous contrainte et facteurs de charge élevés.</French>
+        <Spanish>&lt;font color='#00d0ff' size='14'&gt;DINÁMICA FISIOLÓGICA BAJO CARGA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Visión de túnel y oscurecimiento al sobrepasar 5G.&lt;br/&gt;- Respiración acelerada en maniobras agresivas.</Spanish>
+        <German>&lt;font color='#00d0ff' size='14'&gt;PHYSIOLOGISCHE BELASTUNG&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Blackout bei hohen positiven G-Kräften über 5G.&lt;br/&gt;- Redout bei negativen G-Kräften.&lt;br/&gt;- Atmung intensiviert sich bei extremen Manövern.</German>
+        <Italian>&lt;font color='#00d0ff' size='14'&gt;DINAMICA FISIOLOGICA SOTTO CARICO&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Visione a tunnel e blackout sopra i 5G.&lt;br/&gt;- Respirazione sotto maschera a ossigeno intensificata in manovra.</Italian>
+        <Polish>&lt;font color='#00d0ff' size='14'&gt;OBCIĄŻENIA FIZJOLOGICZNE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Zawężenie pola widzenia i utrata przytomności powyżej 5G.&lt;br/&gt;- Przyspieszony oddech w masce tlenowej podczas ciasnych zakrętów.</Polish>
+        <Portuguese>&lt;font color='#00d0ff' size='14'&gt;DINÂMICA FISIOLÓGICA SOB CARGA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Visão em túnel e blackout acima de 5G.&lt;br/&gt;- Respiração sob máscara intensificada em combate.</Portuguese>
+        <Russian>&lt;font color='#00d0ff' size='14'&gt;ФИЗИОЛОГИЧЕСКИЕ НАГРУЗКИ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Потеря сознания (Blackout) при перегрузках свыше 5G.&lt;br/&gt;- Учащенное дыхание под кислородной маской при виражах.</Russian>
+        <Czech>&lt;font color='#00d0ff' size='14'&gt;FYZIOLOGICKÁ ZÁTĚŽ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Ztráta vědomí a tunelové vidění při přetížení nad 5G.&lt;br/&gt;- Zrychlené dýchání v kyslíkové masce při manévrování.</Czech>
+        <Korean>&lt;font color='#00d0ff' size='14'&gt;중력가속도 생리 반응&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 5G 이상 지속 선회 시 시야 좁아짐 및 블랙아웃 발생.&lt;br/&gt;- 격렬한 기동 시 산소마스크 호흡음 증가.</Korean>
+        <Japanese>&lt;font color='#00d0ff' size='14'&gt;高G下の生理的反応&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 5Gを超える旋回で視界狭窄およびブラックアウトが発生。&lt;br/&gt;- 機動戦闘時に酸素マスクの呼吸が激しくなります。</Japanese>
+        <Chinese>&lt;font color='#00d0ff' size='14'&gt;高 G 力生理動態&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 超過 5G 的持續機動會引發視野狹窄及黑視。&lt;br/&gt;- 激烈纏鬥時氧氣面罩呼吸聲會自動增強。</Chinese>
+        <Chinesesimp>&lt;font color='#00d0ff' size='14'&gt;高 G 力生理动态&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 超过 5G 的持续机动会引发视野狭窄及黑视。&lt;br/&gt;- 激烈缠斗时氧气面罩呼吸声会自动增强。</Chinesesimp>
+        <Turkish>&lt;font color='#00d0ff' size='14'&gt;YÜKSEK G KUVVETİ REAKSİYONLARI&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 5G üzerindeki manevralarda tünel görüşü ve kararma başlar.&lt;br/&gt;- İt dalaşı sırasında oksijen maskesi solunumu sıklaşır.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_MANUAL_EMERGENCY_TITLE">
+        <Original>4. Emergency &amp; Ejection (CSAR)</Original>
+        <English>4. Emergency &amp; Ejection (CSAR)</English>
+        <French>4. Procédure d'Avarie &amp; Éjection (CSAR)</French>
+        <Spanish>4. Emergencia y Eyección (CSAR)</Spanish>
+        <German>4. Notfall &amp; Schleudersitz (CSAR)</German>
+        <Italian>4. Emergenza ed Espulsione (CSAR)</Italian>
+        <Polish>4. Awaria i Katapultowanie (CSAR)</Polish>
+        <Portuguese>4. Emergência e Ejeção (CSAR)</Portuguese>
+        <Russian>4. Аварийная ситуация и катапультирование (CSAR)</Russian>
+        <Czech>4. Nouzový stav a katapultace (CSAR)</Czech>
+        <Korean>4. 비상 상황 및 조종사 탈출 (CSAR)</Korean>
+        <Japanese>4. 緊急事態と緊急脱出 (CSAR)</Japanese>
+        <Chinese>4. 緊急狀況與彈射跳傘 (CSAR)</Chinese>
+        <Chinesesimp>4. 紧急状况与弹射跳伞 (CSAR)</Chinesesimp>
+        <Turkish>4. Acil Durum ve Fırlatma Koltuğu (CSAR)</Turkish>
+    </Key>
+    <Key ID="STR_ORA_MANUAL_EMERGENCY_TEXT">
+        <Original>&lt;font color='#00d0ff' size='14'&gt;CRITICAL DAMAGE &amp; PILOT SURVIVAL&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ff3333'&gt;Master Caution Alarm:&lt;/font&gt; When structural damage exceeds 80%, immediate engine cutoff or aerodynamic failure is imminent.&lt;br/&gt;- &lt;font color='#ff3333'&gt;Emergency Ejection:&lt;/font&gt; Use the emergency eject action to deploy the parachute immediately.&lt;br/&gt;- &lt;font color='#ff3333'&gt;CSAR Recovery:&lt;/font&gt; Once on the ground, ignite your smoke grenades (Green/Orange) to guide the rescue chopper.</Original>
+        <English>&lt;font color='#00d0ff' size='14'&gt;CRITICAL DAMAGE &amp; PILOT SURVIVAL&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ff3333'&gt;Master Caution Alarm:&lt;/font&gt; When structural damage exceeds 80%, immediate engine cutoff or aerodynamic failure is imminent.&lt;br/&gt;- &lt;font color='#ff3333'&gt;Emergency Ejection:&lt;/font&gt; Use the emergency eject action to deploy the parachute immediately.&lt;br/&gt;- &lt;font color='#ff3333'&gt;CSAR Recovery:&lt;/font&gt; Once on the ground, ignite your smoke grenades (Green/Orange) to guide the rescue chopper.</English>
+        <French>&lt;font color='#00d0ff' size='14'&gt;AVARIE CRITIQUE ET SURVIE PILOTE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- &lt;font color='#ff3333'&gt;Alarme Master Caution :&lt;/font&gt; Lorsque les dégâts dépassent 80%, l'extinction réacteur ou la rupture aérodynamique est imminente.&lt;br/&gt;- &lt;font color='#ff3333'&gt;Éjection d'Urgence :&lt;/font&gt; Actionnez la commande d'éjection pour ouvrir votre parachute de secours.&lt;br/&gt;- &lt;font color='#ff3333'&gt;Récupération CSAR :&lt;/font&gt; Une fois au sol, allumez vos fumigènes de détresse (Vert/Orange) pour guider l'hélicoptère de sauvetage.</French>
+        <Spanish>&lt;font color='#00d0ff' size='14'&gt;DAÑO CRÍTICO Y SUPERVIVENCIA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Alarma crítica cuando el daño supera el 80%.&lt;br/&gt;- Active la eyección para abrir el paracaídas.&lt;br/&gt;- Al aterrizar, encienda granadas de humo para guiar al equipo CSAR.</Spanish>
+        <German>&lt;font color='#00d0ff' size='14'&gt;KRITISCHER SCHADEN &amp; RETTUNG&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Master-Caution bei über 80% Strukturschaden.&lt;br/&gt;- Notausstieg betätigen, um Fallschirm zu öffnen.&lt;br/&gt;- Am Boden Rauchgranaten zünden für CSAR-Rettung.</German>
+        <Italian>&lt;font color='#00d0ff' size='14'&gt;DANNO CRITICO E SOPRAVVIVENZA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Allarme Master Caution oltre l'80% di danno.&lt;br/&gt;- Azionare l'espulsione d'emergenza.&lt;br/&gt;- A terra, accendere fumogeni per la squadra CSAR.</Italian>
+        <Polish>&lt;font color='#00d0ff' size='14'&gt;USZKODZENIA KRYTYCZNE I PRZETRWANIE&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Alarm główny przy uszkodzeniach powyżej 80%.&lt;br/&gt;- Użyj procedury katapultowania.&lt;br/&gt;- Na ziemi użyj granatów dymnych do naprowadzania śmigłowca CSAR.</Polish>
+        <Portuguese>&lt;font color='#00d0ff' size='14'&gt;DANO CRÍTICO E SOBREVIVÊNCIA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Alarme crítico acima de 80% de danos.&lt;br/&gt;- Acione a ejeção de emergência para abrir o paraquedas.&lt;br/&gt;- No solo, utilize fumaça verde/laranja para guiar a equipa CSAR.</Portuguese>
+        <Russian>&lt;font color='#00d0ff' size='14'&gt;КРИТИЧЕСКИЕ ПОВРЕЖДЕНИЯ И СПАСЕНИЕ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Аварийный сигнал при повреждениях свыше 80%.&lt;br/&gt;- Выполните аварийное катапультирование.&lt;br/&gt;- На земле зажгите дымовые шашки для группы ПСС (CSAR).</Russian>
+        <Czech>&lt;font color='#00d0ff' size='14'&gt;KRITICKÉ POŠKOZENÍ A PŘEŽITÍ&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Výstraha Master Caution při poškození nad 80%.&lt;br/&gt;- Proveďte nouzovou katapultaci.&lt;br/&gt;- Na zemi odpalte dýmovnice pro navedení týmu CSAR.</Czech>
+        <Korean>&lt;font color='#00d0ff' size='14'&gt;치명적 기체 손상 및 생존&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 기체 손상 80% 초과 시 마스터 경보 발령.&lt;br/&gt;- 비상 탈출을 실행하여 낙하산 전개.&lt;br/&gt;- 착지 후 녹색/주황 연막탄을 점화하여 CSAR 구조 헬기 유도.</Korean>
+        <Japanese>&lt;font color='#00d0ff' size='14'&gt;致命的な損傷と生存手順&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 機体損傷80%超過でマスターコーション警報発令。&lt;br/&gt;- 緊急脱出を実行しパラシュートを展開。&lt;br/&gt;- 着地後は発煙筒(緑/橙)を着火してCSAR救難機を誘導。</Japanese>
+        <Chinese>&lt;font color='#00d0ff' size='14'&gt;嚴重受損與飛行員求生&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 機體受損超過 80% 時發出主要警戒警報。&lt;br/&gt;- 執行緊急彈射並開啟降落傘。&lt;br/&gt;- 落地後點燃綠色/橙色煙霧彈引導搜救小組 (CSAR) 直升機。</Chinese>
+        <Chinesesimp>&lt;font color='#00d0ff' size='14'&gt;严重受损与飞行员求生&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- 机体受损超过 80% 时发出主要警戒警报。&lt;br/&gt;- 执行紧急弹射并开启降落伞。&lt;br/&gt;- 落地后点燃绿色/橙色烟雾弹引导搜救小组 (CSAR) 直升机。</Chinesesimp>
+        <Turkish>&lt;font color='#00d0ff' size='14'&gt;KRİTİK HASAR VE PİLOTUN SAĞ KALIMI&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;- Yapısal hasar %80'i aştığında Ana Uyarı alarmı çalar.&lt;br/&gt;- Fırlatma koltuğunu kullanarak paraşütü açın.&lt;br/&gt;- İniş yaptıktan sonra CSAR arama kurtarma helikopteri için sis yakın.</Turkish>
+    </Key>
+</Keys>

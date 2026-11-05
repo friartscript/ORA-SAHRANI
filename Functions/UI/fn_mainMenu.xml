@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_MENU_TITLE">
+        <Original>OPERATION ROYAL ALLIANCE — AIR FORCE COMMAND PANEL</Original>
+        <English>OPERATION ROYAL ALLIANCE — AIR FORCE COMMAND PANEL</English>
+        <French>OPERATION ROYAL ALLIANCE — PANNEAU DE COMMANDEMENT AÉRIEN</French>
+        <Spanish>OPERATION ROYAL ALLIANCE — PANEL DE MANDO DE LA FUERZA AÉREA</Spanish>
+        <German>OPERATION ROYAL ALLIANCE — LUFTWAFFEN-EINSATZZENTRALE</German>
+        <Italian>OPERATION ROYAL ALLIANCE — PANNELLO DI COMANDO AEREO</Italian>
+        <Polish>OPERATION ROYAL ALLIANCE — PANEL DOWODZENIA SIŁ POWIETRZNYCH</Polish>
+        <Portuguese>OPERATION ROYAL ALLIANCE — PAINEL DE COMANDO AÉREO</Portuguese>
+        <Russian>OPERATION ROYAL ALLIANCE — ПАНЕЛЬ УПРАВЛЕНИЯ ВВС</Russian>
+        <Czech>OPERATION ROYAL ALLIANCE — VELITELSKÝ PANEL LETECTVA</Czech>
+        <Korean>OPERATION ROYAL ALLIANCE — 공군 작전 지휘 패널</Korean>
+        <Japanese>OPERATION ROYAL ALLIANCE — 空軍作戦指揮パネル</Japanese>
+        <Chinese>OPERATION ROYAL ALLIANCE — 空軍作戰指揮面板</Chinese>
+        <Chinesesimp>OPERATION ROYAL ALLIANCE — 空军作战指挥面板</Chinesesimp>
+        <Turkish>OPERATION ROYAL ALLIANCE — HAVA KUVVETLERİ HAREKÂT PANELİ</Turkish>
+    </Key>
+    <Key ID="STR_ORA_HEADER_OBJECTIVES">
+        <Original>PRIMARY OPERATIONAL OBJECTIVES</Original>
+        <English>PRIMARY OPERATIONAL OBJECTIVES</English>
+        <French>OBJECTIFS OPÉRATIONNELS PRINCIPAUX</French>
+        <Spanish>OBJETIVOS OPERACIONALES PRINCIPALES</Spanish>
+        <German>PRIMÄRE EINSATZZIELE</German>
+        <Italian>OBIETTIVI OPERATIVI PRINCIPALI</Italian>
+        <Polish>GŁÓWNE CELE OPERACYJNE</Polish>
+        <Portuguese>OBJETIVOS OPERACIONAIS PRINCIPAIS</Portuguese>
+        <Russian>ОСНОВНЫЕ БОЕВЫЕ ЗАДАЧИ</Russian>
+        <Czech>HLAVNÍ OPERAČNÍ CÍLE</Czech>
+        <Korean>주요 작전 목표</Korean>
+        <Japanese>主要作戦目標</Japanese>
+        <Chinese>主要作戰目標</Chinese>
+        <Chinesesimp>主要作战目标</Chinesesimp>
+        <Turkish>BİRİNCİL HAREKÂT HEDEFLERİ</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TASK_PROTECT_RACS">
+        <Original>Protect RACS allied units</Original>
+        <English>Protect RACS allied units</English>
+        <French>Protéger les unités alliées RACS</French>
+        <Spanish>Proteger a las unidades aliadas RACS</Spanish>
+        <German>Verbündete RACS-Einheiten schützen</German>
+        <Italian>Proteggere le unità alleate RACS</Italian>
+        <Polish>Chroń sojusznicze jednostki RACS</Polish>
+        <Portuguese>Proteger as unidades aliadas RACS</Portuguese>
+        <Russian>Защитить союзные подразделения RACS</Russian>
+        <Czech>Chránit spojenecké jednotky RACS</Czech>
+        <Korean>RACS 아군 부대 보호</Korean>
+        <Japanese>RACS同盟部隊の防衛</Japanese>
+        <Chinese>保護 RACS 盟軍部隊</Chinese>
+        <Chinesesimp>保护 RACS 盟军部队</Chinesesimp>
+        <Turkish>Müttefik RACS unsurlarını koruyun</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TASK_SURVIVE_RTB">
+        <Original>Survive and return to base (RTB)</Original>
+        <English>Survive and return to base (RTB)</English>
+        <French>Revenir en vie à la base (RTB)</French>
+        <Spanish>Sobrevivir y regresar a la base (RTB)</Spanish>
+        <German>Überleben und zur Basis zurückkehren (RTB)</German>
+        <Italian>Sopravvivere e rientrare alla base (RTB)</Italian>
+        <Polish>Przetrwaj i powróć do bazy (RTB)</Polish>
+        <Portuguese>Sobreviver e regressar à base (RTB)</Portuguese>
+        <Russian>Выжить и вернуться на базу (RTB)</Russian>
+        <Czech>Přežít a vrátit se na základnu (RTB)</Czech>
+        <Korean>생존 후 기지 귀환 (RTB)</Korean>
+        <Japanese>生存して基地へ帰投 (RTB)</Japanese>
+        <Chinese>生存並返回基地 (RTB)</Chinese>
+        <Chinesesimp>生存并返回基地 (RTB)</Chinesesimp>
+        <Turkish>Hayatta kalın ve üsse geri dönün (RTB)</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TASK_ZERO_CASUALTIES">
+        <Original>Zero friendly casualties</Original>
+        <English>Zero friendly casualties</English>
+        <French>Aucune unité ne meurt</French>
+        <Spanish>Ninguna baja aliada</Spanish>
+        <German>Keine alliierten Verluste</German>
+        <Italian>Nessuna perdita alleata</Italian>
+        <Polish>Brak strat sojuszniczych</Polish>
+        <Portuguese>Zero baixas aliadas</Portuguese>
+        <Russian>Никаких потерь среди своих</Russian>
+        <Czech>Žádné vlastní ztráty</Czech>
+        <Korean>아군 사망자 0명</Korean>
+        <Japanese>味方戦死者ゼロ</Japanese>
+        <Chinese>友軍零傷亡</Chinese>
+        <Chinesesimp>友军零伤亡</Chinesesimp>
+        <Turkish>Dost birliklerde sıfır kayıp</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TASK_MAJORITY_SURVIVE">
+        <Original>Majority of friendly forces survive</Original>
+        <English>Majority of friendly forces survive</English>
+        <French>La majorité des unités sont en vie</French>
+        <Spanish>La mayoría de las unidades aliadas sobreviven</Spanish>
+        <German>Die Mehrheit der alliierten Einheiten überlebt</German>
+        <Italian>La maggioranza delle unità alleate sopravvive</Italian>
+        <Polish>Większość jednostek sojuszniczych przeżyje</Polish>
+        <Portuguese>A maioria das unidades aliadas sobrevive</Portuguese>
+        <Russian>Большинство союзных сил должно выжить</Russian>
+        <Czech>Většina spojeneckých jednotek přežije</Czech>
+        <Korean>아군 부대 과반수 생존</Korean>
+        <Japanese>味方部隊の大半が生還</Japanese>
+        <Chinese>友軍主力部隊生還</Chinese>
+        <Chinesesimp>友军主力部队生还</Chinesesimp>
+        <Turkish>Dost kuvvetlerin çoğunluğu hayatta kalmalı</Turkish>
+    </Key>
+    <Key ID="STR_ORA_HEADER_MISSION_COUNT">
+        <Original>SORTIES COUNT (1 CHOICE ONLY)</Original>
+        <English>SORTIES COUNT (1 CHOICE ONLY)</English>
+        <French>NOMBRE DE MISSIONS (1 SEUL CHOIX)</French>
+        <Spanish>NÚMERO DE MISIONES (1 SOLA ELECCIÓN)</Spanish>
+        <German>ANZAHL DER EINSÄTZE (NUR 1 WAHL)</German>
+        <Italian>NUMERO DI MISSIONI (SOLO 1 SCELTA)</Italian>
+        <Polish>LICZBA MISJI (TYLKO 1 WYBÓR)</Polish>
+        <Portuguese>NÚMERO DE MISSÕES (APENAS 1 ESCOLHA)</Portuguese>
+        <Russian>КОЛИЧЕСТВО ВЫЛЕТОВ (ТОЛЬКО 1 ВЫБОР)</Russian>
+        <Czech>POČET MISÍ (POUZE 1 VOLBA)</Czech>
+        <Korean>출격 횟수 (단일 선택)</Korean>
+        <Japanese>出撃ミッション数 (1つのみ選択)</Japanese>
+        <Chinese>出擊架次數量 (僅限單選)</Chinese>
+        <Chinesesimp>出击架次数量 (仅限单选)</Chinesesimp>
+        <Turkish>GÖREV SAYISI (YALNIZCA 1 SEÇİM)</Turkish>
+    </Key>
+    <Key ID="STR_ORA_COUNT_5">
+        <Original>1 to 5 missions</Original>
+        <English>1 to 5 missions</English>
+        <French>1 à 5 missions</French>
+        <Spanish>1 a 5 misiones</Spanish>
+        <German>1 bis 5 Missionen</German>
+        <Italian>1 a 5 missioni</Italian>
+        <Polish>Od 1 do 5 misji</Polish>
+        <Portuguese>1 a 5 missões</Portuguese>
+        <Russian>От 1 до 5 вылетов</Russian>
+        <Czech>1 až 5 misí</Czech>
+        <Korean>1 ~ 5개 임무</Korean>
+        <Japanese>1〜5 ミッション</Japanese>
+        <Chinese>1 至 5 次任務</Chinese>
+        <Chinesesimp>1 至 5 次任务</Chinesesimp>
+        <Turkish>1 ila 5 görev</Turkish>
+    </Key>
+    <Key ID="STR_ORA_COUNT_10">
+        <Original>1 to 10 missions</Original>
+        <English>1 to 10 missions</English>
+        <French>1 à 10 missions</French>
+        <Spanish>1 a 10 misiones</Spanish>
+        <German>1 bis 10 Missionen</German>
+        <Italian>1 a 10 missioni</Italian>
+        <Polish>Od 1 do 10 misji</Polish>
+        <Portuguese>1 a 10 missões</Portuguese>
+        <Russian>От 1 до 10 вылетов</Russian>
+        <Czech>1 až 10 misí</Czech>
+        <Korean>1 ~ 10개 임무</Korean>
+        <Japanese>1〜10 ミッション</Japanese>
+        <Chinese>1 至 10 次任務</Chinese>
+        <Chinesesimp>1 至 10 次任务</Chinesesimp>
+        <Turkish>1 ila 10 görev</Turkish>
+    </Key>
+    <Key ID="STR_ORA_COUNT_15">
+        <Original>1 to 15 missions</Original>
+        <English>1 to 15 missions</English>
+        <French>1 à 15 missions</French>
+        <Spanish>1 a 15 misiones</Spanish>
+        <German>1 bis 15 Missionen</German>
+        <Italian>1 a 15 missioni</Italian>
+        <Polish>Od 1 do 15 misji</Polish>
+        <Portuguese>1 a 15 missões</Portuguese>
+        <Russian>От 1 до 15 вылетов</Russian>
+        <Czech>1 à 15 misí</Czech>
+        <Korean>1 ~ 15개 임무</Korean>
+        <Japanese>1〜15 ミッション</Japanese>
+        <Chinese>1 至 15 次任務</Chinese>
+        <Chinesesimp>1 至 15 次任务</Chinesesimp>
+        <Turkish>1 ila 15 görev</Turkish>
+    </Key>
+    <Key ID="STR_ORA_COUNT_20">
+        <Original>1 to 20 missions</Original>
+        <English>1 to 20 missions</English>
+        <French>1 à 20 missions</French>
+        <Spanish>1 a 20 misiones</Spanish>
+        <German>1 bis 20 Missionen</German>
+        <Italian>1 a 20 missioni</Italian>
+        <Polish>Od 1 do 20 misji</Polish>
+        <Portuguese>1 a 20 missões</Portuguese>
+        <Russian>От 1 до 20 вылетов</Russian>
+        <Czech>1 až 20 misí</Czech>
+        <Korean>1 ~ 20개 임무</Korean>
+        <Japanese>1〜20 ミッション</Japanese>
+        <Chinese>1 至 20 次任務</Chinese>
+        <Chinesesimp>1 至 20 次任务</Chinesesimp>
+        <Turkish>1 ila 20 görev</Turkish>
+    </Key>
+    <Key ID="STR_ORA_HEADER_TACTICAL_OPTIONS">
+        <Original>TACTICAL OPTIONS</Original>
+        <English>TACTICAL OPTIONS</English>
+        <French>OPTIONS TACTIQUES</French>
+        <Spanish>OPCIONES TÁCTICAS</Spanish>
+        <German>TAKTIK-OPTIONEN</German>
+        <Italian>OPZIONI TATTICHE</Italian>
+        <Polish>OPCJE TAKTYCZNE</Polish>
+        <Portuguese>OPÇÕES TÁTICAS</Portuguese>
+        <Russian>ТАКТИЧЕСКИЕ НАСТРОЙКИ</Russian>
+        <Czech>TAKTICKÉ MOŽNOSTI</Czech>
+        <Korean>전술 옵션</Korean>
+        <Japanese>戦術オプション</Japanese>
+        <Chinese>戰術選項</Chinese>
+        <Chinesesimp>战术选项</Chinesesimp>
+        <Turkish>TAKTİK SEÇENEKLER</Turkish>
+    </Key>
+    <Key ID="STR_ORA_OPT_GUIDANCE">
+        <Original>Weapon guidance assist (Aide de tir)</Original>
+        <English>Weapon guidance assist (Aide de tir)</English>
+        <French>Téléguidage des tirs (Aide de tir)</French>
+        <Spanish>Asistencia de guiado de armas</Spanish>
+        <German>Waffen-Zielhilfesystem (Zielführung)</German>
+        <Italian>Assistenza di guida al tiro</Italian>
+        <Polish>Wspomaganie naprowadzania ognia</Polish>
+        <Portuguese>Assistência de guiamento de armas</Portuguese>
+        <Russian>Помощь в наведении вооружения</Russian>
+        <Czech>Asistence navádění střelby</Czech>
+        <Korean>유도 무기 조준 보조</Korean>
+        <Japanese>兵装誘導アシスト (射撃支援)</Japanese>
+        <Chinese>武器導引輔助 (射擊輔助)</Chinese>
+        <Chinesesimp>武器导引辅助 (射击辅助)</Chinesesimp>
+        <Turkish>Güdümlü atış desteği</Turkish>
+    </Key>
+    <Key ID="STR_ORA_OPT_ALLIES">
+        <Original>Additional allied presence</Original>
+        <English>Additional allied presence</English>
+        <French>Autres présences alliées</French>
+        <Spanish>Presencia aliada adicional</Spanish>
+        <German>Zusätzliche alliierte Einheiten</German>
+        <Italian>Ulteriore presenza alleata</Italian>
+        <Polish>Dodatkowa obecność sojuszników</Polish>
+        <Portuguese>Presença aliada adicional</Portuguese>
+        <Russian>Дополнительное союзное присутствие</Russian>
+        <Czech>Další spojenecká přítomnost</Czech>
+        <Korean>추가 아군 전력 배치</Korean>
+        <Japanese>追加の同盟軍部隊</Japanese>
+        <Chinese>額外友軍部署</Chinese>
+        <Chinesesimp>额外友军部署</Chinesesimp>
+        <Turkish>Ek müttefik kuvvet varlığı</Turkish>
+    </Key>
+    <Key ID="STR_ORA_OPT_NO_EJECT">
+        <Original>COCKPIT EGRESS FORFEITS MISSION</Original>
+        <English>COCKPIT EGRESS FORFEITS MISSION</English>
+        <French>L'EXTRACTION DU COCKPIT FAIT PERDRE LA MISSION</French>
+        <Spanish>LA SALIDA DE LA CABINA HACE PERDER LA MISIÓN</Spanish>
+        <German>VERLASSEN DES COCKPITS BEENDET DIE MISSION ALS VERLOREN</German>
+        <Italian>L'USCITA DALL'ABITACOLO COMPORTA LA SCONFITTA</Italian>
+        <Polish>OPUSZCZENIE KOKPITU OZNACZA PRZEGRANĄ</Polish>
+        <Portuguese>SAIR DO COCKPIT RESULTA EM DERROTA</Portuguese>
+        <Russian>ВЫХОД ИЗ КАБИНЫ ВЕДЕТ К ПРОВАЛУ МИССИИ</Russian>
+        <Czech>OPUŠTĚNÍ KOKPITU ZNAMENÁ PROHRU MISE</Czech>
+        <Korean>조종석 이탈 시 즉시 임무 실패</Korean>
+        <Japanese>コックピットからの脱出・離脱は作戦失敗</Japanese>
+        <Chinese>離開座艙直接判定任務失敗</Chinese>
+        <Chinesesimp>离开座舱直接判定任务失败</Chinesesimp>
+        <Turkish>KOKPİTTEN ÇIKMAK GÖREVİN KAYBEDİLMESİNE YOL AÇAR</Turkish>
+    </Key>
+    <Key ID="STR_ORA_ALERT_NO_EJECT_INFO">
+        <Original>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ CRITICAL RESTRICTION:&lt;br/&gt;Bailing out, ejecting or leaving the aircraft cockpit will immediately cause mission failure.&lt;/t&gt;</Original>
+        <English>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ CRITICAL RESTRICTION:&lt;br/&gt;Bailing out, ejecting or leaving the aircraft cockpit will immediately cause mission failure.&lt;/t&gt;</English>
+        <French>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ RESTRICTION CRITIQUE :&lt;br/&gt;S'éjecter ou quitter le cockpit de l'avion entraînera immédiatement l'échec de la mission.&lt;/t&gt;</French>
+        <Spanish>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ RESTRICCIÓN CRÍTICA:&lt;br/&gt;Eyectarse o abandonar la cabina causará el fracaso inmediato de la misión.&lt;/t&gt;</Spanish>
+        <German>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ KRITISCHE BESCHRÄNKUNG:&lt;br/&gt;Ein Notausstieg oder das Verlassen des Cockpits führt zum sofortigen Missionsabbruch.&lt;/t&gt;</German>
+        <Italian>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ RESTRIZIONE CRITICA:&lt;br/&gt;Eiettarsi o lasciare l'abitacolo provocherà il fallimento immediato della missione.&lt;/t&gt;</Italian>
+        <Polish>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ KRYTYCZNE OBOSTRZENIE:&lt;br/&gt;Katapultowanie lub opuszczenie maszyny natychmiast kończy misję porażką.&lt;/t&gt;</Polish>
+        <Portuguese>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ RESTRIÇÃO CRÍTICA:&lt;br/&gt;Ejetar-se ou sair da cabine causará a derrota imediata na missão.&lt;/t&gt;</Portuguese>
+        <Russian>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ КРИТИЧЕСКОЕ ОГРАНИЧЕНИЕ:&lt;br/&gt;Катапультирование или выход из кабины приведет к немедленному провалу.&lt;/t&gt;</Russian>
+        <Czech>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ KRITICKÉ OMEZENÍ:&lt;br/&gt;Katapultace nebo opuštění kokpitu způsobí okamžité selhání mise.&lt;/t&gt;</Czech>
+        <Korean>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ 필수 제한 규정:&lt;br/&gt;조종석을 이탈하거나 비상 탈출할 경우 즉시 임무 실패로 처리됩니다.&lt;/t&gt;</Korean>
+        <Japanese>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ 厳格な制限:&lt;br/&gt;緊急脱出または機体からの離脱は直ちに作戦失敗となります。&lt;/t&gt;</Japanese>
+        <Chinese>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ 關鍵限制：&lt;br/&gt;彈射逃生或離開座艙將立即導致任務失敗。&lt;/t&gt;</Chinese>
+        <Chinesesimp>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ 关键限制：&lt;br/&gt;弹射逃生或离开座舱将立即导致任务失败。&lt;/t&gt;</Chinesesimp>
+        <Turkish>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ KRİTİK KISITLAMA:&lt;br/&gt;Uçaktan atlamak veya kokpitten çıkmak derhal görevin başarısızlığına neden olur.&lt;/t&gt;</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TACTICAL_DIRECTIVES_AIR">
+        <Original>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL FLIGHT DIRECTIVES:&lt;br/&gt;- Insertion takes place directly seated in plane_0.&lt;br/&gt;- Mission sectors are randomized dynamically in flight.&lt;br/&gt;- AWACS Overlord will vector you to priority targets.&lt;/t&gt;</Original>
+        <English>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL FLIGHT DIRECTIVES:&lt;br/&gt;- Insertion takes place directly seated in plane_0.&lt;br/&gt;- Mission sectors are randomized dynamically in flight.&lt;br/&gt;- AWACS Overlord will vector you to priority targets.&lt;/t&gt;</English>
+        <French>&lt;t color='#00d0ff' size='0.85'&gt;DIRECTIVES DE VOL TACTIQUES :&lt;br/&gt;- L'insertion s'effectue directement aux commandes de plane_0.&lt;br/&gt;- Les secteurs d'engagement sont assignés aléatoirement en vol.&lt;br/&gt;- L'AWACS Overlord assurera votre guidage vers les cibles prioritaires.&lt;/t&gt;</French>
+        <Spanish>&lt;t color='#00d0ff' size='0.85'&gt;DIRECTIVAS DE VUELO:&lt;br/&gt;- La inserción se realiza directamente en la cabina de plane_0.&lt;br/&gt;- Los sectores de combate se asignan aleatoriamente en vuelo.&lt;br/&gt;- El AWACS Overlord le guiará hacia los objetivos prioritarios.&lt;/t&gt;</Spanish>
+        <German>&lt;t color='#00d0ff' size='0.85'&gt;FLUGDIREKTIVEN:&lt;br/&gt;- Der Einsatz beginnt direkt im Cockpit von plane_0.&lt;br/&gt;- Einsatzsektoren werden dynamisch während des Fluges zugewiesen.&lt;br/&gt;- AWACS Overlord leitet Sie zu Prioritätszielen.&lt;/t&gt;</German>
+        <Italian>&lt;t color='#00d0ff' size='0.85'&gt;DIRETTIVE DI VOLO:&lt;br/&gt;- L'inserimento avviene direttamente nell'abitacolo di plane_0.&lt;br/&gt;- I settori vengono assegnati casualmente in volo.&lt;br/&gt;- L'AWACS Overlord guiderà sui bersagli prioritari.&lt;/t&gt;</Italian>
+        <Polish>&lt;t color='#00d0ff' size='0.85'&gt;WYTYCZNE LOTU:&lt;br/&gt;- Infiltracja odbywa się bezpośrednio za sterami plane_0.&lt;br/&gt;- Sektory misji są przydzielane losowo w trakcie lotu.&lt;br/&gt;- AWACS Overlord poprowadzi cię na cele priorytetowe.&lt;/t&gt;</Polish>
+        <Portuguese>&lt;t color='#00d0ff' size='0.85'&gt;DIRETIVAS DE VOO:&lt;br/&gt;- A inserção é feita diretamente no cockpit de plane_0.&lt;br/&gt;- Os setores de missão são atribuídos aleatoriamente em voo.&lt;br/&gt;- O AWACS Overlord fornecerá vetores para os alvos prioritários.&lt;/t&gt;</Portuguese>
+        <Russian>&lt;t color='#00d0ff' size='0.85'&gt;ПОЛЕТНЫЕ УКАЗАНИЯ:&lt;br/&gt;- Начало операции сразу в кабине plane_0.&lt;br/&gt;- Секторы боевых задач назначаются динамически в воздухе.&lt;br/&gt;- АВАКС Overlord обеспечит наведение на приоритетные цели.&lt;/t&gt;</Russian>
+        <Czech>&lt;t color='#00d0ff' size='0.85'&gt;LETOVÉ POKYNY:&lt;br/&gt;- Výsadek probíhá přímo v kokpitu letounu plane_0.&lt;br/&gt;- Bojové sektory jsou přiřazovány náhodně za letu.&lt;br/&gt;- AWACS Overlord zajistí navádění na prioritní cíle.&lt;/t&gt;</Czech>
+        <Korean>&lt;t color='#00d0ff' size='0.85'&gt;전술 비행 지침:&lt;br/&gt;- 작전 시작 시 plane_0 조종석에 즉시 탑승합니다.&lt;br/&gt;- 비행 중 작전 구역이 무작위로 동적 할당됩니다.&lt;br/&gt;- AWACS Overlord가 최우선 목표로 유도합니다.&lt;/t&gt;</Korean>
+        <Japanese>&lt;t color='#00d0ff' size='0.85'&gt;戦術飛行指示:&lt;br/&gt;- plane_0のコックピットに着席した状態で即座に作戦開始。&lt;br/&gt;- 作戦セクターは飛行中に動的かつランダムに割り当てられます。&lt;br/&gt;- AWACS Overlordが優先目標へと誘導します。&lt;/t&gt;</Japanese>
+        <Chinese>&lt;t color='#00d0ff' size='0.85'&gt;戰術飛行指令：&lt;br/&gt;- 行動開始時直接就位在 plane_0 座艙內。&lt;br/&gt;- 作戰區域在飛行中由系統動態隨機指派。&lt;br/&gt;- 預警機 Overlord 將引導您攻擊高優先級目標。&lt;/t&gt;</Chinese>
+        <Chinesesimp>&lt;t color='#00d0ff' size='0.85'&gt;战术飞行指令：&lt;br/&gt;- 行动开始时直接就位在 plane_0 座舱内。&lt;br/&gt;- 作战区域在飞行中由系统动态随机指派。&lt;br/&gt;- 预警机 Overlord 将引导您攻击高优先级目标。&lt;/t&gt;</Chinesesimp>
+        <Turkish>&lt;t color='#00d0ff' size='0.85'&gt;TAKTIK UÇUŞ TALİMATLARI:&lt;br/&gt;- İntikal doğrudan plane_0 kokpitinde başlar.&lt;br/&gt;- Görev sektörleri uçuş sırasında rastgele atanır.&lt;br/&gt;- AWACS Overlord sizi öncelikli hedeflere yönlendirecektir.&lt;/t&gt;</Turkish>
+    </Key>
+    <Key ID="STR_ORA_HEADER_AIRCRAFT_PREVIEW">
+        <Original>ASSIGNED VECTOR (PLANE_0)</Original>
+        <English>ASSIGNED VECTOR (PLANE_0)</English>
+        <French>VECTEUR ASSIGNÉ (PLANE_0)</French>
+        <Spanish>VECTOR ASIGNADO (PLANE_0)</Spanish>
+        <German>ZUGEWIESENES FLUGZEUG (PLANE_0)</German>
+        <Italian>VETTORE ASSEGNATO (PLANE_0)</Italian>
+        <Polish>PRZYDZIELONA MASZYNA (PLANE_0)</Polish>
+        <Portuguese>VETOR ATRIBUÍDO (PLANE_0)</Portuguese>
+        <Russian>НАЗНАЧЕННЫЙ БОРТ (PLANE_0)</Russian>
+        <Czech>PŘIŘAZENÝ LETOUN (PLANE_0)</Czech>
+        <Korean>지정 기체 (PLANE_0)</Korean>
+        <Japanese>配備戦闘機 (PLANE_0)</Japanese>
+        <Chinese>指定座機 (PLANE_0)</Chinese>
+        <Chinesesimp>指定座机 (PLANE_0)</Chinesesimp>
+        <Turkish>TAHSİS EDİLEN UÇAK (PLANE_0)</Turkish>
+    </Key>
+    <Key ID="STR_ORA_HEADER_THEATER_MAP">
+        <Original>OPERATIONAL THEATER — SAHRANI</Original>
+        <English>OPERATIONAL THEATER — SAHRANI</English>
+        <French>THÉÂTRE D'OPÉRATIONS — SAHRANI</French>
+        <Spanish>TEATRO DE OPERACIONES — SAHRANI</Spanish>
+        <German>EINSATZGEBIET — SAHRANI</German>
+        <Italian>TEATRO DI OPERAZIONI — SAHRANI</Italian>
+        <Polish>TEATR DZIAŁAŃ — SAHRANI</Polish>
+        <Portuguese>TEATRO DE OPERAÇÕES — SAHRANI</Portuguese>
+        <Russian>ТЕАТР ВОЕННЫХ ДЕЙСТВИЙ — САХРАНИ</Russian>
+        <Czech>BOJIŠTĚ — SAHRANI</Czech>
+        <Korean>작전 전구 — 사라니</Korean>
+        <Japanese>作戦区域 — サフラニ</Japanese>
+        <Chinese>作戰戰區 — 薩赫拉尼</Chinese>
+        <Chinesesimp>作战战区 — 萨赫拉尼</Chinesesimp>
+        <Turkish>HAREKÂT ALANI — SAHRANI</Turkish>
+    </Key>
+    <Key ID="STR_ORA_MAP_DYNAMIC_NOTICE">
+        <Original>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL MAP:&lt;/t&gt;&lt;br/&gt;Mission sectors are randomized dynamically across the theater during combat operations.</Original>
+        <English>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL MAP:&lt;/t&gt;&lt;br/&gt;Mission sectors are randomized dynamically across the theater during combat operations.</English>
+        <French>&lt;t color='#00d0ff' size='0.85'&gt;CARTE TACTIQUE :&lt;/t&gt;&lt;br/&gt;Les secteurs de combat seront attribués aléatoirement par le QG sur l'archipel en cours de vol.</French>
+        <Spanish>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TÁCTICO:&lt;/t&gt;&lt;br/&gt;Los sectores de misión se asignan aleatoriamente durante el combate.</Spanish>
+        <German>&lt;t color='#00d0ff' size='0.85'&gt;TAKTIKKARTE:&lt;/t&gt;&lt;br/&gt;Einsatzsektoren werden dynamisch über das gesamte Einsatzgebiet verteilt.</German>
+        <Italian>&lt;t color='#00d0ff' size='0.85'&gt;MAPPA TATTICA:&lt;/t&gt;&lt;br/&gt;I settori di missione vengono assegnati casualmente durante le operazioni.</Italian>
+        <Polish>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TAKTYCZNA:&lt;/t&gt;&lt;br/&gt;Sektory operacji są losowane na całym archipelagu w czasie rzeczywistym.</Polish>
+        <Portuguese>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TÁTICO:&lt;/t&gt;&lt;br/&gt;Os setores de missão são gerados aleatoriamente em pleno voo.</Portuguese>
+        <Russian>&lt;t color='#00d0ff' size='0.85'&gt;ТАКТИЧЕСКАЯ КАРТА:&lt;/t&gt;&lt;br/&gt;Секторы операций распределяются случайным образом в ходе боевого вылета.</Russian>
+        <Czech>&lt;t color='#00d0ff' size='0.85'&gt;TAKTICKÁ MAPA:&lt;/t&gt;&lt;br/&gt;Bojové sektory budou náhodně přidělovány velitelstvím během letu.</Czech>
+        <Korean>&lt;t color='#00d0ff' size='0.85'&gt;전술 지도:&lt;/t&gt;&lt;br/&gt;작전 구역은 교전 중 전구 전역에 무작위로 생성됩니다.</Korean>
+        <Japanese>&lt;t color='#00d0ff' size='0.85'&gt;戦術マップ:&lt;/t&gt;&lt;br/&gt;作戦セクターは飛行中に戦域全域へランダムに配分されます。</Japanese>
+        <Chinese>&lt;t color='#00d0ff' size='0.85'&gt;戰術地圖：&lt;/t&gt;&lt;br/&gt;作戰區域將在戰鬥進行時於全島動態隨機生成。</Chinese>
+        <Chinesesimp>&lt;t color='#00d0ff' size='0.85'&gt;战术地图：&lt;br/&gt;作战区域将在战斗进行时于全岛动态随机生成。</Chinesesimp>
+        <Turkish>&lt;t color='#00d0ff' size='0.85'&gt;TAKTİK HARİTA:&lt;/t&gt;&lt;br/&gt;Görev sektörleri muharebe sırasında harekât alanı genelinde rastgele atanır.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_BUTTON_LAUNCH_SORTIE">
+        <Original>SCRAMBLE / LAUNCH SORTIE</Original>
+        <English>SCRAMBLE / LAUNCH SORTIE</English>
+        <French>DÉCOLLER / LANCER LA MISSION</French>
+        <Spanish>DESPEGAR / INICIAR MISIÓN</Spanish>
+        <German>STARTEN / EINSATZ BEGINNEN</German>
+        <Italian>DECOLLO / AVVIA MISSIONE</Italian>
+        <Polish>START / ROZPOCZNIJ WYLOT</Polish>
+        <Portuguese>DESCOLAR / INICIAR MISSÃO</Portuguese>
+        <Russian>НА ВЗЛЕТ / НАЧАТЬ ВЫЛЕТ</Russian>
+        <Czech>VZLET / ZAHÁJIT MISI</Czech>
+        <Korean>긴급 출격 / 작전 개시</Korean>
+        <Japanese>スクランブル発進 / 出撃開始</Japanese>
+        <Chinese>緊急起飛 / 開始出擊</Chinese>
+        <Chinesesimp>紧急起飞 / 开始出击</Chinesesimp>
+        <Turkish>KALKIŞ / GÖREVİ BAŞLAT</Turkish>
+    </Key>
+    <Key ID="STR_ORA_ALERT_EJECT_FAILED_MSG">
+        <Original>PILOT ABANDONED COCKPIT. MISSION FAILED.</Original>
+        <English>PILOT ABANDONED COCKPIT. MISSION FAILED.</English>
+        <French>LE PILOTE A QUITTÉ LE COCKPIT. MISSION ÉCHOUÉE.</French>
+        <Spanish>EL PILOTO ABANDONÓ LA CABINA. MISIÓN FRACASADA.</Spanish>
+        <German>PILOT HAT DAS COCKPIT VERLASSEN. MISSION FEHLGESCHLAGEN.</German>
+        <Italian>IL PILOTA HA ABBANDONATO L'ABITACOLO. MISSIONE FALLITA.</Italian>
+        <Polish>PILOT OPUŚCIŁ KOKPIT. MISJA ZAKOŃCZONA PORAŻKĄ.</Polish>
+        <Portuguese>O PILOTO ABANDONOU O COCKPIT. MISSÃO FALHADA.</Portuguese>
+        <Russian>ПИЛОТ ПОКИНУЛ КАБИНУ. МИССИЯ ПРОВАЛЕНА.</Russian>
+        <Czech>PILOT OPUSTIL KOKPIT. MISE SELHALA.</Czech>
+        <Korean>조종사가 조종석을 이탈했습니다. 임무 실패.</Korean>
+        <Japanese>パイロットがコックピットを放棄しました。作戦失敗。</Japanese>
+        <Chinese>飛行員脫離座艙。任務失敗。</Chinese>
+        <Chinesesimp>飞行员脱离座舱。任务失败。</Chinesesimp>
+        <Turkish>PİLOT KOKPİTİ TERK ETTİ. GÖREV BAŞARISIZ.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_RADIO_MISSION_LAUNCHED">
+        <Original>Victor-One is airborne. Flight plan armed with %1 sorties. Good hunting.</Original>
+        <English>Victor-One is airborne. Flight plan armed with %1 sorties. Good hunting.</English>
+        <French>Victor-One aux commandes. Plan de vol armé pour %1 sorties. Bonne chasse.</French>
+        <Spanish>Victor-One a los mandos. Plan de vuelo activado para %1 salidas. Buena caza.</Spanish>
+        <German>Victor-One startklar. Flugplan mit %1 Einsätzen geladen. Gute Jagd.</German>
+        <Italian>Victor-One ai comandi. Piano di volo attivo con %1 sortite. Buona caccia.</Italian>
+        <Polish>Victor-One za sterami. Plan lotu załadowany: %1 wylotów. Udanych łowów.</Polish>
+        <Portuguese>Victor-One aos comandos. Plano de voo ativado para %1 saídas. Boa caça.</Portuguese>
+        <Russian>Victor-One у штурвала. Полетный план загружен на %1 вылетов. Удачной охоты.</Russian>
+        <Czech>Victor-One u řízení. Letový plán aktivován na %1 vzletů. Lovu zdar.</Czech>
+        <Korean>빅터-원 탑승 확인. %1개 출격 비행 계획 장전. 성공적인 사냥을 기원합니다.</Korean>
+        <Japanese>ヴィクター1、操縦席に着席。%1回の出撃計画を装填。武運を祈る。</Japanese>
+        <Chinese>Victor-One 已就位。已載入 %1 架次飛行計畫。祝獵運亨通。</Chinese>
+        <Chinesesimp>Victor-One 已就位。已载入 %1 架次飞行计划。祝猎运亨通。</Chinesesimp>
+        <Turkish>Victor-One kontrollerde. %1 sorti için uçuş planı devrede. İyi avlar.</Turkish>
+    </Key>
+</Keys>
+
