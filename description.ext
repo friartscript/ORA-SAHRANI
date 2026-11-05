@@ -16,7 +16,20 @@ saving          = 1;
 respawn         = 0;
 respawnTemplates[] = {"None"};
 disabledAI      = 1;
-enableDebugConsole = 1;
+enableDebugConsole = 0;
+
+// ============================================================================
+// DÉSACTIVATION COMPLÈTE DU SYSTÈME DE CHAT ET DES CANAUX DE LOG DU JEU
+// ============================================================================
+disableChannels[] = {
+    {0, true, true}, // Global
+    {1, true, true}, // Side
+    {2, true, true}, // Command
+    {3, true, true}, // Group
+    {4, true, true}, // Vehicle
+    {5, true, true}, // Direct
+    {6, true, true}  // Custom / System
+};
 
 class Header
 {
@@ -49,6 +62,7 @@ class CfgFunctions
             class cockpitEgressForfeit  { compileFinal = 1; };
             class weaponGuidance        { compileFinal = 1; };
             class airRefuel             { compileFinal = 1; };
+            class callTanker            { compileFinal = 1; };
         };
 
         class Player
@@ -92,6 +106,7 @@ class CfgFunctions
             class taskSea           { compileFinal = 1; };
             class taskAir           { compileFinal = 1; };
             class taskHeli          { compileFinal = 1; };
+            class taskCleanup       { compileFinal = 1; };
         };
     };
 };
@@ -114,6 +129,23 @@ class CfgUnitInsignia
 // DIALOGUES ET INTERFACES GRAPHIQUES (GUI)
 // ============================================================================
 #include "Dialogs\main_menu.hpp"
+
+// ============================================================================
+// MENU COMMUNICATIONS / SUPPORTS RADIO (0-8)
+// ============================================================================
+class CfgCommunicationMenu
+{
+    class ORA_RefuelSupport
+    {
+        text = "$STR_ORA_SUPPORT_REFUEL_TITLE";
+        submenu = "";
+        expression = "[] spawn ORA_fnc_callTanker;";
+        icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa";
+        cursor = "";
+        enable = "1";
+        removeAfterExpressionCall = 0;
+    };
+};
 
 // ============================================================================
 // SONS PERSONNALISÉS (CfgSounds)

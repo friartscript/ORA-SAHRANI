@@ -11,8 +11,6 @@
 */
 if (!isServer) exitWith { false };
 
-diag_log "[ORA-CORE] [INIT] Initialisation du serveur de mission...";
-
 // Initialisation des variables globales de suivi d'opération
 missionNamespace setVariable ["ORA_missionStarted", true, true];
 missionNamespace setVariable ["ORA_currentAlertLevel", 1, true];
@@ -33,8 +31,6 @@ missionNamespace setVariable ["ORA_currentAlertLevel", 1, true];
 
 // Lancement du ravitailleur C-130J en vol perpétuel
 [] spawn ORA_fnc_airRefuel;
-
-diag_log "[ORA-CORE] [OK] Initialisation du serveur terminée.";
 
 true
 

@@ -270,7 +270,6 @@ if (!isNull _targetUnit) then {
                 };
             };
         }];
-        diag_log "[ORA-LOADOUT] [OK] Écouteur EntityCreated pour les dotations RACS activé.";
     };
 };
 

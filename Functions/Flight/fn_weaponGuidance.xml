@@ -18,21 +18,20 @@
         <Turkish>Silah Güdüm Desteği: Sistemler Devrede</Turkish>
     </Key>
     <Key ID="STR_ORA_GUIDANCE_ENGAGED">
-        <Original>Missile guidance initiated (5s post-drop curve)</Original>
-        <English>Missile guidance initiated (5s post-drop curve)</English>
-        <French>Guidage missile initié (inflexion douce après 5s)</French>
-        <Spanish>Guía de misil iniciada (curva suave tras 5 s)</Spanish>
-        <German>Raketenlenkung initiiert (sanfte Kurve nach 5s)</German>
-        <Italian>Guida missile avviata (curva graduale dopo 5s)</Italian>
-        <Polish>Naprowadzanie rakiety rozpoczęte (korekta po 5s)</Polish>
-        <Portuguese>Guiamento de míssil iniciado (curva suave após 5s)</Portuguese>
-        <Russian>Наведение ракеты активировано (плавная дуга после 5 с)</Russian>
-        <Czech>Navádění střely zahájeno (mírná křivka po 5 s)</Czech>
-        <Korean>미사일 유도 시작 (5초 후 완만한 궤적 수정)</Korean>
-        <Japanese>ミサイル誘導開始（投下後5秒・緩やかな弾道補正）</Japanese>
-        <Chinese>飛彈導引已啟動（投彈5秒後平滑修正軌跡）</Chinese>
-        <Chinesesimp>导弹导引已启动（投弹5秒后平滑修正轨迹）</Chinesesimp>
-        <Turkish>Füze güdümü başladı (5 sn sonra yumuşak kavis)</Turkish>
+        <Original>Guidance assist active: Target intercept homing</Original>
+        <English>Guidance assist active: Target intercept homing</English>
+        <French>Aide au tir active : Poursuite et interception de cible</French>
+        <Spanish>Asistencia de tiro activa: Guiado e intercepción de objetivo</Spanish>
+        <German>Zielführung aktiv: Zielabfang und Verfolgung</German>
+        <Italian>Guida al tiro attiva: Intercettazione e inseguimento bersaglio</Italian>
+        <Polish>Wspomaganie ognia aktywne: Przechwytywanie i śledzenie celu</Polish>
+        <Portuguese>Assistência de tiro ativa: Interceção e rastreamento de alvo</Portuguese>
+        <Russian>Система наведения активна: Перехват и сопровождение цели</Russian>
+        <Czech>Podpora střelby aktivní: Zachycení a sledování cíle</Czech>
+        <Korean>사격 보조 활성화: 목표 요격 및 추적</Korean>
+        <Japanese>射撃支援作動: 目標迎撃・追尾ホーミング</Japanese>
+        <Chinese>射擊輔助已啟動：目標攔截與終端導引</Chinese>
+        <Chinesesimp>射击辅助已启动：目标拦截与终端导引</Chinesesimp>
+        <Turkish>Atış desteği devrede: Hedef önleme ve takip</Turkish>
     </Key>
 </Keys>
-

@@ -45,8 +45,5 @@ private _formattedText = format [
 
 [_formattedText, 0, 0.85, 4, 0.3, 0, 999] spawn BIS_fnc_dynamicText;
 
-// Trace dans le journal de chat système
-systemChat format ["[%1] %2", toUpper _sender, _message];
-
 true
 

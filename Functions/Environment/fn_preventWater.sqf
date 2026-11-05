@@ -29,8 +29,6 @@ if (!isServer) exitWith { false };
 if (missionNamespace getVariable ["ORA_preventWaterRunning", false]) exitWith { false };
 missionNamespace setVariable ["ORA_preventWaterRunning", true];
 
-diag_log "[ORA-ENVIRONMENT] [OK] Démarrage du contrôleur anti-noyade pour l'infanterie au sol.";
-
 while {true} do {
     sleep 3;
 
@@ -81,7 +79,6 @@ while {true} do {
                     };
                 };
 
-                diag_log format ["[ORA-WATER] [EXTRACTION] Fantassin %1 extrait de l'eau vers la terre ferme à %2", typeOf _unit, _safePos];
             };
         };
     } forEach _trackedInfantry;

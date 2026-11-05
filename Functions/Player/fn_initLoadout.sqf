@@ -202,9 +202,4 @@ _pilot selectWeapon _pistolClass;
 // 11. Insigne officiel RACS (CfgUnitInsignia)
 [_pilot, "RACS_Badge"] call BIS_fnc_setUnitInsignia;
 
-diag_log format [
-    "[ORA-LOADOUT] [OK] Dotation du joueur (pilote) appliquée : Uniforme=%1, Gilet=%2, Casque=%3, Sac=B_Parachute, Arme=%4",
-    _uniform, _vest, _helmet, _pistolClass
-];
-
 true

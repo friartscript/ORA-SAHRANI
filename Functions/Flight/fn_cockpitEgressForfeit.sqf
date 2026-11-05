@@ -26,15 +26,12 @@ if (isNull _plane) then {
 };
 
 if (isNull _plane) exitWith {
-    diag_log "[ORA-FLIGHT] [ERREUR] plane_0 est null. Impossible d'armer la surveillance d'éjection.";
     false
 };
 
 // Empêcher l'armement multiple
 if (_pilot getVariable ["ORA_cockpitMonitorArmed", false]) exitWith { true };
 _pilot setVariable ["ORA_cockpitMonitorArmed", true];
-
-diag_log "[ORA-FLIGHT] [INIT] Surveillance du cockpit armée : Abandon interdit (Condition de défaite).";
 
 // 1. Écouteur GetOutMan sur le joueur
 _pilot addEventHandler ["GetOutMan", {
@@ -50,8 +47,6 @@ _pilot addEventHandler ["GetOutMan", {
             // Éviter l'exécution concurrente multiple
             if (missionNamespace getVariable ["ORA_forfeitExecuted", false]) exitWith {};
             missionNamespace setVariable ["ORA_forfeitExecuted", true, true];
-
-            diag_log "[ORA-FLIGHT] [DÉFAITE] Extraction / Éjection cockpit détectée. Sortie annulée !";
 
             // Alarme critique et secousse d'écran
             playSoundUI ["ORA_Warning_Beep", 1.5, 0.8];

@@ -49,7 +49,6 @@ if (_mode isEqualTo "OPEN") exitWith {
     // 2. Création du dialogue
     private _created = createDialog "Refour_Main_Menu_Dialog";
     if (!_created) exitWith {
-        diag_log "[ORA-UI] [ERREUR] Impossible de créer le dialogue Refour_Main_Menu_Dialog.";
         false
     };
 
@@ -103,7 +102,7 @@ if (_mode isEqualTo "OPEN") exitWith {
 
     // 5. Options Tactiques (cochables librement)
     // 7120: Téléguidage des tirs | 7121: Autres présences alliées
-    (_display displayCtrl 7120) cbSetChecked false;
+    (_display displayCtrl 7120) cbSetChecked true;
     (_display displayCtrl 7121) cbSetChecked true;
 
     // 6. Environnement & Météo
@@ -201,11 +200,6 @@ if (_mode isEqualTo "LAUNCH") exitWith {
     missionNamespace setVariable ["ORA_setting_guidanceAssist", _optGuidance, true];
     missionNamespace setVariable ["ORA_setting_alliedPresence", _optAllies, true];
 
-    diag_log format [
-        "[ORA-LAUNCH] Missions: %1 | Guidage: %2 | Alliés: %3",
-        _missionCount, _optGuidance, _optAllies
-    ];
-
     // Fermeture du dialogue
     closeDialog 0;
 
@@ -231,7 +225,6 @@ if (_mode isEqualTo "LAUNCH") exitWith {
         // Activation de l'aide au guidage d'armement selon le choix du joueur (IDC 7120)
         [_plane, _optGuidance] call ORA_fnc_weaponGuidance;
     } else {
-        diag_log "[ORA-LAUNCH] [AVERTISSEMENT] plane_0 est introuvable pour l'insertion en cockpit.";
     };
 
     // Notification radio de début de mission

@@ -68,4 +68,38 @@
             <Chinesesimp>胜利一号，这里是霸王。所有作战空域已肃清。表现优异。请返回基地接受任务汇报。</Chinesesimp>
             <Turkish>Victor-One, ben Overlord. Tüm operasyon bölgeleri temizlendi. Mükemmel görev. Brifing için üsse dönün.</Turkish>
         </Key>
+        <Key ID="STR_ORA_Task_Objective">
+            <Original>Objective</Original>
+            <English>Objective</English>
+            <French>Objectif</French>
+            <Spanish>Objetivo</Spanish>
+            <German>Ziel</German>
+            <Italian>Obiettivo</Italian>
+            <Polish>Cel</Polish>
+            <Portuguese>Objetivo</Portuguese>
+            <Russian>Цель</Russian>
+            <Czech>Cíl</Czech>
+            <Korean>목표</Korean>
+            <Japanese>目標</Japanese>
+            <Chinese>目標</Chinese>
+            <Chinesesimp>目标</Chinesesimp>
+            <Turkish>Hedef</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Objective_Desc">
+            <Original>Neutralize designated hostile target.</Original>
+            <English>Neutralize designated hostile target.</English>
+            <French>Neutralisez la cible ennemie désignée.</French>
+            <Spanish>Neutralice el objetivo enemigo designado.</Spanish>
+            <German>Neutralisieren Sie das zugewiesene feindliche Ziel.</German>
+            <Italian>Neutralizzate il bersaglio nemico designato.</Italian>
+            <Polish>Zneutralizuj wyznaczony cel wroga.</Polish>
+            <Portuguese>Neutralize o alvo inimigo designado.</Portuguese>
+            <Russian>Нейтрализуйте указанную вражескую цель.</Russian>
+            <Czech>Neutralizujte určený nepřátelský cíl.</Czech>
+            <Korean>지정된 적 목표를 무력화하십시오.</Korean>
+            <Japanese>指定された敵目標を無力化せよ。</Japanese>
+            <Chinese>殲滅指定的敵軍目標。</Chinese>
+            <Chinesesimp>歼灭指定的敌军目标。</Chinesesimp>
+            <Turkish>Belirtilen düşman hedefini imha edin.</Turkish>
+        </Key>
 </Keys>

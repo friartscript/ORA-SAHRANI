@@ -193,11 +193,24 @@ class RscMapControl
     type = 101;
     idc = -1;
     style = 48;
+    text = "#(argb,8,8,3)color(1,1,1,1)";
     colorBackground[] = {0.92, 0.90, 0.85, 1};
     colorOutside[] = {0.08, 0.12, 0.18, 1};
     colorText[] = {0, 0, 0, 1};
     font = "TahomaB";
     sizeEx = 0.04;
+    fontLabel = "RobotoCondensed";
+    sizeExLabel = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    fontGrid = "TahomaB";
+    sizeExGrid = 0.02;
+    fontUnits = "TahomaB";
+    sizeExUnits = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    fontNames = "RobotoCondensed";
+    sizeExNames = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 2";
+    fontInfo = "RobotoCondensed";
+    sizeExInfo = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    fontLevel = "TahomaB";
+    sizeExLevel = 0.02;
     colorSea[] = {0.35, 0.58, 0.82, 1};
     colorForest[] = {0.45, 0.68, 0.35, 1};
     colorRocks[] = {0.55, 0.55, 0.55, 1};
@@ -208,7 +221,9 @@ class RscMapControl
     colorForestBorder[] = {0.4, 0.6, 0.3, 1};
     colorRocksBorder[] = {0.4, 0.4, 0.4, 1};
     colorPowerLines[] = {0.1, 0.1, 0.1, 1};
+    widthPowerLines = 4;
     colorRailWay[] = {0.8, 0.2, 0, 1};
+    widthRailWay = 4;
     colorNames[] = {0.1, 0.1, 0.1, 0.9};
     colorInactive[] = {1, 1, 1, 0.5};
     colorLevels[] = {0.286, 0.177, 0.094, 0.5};
@@ -510,6 +525,58 @@ class RscMapControl
         lineWidthThick = 0.014;
         lineWidthThin = 0.008;
         textureComboBoxColor = "#(argb,8,8,3)color(1,1,1,1)";
+    };
+
+    shadow = 0;
+    moveOnEdges = 1;
+    showMarkers = 1;
+    idcMarkerColor = -1;
+    idcMarkerIcon = -1;
+
+    class power
+    {
+        icon = "\A3\ui_f\data\map\mapcontrol\power_CA.paa";
+        size = 24;
+        importance = 1;
+        coefMin = 0.85;
+        coefMax = 1;
+        color[] = {1, 1, 1, 1};
+    };
+    class powersolar
+    {
+        icon = "\A3\ui_f\data\map\mapcontrol\powersolar_CA.paa";
+        size = 24;
+        importance = 1;
+        coefMin = 0.85;
+        coefMax = 1;
+        color[] = {1, 1, 1, 1};
+    };
+    class powerwave
+    {
+        icon = "\A3\ui_f\data\map\mapcontrol\powerwave_CA.paa";
+        size = 24;
+        importance = 1;
+        coefMin = 0.85;
+        coefMax = 1;
+        color[] = {1, 1, 1, 1};
+    };
+    class powerwind
+    {
+        icon = "\A3\ui_f\data\map\mapcontrol\powerwind_CA.paa";
+        size = 24;
+        importance = 1;
+        coefMin = 0.85;
+        coefMax = 1;
+        color[] = {1, 1, 1, 1};
+    };
+    class Shipwreck
+    {
+        icon = "\A3\ui_f\data\map\mapcontrol\Shipwreck_CA.paa";
+        size = 24;
+        importance = 1;
+        coefMin = 0.85;
+        coefMax = 1;
+        color[] = {0, 0, 0, 1};
     };
 };
 
@@ -967,6 +1034,7 @@ class Refour_Main_Menu_Dialog
         class MapPreview: RscMapControl
         {
             idc = 7302;
+            text = "#(argb,8,8,3)color(1,1,1,1)";
             x = safezoneX + (0.635 * safezoneW);
             y = safezoneY + (0.178 * safezoneH);
             w = 0.34 * safezoneW;
@@ -975,6 +1043,8 @@ class Refour_Main_Menu_Dialog
             maxSatelliteAlpha = 0.95;
             alphaFadeStartScale = 2.0;
             alphaFadeEndScale = 2.0;
+            widthRailWay = 4;
+            widthPowerLines = 4;
             colorBackground[] = {0.92, 0.90, 0.85, 1};
             colorSea[] = {0.35, 0.58, 0.82, 1};
             colorForest[] = {0.45, 0.68, 0.35, 1};

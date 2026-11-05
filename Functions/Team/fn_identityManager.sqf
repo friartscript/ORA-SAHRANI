@@ -98,7 +98,6 @@ private _fnc_processUnit = {
     private _available_names = _all_names_typed select { !((_x select 0 select 0) in LL_UsedNames) };
     if (count _available_names == 0) then {
         if (DEBUG_MODE) then {
-            diag_log "[LL] WARNING: Tous les noms ont été utilisés ! Reset du cache de noms uniques.";
         };
         LL_UsedNames = [];
         _available_names = _all_names_typed;

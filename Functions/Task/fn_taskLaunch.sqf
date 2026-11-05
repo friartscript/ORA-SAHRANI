@@ -3,11 +3,12 @@
     Description:
         Moteur orchestrateur de lancement et de séquencement des missions (sorties).
         Conforme aux spécifications :
-        - Lance une tâche unique ou une série de sorties (1 à 20) selon le choix du joueur.
-        - Supporte les types de tâches : "RANDOM", "GROUND", "SEA", "AIR", "HELI".
-        - Enchaîne les missions avec délai opérationnel et transmissions radio QG.
-        - À la complétion de la dernière sortie, génère l'ordre et la tâche de RTB
-          (Retour à la base aérienne de Sahrani) avec débriefing de victoire lors de l'atterrissage.
+        - L'ENSEMBLE DES TÂCHES EST CRÉÉ ET ASSIGNÉ À LA BASE dès le démarrage.
+        - Planifie le nombre de sorties choisi par le joueur (1 à 20).
+        - Chaque sortie est enregistrée dans le journal de mission (Sortie 1 ASSIGNED, Sorties 2..N CREATED, RTB CREATED).
+        - S'il y a 2 objectifs dans une tâche, deux sous-tâches sont créées : l'une est assignée,
+          et dès qu'elle est terminée, l'autre est immédiatement assignée.
+        - À la complétion de la dernière sortie, assigne la tâche de RTB (Retour à la base de Sahrani).
 
     Paramètres:
         0: _taskType     - Type de tâche ("RANDOM", "GROUND", "SEA", "AIR", "HELI") [String, défaut: "RANDOM"]
@@ -15,16 +16,6 @@
 
     Retour:
         [Boolean] - true lorsque la campagne de sorties est initiée
-
-    Exemples:
-        // Lancer une mission aléatoire unique :
-        ["RANDOM", 1] spawn ORA_fnc_taskLaunch;
-
-        // Lancer une campagne de 5 sorties consécutives :
-        ["RANDOM", 5] spawn ORA_fnc_taskLaunch;
-
-        // Lancer spécifiquement une frappe maritime :
-        ["SEA", 1] spawn ORA_fnc_taskLaunch;
 */
 
 params [
@@ -36,7 +27,6 @@ if (!hasInterface) exitWith { false };
 
 // Si déjà en cours d'exécution, refuser le double lancement
 if (missionNamespace getVariable ["ORA_campaignActive", false]) exitWith {
-    diag_log "[ORA-TASK] [INFO] Une campagne opérationnelle est déjà active.";
     false
 };
 
@@ -48,56 +38,58 @@ if (_totalSorties <= 0) then {
     _totalSorties = missionNamespace getVariable ["ORA_selectedMissionsCount", 5];
 };
 
-diag_log format ["[ORA-TASK] [LAUNCHER] Lancement de la campagne : %1 sorties (Type: %2)...", _totalSorties, _taskType];
-
 private _plane = missionNamespace getVariable ["plane_0", player];
 private _airbasePos = getPos _plane;
 
 // =============================================================================
-// BOUCLE SÉQUENTIELLE DES SORTIES OPÉRATIONNELLES
+// 1. PLANIFICATION OPÉRATIONNELLE ET CRÉATION DE TOUTES LES TÂCHES À LA BASE
 // =============================================================================
-for "_sortieIndex" from 1 to _totalSorties do {
-    // 1. Détermination du type de tâche pour cette sortie
-    private _selectedType = _taskType;
-    if (_selectedType == "RANDOM") then {
-        _selectedType = selectRandom ["GROUND", "SEA", "AIR", "HELI"];
+private _sortiePlan = [];
+for "_i" from 1 to _totalSorties do {
+    private _type = _taskType;
+    if (_type == "RANDOM") then {
+        _type = selectRandom ["GROUND", "SEA", "AIR", "HELI"];
     };
-
-    private _taskID = format ["task_%1_%2", toLower _selectedType, _sortieIndex];
-
-    diag_log format ["[ORA-TASK] [LAUNCHER] Lancement Sortie %1/%2 : %3 (ID: %4)", _sortieIndex, _totalSorties, _selectedType, _taskID];
-
-    // 2. Déclenchement de la fonction de tâche spécifique
-    private _scriptHandle = switch (_selectedType) do {
-        case "GROUND": { [_taskID, _sortieIndex] spawn ORA_fnc_taskGround };
-        case "SEA":    { [_taskID, _sortieIndex] spawn ORA_fnc_taskSea };
-        case "AIR":    { [_taskID, _sortieIndex] spawn ORA_fnc_taskAir };
-        case "HELI":   { [_taskID, _sortieIndex] spawn ORA_fnc_taskHeli };
-        default        { [_taskID, _sortieIndex] spawn ORA_fnc_taskGround };
-    };
-
-    // 3. Attente active de la complétion de la sortie en cours
-    waitUntil { scriptDone _scriptHandle };
-
-    missionNamespace setVariable ["ORA_sortiesCompleted", _sortieIndex, true];
-
-    diag_log format ["[ORA-TASK] [LAUNCHER] Sortie %1/%2 accomplie avec succès.", _sortieIndex, _totalSorties];
-
-    // 4. Si d'autres sorties sont programmées, délai tactique de respiration (12 secondes)
-    if (_sortieIndex < _totalSorties) then {
-        sleep 12;
-    };
+    _sortiePlan pushBack _type;
 };
 
-// =============================================================================
-// FIN DES SORTIES : ORDRE ET TÂCHE DE RETOUR À LA BASE (RTB)
-// =============================================================================
-sleep 5;
+// Création immédiate à la base de chaque tâche de sortie
+for "_i" from 1 to _totalSorties do {
+    private _sType = _sortiePlan select (_i - 1);
+    private _sID = format ["task_sortie_%1", _i];
 
-// Ordre radio de fin de campagne par Overlord
-["OVERLORD", localize "STR_ORA_Task_All_RTB", "STR_ORA_Task_All_RTB"] call ORA_fnc_radioMsg;
+    private _title = switch (_sType) do {
+        case "GROUND": { format ["[%1/%2] %3", _i, _totalSorties, localize "STR_ORA_Task_Ground_Title"] };
+        case "SEA":    { format ["[%1/%2] %3", _i, _totalSorties, localize "STR_ORA_Task_Sea_Title"] };
+        case "AIR":    { format ["[%1/%2] %3", _i, _totalSorties, localize "STR_ORA_Task_Air_Title"] };
+        case "HELI":   { format ["[%1/%2] %3", _i, _totalSorties, localize "STR_ORA_Task_Heli_Title"] };
+        default        { format ["[%1/%2] Sortie %3", _i, _totalSorties, _sType] };
+    };
 
-// Création de la tâche de retour à la base (RTB)
+    private _desc = switch (_sType) do {
+        case "GROUND": { localize "STR_ORA_Task_Ground_Desc" };
+        case "SEA":    { localize "STR_ORA_Task_Sea_Desc" };
+        case "AIR":    { localize "STR_ORA_Task_Air_Desc" };
+        case "HELI":   { localize "STR_ORA_Task_Heli_Desc" };
+        default        { "Sortie opérationnelle programmée par Overlord." };
+    };
+
+    private _initialState = if (_i == 1) then { "ASSIGNED" } else { "CREATED" };
+
+    [
+        true,
+        _sID,
+        [_desc, _title, ""],
+        objNull,
+        _initialState,
+        5,
+        (_i == 1),
+        "attack",
+        false
+    ] call BIS_fnc_taskCreate;
+};
+
+// Pré-création de la tâche de retour à la base (RTB)
 [
     true,
     "task_rtb",
@@ -107,12 +99,55 @@ sleep 5;
         localize "STR_ORA_Task_RTB_Marker"
     ],
     _airbasePos,
-    "AUTOASSIGNED",
-    10,
-    true,
+    "CREATED",
+    1,
+    false,
     "takeoff",
     false
 ] call BIS_fnc_taskCreate;
+
+// =============================================================================
+// 2. EXÉCUTION SÉQUENTIELLE DES SORTIES OPÉRATIONNELLES
+// =============================================================================
+for "_sortieIndex" from 1 to _totalSorties do {
+    private _selectedType = _sortiePlan select (_sortieIndex - 1);
+    private _taskID = format ["task_sortie_%1", _sortieIndex];
+
+    // S'assurer que la sortie en cours est assignée
+    [_taskID, "ASSIGNED", true] call BIS_fnc_taskSetState;
+    [_taskID] call BIS_fnc_taskSetCurrent;
+
+    // Déclenchement de la fonction de tâche spécifique
+    private _scriptHandle = switch (_selectedType) do {
+        case "GROUND": { [_taskID, _sortieIndex] spawn ORA_fnc_taskGround };
+        case "SEA":    { [_taskID, _sortieIndex] spawn ORA_fnc_taskSea };
+        case "AIR":    { [_taskID, _sortieIndex] spawn ORA_fnc_taskAir };
+        case "HELI":   { [_taskID, _sortieIndex] spawn ORA_fnc_taskHeli };
+        default        { [_taskID, _sortieIndex] spawn ORA_fnc_taskGround };
+    };
+
+    // Attente active de la complétion de la sortie en cours
+    waitUntil { scriptDone _scriptHandle };
+
+    missionNamespace setVariable ["ORA_sortiesCompleted", _sortieIndex, true];
+
+    // Si d'autres sorties sont programmées, délai tactique de respiration (10 secondes)
+    if (_sortieIndex < _totalSorties) then {
+        sleep 10;
+    };
+};
+
+// =============================================================================
+// 3. FIN DES SORTIES : ORDRE ET TÂCHE DE RETOUR À LA BASE (RTB)
+// =============================================================================
+sleep 4;
+
+// Ordre radio de fin de campagne par Overlord
+["OVERLORD", localize "STR_ORA_Task_All_RTB", "STR_ORA_Task_All_RTB"] call ORA_fnc_radioMsg;
+
+// Assignation de la tâche de retour à la base (RTB)
+["task_rtb", "ASSIGNED", true] call BIS_fnc_taskSetState;
+["task_rtb"] call BIS_fnc_taskSetCurrent;
 
 // Surveillance de l'atterrissage en sécurité sur la base aérienne
 waitUntil {
@@ -132,4 +167,3 @@ sleep 3;
 "EndSuccess" call BIS_fnc_endMission;
 
 true
-

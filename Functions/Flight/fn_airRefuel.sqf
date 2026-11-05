@@ -31,8 +31,6 @@ if (!hasInterface && !isServer) exitWith { objNull };
 private _existingTanker = missionNamespace getVariable ["ORA_tankerC130", objNull];
 if (!isNull _existingTanker && {alive _existingTanker}) exitWith { _existingTanker };
 
-diag_log "[ORA-REFUEL] Initialisation de l'avion ravitailleur C-130J...";
-
 // 1. Détermination de la classe d'avion (C-130J RACS prioritaire)
 private _c130Class = "CUP_I_C130J_RACS";
 if (!isClass (configFile >> "CfgVehicles" >> _c130Class)) then {
@@ -64,6 +62,13 @@ _tanker setFuel 1;
 _tanker setCaptive true; // Rendu 100% invisible / neutre pour l'IA ennemie (jamais ciblé)
 _tanker setVehicleRadar 0; // Radar passif uniquement
 
+// Sécurité anti-collision avec le vecteur aérien du joueur
+private _playerPlaneInit = missionNamespace getVariable ["plane_0", objNull];
+if (!isNull _playerPlaneInit) then {
+    _tanker disableCollisionWith _playerPlaneInit;
+    _playerPlaneInit disableCollisionWith _tanker;
+};
+
 // Création de l'équipage RACS allié
 createVehicleCrew _tanker;
 private _tankerGroup = group (driver _tanker);
@@ -94,11 +99,9 @@ missionNamespace setVariable ["ORA_tankerC130", _tanker, true];
 private _markerName = "mrk_c130_tanker";
 deleteMarkerLocal _markerName;
 createMarkerLocal [_markerName, getPos _tanker];
-_markerName setMarkerTypeLocal "n_air";
-_markerName setMarkerColorLocal "ColorWEST";
+_markerName setMarkerTypeLocal "b_air";
+_markerName setMarkerColorLocal "ColorBlue";
 _markerName setMarkerTextLocal (format [" %1", localize "STR_ORA_TANKER_MARKER"]);
-
-diag_log format ["[ORA-REFUEL] Ravitailleur C-130J actif (Classe: %1, Alt: %2m, Marqueur: %3)", _c130Class, _altitude, _markerName];
 
 // 6. Boucle de surveillance, mise à jour du marqueur et ravitaillement automatique
 [_tanker, _markerName] spawn {
@@ -121,6 +124,8 @@ diag_log format ["[ORA-REFUEL] Ravitailleur C-130J actif (Classe: %1, Alt: %2m, 
         private _playerVeh = vehicle player;
 
         if (alive player && {_playerVeh != player} && {_playerVeh isKindOf "Air"}) then {
+            _tanker disableCollisionWith _playerVeh;
+            _playerVeh disableCollisionWith _tanker;
             private _dist = _playerVeh distance _tanker;
 
             // Indication de proximité à l'approche (entre 200m et 1200m)
@@ -177,7 +182,6 @@ diag_log format ["[ORA-REFUEL] Ravitailleur C-130J actif (Classe: %1, Alt: %2m, 
                         true
                     ];
 
-                    diag_log "[ORA-REFUEL] Ravitaillement et réarmement à 100% effectués avec succès pour le joueur.";
                 };
             };
         };

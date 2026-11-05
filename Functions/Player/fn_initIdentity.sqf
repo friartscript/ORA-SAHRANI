@@ -49,6 +49,4 @@ _pilot setUnitRank "CAPTAIN";
 _pilot setVariable ["ORA_pilotCallsign", "Victor-One", true];
 _pilot setVariable ["ORA_pilotIdentitySet", true, true];
 
-diag_log format ["[ORA-IDENTITY] Identité pilote initialisée: %1 (Grade: Capitaine, Voix: %2, Pitch: %3)", name _pilot, _speaker, _pitch];
-
 true

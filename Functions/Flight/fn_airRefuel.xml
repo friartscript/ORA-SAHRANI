@@ -85,4 +85,123 @@
         <Chinesesimp>补给完成：燃油 100% | 机体完整度 100% | 导弹武装 100%</Chinesesimp>
         <Turkish>İKMAL TAMAMLANDI: Yakıt %100 | Gövde %100 | Mühimmat %100</Turkish>
     </Key>
+    <Key ID="STR_ORA_SUPPORT_REFUEL_TITLE">
+        <Original>Refuel Tanker C-130J (0-8-1)</Original>
+        <English>Refuel Tanker C-130J (0-8-1)</English>
+        <French>Ravitailleur C-130J (0-8-1)</French>
+        <Spanish>Nodriza C-130J (0-8-1)</Spanish>
+        <German>Tankflugzeug C-130J (0-8-1)</German>
+        <Italian>Aerocisterna C-130J (0-8-1)</Italian>
+        <Polish>Tankowiec C-130J (0-8-1)</Polish>
+        <Portuguese>Reabastecedor C-130J (0-8-1)</Portuguese>
+        <Russian>Заправщик C-130J (0-8-1)</Russian>
+        <Czech>Tankovací C-130J (0-8-1)</Czech>
+        <Korean>공중급유기 C-130J (0-8-1)</Korean>
+        <Japanese>空中給油機 C-130J (0-8-1)</Japanese>
+        <Chinese>空中加油機 C-130J (0-8-1)</Chinese>
+        <Chinesesimp>空中加油机 C-130J (0-8-1)</Chinesesimp>
+        <Turkish>Yakıt İkmal C-130J (0-8-1)</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TANKER_INBOUND_MSG">
+        <Original>Rodeo-1 copies! Leaving orbit and vectoring to your position. Maintain straight and level flight, do not maneuver.</Original>
+        <English>Rodeo-1 copies! Leaving orbit and vectoring to your position. Maintain straight and level flight, do not maneuver.</English>
+        <French>Rodeo-1 bien reçu ! Nous convergeons vers votre vecteur. Maintenez un vol rectiligne et stabilisé, ne manœuvrez pas.</French>
+        <Spanish>¡Rodeo-1 copia! Dejando la órbita y dirigiéndonos a su posición. Mantenga vuelo nivelado y no maniobre.</Spanish>
+        <German>Rodeo-1 verstanden! Verlassen Orbit und nehmen Kurs auf Sie. Flug gerade und ruhig halten, nicht manövrieren.</German>
+        <Italian>Rodeo-1 ricevuto! Lasciamo l'orbita e facciamo rotta su di voi. Mantenete volo livellato, non manovrate.</Italian>
+        <Polish>Rodeo-1 odbiera! Opuszczamy orbitę i lecimy na twoją pozycję. Utrzymuj stabilny lot, nie wykonuj manewrów.</Polish>
+        <Portuguese>Rodeo-1 compreendido! A convergir para a sua posição. Mantenha voo direito e estabilizado, não manobre.</Portuguese>
+        <Russian>Родео-1 принял! Покидаем орбиту и ложимся на ваш курс. Держите горизонтальный полет, не маневрируйте.</Russian>
+        <Czech>Rodeo-1 rozumí! Opouštíme orbit a letíme k vám. Udržujte přímý stabilní let, nemanévrujte.</Czech>
+        <Korean>로데오-1 수신 완료! 궤도를 이탈하여 귀관의 위치로 향합니다. 비행을 안정적으로 유지하고 기동하지 마십시오.</Korean>
+        <Japanese>ロデオ1了解！待機軌道を離脱し貴機のベクトルへ急行中。水平直線飛行を維持し、旋回や急機動は行わないでください。</Japanese>
+        <Chinese>Rodeo-1 收到！已脫離巡航軌道前往您所在空域。請保持平飛穩定，切勿進行機動。</Chinese>
+        <Chinesesimp>Rodeo-1 收到！已脱离巡航轨道前往您所在空域。请保持平飞稳定，切勿进行机动。</Chinesesimp>
+        <Turkish>Rodeo-1 anlaşıldı! Yörüngeden ayrılıp pozisyonunuza yöneliyoruz. Düz ve dengeli uçuşu koruyun, manevra yapmayın.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TANKER_WARN_1KM">
+        <Original>Tanker at 1 km! Steady flight, do not move, maintain heading and altitude!</Original>
+        <English>Tanker at 1 km! Steady flight, do not move, maintain heading and altitude!</English>
+        <French>Ravitailleur à 1 km ! Ne bougez pas, maintenez le cap et l'altitude !</French>
+        <Spanish>¡Nodriza a 1 km! ¡No se mueva, mantenga rumbo y altitud!</Spanish>
+        <German>Tanker bei 1 km! Nicht bewegen, Kurs und Höhe exakt halten!</German>
+        <Italian>Aerocisterna a 1 km! Non muovetevi, mantenete rotta e quota!</Italian>
+        <Polish>Tankowiec w odległości 1 km! Nie ruszaj się, utrzymaj kurs i wysokość!</Polish>
+        <Portuguese>Reabastecedor a 1 km! Não mexa, mantenha o rumo e a altitude!</Portuguese>
+        <Russian>Заправщик в 1 км! Не двигайтесь, держите курс и высоту!</Russian>
+        <Czech>Tanker 1 km! Nehýbejte se, držte směr a výšku!</Czech>
+        <Korean>급유기 1km 거리 도달! 움직이지 말고 방위와 고도를 유지하십시오!</Korean>
+        <Japanese>給油機まで1km！機首を動かさず、針路と高度を固定してください！</Japanese>
+        <Chinese>加油機距離1公里！請勿變更姿態，保持目前航向與高度！</Chinese>
+        <Chinesesimp>加油机距离1公里！请勿变更姿态，保持当前航向与高度！</Chinesesimp>
+        <Turkish>İkmal uçağı 1 km mesafede! Kımıldamayın, rota ve irtifayı koruyun!</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TANKER_WARN_500M">
+        <Original>Tanker at 500 m! Contact imminent, hold steady, do not move!</Original>
+        <English>Tanker at 500 m! Contact imminent, hold steady, do not move!</English>
+        <French>Ravitailleur à 500 m ! Contact imminent, ne bougez pas !</French>
+        <Spanish>¡Nodriza a 500 m! ¡Contacto inminente, no se mueva!</Spanish>
+        <German>Tanker bei 500 m! Kontakt unmittelbar bevorstehend, ruhig halten, nicht bewegen!</German>
+        <Italian>Aerocisterna a 500 m! Contatto imminente, non muovetevi!</Italian>
+        <Polish>Tankowiec w odległości 500 m! Kontakt bliski, nie ruszaj się!</Polish>
+        <Portuguese>Reabastecedor a 500 m! Contacto iminente, não se mexa!</Portuguese>
+        <Russian>Заправщик в 500 м! Контакт неизбежен, не двигайтесь!</Russian>
+        <Czech>Tanker 500 m! Kontakt bezprostřední, nehýbejte se!</Czech>
+        <Korean>급유기 500m 거리 도달! 접촉 임박, 움직이지 마십시오!</Korean>
+        <Japanese>給油機まで500m！接触寸前です、そのまま動かないでください！</Japanese>
+        <Chinese>加油機距離500公尺！即將對接，請絕對保持穩定，切勿移動！</Chinese>
+        <Chinesesimp>加油机距离500米！即将对接，请绝对保持稳定，切勿移动！</Chinesesimp>
+        <Turkish>İkmal uçağı 500 m mesafede! Temas an meselesi, kımıldamayın!</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TANKER_DISENGAGE">
+        <Original>Refueling and rearming complete. Rodeo-1 resuming 2000m orbit. Good hunting, Victor-One!</Original>
+        <English>Refueling and rearming complete. Rodeo-1 resuming 2000m orbit. Good hunting, Victor-One!</English>
+        <French>Ravitaillement et réarmement complets. Rodeo-1 reprend son orbite à 2000m. Bonne chasse Victor-One !</French>
+        <Spanish>¡Repostaje y rearme completos! Rodeo-1 reanuda su órbita a 2000m. ¡Buena caza, Victor-One!</Spanish>
+        <German>Betankung und Bewaffnung vollständig. Rodeo-1 kehrt in 2000m Orbit zurück. Gute Jagd, Victor-One!</German>
+        <Italian>Rifornimento e riarmo completati. Rodeo-1 riprende l'orbita a 2000m. Buona caccia Victor-One!</Italian>
+        <Polish>Tankowanie i dozbrojenie ukończone. Rodeo-1 wznawia orbitę na 2000m. Udanych łowów, Victor-One!</Polish>
+        <Portuguese>Reabastecimento e rearmamento concluídos. Rodeo-1 retoma a órbita a 2000m. Boa caça, Victor-One!</Portuguese>
+        <Russian>Заправка и боезапас пополнены. Родео-1 возвращается на орбиту 2000м. Удачной охоты, Виктор-Один!</Russian>
+        <Czech>Doplnění a přezbrojení dokončeno. Rodeo-1 se vrací do orbitu 2000m. Lovu zdar, Victor-One!</Czech>
+        <Korean>보급 및 재무장 완료. 로데오-1이 2000m 대기 궤도로 복귀합니다. 행운을 빕니다, 빅터-원!</Korean>
+        <Japanese>給油および再装填完了。ロデオ1は高度2000mの待機軌道へ戻ります。ヴィクター1、武運を祈る！</Japanese>
+        <Chinese>整補與武裝補給完成。Rodeo-1 正在返回 2000 公尺巡航軌道。祝獵運亨通，Victor-One！</Chinese>
+        <Chinesesimp>整补与武装补给完成。Rodeo-1 正在返回 2000 米巡航轨道。祝猎运亨通，Victor-One！</Chinesesimp>
+        <Turkish>İkmal ve mühimmat tamamlandı. Rodeo-1 2000m yörüngesine dönüyor. İyi avlar, Victor-One!</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TANKER_BUSY_MSG">
+        <Original>Rodeo-1 is already inbound to your position. Maintain current heading.</Original>
+        <English>Rodeo-1 is already inbound to your position. Maintain current heading.</English>
+        <French>Rodeo-1 est déjà en route vers votre position. Maintenez votre cap.</French>
+        <Spanish>Rodeo-1 ya está en camino a su posición. Mantenga su rumbo actual.</Spanish>
+        <German>Rodeo-1 ist bereits auf dem Weg zu Ihrer Position. Halten Sie Ihren aktuellen Kurs.</German>
+        <Italian>Rodeo-1 è già in volo verso la vostra posizione. Mantenete la rotta.</Italian>
+        <Polish>Rodeo-1 zmierza już na twoją pozycję. Utrzymaj obecny kurs.</Polish>
+        <Portuguese>Rodeo-1 já está a caminho da sua posição. Mantenha o rumo atual.</Portuguese>
+        <Russian>Родео-1 уже следует к вашей позиции. Сохраняйте текущий курс.</Russian>
+        <Czech>Rodeo-1 již letí k vaší pozici. Držte stávající směr.</Czech>
+        <Korean>로데오-1이 이미 귀관의 위치로 이동 중입니다. 현재 방위를 유지하십시오.</Korean>
+        <Japanese>ロデオ1はすでに貴機の位置へ向かっています。現在の針路を維持してください。</Japanese>
+        <Chinese>Rodeo-1 已在前往您所在位置途中。請保持目前航向。</Chinese>
+        <Chinesesimp>Rodeo-1 已在前往您所在位置途中。请保持当前航向。</Chinesesimp>
+        <Turkish>Rodeo-1 zaten pozisyonunuza doğru yolda. Mevcut rotanızı koruyun.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TANKER_MUST_BE_AIRBORNE">
+        <Original>Negative, you must be airborne in your aircraft to request aerial refueling.</Original>
+        <English>Negative, you must be airborne in your aircraft to request aerial refueling.</English>
+        <French>Négatif, vous devez être en vol à bord de votre appareil pour demander un ravitaillement.</French>
+        <Spanish>Negativo, debe estar en vuelo a bordo de su aparato para solicitar repostaje.</Spanish>
+        <German>Negativ, Sie müssen sich mit Ihrem Flugzeug in der Luft befinden, um eine Betankung anzufordern.</German>
+        <Italian>Negativo, dovete essere in volo a bordo del vostro apparecchio per richiedere il rifornimento.</Italian>
+        <Polish>Odmowa, musisz znajdować się w powietrzu w swoim samolocie, aby wezwać tankowanie.</Polish>
+        <Portuguese>Negativo, tem de estar em voo a bordo do seu avião para pedir reabastecimento.</Portuguese>
+        <Russian>Отказ, для запроса дозаправки вы должны находиться в воздухе на борту своего самолета.</Russian>
+        <Czech>Záporně, pro žádost o dotankování musíte být se svým letounem ve vzduchu.</Czech>
+        <Korean>불가합니다. 공중 급유를 요청하려면 항공기에 탑승하여 비행 중이어야 합니다.</Korean>
+        <Japanese>要求却下。空中給油を要請するには、機体に搭乗し飛行中である必要があります。</Japanese>
+        <Chinese>否定，您必須在戰機內處於飛行狀態方可呼叫空中加油。</Chinese>
+        <Chinesesimp>否定，您必须在战机内处于飞行状态方可呼叫空中加油。</Chinesesimp>
+        <Turkish>Olumsuz, yakıt ikmali talep etmek için uçağınızla havada olmanız gerekir.</Turkish>
+    </Key>
 </Keys>

@@ -432,6 +432,125 @@
             <Chinesesimp>补给完成：燃油 100% | 机体完整度 100% | 导弹武装 100%</Chinesesimp>
             <Turkish>İKMAL TAMAMLANDI: Yakıt %100 | Gövde %100 | Mühimmat %100</Turkish>
         </Key>
+        <Key ID="STR_ORA_SUPPORT_REFUEL_TITLE">
+            <Original>Refuel Tanker C-130J (0-8-1)</Original>
+            <English>Refuel Tanker C-130J (0-8-1)</English>
+            <French>Ravitailleur C-130J (0-8-1)</French>
+            <Spanish>Nodriza C-130J (0-8-1)</Spanish>
+            <German>Tankflugzeug C-130J (0-8-1)</German>
+            <Italian>Aerocisterna C-130J (0-8-1)</Italian>
+            <Polish>Tankowiec C-130J (0-8-1)</Polish>
+            <Portuguese>Reabastecedor C-130J (0-8-1)</Portuguese>
+            <Russian>Заправщик C-130J (0-8-1)</Russian>
+            <Czech>Tankovací C-130J (0-8-1)</Czech>
+            <Korean>공중급유기 C-130J (0-8-1)</Korean>
+            <Japanese>空中給油機 C-130J (0-8-1)</Japanese>
+            <Chinese>空中加油機 C-130J (0-8-1)</Chinese>
+            <Chinesesimp>空中加油机 C-130J (0-8-1)</Chinesesimp>
+            <Turkish>Yakıt İkmal C-130J (0-8-1)</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TANKER_INBOUND_MSG">
+            <Original>Rodeo-1 copies! Leaving orbit and vectoring to your position. Maintain straight and level flight, do not maneuver.</Original>
+            <English>Rodeo-1 copies! Leaving orbit and vectoring to your position. Maintain straight and level flight, do not maneuver.</English>
+            <French>Rodeo-1 bien reçu ! Nous convergeons vers votre vecteur. Maintenez un vol rectiligne et stabilisé, ne manœuvrez pas.</French>
+            <Spanish>¡Rodeo-1 copia! Dejando la órbita y dirigiéndonos a su posición. Mantenga vuelo nivelado y no maniobre.</Spanish>
+            <German>Rodeo-1 verstanden! Verlassen Orbit und nehmen Kurs auf Sie. Flug gerade und ruhig halten, nicht manövrieren.</German>
+            <Italian>Rodeo-1 ricevuto! Lasciamo l'orbita e facciamo rotta su di voi. Mantenete volo livellato, non manovrate.</Italian>
+            <Polish>Rodeo-1 odbiera! Opuszczamy orbitę i lecimy na twoją pozycję. Utrzymuj stabilny lot, nie wykonuj manewrów.</Polish>
+            <Portuguese>Rodeo-1 compreendido! A convergir para a sua posição. Mantenha voo direito e estabilizado, não manobre.</Portuguese>
+            <Russian>Родео-1 принял! Покидаем орбиту и ложимся на ваш курс. Держите горизонтальный полет, не маневрируйте.</Russian>
+            <Czech>Rodeo-1 rozumí! Opouštíme orbit a letíme k vám. Udržujte přímý stabilní let, nemanévrujte.</Czech>
+            <Korean>로데오-1 수신 완료! 궤도를 이탈하여 귀관의 위치로 향합니다. 비행을 안정적으로 유지하고 기동하지 마십시오.</Korean>
+            <Japanese>ロデオ1了解！待機軌道を離脱し貴機のベクトルへ急行中。水平直線飛行を維持し、旋回や急機動は行わないでください。</Japanese>
+            <Chinese>Rodeo-1 收到！已脫離巡航軌道前往您所在空域。請保持平飛穩定，切勿進行機動。</Chinese>
+            <Chinesesimp>Rodeo-1 收到！已脱离巡航轨道前往您所在空域。请保持平飞稳定，切勿进行机动。</Chinesesimp>
+            <Turkish>Rodeo-1 anlaşıldı! Yörüngeden ayrılıp pozisyonunuza yöneliyoruz. Düz ve dengeli uçuşu koruyun, manevra yapmayın.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TANKER_WARN_1KM">
+            <Original>Tanker at 1 km! Steady flight, do not move, maintain heading and altitude!</Original>
+            <English>Tanker at 1 km! Steady flight, do not move, maintain heading and altitude!</English>
+            <French>Ravitailleur à 1 km ! Ne bougez pas, maintenez le cap et l'altitude !</French>
+            <Spanish>¡Nodriza a 1 km! ¡No se mueva, mantenga rumbo y altitud!</Spanish>
+            <German>Tanker bei 1 km! Nicht bewegen, Kurs und Höhe exakt halten!</German>
+            <Italian>Aerocisterna a 1 km! Non muovetevi, mantenete rotta e quota!</Italian>
+            <Polish>Tankowiec w odległości 1 km! Nie ruszaj się, utrzymaj kurs i wysokość!</Polish>
+            <Portuguese>Reabastecedor a 1 km! Não mexa, mantenha o rumo e a altitude!</Portuguese>
+            <Russian>Заправщик в 1 км! Не двигайтесь, держите курс и высоту!</Russian>
+            <Czech>Tanker 1 km! Nehýbejte se, držte směr a výšku!</Czech>
+            <Korean>급유기 1km 거리 도달! 움직이지 말고 방위와 고도를 유지하십시오!</Korean>
+            <Japanese>給油機まで1km！機首を動かさず、針路と高度を固定してください！</Japanese>
+            <Chinese>加油機距離1公里！請勿變更姿態，保持目前航向與高度！</Chinese>
+            <Chinesesimp>加油机距离1公里！请勿变更姿态，保持当前航向与高度！</Chinesesimp>
+            <Turkish>İkmal uçağı 1 km mesafede! Kımıldamayın, rota ve irtifayı koruyun!</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TANKER_WARN_500M">
+            <Original>Tanker at 500 m! Contact imminent, hold steady, do not move!</Original>
+            <English>Tanker at 500 m! Contact imminent, hold steady, do not move!</English>
+            <French>Ravitailleur à 500 m ! Contact imminent, ne bougez pas !</French>
+            <Spanish>¡Nodriza a 500 m! ¡Contacto inminente, no se mueva!</Spanish>
+            <German>Tanker bei 500 m! Kontakt unmittelbar bevorstehend, ruhig halten, nicht bewegen!</German>
+            <Italian>Aerocisterna a 500 m! Contatto imminente, non muovetevi!</Italian>
+            <Polish>Tankowiec w odległości 500 m! Kontakt bliski, nie ruszaj się!</Polish>
+            <Portuguese>Reabastecedor a 500 m! Contacto iminente, não se mexa!</Portuguese>
+            <Russian>Заправщик в 500 м! Контакт неизбежен, не двигайтесь!</Russian>
+            <Czech>Tanker 500 m! Kontakt bezprostřední, nehýbejte se!</Czech>
+            <Korean>급유기 500m 거리 도달! 접촉 임박, 움직이지 마십시오!</Korean>
+            <Japanese>給油機まで500m！接触寸前です、そのまま動かないでください！</Japanese>
+            <Chinese>加油機距離500公尺！即將對接，請絕對保持穩定，切勿移動！</Chinese>
+            <Chinesesimp>加油机距离500米！即将对接，请绝对保持稳定，切勿移动！</Chinesesimp>
+            <Turkish>İkmal uçağı 500 m mesafede! Temas an meselesi, kımıldamayın!</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TANKER_DISENGAGE">
+            <Original>Refueling and rearming complete. Rodeo-1 resuming 2000m orbit. Good hunting, Victor-One!</Original>
+            <English>Refueling and rearming complete. Rodeo-1 resuming 2000m orbit. Good hunting, Victor-One!</English>
+            <French>Ravitaillement et réarmement complets. Rodeo-1 reprend son orbite à 2000m. Bonne chasse Victor-One !</French>
+            <Spanish>¡Repostaje y rearme completos! Rodeo-1 reanuda su órbita a 2000m. ¡Buena caza, Victor-One!</Spanish>
+            <German>Betankung und Bewaffnung vollständig. Rodeo-1 kehrt in 2000m Orbit zurück. Gute Jagd, Victor-One!</German>
+            <Italian>Rifornimento e riarmo completati. Rodeo-1 riprende l'orbita a 2000m. Buona caccia Victor-One!</Italian>
+            <Polish>Tankowanie i dozbrojenie ukończone. Rodeo-1 wznawia orbitę na 2000m. Udanych łowów, Victor-One!</Polish>
+            <Portuguese>Reabastecimento e rearmamento concluídos. Rodeo-1 retoma a órbita a 2000m. Boa caça, Victor-One!</Portuguese>
+            <Russian>Заправка и боезапас пополнены. Родео-1 возвращается на орбиту 2000м. Удачной охоты, Виктор-Один!</Russian>
+            <Czech>Doplnění a přezbrojení dokončeno. Rodeo-1 se vrací do orbitu 2000m. Lovu zdar, Victor-One!</Czech>
+            <Korean>보급 및 재무장 완료. 로데오-1이 2000m 대기 궤도로 복귀합니다. 행운을 빕니다, 빅터-원!</Korean>
+            <Japanese>給油および再装填完了。ロデオ1は高度2000mの待機軌道へ戻ります。ヴィクター1、武運を祈る！</Japanese>
+            <Chinese>整補與武裝補給完成。Rodeo-1 正在返回 2000 公尺巡航軌道。祝獵運亨通，Victor-One！</Chinese>
+            <Chinesesimp>整补与武装补给完成。Rodeo-1 正在返回 2000 米巡航轨道。祝猎运亨通，Victor-One！</Chinesesimp>
+            <Turkish>İkmal ve mühimmat tamamlandı. Rodeo-1 2000m yörüngesine dönüyor. İyi avlar, Victor-One!</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TANKER_BUSY_MSG">
+            <Original>Rodeo-1 is already inbound to your position. Maintain current heading.</Original>
+            <English>Rodeo-1 is already inbound to your position. Maintain current heading.</English>
+            <French>Rodeo-1 est déjà en route vers votre position. Maintenez votre cap.</French>
+            <Spanish>Rodeo-1 ya está en camino a su posición. Mantenga su rumbo actual.</Spanish>
+            <German>Rodeo-1 ist bereits auf dem Weg zu Ihrer Position. Halten Sie Ihren aktuellen Kurs.</German>
+            <Italian>Rodeo-1 è già in volo verso la vostra posizione. Mantenete la rotta.</Italian>
+            <Polish>Rodeo-1 zmierza już na twoją pozycję. Utrzymaj obecny kurs.</Polish>
+            <Portuguese>Rodeo-1 já está a caminho da sua posição. Mantenha o rumo atual.</Portuguese>
+            <Russian>Родео-1 уже следует к вашей позиции. Сохраняйте текущий курс.</Russian>
+            <Czech>Rodeo-1 již letí k vaší pozici. Držte stávající směr.</Czech>
+            <Korean>로데오-1이 이미 귀관의 위치로 이동 중입니다. 현재 방위를 유지하십시오.</Korean>
+            <Japanese>ロデオ1はすでに貴機の位置へ向かっています。現在の針路を維持してください。</Japanese>
+            <Chinese>Rodeo-1 已在前往您所在位置途中。請保持目前航向。</Chinese>
+            <Chinesesimp>Rodeo-1 已在前往您所在位置途中。请保持当前航向。</Chinesesimp>
+            <Turkish>Rodeo-1 zaten pozisyonunuza doğru yolda. Mevcut rotanızı koruyun.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TANKER_MUST_BE_AIRBORNE">
+            <Original>Negative, you must be airborne in your aircraft to request aerial refueling.</Original>
+            <English>Negative, you must be airborne in your aircraft to request aerial refueling.</English>
+            <French>Négatif, vous devez être en vol à bord de votre appareil pour demander un ravitaillement.</French>
+            <Spanish>Negativo, debe estar en vuelo a bordo de su aparato para solicitar repostaje.</Spanish>
+            <German>Negativ, Sie müssen sich mit Ihrem Flugzeug in der Luft befinden, um eine Betankung anzufordern.</German>
+            <Italian>Negativo, dovete essere in volo a bordo del vostro apparecchio per richiedere il rifornimento.</Italian>
+            <Polish>Odmowa, musisz znajdować się w powietrzu w swoim samolocie, aby wezwać tankowanie.</Polish>
+            <Portuguese>Negativo, tem de estar em voo a bordo do seu avião para pedir reabastecimento.</Portuguese>
+            <Russian>Отказ, для запроса дозаправки вы должны находиться в воздухе на борту своего самолета.</Russian>
+            <Czech>Záporně, pro žádost o dotankování musíte být se svým letounem ve vzduchu.</Czech>
+            <Korean>불가합니다. 공중 급유를 요청하려면 항공기에 탑승하여 비행 중이어야 합니다.</Korean>
+            <Japanese>要求却下。空中給油を要請するには、機体に搭乗し飛行中である必要があります。</Japanese>
+            <Chinese>否定，您必須在戰機內處於飛行狀態方可呼叫空中加油。</Chinese>
+            <Chinesesimp>否定，您必须在战机内处于飞行状态方可呼叫空中加油。</Chinesesimp>
+            <Turkish>Olumsuz, yakıt ikmali talep etmek için uçağınızla havada olmanız gerekir.</Turkish>
+        </Key>
         <Key ID="STR_ORA_Debrief_CockpitForfeit_Title">
             <Original>SORTIE FORFEITED</Original>
             <English>SORTIE FORFEITED</English>
@@ -586,21 +705,21 @@
             <Turkish>Silah Güdüm Desteği: Sistemler Devrede</Turkish>
         </Key>
         <Key ID="STR_ORA_GUIDANCE_ENGAGED">
-            <Original>Missile guidance initiated (5s post-drop curve)</Original>
-            <English>Missile guidance initiated (5s post-drop curve)</English>
-            <French>Guidage missile initié (inflexion douce après 5s)</French>
-            <Spanish>Guía de misil iniciada (curva suave tras 5 s)</Spanish>
-            <German>Raketenlenkung initiiert (sanfte Kurve nach 5s)</German>
-            <Italian>Guida missile avviata (curva graduale dopo 5s)</Italian>
-            <Polish>Naprowadzanie rakiety rozpoczęte (korekta po 5s)</Polish>
-            <Portuguese>Guiamento de míssil iniciado (curva suave após 5s)</Portuguese>
-            <Russian>Наведение ракеты активировано (плавная дуга после 5 с)</Russian>
-            <Czech>Navádění střely zahájeno (mírná křivka po 5 s)</Czech>
-            <Korean>미사일 유도 시작 (5초 후 완만한 궤적 수정)</Korean>
-            <Japanese>ミサイル誘導開始（投下後5秒・緩やかな弾道補正）</Japanese>
-            <Chinese>飛彈導引已啟動（投彈5秒後平滑修正軌跡）</Chinese>
-            <Chinesesimp>导弹导引已启动（投弹5秒后平滑修正轨迹）</Chinesesimp>
-            <Turkish>Füze güdümü başladı (5 sn sonra yumuşak kavis)</Turkish>
+            <Original>Guidance assist active: Target intercept homing</Original>
+            <English>Guidance assist active: Target intercept homing</English>
+            <French>Aide au tir active : Poursuite et interception de cible</French>
+            <Spanish>Asistencia de tiro activa: Guiado e intercepción de objetivo</Spanish>
+            <German>Zielführung aktiv: Zielabfang und Verfolgung</German>
+            <Italian>Guida al tiro attiva: Intercettazione e inseguimento bersaglio</Italian>
+            <Polish>Wspomaganie ognia aktywne: Przechwytywanie i śledzenie celu</Polish>
+            <Portuguese>Assistência de tiro ativa: Interceção e rastreamento de alvo</Portuguese>
+            <Russian>Система наведения активна: Перехват и сопровождение цели</Russian>
+            <Czech>Podpora střelby aktivní: Zachycení a sledování cíle</Czech>
+            <Korean>사격 보조 활성화: 목표 요격 및 추적</Korean>
+            <Japanese>射撃支援作動: 目標迎撃・追尾ホーミング</Japanese>
+            <Chinese>射擊輔助已啟動：目標攔截與終端導引</Chinese>
+            <Chinesesimp>射击辅助已启动：目标拦截与终端导引</Chinesesimp>
+            <Turkish>Atış desteği devrede: Hedef önleme ve takip</Turkish>
         </Key>
     </Package>
     <Package name="Player">
@@ -1718,6 +1837,40 @@
             <Chinesesimp>胜利一号，这里是霸王。所有作战空域已肃清。表现优异。请返回基地接受任务汇报。</Chinesesimp>
             <Turkish>Victor-One, ben Overlord. Tüm operasyon bölgeleri temizlendi. Mükemmel görev. Brifing için üsse dönün.</Turkish>
         </Key>
+        <Key ID="STR_ORA_Task_Objective">
+            <Original>Objective</Original>
+            <English>Objective</English>
+            <French>Objectif</French>
+            <Spanish>Objetivo</Spanish>
+            <German>Ziel</German>
+            <Italian>Obiettivo</Italian>
+            <Polish>Cel</Polish>
+            <Portuguese>Objetivo</Portuguese>
+            <Russian>Цель</Russian>
+            <Czech>Cíl</Czech>
+            <Korean>목표</Korean>
+            <Japanese>目標</Japanese>
+            <Chinese>目標</Chinese>
+            <Chinesesimp>目标</Chinesesimp>
+            <Turkish>Hedef</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Objective_Desc">
+            <Original>Neutralize designated hostile target.</Original>
+            <English>Neutralize designated hostile target.</English>
+            <French>Neutralisez la cible ennemie désignée.</French>
+            <Spanish>Neutralice el objetivo enemigo designado.</Spanish>
+            <German>Neutralisieren Sie das zugewiesene feindliche Ziel.</German>
+            <Italian>Neutralizzate il bersaglio nemico designato.</Italian>
+            <Polish>Zneutralizuj wyznaczony cel wroga.</Polish>
+            <Portuguese>Neutralize o alvo inimigo designado.</Portuguese>
+            <Russian>Нейтрализуйте указанную вражескую цель.</Russian>
+            <Czech>Neutralizujte určený nepřátelský cíl.</Czech>
+            <Korean>지정된 적 목표를 무력화하십시오.</Korean>
+            <Japanese>指定された敵目標を無力化せよ。</Japanese>
+            <Chinese>殲滅指定的敵軍目標。</Chinese>
+            <Chinesesimp>歼灭指定的敌军目标。</Chinesesimp>
+            <Turkish>Belirtilen düşman hedefini imha edin.</Turkish>
+        </Key>
         <Key ID="STR_ORA_Task_Sea_Title">
             <Original>Naval Strike - Intercept Hostile Flotilla</Original>
             <English>Naval Strike - Intercept Hostile Flotilla</English>
@@ -2078,38 +2231,38 @@
             <Turkish>&lt;t color='#ff3333' size='0.85' font='PuristaBold'&gt;⚠️ KRİTİK KISITLAMA:&lt;br/&gt;Uçaktan atlamak veya kokpitten çıkmak derhal görevin başarısızlığına neden olur.&lt;/t&gt;</Turkish>
         </Key>
         <Key ID="STR_ORA_TACTICAL_DIRECTIVES_AIR">
-            <Original>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL FLIGHT DIRECTIVES:&lt;br/&gt;- Insertion takes place directly seated in plane_0.&lt;br/&gt;- Mission sectors are randomized dynamically in flight.&lt;br/&gt;- AWACS Overlord will vector you to priority targets.&lt;/t&gt;</Original>
-            <English>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL FLIGHT DIRECTIVES:&lt;br/&gt;- Insertion takes place directly seated in plane_0.&lt;br/&gt;- Mission sectors are randomized dynamically in flight.&lt;br/&gt;- AWACS Overlord will vector you to priority targets.&lt;/t&gt;</English>
-            <French>&lt;t color='#00d0ff' size='0.85'&gt;DIRECTIVES DE VOL TACTIQUES :&lt;br/&gt;- L'insertion s'effectue directement aux commandes de plane_0.&lt;br/&gt;- Les secteurs d'engagement sont assignés aléatoirement en vol.&lt;br/&gt;- L'AWACS Overlord assurera votre guidage vers les cibles prioritaires.&lt;/t&gt;</French>
-            <Spanish>&lt;t color='#00d0ff' size='0.85'&gt;DIRECTIVAS DE VUELO:&lt;br/&gt;- La inserción se realiza directamente en la cabina de plane_0.&lt;br/&gt;- Los sectores de combate se asignan aleatoriamente en vuelo.&lt;br/&gt;- El AWACS Overlord le guiará hacia los objetivos prioritarios.&lt;/t&gt;</Spanish>
-            <German>&lt;t color='#00d0ff' size='0.85'&gt;FLUGDIREKTIVEN:&lt;br/&gt;- Der Einsatz beginnt direkt im Cockpit von plane_0.&lt;br/&gt;- Einsatzsektoren werden dynamisch während des Fluges zugewiesen.&lt;br/&gt;- AWACS Overlord leitet Sie zu Prioritätszielen.&lt;/t&gt;</German>
-            <Italian>&lt;t color='#00d0ff' size='0.85'&gt;DIRETTIVE DI VOLO:&lt;br/&gt;- L'inserimento avviene direttamente nell'abitacolo di plane_0.&lt;br/&gt;- I settori vengono assegnati casualmente in volo.&lt;br/&gt;- L'AWACS Overlord guiderà sui bersagli prioritari.&lt;/t&gt;</Italian>
-            <Polish>&lt;t color='#00d0ff' size='0.85'&gt;WYTYCZNE LOTU:&lt;br/&gt;- Infiltracja odbywa się bezpośrednio za sterami plane_0.&lt;br/&gt;- Sektory misji są przydzielane losowo w trakcie lotu.&lt;br/&gt;- AWACS Overlord poprowadzi cię na cele priorytetowe.&lt;/t&gt;</Polish>
-            <Portuguese>&lt;t color='#00d0ff' size='0.85'&gt;DIRETIVAS DE VOO:&lt;br/&gt;- A inserção é feita diretamente no cockpit de plane_0.&lt;br/&gt;- Os setores de missão são atribuídos aleatoriamente em voo.&lt;br/&gt;- O AWACS Overlord fornecerá vetores para os alvos prioritários.&lt;/t&gt;</Portuguese>
-            <Russian>&lt;t color='#00d0ff' size='0.85'&gt;ПОЛЕТНЫЕ УКАЗАНИЯ:&lt;br/&gt;- Начало операции сразу в кабине plane_0.&lt;br/&gt;- Секторы боевых задач назначаются динамически в воздухе.&lt;br/&gt;- АВАКС Overlord обеспечит наведение на приоритетные цели.&lt;/t&gt;</Russian>
-            <Czech>&lt;t color='#00d0ff' size='0.85'&gt;LETOVÉ POKYNY:&lt;br/&gt;- Výsadek probíhá přímo v kokpitu letounu plane_0.&lt;br/&gt;- Bojové sektory jsou přiřazovány náhodně za letu.&lt;br/&gt;- AWACS Overlord zajistí navádění na prioritní cíle.&lt;/t&gt;</Czech>
-            <Korean>&lt;t color='#00d0ff' size='0.85'&gt;전술 비행 지침:&lt;br/&gt;- 작전 시작 시 plane_0 조종석에 즉시 탑승합니다.&lt;br/&gt;- 비행 중 작전 구역이 무작위로 동적 할당됩니다.&lt;br/&gt;- AWACS Overlord가 최우선 목표로 유도합니다.&lt;/t&gt;</Korean>
-            <Japanese>&lt;t color='#00d0ff' size='0.85'&gt;戦術飛行指示:&lt;br/&gt;- plane_0のコックピットに着席した状態で即座に作戦開始。&lt;br/&gt;- 作戦セクターは飛行中に動的かつランダムに割り当てられます。&lt;br/&gt;- AWACS Overlordが優先目標へと誘導します。&lt;/t&gt;</Japanese>
-            <Chinese>&lt;t color='#00d0ff' size='0.85'&gt;戰術飛行指令：&lt;br/&gt;- 行動開始時直接就位在 plane_0 座艙內。&lt;br/&gt;- 作戰區域在飛行中由系統動態隨機指派。&lt;br/&gt;- 預警機 Overlord 將引導您攻擊高優先級目標。&lt;/t&gt;</Chinese>
-            <Chinesesimp>&lt;t color='#00d0ff' size='0.85'&gt;战术飞行指令：&lt;br/&gt;- 行动开始时直接就位在 plane_0 座舱内。&lt;br/&gt;- 作战区域在飞行中由系统动态随机指派。&lt;br/&gt;- 预警机 Overlord 将引导您攻击高优先级目标。&lt;/t&gt;</Chinesesimp>
-            <Turkish>&lt;t color='#00d0ff' size='0.85'&gt;TAKTIK UÇUŞ TALİMATLARI:&lt;br/&gt;- İntikal doğrudan plane_0 kokpitinde başlar.&lt;br/&gt;- Görev sektörleri uçuş sırasında rastgele atanır.&lt;br/&gt;- AWACS Overlord sizi öncelikli hedeflere yönlendirecektir.&lt;/t&gt;</Turkish>
+            <Original>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL FLIGHT DIRECTIVES:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;Radio Support 0-8-1&lt;/t&gt;: Call C-130J tanker when needed. The tanker vectors directly towards you without collision risk. Warnings at 1km &amp; 500m: hold steady, do not maneuver!&lt;br/&gt;- Approach within 200m for 100% replenishment (fuel, armor, missiles).&lt;br/&gt;- AWACS Overlord vectors to priority targets.&lt;/t&gt;</Original>
+            <English>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL FLIGHT DIRECTIVES:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;Radio Support 0-8-1&lt;/t&gt;: Call C-130J tanker when needed. The tanker vectors directly towards you without collision risk. Warnings at 1km &amp; 500m: hold steady, do not maneuver!&lt;br/&gt;- Approach within 200m for 100% replenishment (fuel, armor, missiles).&lt;br/&gt;- AWACS Overlord vectors to priority targets.&lt;/t&gt;</English>
+            <French>&lt;t color='#00d0ff' size='0.85'&gt;DIRECTIVES DE VOL TACTIQUES :&lt;br/&gt;- &lt;t color='#ffcc00'&gt;Support Radio 0-8-1&lt;/t&gt; : Appelez le ravitailleur C-130J en cas de besoin. Il convergera vers vous sans vous percuter. Alertes à 1km et 500m : gardez votre cap, ne bougez pas !&lt;br/&gt;- Ravitaillement complet à moins de 200m (essence, santé, missiles).&lt;br/&gt;- L'AWACS Overlord assurera votre guidage vers les cibles prioritaires.&lt;/t&gt;</French>
+            <Spanish>&lt;t color='#00d0ff' size='0.85'&gt;DIRECTIVAS DE VUELO:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;Apoyo Radio 0-8-1&lt;/t&gt;: Solicite el C-130J en caso de necesidad. Se dirigirá hacia usted sin riesgo de colisión. Avisos a 1km y 500m: ¡mantenga rumbo y no se mueva!&lt;br/&gt;- Repostaje completo a menos de 200m (combustible, blindaje, misiles).&lt;br/&gt;- AWACS Overlord le guiará hacia los objetivos prioritarios.&lt;/t&gt;</Spanish>
+            <German>&lt;t color='#00d0ff' size='0.85'&gt;FLUGDIREKTIVEN:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;Funkunterstützung 0-8-1&lt;/t&gt;: C-130J Tanker bei Bedarf rufen. Er fliegt kollisionsfrei auf Sie zu. Warnungen bei 1km &amp; 500m: Kurs halten, nicht bewegen!&lt;br/&gt;- 100% Betankung &amp; Aufmunitionierung bei unter 200m.&lt;br/&gt;- AWACS Overlord leitet Sie zu Prioritätszielen.&lt;/t&gt;</German>
+            <Italian>&lt;t color='#00d0ff' size='0.85'&gt;DIRETTIVE DI VOLO:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;Supporto Radio 0-8-1&lt;/t&gt;: Chiamate il C-130J al bisogno. Si dirigerà verso di voi senza rischio collisione. Avvisi a 1km e 500m: tenete la rotta, non manovrate!&lt;br/&gt;- Rifornimento e riarmo al 100% a meno di 200m.&lt;br/&gt;- AWACS Overlord guiderà sui bersagli prioritari.&lt;/t&gt;</Italian>
+            <Polish>&lt;t color='#00d0ff' size='0.85'&gt;WYTYCZNE LOTU:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;Wsparcie radiowe 0-8-1&lt;/t&gt;: Wezwij tankowiec C-130J w razie potrzeby. Skieruje się ku tobie bez kolizji. Ostrzeżenia przy 1km i 500m: trzymaj kurs, nie ruszaj się!&lt;br/&gt;- Pełne uzupełnienie poniżej 200m (paliwo, kadłub, rakiety).&lt;br/&gt;- AWACS Overlord poprowadzi na cele priorytetowe.&lt;/t&gt;</Polish>
+            <Portuguese>&lt;t color='#00d0ff' size='0.85'&gt;DIRETIVAS DE VOO:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;Apoio Rádio 0-8-1&lt;/t&gt;: Chame o C-130J se necessário. Convergirá para si em segurança. Alertas a 1km e 500m: mantenha o rumo, não se mexa!&lt;br/&gt;- Reabastecimento total a menos de 200m.&lt;br/&gt;- AWACS Overlord fornecerá vetores para os alvos prioritários.&lt;/t&gt;</Portuguese>
+            <Russian>&lt;t color='#00d0ff' size='0.85'&gt;ПОЛЕТНЫЕ УКАЗАНИЯ:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;Радиоподдержка 0-8-1&lt;/t&gt;: Вызывайте C-130J при необходимости. Он пойдет на сближение без риска столкновения. Предупреждения на 1км и 500м: держите курс, не маневрируйте!&lt;br/&gt;- Полная дозаправка и перевооружение ближе 200м.&lt;br/&gt;- АВАКС Overlord наведет на цели.&lt;/t&gt;</Russian>
+            <Czech>&lt;t color='#00d0ff' size='0.85'&gt;LETOVÉ POKYNY:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;Rádiová podpora 0-8-1&lt;/t&gt;: Přivolejte C-130J v případě nouze. Přiletí k vám bez kolize. Varování na 1km a 500m: držte směr, nehýbejte se!&lt;br/&gt;- 100% doplnění pod 200m.&lt;br/&gt;- AWACS Overlord navede na prioritní cíle.&lt;/t&gt;</Czech>
+            <Korean>&lt;t color='#00d0ff' size='0.85'&gt;전술 비행 지침:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;무전 지원 0-8-1&lt;/t&gt;: 필요 시 C-130J 급유기를 호출하십시오. 충돌 위험 없이 귀관에게 접근합니다. 1km 및 500m 경고: 방위를 유지하고 기동하지 마십시오!&lt;br/&gt;- 200m 이내 100% 보급 완료.&lt;br/&gt;- AWACS Overlord가 목표로 유도합니다.&lt;/t&gt;</Korean>
+            <Japanese>&lt;t color='#00d0ff' size='0.85'&gt;戦術飛行指示:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;無線支援 0-8-1&lt;/t&gt;: 必要な時に給油機C-130Jを要請可能。接触事故なく貴機へ合流します。1kmおよび500mで警告: 針路を保ち動かないでください！&lt;br/&gt;- 200m以内で100%完全補給。&lt;br/&gt;- AWACS Overlordが誘導します。&lt;/t&gt;</Japanese>
+            <Chinese>&lt;t color='#00d0ff' size='0.85'&gt;戰術飛行指令：&lt;br/&gt;- &lt;t color='#ffcc00'&gt;無線電支援 0-8-1&lt;/t&gt;：需要時可呼叫 C-130J 加油機。它將安全迎向您而不發生碰撞。於 1公里 與 500公尺 觸發警報：保持平飛切勿機動！&lt;br/&gt;- 接近至 200公尺 以內獲得 100% 完全整補。&lt;br/&gt;- 預警機 Overlord 引導目標。&lt;/t&gt;</Chinese>
+            <Chinesesimp>&lt;t color='#00d0ff' size='0.85'&gt;战术飞行指令：&lt;br/&gt;- &lt;t color='#ffcc00'&gt;无线电支援 0-8-1&lt;/t&gt;：需要时可呼叫 C-130J 加油机。它将安全迎向您而不发生碰撞。于 1公里 与 500米 触发警报：保持平飞切勿机动！&lt;br/&gt;- 接近至 200米 以内获得 100% 完全整补。&lt;br/&gt;- 预警机 Overlord 引导目标。&lt;/t&gt;</Chinesesimp>
+            <Turkish>&lt;t color='#00d0ff' size='0.85'&gt;TAKTİK UÇUŞ TALİMATLARI:&lt;br/&gt;- &lt;t color='#ffcc00'&gt;Telsiz Desteği 0-8-1&lt;/t&gt;: İhtiyaç duyduğunuzda C-130J'yi çağırın. Çarpışma riski olmadan size yönelecektir. 1km ve 500m uyarıları: rotayı koruyun, oynamayın!&lt;br/&gt;- 200m altında %100 tam ikmal.&lt;br/&gt;- AWACS Overlord sizi hedeflere yönlendirir.&lt;/t&gt;</Turkish>
         </Key>
         <Key ID="STR_ORA_HEADER_AIRCRAFT_PREVIEW">
-            <Original>ASSIGNED VECTOR (PLANE_0)</Original>
-            <English>ASSIGNED VECTOR (PLANE_0)</English>
-            <French>VECTEUR ASSIGNÉ (PLANE_0)</French>
-            <Spanish>VECTOR ASIGNADO (PLANE_0)</Spanish>
-            <German>ZUGEWIESENES FLUGZEUG (PLANE_0)</German>
-            <Italian>VETTORE ASSEGNATO (PLANE_0)</Italian>
-            <Polish>PRZYDZIELONA MASZYNA (PLANE_0)</Polish>
-            <Portuguese>VETOR ATRIBUÍDO (PLANE_0)</Portuguese>
-            <Russian>НАЗНАЧЕННЫЙ БОРТ (PLANE_0)</Russian>
-            <Czech>PŘIŘAZENÝ LETOUN (PLANE_0)</Czech>
-            <Korean>지정 기체 (PLANE_0)</Korean>
-            <Japanese>配備戦闘機 (PLANE_0)</Japanese>
-            <Chinese>指定座機 (PLANE_0)</Chinese>
-            <Chinesesimp>指定座机 (PLANE_0)</Chinesesimp>
-            <Turkish>TAHSİS EDİLEN UÇAK (PLANE_0)</Turkish>
+            <Original>ASSIGNED COMBAT AIRCRAFT</Original>
+            <English>ASSIGNED COMBAT AIRCRAFT</English>
+            <French>APPAREIL DE COMBAT ASSIGNÉ</French>
+            <Spanish>AERONAVE DE COMBATE ASIGNADA</Spanish>
+            <German>ZUGEWIESENES KAMPFFLUGZEUG</German>
+            <Italian>AEROMOBILE DA COMBATTIMENTO ASSEGNATO</Italian>
+            <Polish>PRZYDZIELONY MYŚLIWIEC BOJOWY</Polish>
+            <Portuguese>AERONAVE DE COMBATE ATRIBUÍDA</Portuguese>
+            <Russian>НАЗНАЧЕННЫЙ БОЕВОЙ САМОЛЕТ</Russian>
+            <Czech>PŘIŘAZENÝ BOJOVÝ LETOUN</Czech>
+            <Korean>지정 전투기</Korean>
+            <Japanese>配備戦闘機</Japanese>
+            <Chinese>指定作戰戰機</Chinese>
+            <Chinesesimp>指定作战战机</Chinesesimp>
+            <Turkish>TAHSİS EDİLEN SAVAŞ UÇAĞI</Turkish>
         </Key>
         <Key ID="STR_ORA_HEADER_THEATER_MAP">
             <Original>OPERATIONAL THEATER — SAHRANI</Original>
@@ -2129,21 +2282,21 @@
             <Turkish>HAREKÂT ALANI — SAHRANI</Turkish>
         </Key>
         <Key ID="STR_ORA_MAP_DYNAMIC_NOTICE">
-            <Original>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL MAP:&lt;/t&gt;&lt;br/&gt;Mission sectors are randomized dynamically across the theater during combat operations.</Original>
-            <English>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL MAP:&lt;/t&gt;&lt;br/&gt;Mission sectors are randomized dynamically across the theater during combat operations.</English>
-            <French>&lt;t color='#00d0ff' size='0.85'&gt;CARTE TACTIQUE :&lt;/t&gt;&lt;br/&gt;Les secteurs de combat seront attribués aléatoirement par le QG sur l'archipel en cours de vol.</French>
-            <Spanish>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TÁCTICO:&lt;/t&gt;&lt;br/&gt;Los sectores de misión se asignan aleatoriamente durante el combate.</Spanish>
-            <German>&lt;t color='#00d0ff' size='0.85'&gt;TAKTIKKARTE:&lt;/t&gt;&lt;br/&gt;Einsatzsektoren werden dynamisch über das gesamte Einsatzgebiet verteilt.</German>
-            <Italian>&lt;t color='#00d0ff' size='0.85'&gt;MAPPA TATTICA:&lt;/t&gt;&lt;br/&gt;I settori di missione vengono assegnati casualmente durante le operazioni.</Italian>
-            <Polish>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TAKTYCZNA:&lt;/t&gt;&lt;br/&gt;Sektory operacji są losowane na całym archipelagu w czasie rzeczywistym.</Polish>
-            <Portuguese>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TÁTICO:&lt;/t&gt;&lt;br/&gt;Os setores de missão são gerados aleatoriamente em pleno voo.</Portuguese>
-            <Russian>&lt;t color='#00d0ff' size='0.85'&gt;ТАКТИЧЕСКАЯ КАРТА:&lt;/t&gt;&lt;br/&gt;Секторы операций распределяются случайным образом в ходе боевого вылета.</Russian>
-            <Czech>&lt;t color='#00d0ff' size='0.85'&gt;TAKTICKÁ MAPA:&lt;/t&gt;&lt;br/&gt;Bojové sektory budou náhodně přidělovány velitelstvím během letu.</Czech>
-            <Korean>&lt;t color='#00d0ff' size='0.85'&gt;전술 지도:&lt;/t&gt;&lt;br/&gt;작전 구역은 교전 중 전구 전역에 무작위로 생성됩니다.</Korean>
-            <Japanese>&lt;t color='#00d0ff' size='0.85'&gt;戦術マップ:&lt;/t&gt;&lt;br/&gt;作戦セクターは飛行中に戦域全域へランダムに配分されます。</Japanese>
-            <Chinese>&lt;t color='#00d0ff' size='0.85'&gt;戰術地圖：&lt;/t&gt;&lt;br/&gt;作戰區域將在戰鬥進行時於全島動態隨機生成。</Chinese>
-            <Chinesesimp>&lt;t color='#00d0ff' size='0.85'&gt;战术地图：&lt;br/&gt;作战区域将在战斗进行时于全岛动态随机生成。</Chinesesimp>
-            <Turkish>&lt;t color='#00d0ff' size='0.85'&gt;TAKTİK HARİTA:&lt;/t&gt;&lt;br/&gt;Görev sektörleri muharebe sırasında harekât alanı genelinde rastgele atanır.</Turkish>
+            <Original>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL MAP — TANKER (BLUE):&lt;/t&gt;&lt;br/&gt;Airborne C-130J is marked in &lt;t color='#3399ff'&gt;BLUE&lt;/t&gt; (100% refuel/rearm within 200m). &lt;t color='#ffcc00'&gt;Call via Support 0-8-1&lt;/t&gt;. Warnings at 1km &amp; 500m: hold steady!</Original>
+            <English>&lt;t color='#00d0ff' size='0.85'&gt;TACTICAL MAP — TANKER (BLUE):&lt;/t&gt;&lt;br/&gt;Airborne C-130J is marked in &lt;t color='#3399ff'&gt;BLUE&lt;/t&gt; (100% refuel/rearm within 200m). &lt;t color='#ffcc00'&gt;Call via Support 0-8-1&lt;/t&gt;. Warnings at 1km &amp; 500m: hold steady!</English>
+            <French>&lt;t color='#00d0ff' size='0.85'&gt;CARTE TACTIQUE — RAVITAILLEUR (BLEU) :&lt;/t&gt;&lt;br/&gt;Le C-130J est repéré en &lt;t color='#3399ff'&gt;BLEU&lt;/t&gt; (ravitaillement complet à 200m). &lt;t color='#ffcc00'&gt;Appel via Support 0-8-1&lt;/t&gt;. Alertes à 1km et 500m : ne bougez pas !</French>
+            <Spanish>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TÁCTICO — NODRIZA (AZUL):&lt;/t&gt;&lt;br/&gt;El C-130J está marcado en &lt;t color='#3399ff'&gt;AZUL&lt;/t&gt; (reabastecimiento a 200m). &lt;t color='#ffcc00'&gt;Llame vía Apoyo 0-8-1&lt;/t&gt;. Avisos a 1km y 500m: ¡no se mueva!</Spanish>
+            <German>&lt;t color='#00d0ff' size='0.85'&gt;TAKTIKKARTE — TANKER (BLAU):&lt;/t&gt;&lt;br/&gt;Die C-130J ist in &lt;t color='#3399ff'&gt;BLAU&lt;/t&gt; markiert (100% Betankung bei 200m). &lt;t color='#ffcc00'&gt;Ruf per Funk 0-8-1&lt;/t&gt;. Warnungen bei 1km &amp; 500m: ruhig halten!</German>
+            <Italian>&lt;t color='#00d0ff' size='0.85'&gt;MAPPA TATTICA — AEROCISTERNA (BLU):&lt;/t&gt;&lt;br/&gt;Il C-130J è in &lt;t color='#3399ff'&gt;BLU&lt;/t&gt; (rifornimento completo a 200m). &lt;t color='#ffcc00'&gt;Chiamata via Supporto 0-8-1&lt;/t&gt;. Avvisi a 1km e 500m: non muovetevi!</Italian>
+            <Polish>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TAKTYCZNA — TANKOWIEC (NIEBIESKI):&lt;/t&gt;&lt;br/&gt;C-130J oznaczony na &lt;t color='#3399ff'&gt;NIEBIESKO&lt;/t&gt; (zaopatrzenie do 200m). &lt;t color='#ffcc00'&gt;Wezwij przez Wsparcie 0-8-1&lt;/t&gt;. Ostrzeżenia na 1km i 500m: trzymaj kurs!</Polish>
+            <Portuguese>&lt;t color='#00d0ff' size='0.85'&gt;MAPA TÁTICO — REABASTECEDOR (AZUL):&lt;/t&gt;&lt;br/&gt;O C-130J está em &lt;t color='#3399ff'&gt;AZUL&lt;/t&gt; (reabastecimento total a 200m). &lt;t color='#ffcc00'&gt;Chamada via Apoio 0-8-1&lt;/t&gt;. Alertas a 1km e 500m: não mexa!</Portuguese>
+            <Russian>&lt;t color='#00d0ff' size='0.85'&gt;ТАКТИЧЕСКАЯ КАРТА — ЗАПРАВЩИК (СИНИЙ):&lt;/t&gt;&lt;br/&gt;C-130J отмечен &lt;t color='#3399ff'&gt;СИНИМ&lt;/t&gt; (заправка ближе 200м). &lt;t color='#ffcc00'&gt;Вызов через Поддержку 0-8-1&lt;/t&gt;. Предупреждения на 1км и 500м: не двигайтесь!</Russian>
+            <Czech>&lt;t color='#00d0ff' size='0.85'&gt;TAKTICKÁ MAPA — TANKER (MODRÁ):&lt;/t&gt;&lt;br/&gt;Letoun C-130J označen &lt;t color='#3399ff'&gt;MODŘE&lt;/t&gt; (100% doplnění do 200m). &lt;t color='#ffcc00'&gt;Přivolání přes Podporu 0-8-1&lt;/t&gt;. Varování na 1km a 500m: nehýbejte se!</Czech>
+            <Korean>&lt;t color='#00d0ff' size='0.85'&gt;전술 지도 — 공중급유기 (파란색):&lt;/t&gt;&lt;br/&gt;C-130J가 &lt;t color='#3399ff'&gt;파란색&lt;/t&gt;으로 표시됩니다 (200m 이내 100% 보급). &lt;t color='#ffcc00'&gt;지원 메뉴 0-8-1로 호출&lt;/t&gt;. 1km 및 500m 경고 시 움직이지 마십시오!</Korean>
+            <Japanese>&lt;t color='#00d0ff' size='0.85'&gt;戦術マップ — 給油機 (青色):&lt;/t&gt;&lt;br/&gt;C-130Jが&lt;t color='#3399ff'&gt;青色&lt;/t&gt;で表示（200m以内で100%補給）。&lt;t color='#ffcc00'&gt;支援メニュー 0-8-1で要請&lt;/t&gt;。1km・500m警告時は動かないでください！</Japanese>
+            <Chinese>&lt;t color='#00d0ff' size='0.85'&gt;戰術地圖 — 加油機 (藍色)：&lt;/t&gt;&lt;br/&gt;C-130J 標示為&lt;t color='#3399ff'&gt;藍色&lt;/t&gt;（200公尺以內完全整補）。&lt;t color='#ffcc00'&gt;透過支援選單 0-8-1 呼叫&lt;/t&gt;。1公里與500公尺警告時切勿移動！</Chinese>
+            <Chinesesimp>&lt;t color='#00d0ff' size='0.85'&gt;战术地图 — 加油机 (蓝色)：&lt;/t&gt;&lt;br/&gt;C-130J 标示为&lt;t color='#3399ff'&gt;蓝色&lt;/t&gt;（200米以内完全整补）。&lt;t color='#ffcc00'&gt;通过支援菜单 0-8-1 呼叫&lt;/t&gt;。1公里与500米警告时切勿移动！</Chinesesimp>
+            <Turkish>&lt;t color='#00d0ff' size='0.85'&gt;TAKTİK HARİTA — İKMAL UÇAĞI (MAVİ):&lt;/t&gt;&lt;br/&gt;C-130J &lt;t color='#3399ff'&gt;MAVİ&lt;/t&gt; renktedir (200m altında %100 ikmal). &lt;t color='#ffcc00'&gt;Destek 0-8-1 ile çağrılır&lt;/t&gt;. 1km ve 500m uyarılarında kımıldamayın!</Turkish>
         </Key>
         <Key ID="STR_ORA_BUTTON_LAUNCH_SORTIE">
             <Original>SCRAMBLE / LAUNCH SORTIE</Original>

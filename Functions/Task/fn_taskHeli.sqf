@@ -3,15 +3,15 @@
     Description:
         Génère et supervise une mission de frappe contre une force héliportée d'assaut.
         Conforme aux spécifications :
-        - Distance minimale garantie : STRICTEMENT supérieure à 2000m du joueur (2500m - 7000m).
-        - Fait apparaître 1 à 3 hélicoptères de combat/manœuvre volant en basse altitude (30-80m).
-        - Fait apparaître 5 à 15 unités d'infanterie ennemie au sol.
+        - Les hélicoptères ennemis apparaissent STRICTEMENT sur les marqueurs oranges :
+          marker_orange_0 à marker_orange_52 (secteurs terrestres au sol sur Sahrani).
+        - Fait apparaître 1 à 3 hélicoptères de combat/manœuvre volant en basse altitude (40-80m).
+        - Fait apparaître 5 à 15 unités d'infanterie ennemie au sol autour du marqueur.
         - Fait apparaître une escouade alliée RACS (4 à 8 soldats avec dotation INFO_EDITOR.md).
-        - MOUVEMENT DYNAMIQUE : Les troupes au sol se déplacent et convergent vers le secteur
-          de contact pendant que les hélicoptères patrouillent à basse altitude.
-        - Signalement visuel : fumigène vert allié pour identification.
+        - MOUVEMENT DYNAMIQUE : Les troupes au sol s'affrontent pendant que les hélicoptères
+          patrouillent et fournissent un appui-feu à basse altitude sur le secteur.
+        - Signalement visuel : fumigène vert allié pour identification CAS.
         - RÈGLE CONTRACTUELLE : La réussite se limite STRICTEMENT à l'élimination des hélicoptères.
-          L'infanterie au sol participe à l'engagement mais sa destruction n'est pas requise.
         - Ordre radio QG (Overlord) avec coordonnées au format militaire et TTS.
 
     Paramètres:
@@ -32,57 +32,62 @@ params [
 
 if (!hasInterface) exitWith { false };
 
-diag_log format ["[ORA-TASK] [HELI] Démarrage de la tâche %1 (Sortie %2)...", _taskID, _orderNum];
-
 private _plane = missionNamespace getVariable ["plane_0", player];
-private _playerPos = getPos _plane;
 
 // =============================================================================
-// 1. DÉFINITION DU POINT DE COMBAT (STRICTEMENT >= 2500m)
+// 1. SÉLECTION D'UN SECTEUR TERRESTRE PARMI LES MARQUEURS ORANGES (0 à 52)
 // =============================================================================
-private _clashPos = [];
-private _attempts = 0;
+private _groundMarkers = [];
 
-while {_attempts < 40 && {_clashPos isEqualTo []}} do {
-    _attempts = _attempts + 1;
-    private _dir = random 360;
-    private _dist = 2500 + (random 4500);
-    private _testPos = _playerPos getPos [_dist, _dir];
+for "_i" from 0 to 52 do {
+    private _mrk = format ["marker_orange_%1", _i];
+    if (getMarkerColor _mrk != "") then {
+        _groundMarkers pushBack _mrk;
+    };
+};
 
-    if (!surfaceIsWater _testPos) then {
-        private _flatPos = _testPos isFlatEmpty [10, 0, 0.4, 25, 0, false, objNull];
-        if !(_flatPos isEqualTo []) then {
-            _clashPos = _flatPos;
+if (_groundMarkers isEqualTo []) then {
+    for "_i" from 0 to 52 do {
+        private _mrk = format ["marker_blue_%1", _i];
+        if (getMarkerColor _mrk != "" && {!surfaceIsWater (getMarkerPos _mrk)}) then {
+            _groundMarkers pushBack _mrk;
         };
     };
 };
 
-if (_clashPos isEqualTo [] || {(_clashPos distance _playerPos) < 2000}) then {
-    private _safeDir = random 360;
-    _clashPos = _playerPos getPos [3300, _safeDir];
-    _clashPos set [2, 0];
+if (_groundMarkers isEqualTo []) exitWith {
+    false
 };
+
+private _spawnMrk = selectRandom _groundMarkers;
+private _clashPos = getMarkerPos _spawnMrk;
+_clashPos set [2, 0];
 
 private _gridStr = mapGridPosition _clashPos;
 
 // =============================================================================
-// 2. CRÉATION DE LA TÂCHE (BIS_fnc_taskCreate)
+// 2. RATTACHEMENT OU CRÉATION DE LA TÂCHE OFFICIELLE
 // =============================================================================
-[
-    true,
-    _taskID,
+if (!([_taskID] call BIS_fnc_taskExists)) then {
     [
-        localize "STR_ORA_Task_Heli_Desc",
-        format ["[%1] %2", _orderNum, localize "STR_ORA_Task_Heli_Title"],
-        localize "STR_ORA_Task_Heli_Marker"
-    ],
-    _clashPos,
-    "AUTOASSIGNED",
-    5,
-    true,
-    "destroy",
-    false
-] call BIS_fnc_taskCreate;
+        true,
+        _taskID,
+        [
+            localize "STR_ORA_Task_Heli_Desc",
+            format ["[%1] %2", _orderNum, localize "STR_ORA_Task_Heli_Title"],
+            localize "STR_ORA_Task_Heli_Marker"
+        ],
+        _clashPos,
+        "ASSIGNED",
+        5,
+        true,
+        "destroy",
+        false
+    ] call BIS_fnc_taskCreate;
+} else {
+    [_taskID, _clashPos] call BIS_fnc_taskSetDestination;
+    [_taskID, "ASSIGNED", true] call BIS_fnc_taskSetState;
+};
 
 // Ordre radio Overlord via TTS
 private _radioOrder = format [localize "STR_ORA_Task_Heli_Order", _gridStr];
@@ -121,22 +126,24 @@ private _infantryClasses = [
 private _approachDir = random 360;
 
 // =============================================================================
-// 4. CIBLES PRIORITAIRES : 1 À 3 HÉLICOPTÈRES EN VOL BASSE ALTITUDE (30-80M)
+// 4. CIBLES PRIORITAIRES : 1 À 3 HÉLICOPTÈRES EN VOL BASSE ALTITUDE (40-80M)
 // =============================================================================
 private _numHelis = 1 + floor (random 3);
 private _targetHelis = [];
+private _createdEntities = [];
 private _enemyHeliGroup = createGroup [east, true];
 
 for "_i" from 1 to _numHelis do {
     private _hClass = selectRandom _heliClasses;
-    private _hPos = _clashPos getPos [50 * _i, _approachDir + 180];
-    private _alt = 35 + (random 45);
-    _hPos set [2, _alt];
+    private _hPos = _clashPos getPos [80 * _i, _approachDir + (_i * 45)];
+    private _hAlt = 45 + (random 35);
+    _hPos set [2, _hAlt];
 
     private _heli = createVehicle [_hClass, _hPos, [], 0, "FLY"];
-    _heli setDir _approachDir;
-    _heli flyInHeight _alt;
-    _heli setVelocityModelSpace [0, 30, 0];
+    _heli setPosASL _hPos;
+    _heli setDir (random 360);
+    _heli flyInHeight _hAlt;
+    _heli setVelocityModelSpace [0, 45, 0];
 
     _heli allowDamage false;
     [_heli] spawn { sleep 3; if (!isNull (_this select 0)) then { (_this select 0) allowDamage true; }; };
@@ -146,7 +153,9 @@ for "_i" from 1 to _numHelis do {
 
     _heli setVariable ["ORA_isEnemy", true, true];
     _targetHelis pushBack _heli;
-    sleep 0.2;
+    _createdEntities pushBack _heli;
+    _createdEntities append (crew _heli);
+    sleep 0.15;
 };
 
 // Enregistrement des cibles de la tâche pour le guidage d'armement
@@ -157,57 +166,90 @@ private _mrkName = format ["mrk_tactical_%1", _taskID];
 private _currentTracked = if (_targetHelis isNotEqualTo []) then { _targetHelis select 0 } else { objNull };
 
 if (!isNull _currentTracked) then {
-    [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
     createMarkerLocal [_mrkName, getPos _currentTracked];
     _mrkName setMarkerTypeLocal "o_air";
     _mrkName setMarkerColorLocal "ColorRed";
     _mrkName setMarkerTextLocal (format [" %1", localize "STR_ORA_Task_Heli_Marker"]);
 };
 
-// Patrouille basse altitude au-dessus du secteur
+// Gestion multi-objectifs : si 2 objectifs ou plus, créer des sous-tâches dédiées
+private _objTaskData = [];
+if ((count _targetHelis) >= 2) then {
+    for "_k" from 0 to ((count _targetHelis) - 1) do {
+        private _tHeli = _targetHelis select _k;
+        private _objID = format ["%1_obj_%2", _taskID, _k + 1];
+        private _objTitle = format ["%1 %2 : %3", localize "STR_ORA_Task_Objective", _k + 1, localize "STR_ORA_Task_Heli_Marker"];
+        private _objDesc = format ["%1 (%2 %3)", localize "STR_ORA_Task_Heli_Desc", localize "STR_ORA_Task_Objective", _k + 1];
+        private _objState = if (_k == 0) then { "ASSIGNED" } else { "CREATED" };
+
+        [
+            true,
+            [_objID, _taskID],
+            [_objDesc, _objTitle, ""],
+            _tHeli,
+            _objState,
+            5,
+            (_k == 0),
+            "destroy",
+            false
+        ] call BIS_fnc_taskCreate;
+
+        _objTaskData pushBack [_tHeli, _objID, false];
+    };
+    [format ["%1_obj_1", _taskID]] call BIS_fnc_taskSetCurrent;
+} else {
+    if (!isNull _currentTracked) then {
+        [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
+    };
+};
+
+// Waypoints de patrouille et appui-feu pour les hélicoptères au-dessus du secteur
 for "_w" from 1 to 4 do {
-    private _wpPos = _clashPos getPos [250 + (_w * 100), _w * 90];
-    private _wp = _enemyHeliGroup addWaypoint [_wpPos, 0];
-    _wp setWaypointType "MOVE";
-    _wp setWaypointSpeed "NORMAL";
-    _wp setWaypointBehaviour "COMBAT";
+    private _wpHeliPos = _clashPos getPos [250 + (_w * 100), _w * 90];
+    private _wpHeli = _enemyHeliGroup addWaypoint [_wpHeliPos, 0];
+    _wpHeli setWaypointType "SAD";
+    _wpHeli setWaypointSpeed "NORMAL";
+    _wpHeli setWaypointBehaviour "COMBAT";
+    _wpHeli setWaypointCombatMode "RED";
     if (_w == 4) then {
-        _wp setWaypointType "CYCLE";
+        _wpHeli setWaypointType "CYCLE";
     };
 };
 
 // =============================================================================
-// 5. INFANTERIE ENNEMIE AU SOL (5 À 15 UNITÉS EN MOUVEMENT)
+// 5. TROUPES ENNEMIES AU SOL AUTOUR DU MARQUEUR ORANGE
 // =============================================================================
+private _enemySpawnPos = _clashPos getPos [200 + random 80, _approachDir + 180];
+_enemySpawnPos set [2, 0.1];
+
 private _numEnemyInf = 5 + floor (random 11);
 private _enemyInfGroup = createGroup [east, true];
-private _enemyInfSpawn = _clashPos getPos [300 + random 80, _approachDir + 180];
-_enemyInfSpawn set [2, 0.2];
 
 for "_i" from 1 to _numEnemyInf do {
-    private _infClass = selectRandom _infantryClasses;
-    private _pPos = _enemyInfSpawn getPos [4 + random 25, random 360];
-    _pPos set [2, 0.2];
+    private _iClass = selectRandom _infantryClasses;
+    private _iPos = _enemySpawnPos getPos [4 + random 25, random 360];
+    _iPos set [2, 0.1];
 
-    private _unit = _enemyInfGroup createUnit [_infClass, _pPos, [], 0, "CAN_COLLIDE"];
-    _unit setPosATL _pPos;
+    private _unit = _enemyInfGroup createUnit [_iClass, _iPos, [], 0, "CAN_COLLIDE"];
+    _unit setPosATL _iPos;
 
     _unit allowDamage false;
     [_unit] spawn { sleep 3; if (!isNull (_this select 0)) then { (_this select 0) allowDamage true; }; };
 
+    _createdEntities pushBack _unit;
     sleep 0.05;
 };
 
-private _wpEnemyInf = _enemyInfGroup addWaypoint [_clashPos, 20];
-_wpEnemyInf setWaypointType "MOVE";
+private _wpEnemyInf = _enemyInfGroup addWaypoint [_clashPos, 30];
+_wpEnemyInf setWaypointType "SAD";
 _wpEnemyInf setWaypointSpeed "NORMAL";
 _wpEnemyInf setWaypointBehaviour "AWARE";
 
 // =============================================================================
-// 6. ESCOUADE ALLIÉE RACS (4 À 8 SOLDATS EN MOUVEMENT DE RENFORT)
+// 6. FORCES ALLIÉES RACS DÉPLOYÉES SUR LE SECTEUR
 // =============================================================================
-private _alliedSpawnPos = _clashPos getPos [280 + random 80, _approachDir];
-_alliedSpawnPos set [2, 0.2];
+private _alliedSpawnPos = _clashPos getPos [180 + random 60, _approachDir];
+_alliedSpawnPos set [2, 0.1];
 
 private _numAllies = 4 + floor (random 5);
 private _alliedGroup = createGroup [independent, true];
@@ -215,7 +257,7 @@ private _alliedGroup = createGroup [independent, true];
 for "_i" from 1 to _numAllies do {
     private _aClass = selectRandom _infantryClasses;
     private _aPos = _alliedSpawnPos getPos [4 + random 20, random 360];
-    _aPos set [2, 0.2];
+    _aPos set [2, 0.1];
 
     private _ally = _alliedGroup createUnit [_aClass, _aPos, [], 0, "CAN_COLLIDE"];
     _ally setPosATL _aPos;
@@ -225,19 +267,28 @@ for "_i" from 1 to _numAllies do {
 
     [_ally] call ORA_fnc_applyRACSLoadout;
 
+    _createdEntities pushBack _ally;
     sleep 0.05;
 };
 
-// Déplacement allié vers le point de contact
-private _wpAlly1 = _alliedGroup addWaypoint [_clashPos, 0];
-_wpAlly1 setWaypointType "MOVE";
-_wpAlly1 setWaypointSpeed "NORMAL";
-_wpAlly1 setWaypointBehaviour "AWARE";
+// Présence alliée renforcée si l'option est cochée dans le menu principal
+if (missionNamespace getVariable ["ORA_setting_alliedPresence", false]) then {
+    private _alliedVeh = createVehicle ["I_MRAP_03_hmg_F", _alliedSpawnPos, [], 0, "NONE"];
+    _alliedVeh setDir (_approachDir + 180);
+    _alliedVeh allowDamage false;
+    [_alliedVeh] spawn { sleep 3; if (!isNull (_this select 0)) then { (_this select 0) allowDamage true; }; };
+    createVehicleCrew _alliedVeh;
+    (crew _alliedVeh) joinSilent _alliedGroup;
+    _createdEntities pushBack _alliedVeh;
+    _createdEntities append (crew _alliedVeh);
+};
 
-private _wpAlly2 = _alliedGroup addWaypoint [_clashPos, 40];
-_wpAlly2 setWaypointType "GUARD";
+private _wpAlly = _alliedGroup addWaypoint [_clashPos, 20];
+_wpAlly setWaypointType "GUARD";
+_wpAlly setWaypointSpeed "NORMAL";
+_wpAlly setWaypointBehaviour "AWARE";
 
-// Fumigène vert allié pour marquer la position au jet
+// Fumigène vert allié pour identification CAS dès l'approche
 [_alliedGroup, _clashPos] spawn {
     params ["_grp", "_target"];
     waitUntil {
@@ -253,23 +304,63 @@ _wpAlly2 setWaypointType "GUARD";
 // =============================================================================
 // 7. SURVEILLANCE ET SUIVI EN TEMPS RÉEL (MARQUEUR ET DESTINATION DYNAMIQUES)
 // =============================================================================
-while { ({ alive _x } count _targetHelis) > 0 } do {
-    private _livingHelis = _targetHelis select { alive _x };
+if (_objTaskData isNotEqualTo []) then {
+    private _activeIdx = 0;
+    private _activeObjTask = _objTaskData select 0 select 1;
 
-    if (_livingHelis isNotEqualTo []) then {
-        // Si l'hélicoptère suivi est abattu, basculer immédiatement sur le prochain appareil vivant
-        if (isNull _currentTracked || {!alive _currentTracked}) then {
-            _currentTracked = _livingHelis select 0;
-            [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
+    while { ({ alive (_x select 0) } count _objTaskData) > 0 } do {
+        {
+            _x params ["_tHeli", "_tID", "_done"];
+            if (!_done && {!alive _tHeli}) then {
+                _x set [2, true];
+                [_tID, "SUCCEEDED", true] call BIS_fnc_taskSetState;
+                // Recherche et assignation immédiate de l'autre objectif !
+                private _nextIdx = _objTaskData findIf { !(_x select 2) && {alive (_x select 0)} };
+                if (_nextIdx != -1) then {
+                    private _nextData = _objTaskData select _nextIdx;
+                    _activeIdx = _nextIdx;
+                    _activeObjTask = _nextData select 1;
+
+                    [_activeObjTask, "ASSIGNED", true] call BIS_fnc_taskSetState;
+                    [_activeObjTask] call BIS_fnc_taskSetCurrent;
+
+                };
+            };
+        } forEach _objTaskData;
+
+        private _curData = _objTaskData select _activeIdx;
+        if (_curData select 2 || {!alive (_curData select 0)}) then {
+            private _nextIdx = _objTaskData findIf { !(_x select 2) && {alive (_x select 0)} };
+            if (_nextIdx != -1) then {
+                _activeIdx = _nextIdx;
+                _curData = _objTaskData select _activeIdx;
+            };
         };
 
-        // Mise à jour continue de la position du marqueur sur la cible vivante
-        if (!isNull _currentTracked && {alive _currentTracked}) then {
-            _mrkName setMarkerPosLocal (getPos _currentTracked);
+        private _curTarget = _curData select 0;
+        if (!isNull _curTarget && {alive _curTarget}) then {
+            _mrkName setMarkerPosLocal (getPos _curTarget);
         };
+
+        private _livingTargets = (_objTaskData select { !(_x select 2) && {alive (_x select 0)} }) apply { _x select 0 };
+        missionNamespace setVariable ["ORA_activeTaskTargets", _livingTargets, true];
+
+        sleep 0.5;
     };
-
-    sleep 0.5;
+} else {
+    while { ({ alive _x } count _targetHelis) > 0 } do {
+        private _livingHelis = _targetHelis select { alive _x };
+        if (_livingHelis isNotEqualTo []) then {
+            if (isNull _currentTracked || {!alive _currentTracked}) then {
+                _currentTracked = _livingHelis select 0;
+                [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
+            };
+            if (!isNull _currentTracked && {alive _currentTracked}) then {
+                _mrkName setMarkerPosLocal (getPos _currentTracked);
+            };
+        };
+        sleep 0.5;
+    };
 };
 
 // Suppression propre du marqueur tactique de suivi
@@ -282,19 +373,9 @@ missionNamespace setVariable ["ORA_activeTaskTargets", [], true];
 // Message radio BDA QG Overlord
 ["OVERLORD", localize "STR_ORA_Task_Heli_Done", "STR_ORA_Task_Heli_Done"] call ORA_fnc_radioMsg;
 
-diag_log format ["[ORA-TASK] [HELI] [SUCCÈS] Tâche %1 accomplie : tous les hélicoptères abattus.", _taskID];
-
-// Nettoyage après crash et éloignement
-[_targetHelis, _enemyInfGroup, _alliedGroup] spawn {
-    params ["_helis", "_enemyGrp", "_allyGrp"];
-    sleep 60;
-    waitUntil {
-        sleep 5;
-        (player distance (_helis select 0)) > 2500
-    };
-    { deleteVehicle _x; } forEach _helis;
-    { deleteVehicle _x; } forEach (units _enemyGrp);
-    { deleteVehicle _x; } forEach (units _allyGrp);
-};
+// Nettoyage automatique après fin de tâche :
+// Toutes les unités au sol (alliés, ennemis), épaves d'hélicoptères et véhicules créés
+// disparaissent immédiatement si à plus de 2000m du joueur, ou dès que le joueur s'éloigne à plus de 2000m.
+[_createdEntities, [_enemyHeliGroup, _enemyInfGroup, _alliedGroup], 2000] spawn ORA_fnc_taskCleanup;
 
 true

@@ -9,6 +9,14 @@ params ["_player", "_didJIP"];
 
 if (!hasInterface) exitWith {};
 
+// ============================================================================
+// DÉSACTIVATION COMPLÈTE DU SYSTÈME DE CHAT ET DES LOGS DU JEU
+// ============================================================================
+showChat false;
+enableRadio false;
+enableSentences false;
+0 fadeRadio 0;
+
 // Verrouillage immédiat pour empêcher toute altération par des scripts d'équipement généralistes
 _player setVariable ["ORA_isPilot", true, true];
 player setVariable ["ORA_isPilot", true, true];

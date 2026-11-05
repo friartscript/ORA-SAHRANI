@@ -3,15 +3,16 @@
     Description:
         Génère et supervise une mission de frappe au sol (CAS / Anti-Blindés).
         Conforme aux spécifications :
-        - Distance minimale garantie : STRICTEMENT supérieure à 2000m du joueur (2500m - 7000m).
-        - Fait apparaître 1 à 3 véhicules terrestres ennemis (blindés, DCA, convois).
-        - Fait apparaître 5 à 15 unités d'infanterie ennemie AAF.
-        - Fait apparaître une escouade alliée RACS (4 à 8 soldats avec dotation INFO_EDITOR.md).
-        - MOUVEMENT DYNAMIQUE : Les forces ennemies et les forces alliées convergent l'une vers
-          l'autre vers un point de rendez-vous tactique et s'affrontent en combat d'infanterie.
-        - Signalement visuel : fumigène vert allié (SmokeShellGreen) pour identification CAS.
+        - Les missions au sol s'effectuent STRICTEMENT sur les marqueurs routiers :
+          marker_orange_0 à marker_orange_52 (ou marker_blue_0 à 52 si applicable).
+        - Ces marqueurs sont placés exactement sur le réseau routier de Sahrani.
+        - Fait apparaître 1 à 3 véhicules blindés ennemis directement sur la route.
+        - Les véhicules se déplacent en convoi le long de la route vers un autre point
+          situé à MINIMUM 950 mètres.
+        - À cette destination (>= 950m), des unités alliées RACS armées (lance-roquettes,
+          fusils, mitrailleuses) les attendent en position défensive / embuscade.
+        - Signalement visuel : fumigène vert allié (SmokeShellGreen) dès l'engagement.
         - RÈGLE CONTRACTUELLE : La réussite se limite STRICTEMENT à l'élimination des véhicules.
-          L'infanterie au sol participe au combat mais sa destruction n'est pas requise.
         - Ordre radio QG (Overlord) avec coordonnées au format militaire et TTS.
 
     Paramètres:
@@ -32,66 +33,109 @@ params [
 
 if (!hasInterface) exitWith { false };
 
-diag_log format ["[ORA-TASK] [GROUND] Démarrage de la tâche %1 (Sortie %2)...", _taskID, _orderNum];
-
 private _plane = missionNamespace getVariable ["plane_0", player];
-private _playerPos = getPos _plane;
 
 // =============================================================================
-// 1. DÉFINITION DU POINT DE RENDEZ-VOUS / COMBAT (STRICTEMENT >= 2500m)
+// 1. COLLECTE DES MARQUEURS ROUTIERS (marker_orange_0..52 ou marker_blue_0..52)
 // =============================================================================
-private _clashPos = [];
-private _attempts = 0;
+private _roadMarkers = [];
 
-while {_attempts < 40 && {_clashPos isEqualTo []}} do {
-    _attempts = _attempts + 1;
-    private _dir = random 360;
-    // Distance garantie entre 2500m et 7000m du joueur
-    private _dist = 2500 + (random 4500);
-    private _testPos = _playerPos getPos [_dist, _dir];
+// Recherche prioritaire des marqueurs oranges (placés sur les routes dans l'éditeur)
+for "_i" from 0 to 52 do {
+    private _mrk = format ["marker_orange_%1", _i];
+    if (getMarkerColor _mrk != "") then {
+        _roadMarkers pushBack _mrk;
+    };
+};
 
-    if (!surfaceIsWater _testPos) then {
-        private _flatPos = _testPos isFlatEmpty [8, 0, 0.4, 25, 0, false, objNull];
-        if !(_flatPos isEqualTo []) then {
-            _clashPos = _flatPos;
+// Fallback transparent si les marqueurs sont préfixés marker_blue_
+if (_roadMarkers isEqualTo []) then {
+    for "_i" from 0 to 52 do {
+        private _mrk = format ["marker_blue_%1", _i];
+        if (getMarkerColor _mrk != "" && {!surfaceIsWater (getMarkerPos _mrk)}) then {
+            _roadMarkers pushBack _mrk;
         };
     };
 };
 
-// Sécurité distance sur position de repli
-if (_clashPos isEqualTo [] || {(_clashPos distance _playerPos) < 2000}) then {
-    private _safeDir = random 360;
-    _clashPos = _playerPos getPos [3200, _safeDir];
-    _clashPos set [2, 0];
+if (_roadMarkers isEqualTo []) exitWith {
+    false
 };
 
-private _gridStr = mapGridPosition _clashPos;
+// =============================================================================
+// 2. CHOIX DU MARQUEUR DE DÉPART ET ALIGNEMENT EXACT SUR LA ROUTE
+// =============================================================================
+private _spawnMrk = selectRandom _roadMarkers;
+private _spawnPos = getMarkerPos _spawnMrk;
+
+// Repérage précis du tronçon routier au milieu du marqueur
+private _nearRoads = _spawnPos nearRoads 80;
+private _roadDir = random 360;
+
+if (_nearRoads isNotEqualTo []) then {
+    private _road = _nearRoads select 0;
+    _spawnPos = getPosATL _road;
+    private _conn = roadsConnectedTo _road;
+    if (_conn isNotEqualTo []) then {
+        _roadDir = _road getDir (_conn select 0);
+    };
+};
+_spawnPos set [2, 0.1];
 
 // =============================================================================
-// 2. CRÉATION DE LA TÂCHE (BIS_fnc_taskCreate)
+// 3. SÉLECTION D'UN LIEU DE DESTINATION À MINIMUM 950 MÈTRES
 // =============================================================================
-[
-    true,
-    _taskID,
+private _destCandidates = _roadMarkers select { ((getMarkerPos _x) distance2D _spawnPos) >= 950 };
+private _destPos = [];
+
+if (_destCandidates isNotEqualTo []) then {
+    private _destMrk = selectRandom _destCandidates;
+    _destPos = getMarkerPos _destMrk;
+    private _nearDestRoads = _destPos nearRoads 80;
+    if (_nearDestRoads isNotEqualTo []) then {
+        _destPos = getPosATL (_nearDestRoads select 0);
+    };
+} else {
+    // Si aucun marqueur n'est assez éloigné, projection à 1100m le long de l'axe routier
+    _destPos = _spawnPos getPos [1100, _roadDir];
+};
+_destPos set [2, 0.1];
+
+// Réajuster l'orientation du convoi vers la destination choisie
+_roadDir = _spawnPos getDir _destPos;
+
+private _gridStr = mapGridPosition _spawnPos;
+
+// =============================================================================
+// 4. RATTACHEMENT OU CRÉATION DE LA TÂCHE OFFICIELLE
+// =============================================================================
+if (!([_taskID] call BIS_fnc_taskExists)) then {
     [
-        localize "STR_ORA_Task_Ground_Desc",
-        format ["[%1] %2", _orderNum, localize "STR_ORA_Task_Ground_Title"],
-        localize "STR_ORA_Task_Ground_Marker"
-    ],
-    _clashPos,
-    "AUTOASSIGNED",
-    5,
-    true,
-    "destroy",
-    false
-] call BIS_fnc_taskCreate;
+        true,
+        _taskID,
+        [
+            localize "STR_ORA_Task_Ground_Desc",
+            format ["[%1] %2", _orderNum, localize "STR_ORA_Task_Ground_Title"],
+            localize "STR_ORA_Task_Ground_Marker"
+        ],
+        _spawnPos,
+        "ASSIGNED",
+        5,
+        true,
+        "destroy",
+        false
+    ] call BIS_fnc_taskCreate;
+} else {
+    [_taskID, _spawnPos] call BIS_fnc_taskSetDestination;
+    [_taskID, "ASSIGNED", true] call BIS_fnc_taskSetState;
+};
 
-// Ordre radio Overlord via le système TTS
+// Ordre radio Overlord via TTS
 private _radioOrder = format [localize "STR_ORA_Task_Ground_Order", _gridStr];
 ["OVERLORD", _radioOrder, "STR_ORA_Task_Ground_Order"] call ORA_fnc_radioMsg;
 
 // =============================================================================
-// 3. CATALOGUES DES UNITÉS ET VÉHICULES (INFO_ENNEMIS.md)
+// 5. CATALOGUES DES UNITÉS ET BLINDÉS (INFO_ENNEMIS.md)
 // =============================================================================
 private _vehicleClasses = [
     "I_LT_01_AA_F",
@@ -129,27 +173,23 @@ private _infantryClasses = [
     "I_Soldier_lite_F"
 ];
 
-// Axe d'approche pour le face-à-face tactique
-private _approachDir = random 360;
-
 // =============================================================================
-// 4. FORCES ENNEMIES (AAF - Side EAST) EN MOUVEMENT
+// 6. APPARITION DU CONVOI ENNEMI SUR LA ROUTE (1 À 3 VÉHICULES)
 // =============================================================================
-private _enemySpawnPos = _clashPos getPos [350 + random 100, _approachDir + 180];
-_enemySpawnPos set [2, 0.2];
-
-// A. 1 à 3 Véhicules blindés hostiles
 private _numVehicles = 1 + floor (random 3);
 private _targetVehicles = [];
+private _createdEntities = [];
 private _enemyVehGroup = createGroup [east, true];
 
 for "_i" from 1 to _numVehicles do {
     private _vClass = selectRandom _vehicleClasses;
-    private _vPos = _enemySpawnPos getPos [20 * _i, _approachDir + 90];
-    _vPos set [2, 0.2];
+    // Espacement propre de 25m en file indienne le long de la route
+    private _vPos = _spawnPos getPos [25 * (_i - 1), _roadDir + 180];
+    _vPos set [2, 0.1];
 
     private _veh = createVehicle [_vClass, _vPos, [], 0, "NONE"];
-    _veh setDir _approachDir;
+    _veh setDir _roadDir;
+    _veh setPosATL _vPos;
 
     _veh allowDamage false;
     [_veh] spawn { sleep 3; if (!isNull (_this select 0)) then { (_this select 0) allowDamage true; }; };
@@ -159,6 +199,8 @@ for "_i" from 1 to _numVehicles do {
 
     _veh setVariable ["ORA_isEnemy", true, true];
     _targetVehicles pushBack _veh;
+    _createdEntities pushBack _veh;
+    _createdEntities append (crew _veh);
     sleep 0.15;
 };
 
@@ -170,127 +212,175 @@ private _mrkName = format ["mrk_tactical_%1", _taskID];
 private _currentTracked = if (_targetVehicles isNotEqualTo []) then { _targetVehicles select 0 } else { objNull };
 
 if (!isNull _currentTracked) then {
-    [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
     createMarkerLocal [_mrkName, getPos _currentTracked];
     _mrkName setMarkerTypeLocal "o_armor";
     _mrkName setMarkerColorLocal "ColorRed";
     _mrkName setMarkerTextLocal (format [" %1", localize "STR_ORA_Task_Ground_Marker"]);
 };
 
-// B. 5 à 15 Fantassins ennemis
-private _numEnemyInf = 5 + floor (random 11);
-private _enemyInfGroup = createGroup [east, true];
+// Gestion multi-objectifs : si 2 objectifs ou plus, créer des sous-tâches dédiées
+private _objTaskData = [];
+if ((count _targetVehicles) >= 2) then {
+    for "_k" from 0 to ((count _targetVehicles) - 1) do {
+        private _tVeh = _targetVehicles select _k;
+        private _objID = format ["%1_obj_%2", _taskID, _k + 1];
+        private _objTitle = format ["%1 %2 : %3", localize "STR_ORA_Task_Objective", _k + 1, localize "STR_ORA_Task_Ground_Marker"];
+        private _objDesc = format ["%1 (%2 %3)", localize "STR_ORA_Task_Ground_Desc", localize "STR_ORA_Task_Objective", _k + 1];
+        private _objState = if (_k == 0) then { "ASSIGNED" } else { "CREATED" };
 
-for "_i" from 1 to _numEnemyInf do {
-    private _iClass = selectRandom _infantryClasses;
-    private _iPos = _enemySpawnPos getPos [5 + random 30, random 360];
-    _iPos set [2, 0.2];
+        [
+            true,
+            [_objID, _taskID],
+            [_objDesc, _objTitle, ""],
+            _tVeh,
+            _objState,
+            5,
+            (_k == 0),
+            "destroy",
+            false
+        ] call BIS_fnc_taskCreate;
 
-    private _unit = _enemyInfGroup createUnit [_iClass, _iPos, [], 0, "CAN_COLLIDE"];
-    _unit setPosATL _iPos;
-
-    _unit allowDamage false;
-    [_unit] spawn { sleep 3; if (!isNull (_this select 0)) then { (_this select 0) allowDamage true; }; };
-
-    sleep 0.05;
+        _objTaskData pushBack [_tVeh, _objID, false];
+    };
+    [format ["%1_obj_1", _taskID]] call BIS_fnc_taskSetCurrent;
+} else {
+    if (!isNull _currentTracked) then {
+        [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
+    };
 };
 
-// Ordre de mouvement ennemi vers le point de rendez-vous
-private _wpEnemy1 = _enemyVehGroup addWaypoint [_clashPos, 0];
-_wpEnemy1 setWaypointType "MOVE";
-_wpEnemy1 setWaypointSpeed "NORMAL";
-_wpEnemy1 setWaypointBehaviour "AWARE";
+// Ordre de déplacement du convoi ennemi vers la position d'embuscade alliée (>= 950m)
+private _wpEnemyMove = _enemyVehGroup addWaypoint [_destPos, 0];
+_wpEnemyMove setWaypointType "MOVE";
+_wpEnemyMove setWaypointSpeed "NORMAL";
+_wpEnemyMove setWaypointBehaviour "AWARE";
+_wpEnemyMove setWaypointFormation "COLUMN";
 
-private _wpEnemy2 = _enemyVehGroup addWaypoint [_clashPos, 100];
-_wpEnemy2 setWaypointType "SAD";
-
-private _wpInf1 = _enemyInfGroup addWaypoint [_clashPos, 20];
-_wpInf1 setWaypointType "MOVE";
-_wpInf1 setWaypointSpeed "NORMAL";
-_wpInf1 setWaypointBehaviour "AWARE";
-
-private _wpInf2 = _enemyInfGroup addWaypoint [_clashPos, 100];
-_wpInf2 setWaypointType "SAD";
+private _wpEnemySAD = _enemyVehGroup addWaypoint [_destPos, 60];
+_wpEnemySAD setWaypointType "SAD";
 
 // =============================================================================
-// 5. FORCES ALLIÉES (RACS - Side INDEPENDENT) EN MOUVEMENT DE RENCONTRE
+// 7. UNITÉS ALLIÉES RACS ATTENDANT AVEC LEURS ARMES À LA DESTINATION (>= 950m)
 // =============================================================================
-private _alliedSpawnPos = _clashPos getPos [300 + random 100, _approachDir];
-_alliedSpawnPos set [2, 0.2];
-
-private _numAllies = 4 + floor (random 5); // 4 à 8 soldats alliés RACS
 private _alliedGroup = createGroup [independent, true];
+private _numAllies = 4 + floor (random 5); // 4 à 8 soldats alliés RACS armés
 
 for "_i" from 1 to _numAllies do {
     private _aClass = selectRandom _infantryClasses;
-    private _aPos = _alliedSpawnPos getPos [4 + random 20, random 360];
-    _aPos set [2, 0.2];
+    // Déploiement en arc défensif / couverture autour du point d'arrivée
+    private _aPos = _destPos getPos [8 + random 25, random 360];
+    _aPos set [2, 0.1];
 
     private _ally = _alliedGroup createUnit [_aClass, _aPos, [], 0, "CAN_COLLIDE"];
     _ally setPosATL _aPos;
+    _ally setDir (_destPos getDir _spawnPos);
 
     _ally allowDamage false;
     [_ally] spawn { sleep 3; if (!isNull (_this select 0)) then { (_this select 0) allowDamage true; }; };
 
-    // Application contractuelle immédiate de la dotation RACS
+    // Application contractuelle de la dotation RACS (armes, roquettes AT, munitions)
     [_ally] call ORA_fnc_applyRACSLoadout;
 
+    _createdEntities pushBack _ally;
     sleep 0.05;
 };
 
+// Posture d'attente armée en embuscade
+_alliedGroup setCombatMode "RED";
+_alliedGroup setBehaviour "COMBAT";
+private _wpAllyHold = _alliedGroup addWaypoint [_destPos, 15];
+_wpAllyHold setWaypointType "HOLD";
+
 // Présence alliée renforcée si l'option est cochée dans le menu principal
 if (missionNamespace getVariable ["ORA_setting_alliedPresence", false]) then {
-    private _alliedVeh = createVehicle ["I_MRAP_03_hmg_F", _alliedSpawnPos, [], 0, "NONE"];
-    _alliedVeh setDir (_approachDir + 180);
+    private _alliedVehPos = _destPos getPos [15, _destPos getDir _spawnPos];
+    _alliedVehPos set [2, 0.1];
+    private _alliedVeh = createVehicle ["I_MRAP_03_hmg_F", _alliedVehPos, [], 0, "NONE"];
+    _alliedVeh setDir (_destPos getDir _spawnPos);
     _alliedVeh allowDamage false;
     [_alliedVeh] spawn { sleep 3; if (!isNull (_this select 0)) then { (_this select 0) allowDamage true; }; };
     createVehicleCrew _alliedVeh;
     (crew _alliedVeh) joinSilent _alliedGroup;
+    _createdEntities pushBack _alliedVeh;
+    _createdEntities append (crew _alliedVeh);
 };
 
-// Ordre de déplacement allié vers le point de contact
-private _wpAlly1 = _alliedGroup addWaypoint [_clashPos, 0];
-_wpAlly1 setWaypointType "MOVE";
-_wpAlly1 setWaypointSpeed "NORMAL";
-_wpAlly1 setWaypointBehaviour "AWARE";
-
-private _wpAlly2 = _alliedGroup addWaypoint [_clashPos, 60];
-_wpAlly2 setWaypointType "GUARD";
-
-// Déploiement automatique d'un fumigène vert allié à l'approche de la zone
-[_alliedGroup, _clashPos] spawn {
-    params ["_grp", "_target"];
+// Déclenchement automatique du fumigène vert allié et message radio dès que les ennemis approchent
+[_alliedGroup, _targetVehicles, _destPos] spawn {
+    params ["_allyGrp", "_enemyVehs", "_pos"];
     waitUntil {
         sleep 2;
-        ({ alive _x } count (units _grp) == 0) || {((leader _grp) distance _target) < 150}
+        ({ alive _x } count (units _allyGrp) == 0) ||
+        ({ alive _x } count _enemyVehs == 0) ||
+        { (_enemyVehs select 0) distance _pos < 450 }
     };
-    if ({ alive _x } count (units _grp) > 0) then {
-        private _smokePos = getPosATL (leader _grp);
+
+    if ({ alive _x } count (units _allyGrp) > 0 && {({ alive _x } count _enemyVehs) > 0}) then {
+        private _smokePos = getPosATL (leader _allyGrp);
         createVehicle ["SmokeShellGreen", _smokePos, [], 0, "NONE"];
-        diag_log "[ORA-TASK] [GROUND] Fumigène vert allié déclenché pour identification CAS.";
     };
 };
 
 // =============================================================================
-// 6. SURVEILLANCE ET SUIVI EN TEMPS RÉEL (MARQUEUR ET DESTINATION DYNAMIQUES)
+// 8. SURVEILLANCE ET SUIVI EN TEMPS RÉEL (MARQUEUR ET DESTINATION DYNAMIQUES)
 // =============================================================================
-while { ({ alive _x } count _targetVehicles) > 0 } do {
-    private _livingVehs = _targetVehicles select { alive _x };
+if (_objTaskData isNotEqualTo []) then {
+    private _activeIdx = 0;
+    private _activeObjTask = _objTaskData select 0 select 1;
 
-    if (_livingVehs isNotEqualTo []) then {
-        // Si le blindé suivi est détruit, basculer immédiatement sur le prochain véhicule vivant
-        if (isNull _currentTracked || {!alive _currentTracked}) then {
-            _currentTracked = _livingVehs select 0;
-            [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
+    while { ({ alive (_x select 0) } count _objTaskData) > 0 } do {
+        {
+            _x params ["_tVeh", "_tID", "_done"];
+            if (!_done && {!alive _tVeh}) then {
+                _x set [2, true];
+                [_tID, "SUCCEEDED", true] call BIS_fnc_taskSetState;
+                // Recherche et assignation immédiate de l'autre objectif !
+                private _nextIdx = _objTaskData findIf { !(_x select 2) && {alive (_x select 0)} };
+                if (_nextIdx != -1) then {
+                    private _nextData = _objTaskData select _nextIdx;
+                    _activeIdx = _nextIdx;
+                    _activeObjTask = _nextData select 1;
+
+                    [_activeObjTask, "ASSIGNED", true] call BIS_fnc_taskSetState;
+                    [_activeObjTask] call BIS_fnc_taskSetCurrent;
+
+                };
+            };
+        } forEach _objTaskData;
+
+        private _curData = _objTaskData select _activeIdx;
+        if (_curData select 2 || {!alive (_curData select 0)}) then {
+            private _nextIdx = _objTaskData findIf { !(_x select 2) && {alive (_x select 0)} };
+            if (_nextIdx != -1) then {
+                _activeIdx = _nextIdx;
+                _curData = _objTaskData select _activeIdx;
+            };
         };
 
-        // Mise à jour continue de la position du marqueur sur la cible vivante
-        if (!isNull _currentTracked && {alive _currentTracked}) then {
-            _mrkName setMarkerPosLocal (getPos _currentTracked);
+        private _curTarget = _curData select 0;
+        if (!isNull _curTarget && {alive _curTarget}) then {
+            _mrkName setMarkerPosLocal (getPos _curTarget);
         };
+
+        private _livingTargets = (_objTaskData select { !(_x select 2) && {alive (_x select 0)} }) apply { _x select 0 };
+        missionNamespace setVariable ["ORA_activeTaskTargets", _livingTargets, true];
+
+        sleep 0.5;
     };
-
-    sleep 0.5;
+} else {
+    while { ({ alive _x } count _targetVehicles) > 0 } do {
+        private _livingVehs = _targetVehicles select { alive _x };
+        if (_livingVehs isNotEqualTo []) then {
+            if (isNull _currentTracked || {!alive _currentTracked}) then {
+                _currentTracked = _livingVehs select 0;
+                [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
+            };
+            if (!isNull _currentTracked && {alive _currentTracked}) then {
+                _mrkName setMarkerPosLocal (getPos _currentTracked);
+            };
+        };
+        sleep 0.5;
+    };
 };
 
 // Suppression propre du marqueur tactique de suivi
@@ -303,19 +393,9 @@ missionNamespace setVariable ["ORA_activeTaskTargets", [], true];
 // Message radio BDA QG Overlord
 ["OVERLORD", localize "STR_ORA_Task_Ground_Done", "STR_ORA_Task_Ground_Done"] call ORA_fnc_radioMsg;
 
-diag_log format ["[ORA-TASK] [GROUND] [SUCCÈS] Tâche %1 accomplie : blindés ennemis détruits.", _taskID];
-
-// Nettoyage après éloignement du joueur
-[_targetVehicles, _enemyInfGroup, _alliedGroup] spawn {
-    params ["_vehs", "_enemyGrp", "_allyGrp"];
-    sleep 60;
-    waitUntil {
-        sleep 5;
-        (player distance (_vehs select 0)) > 2500
-    };
-    { deleteVehicle _x; } forEach _vehs;
-    { deleteVehicle _x; } forEach (units _enemyGrp);
-    { deleteVehicle _x; } forEach (units _allyGrp);
-};
+// Nettoyage automatique après fin de tâche :
+// Toutes les unités au sol et épaves créées disparaissent immédiatement si à plus de 2000m du joueur,
+// ou dès que le joueur s'éloigne à plus de 2000m.
+[_createdEntities, [_enemyVehGroup, _alliedGroup], 2000] spawn ORA_fnc_taskCleanup;
 
 true
