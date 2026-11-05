@@ -44,8 +44,11 @@ class CfgFunctions
         class Flight
         {
             file = "Functions\Flight";
-            class flightEffects     { compileFinal = 1; };
-            class ejectionSystem    { compileFinal = 1; };
+            class flightEffects         { compileFinal = 1; };
+            class ejectionSystem        { compileFinal = 1; };
+            class cockpitEgressForfeit  { compileFinal = 1; };
+            class weaponGuidance        { compileFinal = 1; };
+            class airRefuel             { compileFinal = 1; };
         };
 
         class Player
@@ -71,12 +74,24 @@ class CfgFunctions
             file = "Functions\Environment";
             class randomWeather     { compileFinal = 1; };
             class initSkills        { compileFinal = 1; };
+            class applyRACSLoadout  { compileFinal = 1; };
+            class preventWater      { compileFinal = 1; };
         };
 
         class UI
         {
             file = "Functions\UI";
             class mainMenu          { compileFinal = 1; };
+        };
+
+        class Task
+        {
+            file = "Functions\Task";
+            class taskLaunch        { compileFinal = 1; };
+            class taskGround        { compileFinal = 1; };
+            class taskSea           { compileFinal = 1; };
+            class taskAir           { compileFinal = 1; };
+            class taskHeli          { compileFinal = 1; };
         };
     };
 };
@@ -155,6 +170,16 @@ class CfgDebriefing
         pictureBackground = "";
         picture     = "o_air";
         pictureColor[] = {0.8, 0.4, 0.0, 1};
+    };
+
+    class EndCockpitForfeit
+    {
+        title       = "$STR_ORA_Debrief_CockpitForfeit_Title";
+        subtitle    = "$STR_ORA_Debrief_CockpitForfeit_Subtitle";
+        description = "$STR_ORA_Debrief_CockpitForfeit_Desc";
+        pictureBackground = "";
+        picture     = "KIA";
+        pictureColor[] = {0.9, 0.1, 0.1, 1};
     };
 };
 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_Task_Heli_Title">
+            <Original>Air Defense - Eradicate Hostile Rotary Threat</Original>
+            <English>Air Defense - Eradicate Hostile Rotary Threat</English>
+            <French>Défense Aérienne - Neutraliser la Menace d'Hélicoptères</French>
+            <Spanish>Defensa aérea - Erradicar helicópteros enemigos</Spanish>
+            <German>Luftverteidigung - Feindliche Kampfhubschrauber vernichten</German>
+            <Italian>Difesa aerea - Eliminare gli elicotteri d'attacco nemici</Italian>
+            <Polish>Obrona powietrzna - Zniszcz śmigłowce wroga</Polish>
+            <Portuguese>Defesa Aérea - Eliminar Helicópteros Inimigos</Portuguese>
+            <Russian>ПВО - Уничтожить вражеские ударные вертолеты</Russian>
+            <Czech>Protivzdušná obrana - Zlikvidovat nepřátelské vrtulníky</Czech>
+            <Korean>대공 방어 - 적 공격 헬리콥터 격퇴</Korean>
+            <Japanese>防空戦闘 - 敵攻撃ヘリコプター部隊の殲滅</Japanese>
+            <Chinese>防空作戰 - 圍剿敵軍武裝直升機</Chinese>
+            <Chinesesimp>防空作战 - 围剿敌军武装直升机</Chinesesimp>
+            <Turkish>Hava Savunma - Düşman Taarruz Helikopterlerini İmha Edin</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Heli_Desc">
+            <Original>Hostile attack helicopters are operating at low level supporting ground assault operations. Ingress rapidly, engage with air-to-air missiles or cannon and eliminate all hostile helicopters. Ground troops are present but their elimination is not required.</Original>
+            <English>Hostile attack helicopters are operating at low level supporting ground assault operations. Ingress rapidly, engage with air-to-air missiles or cannon and eliminate all hostile helicopters. Ground troops are present but their elimination is not required.</English>
+            <French>Des hélicoptères de combat ennemis opèrent à basse altitude en appui des opérations terrestres. Intervenez rapidement, engagez aux missiles air-air ou au canon et éliminez tous les hélicoptères cibles. Des troupes au sol sont présentes mais leur destruction n'est pas requise.</French>
+            <Spanish>Helicópteros de ataque enemigos operan a baja cota. Enlace con misiles aire-aire o cañón y derribe todos los helicópteros. No es necesario abatir a la infantería.</Spanish>
+            <German>Feindliche Kampfhubschrauber fliegen im Tiefflug zur Unterstützung der Bodentruppen. Schießen Sie alle Hubschrauber ab. Bodentruppen müssen nicht eliminiert werden.</German>
+            <Italian>Elicotteri d'attacco nemici operano a bassa quota. Abbattete tutti gli elicotteri con missili o cannone. La distruzione della fanteria a terra non è richiesta.</Italian>
+            <Polish>Śmigłowce bojowe wroga operują na małej wysokości. Zniszcz wszystkie wrogie śmigłowce rakietami lub działkiem. Piechota naziemna nie musi być zniszczona.</Polish>
+            <Portuguese>Helicópteros de ataque inimigos operam a baixa altitude. Abata todos os helicópteros inimigos. A destruição das tropas terrestres não é exigida.</Portuguese>
+            <Russian>Ударные вертолеты противника действуют на малой высоте. Уничтожьте все вертолеты ракетами «воздух-воздух» или пушкой. Ликвидация пехоты на земле не требуется.</Russian>
+            <Czech>Nepřátelské bojové vrtulníky operují v nízké výšce. Sestřelte všechny vrtulníky střelami nebo kanónem. Likvidace pozemních jednotek není vyžadována.</Czech>
+            <Korean>적 공격 헬기가 지상 작전을 지원하며 초저고도로 비행 중입니다. 신속히 진입하여 공대공 미사일이나 기관포로 모든 헬기를 격추하십시오. 지상 보병 섬멸은 필수가 아닙니다.</Korean>
+            <Japanese>敵攻撃ヘリが超低空で地上支援を実施している。迅速に進出し、空対空ミサイルまたは機関砲ですべての敵ヘリを撃墜せよ。地上部隊の撃破は必須ではない。</Japanese>
+            <Chinese>敵軍武裝直升機正於超低空活動以支援地面部隊。請迅速切入戰區，以空對空飛彈或航砲擊落所有敵方直升機。地面部隊無須清剿。</Chinese>
+            <Chinesesimp>敌军武装直升机正于超低空活动以支援地面部队。请迅速切入战区，以空对空导弹或航炮击落所有敌方直升机。地面部队无须清剿。</Chinesesimp>
+            <Turkish>Düşman taarruz helikopterleri alçak irtifada kara harekâtını destekliyor. Hızla intikal edin ve tüm helikopterleri vurun. Yer birliklerini imha etmek zorunlu değildir.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Heli_Marker">
+            <Original>Hostile Helicopter Contact</Original>
+            <English>Hostile Helicopter Contact</English>
+            <French>Contact Hélicoptères Ennemis</French>
+            <Spanish>Contacto helicópteros enemigos</Spanish>
+            <German>Feindliche Hubschrauber</German>
+            <Italian>Contatto elicotteri nemici</Italian>
+            <Polish>Kontakt ze śmigłowcami wroga</Polish>
+            <Portuguese>Contato de Helicópteros Inimigos</Portuguese>
+            <Russian>Вражеские вертолеты</Russian>
+            <Czech>Kontakt nepřátelských vrtulníků</Czech>
+            <Korean>적 헬기 접적 구역</Korean>
+            <Japanese>敵ヘリ部隊接触空域</Japanese>
+            <Chinese>敵軍直升機作戰空域</Chinese>
+            <Chinesesimp>敌军直升机作战空域</Chinesesimp>
+            <Turkish>Düşman Helikopter Temas Noktası</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Heli_Order">
+            <Original>Victor-One, Overlord. Enemy attack helicopters operating at tree-top level near grid %1. Hunt them down.</Original>
+            <English>Victor-One, Overlord. Enemy attack helicopters operating at tree-top level near grid %1. Hunt them down.</English>
+            <French>Victor-One, ici Overlord. Des hélicoptères de combat ennemis volent au ras des arbres près de la grille %1. Chassez-les et détruisez-les.</French>
+            <Spanish>Victor-One, aquí Overlord. Helicópteros enemigos operando al ras de los árboles en cuadrícula %1. Cácelos.</Spanish>
+            <German>Victor-One, hier Overlord. Feindliche Kampfhubschrauber fliegen im Wipfelflug bei Gitter %1. Jagen und vernichten Sie sie.</German>
+            <Italian>Victor-One, qui Overlord. Elicotteri d'attacco nemici operano a filo d'albero vicino alla griglia %1. Date loro la caccia.</Italian>
+            <Polish>Victor-One, tu Overlord. Śmigłowce bojowe wroga lecą tuż nad koronami drzew przy siatce %1. Zlikwiduj je.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Helicópteros inimigos voando a baixa altitude perto da grade %1. Cace-os.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Ударные вертолеты противника идут на бреющем у сетки %1. Устраните угрозу.</Russian>
+            <Czech>Victor-One, zde Overlord. Bojové vrtulníky nepřítele letí těsně nad stromy u sítě %1. Zničte je.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 적 공격 헬기가 그리드 %1 인근에서 초저공 비행 중입니다. 격추하십시오.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。グリッド %1 付近を超低空で飛行する敵攻撃ヘリを確認。直ちに急襲し撃墜せよ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。網格座標 %1 附近有敵武裝直升機正進行超低空掠地飛行。予以獵殺消滅。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。网格坐标 %1 附近有敌武装直升机正进行超低空掠地飞行。予以猎杀消灭。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. %1 koordinatı yakınlarında düşman taarruz helikopterleri alçaktan uçuyor. Vurun onları.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Heli_Done">
+            <Original>Victor-One, Overlord. Rotary threats down! Helicopter assets eradicated.</Original>
+            <English>Victor-One, Overlord. Rotary threats down! Helicopter assets eradicated.</English>
+            <French>Victor-One, ici Overlord. Menaces à voilure tournante abattues ! Hélicoptères ennemis anéantis.</French>
+            <Spanish>Victor-One, aquí Overlord. ¡Helicópteros abatidos! Amenaza erradicada.</Spanish>
+            <German>Victor-One, hier Overlord. Hubschrauber abgeschossen! Bedrohung ausgeschaltet.</German>
+            <Italian>Victor-One, qui Overlord. Elicotteri abbattuti! Minaccia nemica eliminata.</Italian>
+            <Polish>Victor-One, tu Overlord. Śmigłowce zestrzelone! Zagrożenie zlikwidowane.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Helicópteros abatidos! Ameaça erradicada.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Вертолеты сбиты! Воздушные цели уничтожены.</Russian>
+            <Czech>Victor-One, zde Overlord. Vrtulníky sestřeleny! Hrozba zlikvidována.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 회전익 위협 격추 완료! 적 헬기 세력이 전멸했습니다.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。敵回転翼機を全機撃墜！ヘリ戦力は壊滅した。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。敵旋翼機全數擊落！直升機威脅已消除。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。敌旋翼机全数击落！直升机威胁已消除。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Düşman helikopterleri düşürüldü! Döner kanat tehdidi bertaraf edildi.</Turkish>
+        </Key>
+</Keys>

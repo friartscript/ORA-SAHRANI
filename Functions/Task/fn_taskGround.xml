@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_Task_Ground_Title">
+            <Original>CAS - Neutralize Hostile Armored Force</Original>
+            <English>CAS - Neutralize Hostile Armored Force</English>
+            <French>CAS - Neutraliser la Force Blindée Ennemie</French>
+            <Spanish>CAS - Neutralizar fuerza blindada enemiga</Spanish>
+            <German>CAS - Feindliche Panzerkräfte neutralisieren</German>
+            <Italian>CAS - Neutralizzare forza corazzata nemica</Italian>
+            <Polish>CAS - Zneutralizuj wrogie siły pancerne</Polish>
+            <Portuguese>CAS - Neutralizar Força Blindada Inimiga</Portuguese>
+            <Russian>CAS - Нейтрализовать бронетанковые силы врага</Russian>
+            <Czech>CAS - Neutralizovat nepřátelské obrněné síly</Czech>
+            <Korean>CAS - 적 기갑 부대 무력화</Korean>
+            <Japanese>CAS - 敵装甲部隊の無力化</Japanese>
+            <Chinese>CAS - 殲滅敵軍裝甲部隊</Chinese>
+            <Chinesesimp>CAS - 歼灭敌军装甲部队</Chinesesimp>
+            <Turkish>CAS - Düşman Zırhlı Güçlerini İmha Edin</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Ground_Desc">
+            <Original>Hostile mechanized assets and combat vehicles have advanced into the sector. Deliver precision close air support (CAS) and destroy all enemy armored vehicles. Neutralization of ground infantry is not required.</Original>
+            <English>Hostile mechanized assets and combat vehicles have advanced into the sector. Deliver precision close air support (CAS) and destroy all enemy armored vehicles. Neutralization of ground infantry is not required.</English>
+            <French>Des véhicules de combat et blindés ennemis progressent dans le secteur. Délivrez un appui aérien rapproché (CAS) de précision et détruisez tous les véhicules blindés ennemis. L'élimination de l'infanterie au sol n'est pas requise.</French>
+            <Spanish>Blindados enemigos avanzan en el sector. Proporcione apoyo aéreo cercano y destruya los vehículos blindados. No es necesario eliminar a la infantería.</Spanish>
+            <German>Feindliche Panzerfahrzeuge rücken im Sektor vor. Leisten Sie Luftnahunterstützung (CAS) und zerstören Sie alle Zielfahrzeuge. Die Vernichtung von Infanterie ist nicht erforderlich.</German>
+            <Italian>Veicoli corazzati nemici avanzano nel settore. Fornite supporto aereo ravvicinato (CAS) e distruggete tutti i veicoli corazzati. L'eliminazione della fanteria non è richiesta.</Italian>
+            <Polish>Pojazdy pancerne wroga posuwają się w sektorze. Zapewnij bliskie wsparcie powietrzne (CAS) i zniszcz wszystkie pojazdy. Likwidacja piechoty nie jest wymagana.</Polish>
+            <Portuguese>Veículos blindados inimigos avançam no setor. Forneça apoio aéreo aproximado e destrua todos os veículos. A eliminação da infantaria não é necessária.</Portuguese>
+            <Russian>Бронетехника противника продвигается в секторе. Окажите авиационную поддержку (CAS) и уничтожьте всю бронетехнику. Уничтожение пехоты не требуется.</Russian>
+            <Czech>Nepřátelská obrněná vozidla postupují v sektoru. Proveďte blízkou leteckou podporu (CAS) a zničte všechna obrněná vozidla. Likvidace pěchoty není vyžadována.</Czech>
+            <Korean>적 장갑 차량이 해당 구역으로 진격 중입니다. 정밀 근접항공지원(CAS)을 실시하여 모든 적 장갑 차량을 파괴하십시오. 지상 보병 섬멸은 필수가 아닙니다.</Korean>
+            <Japanese>敵の装甲車両が当空域に侵入した。精密な近接航空支援（CAS）を実施し、敵装甲車両をすべて撃破せよ。地上歩兵の殲滅は不要である。</Japanese>
+            <Chinese>敵軍裝甲車輛正挺進該防區。請實施精準近距離空中支援（CAS）並摧毀所有裝甲目標。無須肅清地面步兵。</Chinese>
+            <Chinesesimp>敌军装甲车辆正挺进该防区。请实施精准近距离空中支援（CAS）并摧毁所有装甲目标。无须肃清地面步兵。</Chinesesimp>
+            <Turkish>Düşman zırhlı araçları bölgede ilerliyor. Hassas yakın hava desteği (CAS) sağlayın ve tüm düşman zırhlılarını vurun. Piyadeleri yok etmek zorunlu değildir.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Ground_Marker">
+            <Original>Hostile Armor Concentration</Original>
+            <English>Hostile Armor Concentration</English>
+            <French>Concentration Blindée Ennemie</French>
+            <Spanish>Concentración blindada enemiga</Spanish>
+            <German>Feindliche Panzerkonzentration</German>
+            <Italian>Concentrazione corazzata nemica</Italian>
+            <Polish>Zgrupowanie pancerne wroga</Polish>
+            <Portuguese>Concentração Blindada Inimiga</Portuguese>
+            <Russian>Скопление вражеской бронетехники</Russian>
+            <Czech>Koncentrace nepřátelských tanků</Czech>
+            <Korean>적 기갑 집결지</Korean>
+            <Japanese>敵装甲集結地点</Japanese>
+            <Chinese>敵軍裝甲集結點</Chinese>
+            <Chinesesimp>敌军装甲集结点</Chinesesimp>
+            <Turkish>Düşman Zırhlı Toplanma Alanı</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Ground_Order">
+            <Original>Victor-One, Overlord. Hostile mechanized forces active at grid %1. Neutralize all armored vehicles. Weapons free.</Original>
+            <English>Victor-One, Overlord. Hostile mechanized forces active at grid %1. Neutralize all armored vehicles. Weapons free.</English>
+            <French>Victor-One, ici Overlord. Forces mécanisées ennemies actives sur la grille %1. Neutralisez tous les véhicules blindés. Tir autorisé.</French>
+            <Spanish>Victor-One, aquí Overlord. Fuerzas mecanizadas enemigas en cuadrícula %1. Neutralice todos los vehículos. Fuego libre.</Spanish>
+            <German>Victor-One, hier Overlord. Feindliche mechanisierte Kräfte bei Gitter %1 aktiv. Neutralisieren Sie alle Panzerfahrzeuge. Feuer frei.</German>
+            <Italian>Victor-One, qui Overlord. Forze corazzate nemiche attive nella griglia %1. Neutralizzate tutti i veicoli. Fuoco autorizzato.</Italian>
+            <Polish>Victor-One, tu Overlord. Wrogie siły zmechanizowane na siatce %1. Zniszcz wszystkie pojazdy. Ogień wolny.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Forças mecanizadas inimigas na grade %1. Neutralize todos os veículos. Fogo livre.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Вражеские механизированные силы на сетке %1. Уничтожьте всю бронетехнику. Огонь разрешен.</Russian>
+            <Czech>Victor-One, zde Overlord. Nepřátelské mechanizované síly na síti %1. Zničte všechna obrněná vozidla. Palba povolena.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 그리드 %1에 적 기계화 부대 확인. 모든 장갑 차량을 무력화하십시오. 발포를 허가합니다.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。グリッド %1 に敵機甲部隊を確認。すべての装甲車両を撃破せよ。交戦を許可する。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。網格座標 %1 發現敵軍機械化部隊。摧毀所有裝甲目標。開火許可。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。网格坐标 %1 发现敌军机械化部队。摧毁所有装甲目标。开火许可。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. %1 koordinatında düşman mekanize unsurları aktif. Tüm zırhlı araçları vurun. Ateş serbest.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Ground_Done">
+            <Original>Victor-One, Overlord. Direct hit! Enemy armor confirmed destroyed. Good shooting.</Original>
+            <English>Victor-One, Overlord. Direct hit! Enemy armor confirmed destroyed. Good shooting.</English>
+            <French>Victor-One, ici Overlord. Coup au but ! Blindés ennemis confirmés détruits. Beau tir.</French>
+            <Spanish>Victor-One, aquí Overlord. ¡Impacto directo! Blindados destruidos. Buen tiro.</Spanish>
+            <German>Victor-One, hier Overlord. Volltreffer! Feindpanzer zerstört. Guter Schuss.</German>
+            <Italian>Victor-One, qui Overlord. Colpo a segno! Corazzati nemici distrutti. Ottimo tiro.</Italian>
+            <Polish>Victor-One, tu Overlord. Bezpośrednie trafienie! Wrogie pojazdy zniszczone. Dobry strzał.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Tiro certeiro! Blindados destruídos. Belo disparo.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Прямое попадание! Бронетехника уничтожена. Отличная стрельба.</Russian>
+            <Czech>Victor-One, zde Overlord. Přímý zásah! Obrněná technika zničena. Dobrá trefa.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 명중! 적 장갑 차량 파괴를 확인했습니다. 훌륭한 사격입니다.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。直撃確認！敵装甲車両の完全撃破を確認した。見事な射撃だ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。直接命中！已確認敵軍裝甲全數摧毀。射擊精準。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。直接命中！已确认敌军装甲全数摧毁。射击精准。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Tam isabet! Düşman zırhlıları imha edildi. İyi atıştı.</Turkish>
+        </Key>
+</Keys>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_Debrief_CockpitForfeit_Title">
+        <Original>SORTIE FORFEITED</Original>
+        <English>SORTIE FORFEITED</English>
+        <French>SORTIE ÉCHOUÉE</French>
+        <Spanish>SALIDA FRACASADA</Spanish>
+        <German>EINSATZ ABGEBROCHEN</German>
+        <Italian>SORTITA FALLITA</Italian>
+        <Polish>MISJA PRZEGRANA</Polish>
+        <Portuguese>SORTIDA PERDIDA</Portuguese>
+        <Russian>ВЫЛЕТ СОРВАН</Russian>
+        <Czech>VZLET ZMAŘEN</Czech>
+        <Korean>출격 실패</Korean>
+        <Japanese>出撃失敗</Japanese>
+        <Chinese>任務失敗</Chinese>
+        <Chinesesimp>任务失败</Chinesesimp>
+        <Turkish>GÖREV BAŞARISIZ</Turkish>
+    </Key>
+    <Key ID="STR_ORA_Debrief_CockpitForfeit_Subtitle">
+        <Original>COCKPIT EGRESS PROHIBITED</Original>
+        <English>COCKPIT EGRESS PROHIBITED</English>
+        <French>ABANDON DU COCKPIT INTERDIT</French>
+        <Spanish>ABANDONO DE CABINA PROHIBIDO</Spanish>
+        <German>COCKPIT-VERLASSEN UNTERSAGT</German>
+        <Italian>ABBANDONO COCKPIT VIETATO</Italian>
+        <Polish>OPUSZCZENIE KOKPITU ZABRONIONE</Polish>
+        <Portuguese>ABANDONO DO COCKPIT PROIBIDO</Portuguese>
+        <Russian>ПОКИДАНИЕ КАБИНЫ ЗАПРЕЩЕНО</Russian>
+        <Czech>OPUŠTĚNÍ KOKPITU ZAKÁZÁNO</Czech>
+        <Korean>조종석 무단 이탈 금지</Korean>
+        <Japanese>コックピット離脱禁止</Japanese>
+        <Chinese>禁止擅自離開座艙</Chinese>
+        <Chinesesimp>禁止擅自离开座舱</Chinesesimp>
+        <Turkish>KOKPİT TERKİ YASAKLANMIŞTIR</Turkish>
+    </Key>
+    <Key ID="STR_ORA_Debrief_CockpitForfeit_Desc">
+        <Original>You ejected or abandoned the cockpit of plane_0 during active combat operations. Mission protocol requires the pilot to remain in command and return the aircraft safely to base.</Original>
+        <English>You ejected or abandoned the cockpit of plane_0 during active combat operations. Mission protocol requires the pilot to remain in command and return the aircraft safely to base.</English>
+        <French>Vous vous êtes éjecté ou avez quitté le cockpit de plane_0 en pleine opération. Le protocole opérationnel exige impérativement que le pilote reste aux commandes et ramène son appareil intact.</French>
+        <Spanish>Se ha eyectado o ha abandonado la cabina de plane_0 en combate. El protocolo exige permanecer al mando y regresar el avión intacto a la base.</Spanish>
+        <German>Sie haben das Cockpit von plane_0 im Einsatz verlassen oder sich herauskatapultiert. Das Protokoll verlangt zwingend, das Flugzeug zurück zur Basis zu fliegen.</German>
+        <Italian>Ti sei espulso o hai abbandonato il cockpit di plane_0 durante le operazioni. Il protocollo impone di restare ai comandi e riportare il velivolo alla base.</Italian>
+        <Polish>Katapultowałeś się lub opuściłeś kokpit plane_0 podczas operacji bojowej. Protokół wymaga pozostania za sterami i bezpiecznego sprowadzenia maszyny.</Polish>
+        <Portuguese>Você ejetou ou abandonou o cockpit de plane_0 durante a operação. O protocolo exige permanecer aos comandos e retornar a aeronave à base em segurança.</Portuguese>
+        <Russian>Вы катапультировались или покинули кабину plane_0 во время боевого вылета. Протокол требует оставаться за штурвалом и вернуть борт на базу.</Russian>
+        <Czech>Katapultoval jste se nebo opustil kokpit letounu plane_0 během operace. Protokol nařizuje setrvat v řízení a vrátit stroj bezpečně na základnu.</Czech>
+        <Korean>작전 도중 plane_0의 조종석을 이탈하거나 사출했습니다. 작전 수칙상 조종사는 끝까지 기체를 조종하여 무사히 기지로 복귀해야 합니다.</Korean>
+        <Japanese>作戦行動中にplane_0のコックピットを脱出または射出しました。規定により、パイロットは操縦を維持し機体を安全に帰還させねばなりません。</Japanese>
+        <Chinese>您在作戰行動中彈射或離開了 plane_0 座艙。任務規範嚴格要求飛行員必須堅守駕駛艙並平安將戰機帶回基地。</Chinese>
+        <Chinesesimp>您在作战行动中弹射或离开了 plane_0 座舱。任务规范严格要求飞行员必须坚守驾驶舱并平安将战机带回基地。</Chinesesimp>
+        <Turkish>Harekât sırasında plane_0 uçağının kokpitinden atladınız veya terk ettiniz. Görev protokolü pilotun uçakta kalıp üsse dönmesini şart koşar.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_Radio_CockpitAbandoned">
+        <Original>Mayday, Mayday! Pilot has abandoned plane_0! Sortie forfeited, mission failed! All units, Eagle-1 is down by cockpit egress.</Original>
+        <English>Mayday, Mayday! Pilot has abandoned plane_0! Sortie forfeited, mission failed! All units, Eagle-1 is down by cockpit egress.</English>
+        <French>Mayday, Mayday ! Le pilote a abandonné le cockpit de plane_0 ! Sortie annulée, mission échouée ! À toutes les stations, Eagle-1 a quitté son bord.</French>
+        <Spanish>¡Mayday, Mayday! ¡El piloto ha abandonado plane_0! ¡Salida cancelada, misión fallida!</Spanish>
+        <German>Mayday, Mayday! Der Pilot hat plane_0 verlassen! Einsatz abgebrochen, Mission gescheitert!</German>
+        <Italian>Mayday, Mayday! Il pilota ha abbandonato plane_0! Sortita annullata, missione fallita!</Italian>
+        <Polish>Mayday, Mayday! Pilot opuścił maszynę plane_0! Misja przerwana, zadanie nieudane!</Polish>
+        <Portuguese>Mayday, Mayday! O piloto abandonou plane_0! Sortida cancelada, missão falhada!</Portuguese>
+        <Russian>Мэйдей, Мэйдей! Пилот покинул борт plane_0! Вылет сорван, задание провалено!</Russian>
+        <Czech>Mayday, Mayday! Pilot opustil letoun plane_0! Mise zrušena, operace selhala!</Czech>
+        <Korean>메이데이, 메이데이! 조종사가 plane_0 기체를 이탈했습니다! 출격이 취소되었으며 임무 실패입니다!</Korean>
+        <Japanese>メーデー、メーデー！パイロットがplane_0を放棄！出撃は中止、作戦失敗！</Japanese>
+        <Chinese>求救，求救！飛行員已棄機離開 plane_0！出擊終止，任務判定失敗！</Chinese>
+        <Chinesesimp>求救，求救！飞行员已弃机离开 plane_0！出击终止，任务判定失败！</Chinesesimp>
+        <Turkish>Mayday, Mayday! Pilot plane_0 uçağını terk etti! Görev iptal, harekât başarısız!</Turkish>
+    </Key>
+    <Key ID="STR_ORA_Alert_CockpitForfeit_Screen">
+        <Original>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SORTIE FORFEITED&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Cockpit egress prohibited - Mission Failed&lt;/t&gt;</Original>
+        <English>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SORTIE FORFEITED&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Cockpit egress prohibited - Mission Failed&lt;/t&gt;</English>
+        <French>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SORTIE ÉCHOUÉE&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Abandon du cockpit interdit - Mission Annulée&lt;/t&gt;</French>
+        <Spanish>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SALIDA FRACASADA&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Abandono de cabina prohibido - Misión Fallida&lt;/t&gt;</Spanish>
+        <German>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;EINSATZ ABGEBROCHEN&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Cockpit-Verlassen untersagt - Mission Gescheitert&lt;/t&gt;</German>
+        <Italian>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SORTITA FALLITA&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Abbandono cockpit vietato - Missione Fallita&lt;/t&gt;</Italian>
+        <Polish>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;MISJA PRZEGRANA&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Opuszczenie kokpitu zabronione - Porażka&lt;/t&gt;</Polish>
+        <Portuguese>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SORTIDA PERDIDA&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Abandono do cockpit proibido - Missão Falhada&lt;/t&gt;</Portuguese>
+        <Russian>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;ВЫЛЕТ СОРВАН&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Покидание кабины запрещено - Задание Провалено&lt;/t&gt;</Russian>
+        <Czech>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;VZLET ZMAŘEN&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Opuštění kokpitu zakázáno - Mise Selhala&lt;/t&gt;</Czech>
+        <Korean>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;출격 실패&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;조종석 이탈 금지 - 임무 실패&lt;/t&gt;</Korean>
+        <Japanese>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;出撃失敗&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;コックピット離脱禁止 - 作戦失敗&lt;/t&gt;</Japanese>
+        <Chinese>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;出擊失敗&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;嚴禁擅自離開座艙 - 任務終止判定失敗&lt;/t&gt;</Chinese>
+        <Chinesesimp>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;出击失败&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;严禁擅自离开座舱 - 任务终止判定失败&lt;/t&gt;</Chinesesimp>
+        <Turkish>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;GÖREV BAŞARISIZ&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Kokpit terki yasaktır - Görev İptal Edildi&lt;/t&gt;</Turkish>
+    </Key>
+</Keys>
+

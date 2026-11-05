@@ -310,7 +310,213 @@
             <Turkish>Bingo Yakıt! Derhal Sahrani Hava Üssüne geri dönün.</Turkish>
         </Key>
     </Package>
+    <Package name="Environment">
+        <Key ID="STR_ORA_RACS_LOADOUT_NAME">
+            <Original>RACS Standard Infantry Loadout</Original>
+            <English>RACS Standard Infantry Loadout</English>
+            <French>Dotation d'Infanterie Standard RACS</French>
+            <Spanish>Equipamiento Estándar de Infantería RACS</Spanish>
+            <German>RACS-Standard-Infanterieausrüstung</German>
+            <Italian>Dotazione Standard Fanteria RACS</Italian>
+            <Polish>Standardowe Wyposażenie Piechoty RACS</Polish>
+            <Portuguese>Equipamento Padrão de Infantaria RACS</Portuguese>
+            <Russian>Стандартное снаряжение пехоты RACS</Russian>
+            <Czech>Standardní výstroj pěchoty RACS</Czech>
+            <Korean>RACS 표준 보병 무장</Korean>
+            <Japanese>RACS標準歩兵装備</Japanese>
+            <Chinese>RACS 標準步兵裝備</Chinese>
+            <Chinesesimp>RACS 标准步兵装备</Chinesesimp>
+            <Turkish>RACS Standart Piyade Teçhizatı</Turkish>
+        </Key>
+        <Key ID="STR_ORA_RACS_LOADOUT_DESC">
+            <Original>Official combat uniform, Ops-Core helmet, JPC vest, night vision, and ammunition assigned to Kingdom of Sahrani ground units.</Original>
+            <English>Official combat uniform, Ops-Core helmet, JPC vest, night vision, and ammunition assigned to Kingdom of Sahrani ground units.</English>
+            <French>Treillis officiel, casque Ops-Core, gilet JPC, vision nocturne et munitions assignés aux unités au sol du Royaume de Sahrani.</French>
+            <Spanish>Uniforme oficial, casco Ops-Core, chaleco JPC, visión nocturna y municiones asignadas al ejército de Sahrani.</Spanish>
+            <German>Offizielle Uniform, Ops-Core-Helm, JPC-Weste, Nachtsichtgerät und Munition für die Sahrani-Bodentruppen.</German>
+            <Italian>Uniforme ufficiale, elmetto Ops-Core, giubbotto JPC, visore notturno e munizioni per le truppe di terra di Sahrani.</Italian>
+            <Polish>Oficjalny mundur, hełm Ops-Core, kamizelka JPC, noktowizja i amunicja dla wojsk lądowych Sahrani.</Polish>
+            <Portuguese>Farda oficial, capacete Ops-Core, colete JPC, visão noturna e munições atribuídas às tropas de Sahrani.</Portuguese>
+            <Russian>Официальная форма, шлем Ops-Core, бронежилет JPC, ПНВ и боеприпасы для сухопутных сил Сахрани.</Russian>
+            <Czech>Oficiální uniforma, přilba Ops-Core, vesta JPC, noční vidění a munice pro pozemní síly Sahrani.</Czech>
+            <Korean>사라니 왕국 지상군에 지급되는 공식 군복, 옵스코어 헬멧, JPC 방탄복, 야간투시경 및 탄약 세트.</Korean>
+            <Japanese>サフラニ王国地上部隊に支給される制式迷彩服、Ops-Coreヘルメット、JPCベスト、暗視装置および弾薬。</Japanese>
+            <Chinese>配發予薩赫拉尼王國軍地面部隊的制式作戰服、Ops-Core 頭盔、JPC 防彈背心、夜視鏡與彈藥。</Chinese>
+            <Chinesesimp>配发予萨赫拉尼王国军地面部队的制式作战服、Ops-Core 头盔、JPC 防弹背心、夜视镜与弹药。</Chinesesimp>
+            <Turkish>Sahrani Krallığı kara birliklerine tahsis edilen resmi muharebe üniforması, Ops-Core kask, JPC yelek ve mühimmat.</Turkish>
+        </Key>
+    </Package>
     <Package name="Flight">
+        <Key ID="STR_ORA_TANKER_CALLSIGN">
+            <Original>Tanker Rodeo-1</Original>
+            <English>Tanker Rodeo-1</English>
+            <French>Ravitailleur Rodeo-1</French>
+            <Spanish>Nodriza Rodeo-1</Spanish>
+            <German>Tanker Rodeo-1</German>
+            <Italian>Aerocisterna Rodeo-1</Italian>
+            <Polish>Tankowiec Rodeo-1</Polish>
+            <Portuguese>Reabastecedor Rodeo-1</Portuguese>
+            <Russian>Заправщик Родео-1</Russian>
+            <Czech>Tanker Rodeo-1</Czech>
+            <Korean>급유기 로데오-1</Korean>
+            <Japanese>給油機 ロデオ-1</Japanese>
+            <Chinese>加油機 Rodeo-1</Chinese>
+            <Chinesesimp>加油机 Rodeo-1</Chinesesimp>
+            <Turkish>İkmal Uçağı Rodeo-1</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TANKER_MARKER">
+            <Original>Refuel Tanker C-130J (2000m)</Original>
+            <English>Refuel Tanker C-130J (2000m)</English>
+            <French>Ravitailleur C-130J (2000m)</French>
+            <Spanish>Avión cisterna C-130J (2000m)</Spanish>
+            <German>Tankflugzeug C-130J (2000m)</German>
+            <Italian>Aerocisterna C-130J (2000m)</Italian>
+            <Polish>Tankowiec C-130J (2000m)</Polish>
+            <Portuguese>Reabastecedor C-130J (2000m)</Portuguese>
+            <Russian>Заправщик C-130J (2000м)</Russian>
+            <Czech>Tankovací C-130J (2000m)</Czech>
+            <Korean>공중급유기 C-130J (2000m)</Korean>
+            <Japanese>空中給油機 C-130J (2000m)</Japanese>
+            <Chinese>空中加油機 C-130J (2000公尺)</Chinese>
+            <Chinesesimp>空中加油机 C-130J (2000米)</Chinesesimp>
+            <Turkish>Yakıt İkmal C-130J (2000m)</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TANKER_APPROACH">
+            <Original>Tanker in visual range (%1m). Approach within 200m to refuel.</Original>
+            <English>Tanker in visual range (%1m). Approach within 200m to refuel.</English>
+            <French>Ravitailleur en visuel (%1m). Rapprochez-vous à moins de 200m.</French>
+            <Spanish>Nodriza a la vista (%1m). Acérquese a menos de 200m para repostar.</Spanish>
+            <German>Tanker in Sicht (%1m). Auf unter 200m nähern zum Auftanken.</German>
+            <Italian>Aerocisterna in vista (%1m). Avvicinati a meno di 200m per rifornire.</Italian>
+            <Polish>Tankowiec w zasięgu wzroku (%1m). Zbliż się na odległość poniżej 200m.</Polish>
+            <Portuguese>Reabastecedor à vista (%1m). Aproxime-se a menos de 200m para reabastecer.</Portuguese>
+            <Russian>Заправщик в поле зрения (%1м). Подойдите ближе 200м для дозаправки.</Russian>
+            <Czech>Tanker v dohledu (%1m). Přibližte se na méně než 200m pro doplnění.</Czech>
+            <Korean>급유기 시야 확보 (%1m). 200m 이내로 접근하여 보급을 받으십시오.</Korean>
+            <Japanese>給油機視認 (%1m)。補給のため200m以内に接近してください。</Japanese>
+            <Chinese>已目視加油機（%1公尺）。請接近至200公尺以內進行整補。</Chinese>
+            <Chinesesimp>已目视加油机（%1米）。请接近至200米以内进行整补。</Chinesesimp>
+            <Turkish>İkmal uçağı menzilde (%1m). İkmal için 200m altına yaklaşın.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TANKER_SUCCESS_MSG">
+            <Original>Contact established. Refueling and rearming complete! All systems 100%.</Original>
+            <English>Contact established. Refueling and rearming complete! All systems 100%.</English>
+            <French>Contact établi. Ravitaillement et réarmement terminés ! Systèmes à 100%.</French>
+            <Spanish>¡Contacto establecido! Repostaje y rearme completados al 100%.</Spanish>
+            <German>Kontakt hergestellt. Betankung und Aufmunitionierung abgeschlossen! 100%.</German>
+            <Italian>Contatto stabilito. Rifornimento e riarmo completati al 100%!</Italian>
+            <Polish>Kontakt nawiązany. Tankowanie i dozbrojenie ukończone na 100%!</Polish>
+            <Portuguese>Contato estabelecido. Reabastecimento e rearmamento concluídos a 100%!</Portuguese>
+            <Russian>Контакт установлен. Заправка и пополнение боезапаса завершены на 100%!</Russian>
+            <Czech>Spojení navázáno. Dotankování a přezbrojení dokončeno na 100%!</Czech>
+            <Korean>접촉 완료. 연료 보급 및 무장 재보급 100% 완료!</Korean>
+            <Japanese>コンタクト完了。燃料給油およびミサイル再装填完了（全系統100%）！</Japanese>
+            <Chinese>對接完成。加油與飛彈掛載補給完畢！全系統已恢復100%。</Chinese>
+            <Chinesesimp>对接完成。加油与导弹挂载补给完毕！全系统已恢复100%。</Chinesesimp>
+            <Turkish>Bağlantı kuruldu. İkmal ve yeniden silahlanma %100 tamamlandı!</Turkish>
+        </Key>
+        <Key ID="STR_ORA_TANKER_REPLENISHED">
+            <Original>REFUEL &amp; REARM COMPLETE: Fuel 100% | Armor 100% | Ordnance 100%</Original>
+            <English>REFUEL &amp; REARM COMPLETE: Fuel 100% | Armor 100% | Ordnance 100%</English>
+            <French>RAVITAILLEMENT TERMINÉ : Carburant 100% | Intégrité 100% | Missiles 100%</French>
+            <Spanish>REPOSTAJE COMPLETO: Combustible 100% | Blindaje 100% | Misiles 100%</Spanish>
+            <German>AUFTANKEN ABGESCHLOSSEN: Treibstoff 100% | Rumpf 100% | Waffen 100%</German>
+            <Italian>RIFORNIMENTO COMPLETATO: Carburante 100% | Integrità 100% | Missili 100%</Italian>
+            <Polish>UZUPEŁNIONO: Paliwo 100% | Kadłub 100% | Uzbrojenie 100%</Polish>
+            <Portuguese>REABASTECIMENTO CONCLUÍDO: Combustível 100% | Blindagem 100% | Mísseis 100%</Portuguese>
+            <Russian>ДОЗАПРАВКА ЗАВЕРШЕНА: Топливо 100% | Прочность 100% | Ракеты 100%</Russian>
+            <Czech>DOPLNĚNÍ DOKONČENO: Palivo 100% | Pancíř 100% | Munice 100%</Czech>
+            <Korean>보급 완료: 연료 100% | 기체 100% | 미사일 무장 100%</Korean>
+            <Japanese>補給完了: 燃料 100% | 機体耐久 100% | 兵装 100%</Japanese>
+            <Chinese>補給完成：燃油 100% | 機體完整度 100% | 飛彈武裝 100%</Chinese>
+            <Chinesesimp>补给完成：燃油 100% | 机体完整度 100% | 导弹武装 100%</Chinesesimp>
+            <Turkish>İKMAL TAMAMLANDI: Yakıt %100 | Gövde %100 | Mühimmat %100</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Debrief_CockpitForfeit_Title">
+            <Original>SORTIE FORFEITED</Original>
+            <English>SORTIE FORFEITED</English>
+            <French>SORTIE ÉCHOUÉE</French>
+            <Spanish>SALIDA FRACASADA</Spanish>
+            <German>EINSATZ ABGEBROCHEN</German>
+            <Italian>SORTITA FALLITA</Italian>
+            <Polish>MISJA PRZEGRANA</Polish>
+            <Portuguese>SORTIDA PERDIDA</Portuguese>
+            <Russian>ВЫЛЕТ СОРВАН</Russian>
+            <Czech>VZLET ZMAŘEN</Czech>
+            <Korean>출격 실패</Korean>
+            <Japanese>出撃失敗</Japanese>
+            <Chinese>任務失敗</Chinese>
+            <Chinesesimp>任务失败</Chinesesimp>
+            <Turkish>GÖREV BAŞARISIZ</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Debrief_CockpitForfeit_Subtitle">
+            <Original>COCKPIT EGRESS PROHIBITED</Original>
+            <English>COCKPIT EGRESS PROHIBITED</English>
+            <French>ABANDON DU COCKPIT INTERDIT</French>
+            <Spanish>ABANDONO DE CABINA PROHIBIDO</Spanish>
+            <German>COCKPIT-VERLASSEN UNTERSAGT</German>
+            <Italian>ABBANDONO COCKPIT VIETATO</Italian>
+            <Polish>OPUSZCZENIE KOKPITU ZABRONIONE</Polish>
+            <Portuguese>ABANDONO DO COCKPIT PROIBIDO</Portuguese>
+            <Russian>ПОКИДАНИЕ КАБИНЫ ЗАПРЕЩЕНО</Russian>
+            <Czech>OPUŠTĚNÍ KOKPITU ZAKÁZÁNO</Czech>
+            <Korean>조종석 무단 이탈 금지</Korean>
+            <Japanese>コックピット離脱禁止</Japanese>
+            <Chinese>禁止擅自離開座艙</Chinese>
+            <Chinesesimp>禁止擅自离开座舱</Chinesesimp>
+            <Turkish>KOKPİT TERKİ YASAKLANMIŞTIR</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Debrief_CockpitForfeit_Desc">
+            <Original>You ejected or abandoned the cockpit of plane_0 during active combat operations. Mission protocol requires the pilot to remain in command and return the aircraft safely to base.</Original>
+            <English>You ejected or abandoned the cockpit of plane_0 during active combat operations. Mission protocol requires the pilot to remain in command and return the aircraft safely to base.</English>
+            <French>Vous vous êtes éjecté ou avez quitté le cockpit de plane_0 en pleine opération. Le protocole opérationnel exige impérativement que le pilote reste aux commandes et ramène son appareil intact.</French>
+            <Spanish>Se ha eyectado o ha abandonado la cabina de plane_0 en combate. El protocolo exige permanecer al mando y regresar el avión intacto a la base.</Spanish>
+            <German>Sie haben das Cockpit von plane_0 im Einsatz verlassen oder sich herauskatapultiert. Das Protokoll verlangt zwingend, das Flugzeug zurück zur Basis zu fliegen.</German>
+            <Italian>Ti sei espulso o hai abbandonato il cockpit di plane_0 durante le operazioni. Il protocollo impone di restare ai comandi e riportare il velivolo alla base.</Italian>
+            <Polish>Katapultowałeś się lub opuściłeś kokpit plane_0 podczas operacji bojowej. Protokół wymaga pozostania za sterami i bezpiecznego sprowadzenia maszyny.</Polish>
+            <Portuguese>Você ejetou ou abandonou o cockpit de plane_0 durante a operação. O protocolo exige permanecer aos comandos e retornar a aeronave à base em segurança.</Portuguese>
+            <Russian>Вы катапультировались или покинули кабину plane_0 во время боевого вылета. Протокол требует оставаться за штурвалом и вернуть борт на базу.</Russian>
+            <Czech>Katapultoval jste se nebo opustil kokpit letounu plane_0 během operace. Protokol nařizuje setrvat v řízení a vrátit stroj bezpečně na základnu.</Czech>
+            <Korean>작전 도중 plane_0의 조종석을 이탈하거나 사출했습니다. 작전 수칙상 조종사는 끝까지 기체를 조종하여 무사히 기지로 복귀해야 합니다.</Korean>
+            <Japanese>作戦行動中にplane_0のコックピットを脱出または射出しました。規定により、パイロットは操縦を維持し機体を安全に帰還させねばなりません。</Japanese>
+            <Chinese>您在作戰行動中彈射或離開了 plane_0 座艙。任務規範嚴格要求飛行員必須堅守駕駛艙並平安將戰機帶回基地。</Chinese>
+            <Chinesesimp>您在作战行动中弹射或离开了 plane_0 座舱。任务规范严格要求飞行员必须坚守驾驶舱并平安将战机带回基地。</Chinesesimp>
+            <Turkish>Harekât sırasında plane_0 uçağının kokpitinden atladınız veya terk ettiniz. Görev protokolü pilotun uçakta kalıp üsse dönmesini şart koşar.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Radio_CockpitAbandoned">
+            <Original>Mayday, Mayday! Pilot has abandoned plane_0! Sortie forfeited, mission failed! All units, Eagle-1 is down by cockpit egress.</Original>
+            <English>Mayday, Mayday! Pilot has abandoned plane_0! Sortie forfeited, mission failed! All units, Eagle-1 is down by cockpit egress.</English>
+            <French>Mayday, Mayday ! Le pilote a abandonné le cockpit de plane_0 ! Sortie annulée, mission échouée ! À toutes les stations, Eagle-1 a quitté son bord.</French>
+            <Spanish>¡Mayday, Mayday! ¡El piloto ha abandonado plane_0! ¡Salida cancelada, misión fallida!</Spanish>
+            <German>Mayday, Mayday! Der Pilot hat plane_0 verlassen! Einsatz abgebrochen, Mission gescheitert!</German>
+            <Italian>Mayday, Mayday! Il pilota ha abbandonato plane_0! Sortita annullata, missione fallita!</Italian>
+            <Polish>Mayday, Mayday! Pilot opuścił maszynę plane_0! Misja przerwana, zadanie nieudane!</Polish>
+            <Portuguese>Mayday, Mayday! O piloto abandonou plane_0! Sortida cancelada, missão falhada!</Portuguese>
+            <Russian>Мэйдей, Мэйдей! Пилот покинул борт plane_0! Вылет сорван, задание провалено!</Russian>
+            <Czech>Mayday, Mayday! Pilot opustil letoun plane_0! Mise zrušena, operace selhala!</Czech>
+            <Korean>메이데이, 메이데이! 조종사가 plane_0 기체를 이탈했습니다! 출격이 취소되었으며 임무 실패입니다!</Korean>
+            <Japanese>メーデー、メーデー！パイロットがplane_0を放棄！出撃は中止、作戦失敗！</Japanese>
+            <Chinese>求救，求救！飛行員已棄機離開 plane_0！出擊終止，任務判定失敗！</Chinese>
+            <Chinesesimp>求救，求救！飞行员已弃机离开 plane_0！出击终止，任务判定失败！</Chinesesimp>
+            <Turkish>Mayday, Mayday! Pilot plane_0 uçağını terk etti! Görev iptal, harekât başarısız!</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Alert_CockpitForfeit_Screen">
+            <Original>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SORTIE FORFEITED&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Cockpit egress prohibited - Mission Failed&lt;/t&gt;</Original>
+            <English>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SORTIE FORFEITED&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Cockpit egress prohibited - Mission Failed&lt;/t&gt;</English>
+            <French>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SORTIE ÉCHOUÉE&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Abandon du cockpit interdit - Mission Annulée&lt;/t&gt;</French>
+            <Spanish>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SALIDA FRACASADA&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Abandono de cabina prohibido - Misión Fallida&lt;/t&gt;</Spanish>
+            <German>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;EINSATZ ABGEBROCHEN&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Cockpit-Verlassen untersagt - Mission Gescheitert&lt;/t&gt;</German>
+            <Italian>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SORTITA FALLITA&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Abbandono cockpit vietato - Missione Fallita&lt;/t&gt;</Italian>
+            <Polish>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;MISJA PRZEGRANA&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Opuszczenie kokpitu zabronione - Porażka&lt;/t&gt;</Polish>
+            <Portuguese>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;SORTIDA PERDIDA&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Abandono do cockpit proibido - Missão Falhada&lt;/t&gt;</Portuguese>
+            <Russian>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;ВЫЛЕТ СОРВАН&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Покидание кабины запрещено - Задание Провалено&lt;/t&gt;</Russian>
+            <Czech>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;VZLET ZMAŘEN&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Opuštění kokpitu zakázáno - Mise Selhala&lt;/t&gt;</Czech>
+            <Korean>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;출격 실패&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;조종석 이탈 금지 - 임무 실패&lt;/t&gt;</Korean>
+            <Japanese>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;出撃失敗&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;コックピット離脱禁止 - 作戦失敗&lt;/t&gt;</Japanese>
+            <Chinese>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;出擊失敗&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;嚴禁擅自離開座艙 - 任務終止判定失敗&lt;/t&gt;</Chinese>
+            <Chinesesimp>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;出击失败&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;严禁擅自离开座舱 - 任务终止判定失败&lt;/t&gt;</Chinesesimp>
+            <Turkish>&lt;t color='#ff2222' size='2' font='RobotoCondensedBold'&gt;GÖREV BAŞARISIZ&lt;/t&gt;&lt;br/&gt;&lt;t color='#ffffff' size='1.2'&gt;Kokpit terki yasaktır - Görev İptal Edildi&lt;/t&gt;</Turkish>
+        </Key>
         <Key ID="STR_ORA_Alert_CriticalDamage">
             <Original>CRITICAL DAMAGE DETECTED! ENGINE COMPROMISED - EJECT! EJECT!</Original>
             <English>CRITICAL DAMAGE DETECTED! ENGINE COMPROMISED - EJECT! EJECT!</English>
@@ -361,6 +567,40 @@
             <Chinese>突破音障。</Chinese>
             <Chinesesimp>突破音障。</Chinesesimp>
             <Turkish>Ses duvarı aşıldı.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_GUIDANCE_ACTIVE">
+            <Original>Weapon Guidance Assist: Systems Online</Original>
+            <English>Weapon Guidance Assist: Systems Online</English>
+            <French>Aide de Tir : Systèmes de Guidage Actifs</French>
+            <Spanish>Asistencia de disparo: Sistemas activos</Spanish>
+            <German>Waffenführungshilfe: Systeme online</German>
+            <Italian>Assistenza di tiro: Sistemi attivi</Italian>
+            <Polish>Wspomaganie celowania: Systemy aktywne</Polish>
+            <Portuguese>Assistência de Disparo: Sistemas Ativos</Portuguese>
+            <Russian>Помощь в наведении оружия: Системы активны</Russian>
+            <Czech>Podpora navádění zbraní: Systémy aktivní</Czech>
+            <Korean>무기 유도 보조: 시스템 활성화</Korean>
+            <Japanese>兵装誘導アシスト: システム起動</Japanese>
+            <Chinese>武器導引輔助：系統已啟動</Chinese>
+            <Chinesesimp>武器导引辅助：系统已启动</Chinesesimp>
+            <Turkish>Silah Güdüm Desteği: Sistemler Devrede</Turkish>
+        </Key>
+        <Key ID="STR_ORA_GUIDANCE_ENGAGED">
+            <Original>Missile guidance initiated (5s post-drop curve)</Original>
+            <English>Missile guidance initiated (5s post-drop curve)</English>
+            <French>Guidage missile initié (inflexion douce après 5s)</French>
+            <Spanish>Guía de misil iniciada (curva suave tras 5 s)</Spanish>
+            <German>Raketenlenkung initiiert (sanfte Kurve nach 5s)</German>
+            <Italian>Guida missile avviata (curva graduale dopo 5s)</Italian>
+            <Polish>Naprowadzanie rakiety rozpoczęte (korekta po 5s)</Polish>
+            <Portuguese>Guiamento de míssil iniciado (curva suave após 5s)</Portuguese>
+            <Russian>Наведение ракеты активировано (плавная дуга после 5 с)</Russian>
+            <Czech>Navádění střely zahájeno (mírná křivka po 5 s)</Czech>
+            <Korean>미사일 유도 시작 (5초 후 완만한 궤적 수정)</Korean>
+            <Japanese>ミサイル誘導開始（投下後5秒・緩やかな弾道補正）</Japanese>
+            <Chinese>飛彈導引已啟動（投彈5秒後平滑修正軌跡）</Chinese>
+            <Chinesesimp>导弹导引已启动（投弹5秒后平滑修正轨迹）</Chinesesimp>
+            <Turkish>Füze güdümü başladı (5 sn sonra yumuşak kavis)</Turkish>
         </Key>
     </Package>
     <Package name="Player">
@@ -1154,6 +1394,416 @@
             <Chinesesimp>&lt;t color='#FF3333' size='0.85' font='PuristaBold'&gt;⚠️ 撤离重要提示：&lt;br/&gt;撤离行动必须由玩家通过支援菜单 (0-8-3) 手动呼叫，绝非自动触发！您可以在行动中随时呼叫撤离。&lt;/t&gt;</Chinesesimp>
         </Key>
     </Package>
+    <Package name="Task">
+        <Key ID="STR_ORA_Task_Air_Title">
+            <Original>Air Superiority - Intercept Hostile Bandits</Original>
+            <English>Air Superiority - Intercept Hostile Bandits</English>
+            <French>Supériorité Aérienne - Intercepter les Chasseurs Ennemis</French>
+            <Spanish>Superioridad aérea - Interceptar cazas enemigos</Spanish>
+            <German>Luftüberlegenheit - Feindliche Abfangjäger bekämpfen</German>
+            <Italian>Superiorità aerea - Intercettare i caccia nemici</Italian>
+            <Polish>Przewaga w powietrzu - Przechwyć wrogie myśliwce</Polish>
+            <Portuguese>Superioridade Aérea - Interceptar Caças Inimigos</Portuguese>
+            <Russian>Господство в воздухе - Перехватить вражеские истребители</Russian>
+            <Czech>Vzdušná převaha - Přepadnout nepřátelské stíhačky</Czech>
+            <Korean>제공권 장악 - 적 전투기 요격</Korean>
+            <Japanese>制空戦闘 - 敵戦闘機隊の要撃</Japanese>
+            <Chinese>空中優勢 - 截擊敵軍戰機</Chinese>
+            <Chinesesimp>空中优势 - 截击敌军战机</Chinesesimp>
+            <Turkish>Hava Üstünlüğü - Düşman Avcı Uçaklarını İmha Edin</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Air_Desc">
+            <Original>Hostile strike aircraft have violated Sahrani airspace. Ingress, establish radar lock, and splash all hostile bandits to secure air superiority.</Original>
+            <English>Hostile strike aircraft have violated Sahrani airspace. Ingress, establish radar lock, and splash all hostile bandits to secure air superiority.</English>
+            <French>Des chasseurs de combat ennemis violent l'espace aérien de Sahrani. Accélérez, verrouillez les cibles au radar et abattez tous les bandits pour garantir la supériorité aérienne.</French>
+            <Spanish>Cazas enemigos han violado el espacio aéreo de Sahrani. Fije los blancos en el radar y derribe todos los aviones enemigos.</Spanish>
+            <German>Feindliche Kampfflugzeuge haben den Luftraum von Sahrani verletzt. Zielerfassung durchführen und alle feindlichen Flugzeuge abschießen.</German>
+            <Italian>Caccia nemici hanno violato lo spazio aereo di Sahrani. Agganciate i bersagli al radar e abbattete tutti i caccia ostili.</Italian>
+            <Polish>Myśliwce wroga naruszyły przestrzeń powietrzną Sahrani. Zablokuj cele na radarze i zestrzel wszystkie wrogie samoloty.</Polish>
+            <Portuguese>Caças de ataque inimigos violaram o espaço aéreo de Sahrani. Trave alvos no radar e abata todos os bandidos.</Portuguese>
+            <Russian>Боевые самолеты противника нарушили воздушное пространство Сахрани. Захватите цели радаром и сбейте все вражеские истребители.</Russian>
+            <Czech>Nepřátelské bojové letouny narušily vzdušný prostor Sahrani. Zaměřte radarem a sestřelte všechna nepřátelská letadla.</Czech>
+            <Korean>적 전투기가 사하라니 영공을 침범했습니다. 레이더 락온을 확보하고 모든 적기를 격추하여 제공권을 장악하십시오.</Korean>
+            <Japanese>敵戦闘機がサフラニ領空を侵犯した。レーダーロックを捕捉し、すべての敵機を撃墜して制空権を確保せよ。</Japanese>
+            <Chinese>敵軍戰機已侵入薩拉尼領空。請切入戰鬥空域，雷達鎖定並擊落所有敵機以奪取制空權。</Chinese>
+            <Chinesesimp>敌军战机已侵入萨拉尼领空。请切入战斗空域，雷达锁定并击落所有敌机以夺取制空权。</Chinesesimp>
+            <Turkish>Düşman savaş uçakları Sahrani hava sahasını ihlal etti. Radarla kilitlenin ve tüm düşman uçaklarını düşürün.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Air_Marker">
+            <Original>Hostile Air Intercept</Original>
+            <English>Hostile Air Intercept</English>
+            <French>Interception Aérienne Ennemie</French>
+            <Spanish>Intercepción aérea enemiga</Spanish>
+            <German>Feindlicher Luftkontakt</German>
+            <Italian>Intercettazione aerea nemica</Italian>
+            <Polish>Przechwycenie wrogiego lotnictwa</Polish>
+            <Portuguese>Intercepção Aérea Inimiga</Portuguese>
+            <Russian>Воздушный перехват</Russian>
+            <Czech>Vzdušný přepad</Czech>
+            <Korean>적기 요격 지점</Korean>
+            <Japanese>敵要撃空域</Japanese>
+            <Chinese>空中截擊空域</Chinese>
+            <Chinesesimp>空中截击空域</Chinesesimp>
+            <Turkish>Düşman Hava Önleme Noktası</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Air_Order">
+            <Original>Victor-One, Overlord. Bandits inbound at Angels 15, vector grid %1. Engage and destroy all hostile aircraft.</Original>
+            <English>Victor-One, Overlord. Bandits inbound at Angels 15, vector grid %1. Engage and destroy all hostile aircraft.</English>
+            <French>Victor-One, ici Overlord. Bandits en approche à 1500 mètres, cap sur la grille %1. Engagez et détruisez tous les aéronefs ennemis.</French>
+            <Spanish>Victor-One, aquí Overlord. Bandidos aproximándose a 1500 metros, rumbo a cuadrícula %1. Destruya todos los cazas.</Spanish>
+            <German>Victor-One, hier Overlord. Feindkontakte im Anflug auf 1500 Meter, Vektor Gitter %1. Feindflugzeuge vernichten.</German>
+            <Italian>Victor-One, qui Overlord. Banditi in avvicinamento a quota 1500, rotta sulla griglia %1. Distruggete tutti i velivoli ostili.</Italian>
+            <Polish>Victor-One, tu Overlord. Wrogie myśliwce zbliżają się na 1500m, kierunek siatka %1. Zniszcz wszystkie samoloty wroga.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Bandidos a caminho a 1500 metros, vetor grade %1. Destrua todas as aeronaves inimigas.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Бандиты на высоте 1500 метров, курс на сетку %1. Уничтожьте все вражеские самолеты.</Russian>
+            <Czech>Victor-One, zde Overlord. Nepřátelé se blíží ve výšce 1500 metrů, vektor síť %1. Zničte všechna nepřátelská letadla.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 고도 1500m에서 적기 접근 중, 벡터 그리드 %1. 모든 적 항공기를 격추하십시오.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。高度1500mにて敵戦闘機接近中、目標グリッド %1。全敵機を撃墜せよ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。敵機正於高度 1500 米接近，航向網格 %1。交戰並擊毀所有敵機。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。敌机正于高度 1500 米接近，航向网格 %1。交战并击毁所有敌机。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Düşman uçakları 1500 metre irtifada yaklaşıyor, rota %1. Hepsini imha edin.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Air_Done">
+            <Original>Victor-One, Overlord. Scratch the bandits! Air threat eliminated. Skies are clear.</Original>
+            <English>Victor-One, Overlord. Scratch the bandits! Air threat eliminated. Skies are clear.</English>
+            <French>Victor-One, ici Overlord. Bandits au tapis ! Menace aérienne éliminée. Le ciel est dégagé.</French>
+            <Spanish>Victor-One, aquí Overlord. ¡Bandidos derribados! Amenaza aérea eliminada.</Spanish>
+            <German>Victor-One, hier Overlord. Feindflugzeuge abgeschossen! Luftraum ist gesichert.</German>
+            <Italian>Victor-One, qui Overlord. Banditi abbattuti! Minaccia aerea eliminata. Cieli liberi.</Italian>
+            <Polish>Victor-One, tu Overlord. Bandyci zestrzeleni! Zagrożenie zlikwidowane. Niebo jest czyste.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Bandidos abatidos! Ameaça eliminada. Céus limpos.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Бандиты сбиты! Воздушная угроза устранена. Небо чистое.</Russian>
+            <Czech>Victor-One, zde Overlord. Bandité sestřeleni! Vzdušná hrozba zlikvidována. Nebe je čisté.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 적기 격추 완료! 공중 위협이 제거되었습니다. 상공이 안전합니다.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。敵機撃墜！空中の脅威は排除された。空域の安全を確保。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。敵機已全數擊落！空中威脅肅清。空域已重獲安全。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。敌机已全数击落！空中威胁肃清。空域已重获安全。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Düşman düşürüldü! Hava tehdidi ortadan kaldırıldı. Gökyüzü temiz.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Ground_Title">
+            <Original>CAS - Neutralize Hostile Armored Force</Original>
+            <English>CAS - Neutralize Hostile Armored Force</English>
+            <French>CAS - Neutraliser la Force Blindée Ennemie</French>
+            <Spanish>CAS - Neutralizar fuerza blindada enemiga</Spanish>
+            <German>CAS - Feindliche Panzerkräfte neutralisieren</German>
+            <Italian>CAS - Neutralizzare forza corazzata nemica</Italian>
+            <Polish>CAS - Zneutralizuj wrogie siły pancerne</Polish>
+            <Portuguese>CAS - Neutralizar Força Blindada Inimiga</Portuguese>
+            <Russian>CAS - Нейтрализовать бронетанковые силы врага</Russian>
+            <Czech>CAS - Neutralizovat nepřátelské obrněné síly</Czech>
+            <Korean>CAS - 적 기갑 부대 무력화</Korean>
+            <Japanese>CAS - 敵装甲部隊の無力化</Japanese>
+            <Chinese>CAS - 殲滅敵軍裝甲部隊</Chinese>
+            <Chinesesimp>CAS - 歼灭敌军装甲部队</Chinesesimp>
+            <Turkish>CAS - Düşman Zırhlı Güçlerini İmha Edin</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Ground_Desc">
+            <Original>Hostile mechanized assets and combat vehicles have advanced into the sector. Deliver precision close air support (CAS) and destroy all enemy armored vehicles. Neutralization of ground infantry is not required.</Original>
+            <English>Hostile mechanized assets and combat vehicles have advanced into the sector. Deliver precision close air support (CAS) and destroy all enemy armored vehicles. Neutralization of ground infantry is not required.</English>
+            <French>Des véhicules de combat et blindés ennemis progressent dans le secteur. Délivrez un appui aérien rapproché (CAS) de précision et détruisez tous les véhicules blindés ennemis. L'élimination de l'infanterie au sol n'est pas requise.</French>
+            <Spanish>Blindados enemigos avanzan en el sector. Proporcione apoyo aéreo cercano y destruya los vehículos blindados. No es necesario eliminar a la infantería.</Spanish>
+            <German>Feindliche Panzerfahrzeuge rücken im Sektor vor. Leisten Sie Luftnahunterstützung (CAS) und zerstören Sie alle Zielfahrzeuge. Die Vernichtung von Infanterie ist nicht erforderlich.</German>
+            <Italian>Veicoli corazzati nemici avanzano nel settore. Fornite supporto aereo ravvicinato (CAS) e distruggete tutti i veicoli corazzati. L'eliminazione della fanteria non è richiesta.</Italian>
+            <Polish>Pojazdy pancerne wroga posuwają się w sektorze. Zapewnij bliskie wsparcie powietrzne (CAS) i zniszcz wszystkie pojazdy. Likwidacja piechoty nie jest wymagana.</Polish>
+            <Portuguese>Veículos blindados inimigos avançam no setor. Forneça apoio aéreo aproximado e destrua todos os veículos. A eliminação da infantaria não é necessária.</Portuguese>
+            <Russian>Бронетехника противника продвигается в секторе. Окажите авиационную поддержку (CAS) и уничтожьте всю бронетехнику. Уничтожение пехоты не требуется.</Russian>
+            <Czech>Nepřátelská obrněná vozidla postupují v sektoru. Proveďte blízkou leteckou podporu (CAS) a zničte všechna obrněná vozidla. Likvidace pěchoty není vyžadována.</Czech>
+            <Korean>적 장갑 차량이 해당 구역으로 진격 중입니다. 정밀 근접항공지원(CAS)을 실시하여 모든 적 장갑 차량을 파괴하십시오. 지상 보병 섬멸은 필수가 아닙니다.</Korean>
+            <Japanese>敵の装甲車両が当空域に侵入した。精密な近接航空支援（CAS）を実施し、敵装甲車両をすべて撃破せよ。地上歩兵の殲滅は不要である。</Japanese>
+            <Chinese>敵軍裝甲車輛正挺進該防區。請實施精準近距離空中支援（CAS）並摧毀所有裝甲目標。無須肅清地面步兵。</Chinese>
+            <Chinesesimp>敌军装甲车辆正挺进该防区。请实施精准近距离空中支援（CAS）并摧毁所有装甲目标。无须肃清地面步兵。</Chinesesimp>
+            <Turkish>Düşman zırhlı araçları bölgede ilerliyor. Hassas yakın hava desteği (CAS) sağlayın ve tüm düşman zırhlılarını vurun. Piyadeleri yok etmek zorunlu değildir.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Ground_Marker">
+            <Original>Hostile Armor Concentration</Original>
+            <English>Hostile Armor Concentration</English>
+            <French>Concentration Blindée Ennemie</French>
+            <Spanish>Concentración blindada enemiga</Spanish>
+            <German>Feindliche Panzerkonzentration</German>
+            <Italian>Concentrazione corazzata nemica</Italian>
+            <Polish>Zgrupowanie pancerne wroga</Polish>
+            <Portuguese>Concentração Blindada Inimiga</Portuguese>
+            <Russian>Скопление вражеской бронетехники</Russian>
+            <Czech>Koncentrace nepřátelských tanků</Czech>
+            <Korean>적 기갑 집결지</Korean>
+            <Japanese>敵装甲集結地点</Japanese>
+            <Chinese>敵軍裝甲集結點</Chinese>
+            <Chinesesimp>敌军装甲集结点</Chinesesimp>
+            <Turkish>Düşman Zırhlı Toplanma Alanı</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Ground_Order">
+            <Original>Victor-One, Overlord. Hostile mechanized forces active at grid %1. Neutralize all armored vehicles. Weapons free.</Original>
+            <English>Victor-One, Overlord. Hostile mechanized forces active at grid %1. Neutralize all armored vehicles. Weapons free.</English>
+            <French>Victor-One, ici Overlord. Forces mécanisées ennemies actives sur la grille %1. Neutralisez tous les véhicules blindés. Tir autorisé.</French>
+            <Spanish>Victor-One, aquí Overlord. Fuerzas mecanizadas enemigas en cuadrícula %1. Neutralice todos los vehículos. Fuego libre.</Spanish>
+            <German>Victor-One, hier Overlord. Feindliche mechanisierte Kräfte bei Gitter %1 aktiv. Neutralisieren Sie alle Panzerfahrzeuge. Feuer frei.</German>
+            <Italian>Victor-One, qui Overlord. Forze corazzate nemiche attive nella griglia %1. Neutralizzate tutti i veicoli. Fuoco autorizzato.</Italian>
+            <Polish>Victor-One, tu Overlord. Wrogie siły zmechanizowane na siatce %1. Zniszcz wszystkie pojazdy. Ogień wolny.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Forças mecanizadas inimigas na grade %1. Neutralize todos os veículos. Fogo livre.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Вражеские механизированные силы на сетке %1. Уничтожьте всю бронетехнику. Огонь разрешен.</Russian>
+            <Czech>Victor-One, zde Overlord. Nepřátelské mechanizované síly na síti %1. Zničte všechna obrněná vozidla. Palba povolena.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 그리드 %1에 적 기계화 부대 확인. 모든 장갑 차량을 무력화하십시오. 발포를 허가합니다.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。グリッド %1 に敵機甲部隊を確認。すべての装甲車両を撃破せよ。交戦を許可する。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。網格座標 %1 發現敵軍機械化部隊。摧毀所有裝甲目標。開火許可。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。网格坐标 %1 发现敌军机械化部队。摧毁所有装甲目标。开火许可。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. %1 koordinatında düşman mekanize unsurları aktif. Tüm zırhlı araçları vurun. Ateş serbest.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Ground_Done">
+            <Original>Victor-One, Overlord. Direct hit! Enemy armor confirmed destroyed. Good shooting.</Original>
+            <English>Victor-One, Overlord. Direct hit! Enemy armor confirmed destroyed. Good shooting.</English>
+            <French>Victor-One, ici Overlord. Coup au but ! Blindés ennemis confirmés détruits. Beau tir.</French>
+            <Spanish>Victor-One, aquí Overlord. ¡Impacto directo! Blindados destruidos. Buen tiro.</Spanish>
+            <German>Victor-One, hier Overlord. Volltreffer! Feindpanzer zerstört. Guter Schuss.</German>
+            <Italian>Victor-One, qui Overlord. Colpo a segno! Corazzati nemici distrutti. Ottimo tiro.</Italian>
+            <Polish>Victor-One, tu Overlord. Bezpośrednie trafienie! Wrogie pojazdy zniszczone. Dobry strzał.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Tiro certeiro! Blindados destruídos. Belo disparo.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Прямое попадание! Бронетехника уничтожена. Отличная стрельба.</Russian>
+            <Czech>Victor-One, zde Overlord. Přímý zásah! Obrněná technika zničena. Dobrá trefa.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 명중! 적 장갑 차량 파괴를 확인했습니다. 훌륭한 사격입니다.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。直撃確認！敵装甲車両の完全撃破を確認した。見事な射撃だ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。直接命中！已確認敵軍裝甲全數摧毀。射擊精準。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。直接命中！已确认敌军装甲全数摧毁。射击精准。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Tam isabet! Düşman zırhlıları imha edildi. İyi atıştı.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Heli_Title">
+            <Original>Air Defense - Eradicate Hostile Rotary Threat</Original>
+            <English>Air Defense - Eradicate Hostile Rotary Threat</English>
+            <French>Défense Aérienne - Neutraliser la Menace d'Hélicoptères</French>
+            <Spanish>Defensa aérea - Erradicar helicópteros enemigos</Spanish>
+            <German>Luftverteidigung - Feindliche Kampfhubschrauber vernichten</German>
+            <Italian>Difesa aerea - Eliminare gli elicotteri d'attacco nemici</Italian>
+            <Polish>Obrona powietrzna - Zniszcz śmigłowce wroga</Polish>
+            <Portuguese>Defesa Aérea - Eliminar Helicópteros Inimigos</Portuguese>
+            <Russian>ПВО - Уничтожить вражеские ударные вертолеты</Russian>
+            <Czech>Protivzdušná obrana - Zlikvidovat nepřátelské vrtulníky</Czech>
+            <Korean>대공 방어 - 적 공격 헬리콥터 격퇴</Korean>
+            <Japanese>防空戦闘 - 敵攻撃ヘリコプター部隊の殲滅</Japanese>
+            <Chinese>防空作戰 - 圍剿敵軍武裝直升機</Chinese>
+            <Chinesesimp>防空作战 - 围剿敌军武装直升机</Chinesesimp>
+            <Turkish>Hava Savunma - Düşman Taarruz Helikopterlerini İmha Edin</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Heli_Desc">
+            <Original>Hostile attack helicopters are operating at low level supporting ground assault operations. Ingress rapidly, engage with air-to-air missiles or cannon and eliminate all hostile helicopters. Ground troops are present but their elimination is not required.</Original>
+            <English>Hostile attack helicopters are operating at low level supporting ground assault operations. Ingress rapidly, engage with air-to-air missiles or cannon and eliminate all hostile helicopters. Ground troops are present but their elimination is not required.</English>
+            <French>Des hélicoptères de combat ennemis opèrent à basse altitude en appui des opérations terrestres. Intervenez rapidement, engagez aux missiles air-air ou au canon et éliminez tous les hélicoptères cibles. Des troupes au sol sont présentes mais leur destruction n'est pas requise.</French>
+            <Spanish>Helicópteros de ataque enemigos operan a baja cota. Enlace con misiles aire-aire o cañón y derribe todos los helicópteros. No es necesario abatir a la infantería.</Spanish>
+            <German>Feindliche Kampfhubschrauber fliegen im Tiefflug zur Unterstützung der Bodentruppen. Schießen Sie alle Hubschrauber ab. Bodentruppen müssen nicht eliminiert werden.</German>
+            <Italian>Elicotteri d'attacco nemici operano a bassa quota. Abbattete tutti gli elicotteri con missili o cannone. La distruzione della fanteria a terra non è richiesta.</Italian>
+            <Polish>Śmigłowce bojowe wroga operują na małej wysokości. Zniszcz wszystkie wrogie śmigłowce rakietami lub działkiem. Piechota naziemna nie musi być zniszczona.</Polish>
+            <Portuguese>Helicópteros de ataque inimigos operam a baixa altitude. Abata todos os helicópteros inimigos. A destruição das tropas terrestres não é exigida.</Portuguese>
+            <Russian>Ударные вертолеты противника действуют на малой высоте. Уничтожьте все вертолеты ракетами «воздух-воздух» или пушкой. Ликвидация пехоты на земле не требуется.</Russian>
+            <Czech>Nepřátelské bojové vrtulníky operují v nízké výšce. Sestřelte všechny vrtulníky střelami nebo kanónem. Likvidace pozemních jednotek není vyžadována.</Czech>
+            <Korean>적 공격 헬기가 지상 작전을 지원하며 초저고도로 비행 중입니다. 신속히 진입하여 공대공 미사일이나 기관포로 모든 헬기를 격추하십시오. 지상 보병 섬멸은 필수가 아닙니다.</Korean>
+            <Japanese>敵攻撃ヘリが超低空で地上支援を実施している。迅速に進出し、空対空ミサイルまたは機関砲ですべての敵ヘリを撃墜せよ。地上部隊の撃破は必須ではない。</Japanese>
+            <Chinese>敵軍武裝直升機正於超低空活動以支援地面部隊。請迅速切入戰區，以空對空飛彈或航砲擊落所有敵方直升機。地面部隊無須清剿。</Chinese>
+            <Chinesesimp>敌军武装直升机正于超低空活动以支援地面部队。请迅速切入战区，以空对空导弹或航炮击落所有敌方直升机。地面部队无须清剿。</Chinesesimp>
+            <Turkish>Düşman taarruz helikopterleri alçak irtifada kara harekâtını destekliyor. Hızla intikal edin ve tüm helikopterleri vurun. Yer birliklerini imha etmek zorunlu değildir.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Heli_Marker">
+            <Original>Hostile Helicopter Contact</Original>
+            <English>Hostile Helicopter Contact</English>
+            <French>Contact Hélicoptères Ennemis</French>
+            <Spanish>Contacto helicópteros enemigos</Spanish>
+            <German>Feindliche Hubschrauber</German>
+            <Italian>Contatto elicotteri nemici</Italian>
+            <Polish>Kontakt ze śmigłowcami wroga</Polish>
+            <Portuguese>Contato de Helicópteros Inimigos</Portuguese>
+            <Russian>Вражеские вертолеты</Russian>
+            <Czech>Kontakt nepřátelských vrtulníků</Czech>
+            <Korean>적 헬기 접적 구역</Korean>
+            <Japanese>敵ヘリ部隊接触空域</Japanese>
+            <Chinese>敵軍直升機作戰空域</Chinese>
+            <Chinesesimp>敌军直升机作战空域</Chinesesimp>
+            <Turkish>Düşman Helikopter Temas Noktası</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Heli_Order">
+            <Original>Victor-One, Overlord. Enemy attack helicopters operating at tree-top level near grid %1. Hunt them down.</Original>
+            <English>Victor-One, Overlord. Enemy attack helicopters operating at tree-top level near grid %1. Hunt them down.</English>
+            <French>Victor-One, ici Overlord. Des hélicoptères de combat ennemis volent au ras des arbres près de la grille %1. Chassez-les et détruisez-les.</French>
+            <Spanish>Victor-One, aquí Overlord. Helicópteros enemigos operando al ras de los árboles en cuadrícula %1. Cácelos.</Spanish>
+            <German>Victor-One, hier Overlord. Feindliche Kampfhubschrauber fliegen im Wipfelflug bei Gitter %1. Jagen und vernichten Sie sie.</German>
+            <Italian>Victor-One, qui Overlord. Elicotteri d'attacco nemici operano a filo d'albero vicino alla griglia %1. Date loro la caccia.</Italian>
+            <Polish>Victor-One, tu Overlord. Śmigłowce bojowe wroga lecą tuż nad koronami drzew przy siatce %1. Zlikwiduj je.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Helicópteros inimigos voando a baixa altitude perto da grade %1. Cace-os.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Ударные вертолеты противника идут на бреющем у сетки %1. Устраните угрозу.</Russian>
+            <Czech>Victor-One, zde Overlord. Bojové vrtulníky nepřítele letí těsně nad stromy u sítě %1. Zničte je.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 적 공격 헬기가 그리드 %1 인근에서 초저공 비행 중입니다. 격추하십시오.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。グリッド %1 付近を超低空で飛行する敵攻撃ヘリを確認。直ちに急襲し撃墜せよ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。網格座標 %1 附近有敵武裝直升機正進行超低空掠地飛行。予以獵殺消滅。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。网格坐标 %1 附近有敌武装直升机正进行超低空掠地飞行。予以猎杀消灭。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. %1 koordinatı yakınlarında düşman taarruz helikopterleri alçaktan uçuyor. Vurun onları.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Heli_Done">
+            <Original>Victor-One, Overlord. Rotary threats down! Helicopter assets eradicated.</Original>
+            <English>Victor-One, Overlord. Rotary threats down! Helicopter assets eradicated.</English>
+            <French>Victor-One, ici Overlord. Menaces à voilure tournante abattues ! Hélicoptères ennemis anéantis.</French>
+            <Spanish>Victor-One, aquí Overlord. ¡Helicópteros abatidos! Amenaza erradicada.</Spanish>
+            <German>Victor-One, hier Overlord. Hubschrauber abgeschossen! Bedrohung ausgeschaltet.</German>
+            <Italian>Victor-One, qui Overlord. Elicotteri abbattuti! Minaccia nemica eliminata.</Italian>
+            <Polish>Victor-One, tu Overlord. Śmigłowce zestrzelone! Zagrożenie zlikwidowane.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Helicópteros abatidos! Ameaça erradicada.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Вертолеты сбиты! Воздушные цели уничтожены.</Russian>
+            <Czech>Victor-One, zde Overlord. Vrtulníky sestřeleny! Hrozba zlikvidována.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 회전익 위협 격추 완료! 적 헬기 세력이 전멸했습니다.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。敵回転翼機を全機撃墜！ヘリ戦力は壊滅した。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。敵旋翼機全數擊落！直升機威脅已消除。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。敌旋翼机全数击落！直升机威胁已消除。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Düşman helikopterleri düşürüldü! Döner kanat tehdidi bertaraf edildi.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_RTB_Title">
+            <Original>RTB - Return to Sahrani Airbase</Original>
+            <English>RTB - Return to Sahrani Airbase</English>
+            <French>RTB - Retour à la Base Aérienne de Sahrani</French>
+            <Spanish>RTB - Regreso a la base aérea de Sahrani</Spanish>
+            <German>RTB - Rückkehr zur Luftwaffenbasis Sahrani</German>
+            <Italian>RTB - Rientro alla base aerea di Sahrani</Italian>
+            <Polish>RTB - Powrót do bazy lotniczej Sahrani</Polish>
+            <Portuguese>RTB - Retorno à Base Aérea de Sahrani</Portuguese>
+            <Russian>RTB - Возвращение на авиабазу Сахрани</Russian>
+            <Czech>RTB - Návrat na leteckou základnu Sahrani</Czech>
+            <Korean>RTB - 사하라니 공군 기지 귀환</Korean>
+            <Japanese>RTB - サフラニ空軍基地への帰投</Japanese>
+            <Chinese>RTB - 返回萨拉尼空军基地</Chinese>
+            <Chinesesimp>RTB - 返回萨拉尼空军基地</Chinesesimp>
+            <Turkish>RTB - Sahrani Hava Üssüne Dönüş</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_RTB_Desc">
+            <Original>All assigned combat sortie objectives have been neutralized. Navigate back to Sahrani Airbase, configure your approach vector and land safely.</Original>
+            <English>All assigned combat sortie objectives have been neutralized. Navigate back to Sahrani Airbase, configure your approach vector and land safely.</English>
+            <French>Tous les objectifs de sortie de combat assignés ont été neutralisés. Rejoignez la base aérienne de Sahrani, configurez votre vecteur d'approche et atterrissez en toute sécurité.</French>
+            <Spanish>Todos los objetivos asignados han sido neutralizados. Regrese a la base de Sahrani y aterrice de forma segura.</Spanish>
+            <German>Alle zugewiesenen Kampfaufträge wurden neutralisiert. Fliegen Sie zur Basis Sahrani zurück und landen Sie sicher.</German>
+            <Italian>Tutti gli obiettivi assegnati sono stati neutralizzati. Tornate alla base di Sahrani e atterrate in sicurezza.</Italian>
+            <Polish>Wszystkie cele bojowe zostały zneutralizowane. Wróć do bazy Sahrani i bezpiecznie wyląduj.</Polish>
+            <Portuguese>Todos os objetivos de combate foram neutralizados. Retorne à Base de Sahrani e pouse com segurança.</Portuguese>
+            <Russian>Все назначенные боевые цели нейтрализованы. Возвращайтесь на авиабазу Сахрани и совершите безопасную посадку.</Russian>
+            <Czech>Všechny bojové cíle byly neutralizovány. Vraťte se na základnu Sahrani a bezpečně přistaňte.</Czech>
+            <Korean>할당된 모든 전투 목표가 무력화되었습니다. 사하라니 공군 기지로 복귀하여 안전하게 착륙하십시오.</Korean>
+            <Japanese>割り当てられたすべての戦闘目標は無力化されました。サフラニ空軍基地へ帰投し、安全に着陸してください。</Japanese>
+            <Chinese>所有指定戰鬥目標均已被摧毀。請返回薩拉尼空軍基地並安全降落。</Chinese>
+            <Chinesesimp>所有指定战斗目标均已被摧毁。请返回萨拉尼空军基地并安全降落。</Chinesesimp>
+            <Turkish>Verilen tüm muharebe hedefleri imha edildi. Sahrani Hava Üssüne dönün ve güvenli bir iniş yapın.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_RTB_Marker">
+            <Original>Sahrani Airbase (RTB)</Original>
+            <English>Sahrani Airbase (RTB)</English>
+            <French>Base Aérienne de Sahrani (RTB)</French>
+            <Spanish>Base aérea de Sahrani (RTB)</Spanish>
+            <German>Luftwaffenbasis Sahrani (RTB)</German>
+            <Italian>Base aerea di Sahrani (RTB)</Italian>
+            <Polish>Baza lotnicza Sahrani (RTB)</Polish>
+            <Portuguese>Base Aérea de Sahrani (RTB)</Portuguese>
+            <Russian>Авиабаза Сахрани (RTB)</Russian>
+            <Czech>Letecká základna Sahrani (RTB)</Czech>
+            <Korean>사하라니 공군 기지 (RTB)</Korean>
+            <Japanese>サフラニ空軍基地 (RTB)</Japanese>
+            <Chinese>薩拉尼空軍基地 (RTB)</Chinese>
+            <Chinesesimp>萨拉尼空军基地 (RTB)</Chinesesimp>
+            <Turkish>Sahrani Hava Üssü (RTB)</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_All_RTB">
+            <Original>Victor-One, Overlord. All operational sectors cleared. Outstanding performance. Return to base for debriefing.</Original>
+            <English>Victor-One, Overlord. All operational sectors cleared. Outstanding performance. Return to base for debriefing.</English>
+            <French>Victor-One, ici Overlord. Tous les secteurs opérationnels sont nettoyés. Performance remarquable. Retournez à la base pour le débriefing.</French>
+            <Spanish>Victor-One, aquí Overlord. Todos los sectores están despejados. Excelente trabajo. Regrese a la base.</Spanish>
+            <German>Victor-One, hier Overlord. Alle Einsatzsektoren gesichert. Hervorragende Leistung. Kehren Sie zur Basis zurück.</German>
+            <Italian>Victor-One, qui Overlord. Tutti i settori operativi sono liberi. Ottimo lavoro. Rientrate alla base.</Italian>
+            <Polish>Victor-One, tu Overlord. Wszystkie sektory operacyjne oczyszczone. Wspaniała robota. Wracajcie do bazy.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Todos os setores operacionais foram limpos. Excelente trabalho. Retorne à base.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Все секторы зачищены. Отличная работа. Возвращайтесь на базу.</Russian>
+            <Czech>Victor-One, zde Overlord. Všechny operační sektory vyčištěny. Skvělá práce. Návrat na základnu.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 모든 작전 구역이 정리되었습니다. 훌륭한 작전이었습니다. 기지로 귀환하십시오.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。全作戦空域を制圧した。見事な戦果だ。デブリーフィングのため帰投せよ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。所有作戰空域已肅清。表現優異。請返回基地接受任務彙報。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。所有作战空域已肃清。表现优异。请返回基地接受任务汇报。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Tüm operasyon bölgeleri temizlendi. Mükemmel görev. Brifing için üsse dönün.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Sea_Title">
+            <Original>Naval Strike - Intercept Hostile Flotilla</Original>
+            <English>Naval Strike - Intercept Hostile Flotilla</English>
+            <French>Frappe Navale - Intercepter la Flottille Ennemie</French>
+            <Spanish>Ataque naval - Interceptar flotilla enemiga</Spanish>
+            <German>Seeangriff - Feindliche Flottille abfangen</German>
+            <Italian>Attacco navale - Intercettare la flottiglia nemica</Italian>
+            <Polish>Uderzenie morskie - Przechwyć flotyllę wroga</Polish>
+            <Portuguese>Ataque Naval - Interceptar Flotilha Inimiga</Portuguese>
+            <Russian>Морской удар - Перехватить вражескую флотилию</Russian>
+            <Czech>Námořní úder - Přepadnout nepřátelskou flotilu</Czech>
+            <Korean>해상 타격 - 적 함대 요격</Korean>
+            <Japanese>対艦攻撃 - 敵小艦隊の邀撃</Japanese>
+            <Chinese>反艦作戰 - 攔截敵軍艦艇編隊</Chinese>
+            <Chinesesimp>反舰作战 - 拦截敌军舰艇编队</Chinesesimp>
+            <Turkish>Deniz Harekâtı - Düşman Filosunu Vurun</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Sea_Desc">
+            <Original>Hostile naval vessels and landing craft have been detected operating off the coast of Sahrani. Deliver anti-ship ordnance and sink all enemy vessels to protect allied shores.</Original>
+            <English>Hostile naval vessels and landing craft have been detected operating off the coast of Sahrani. Deliver anti-ship ordnance and sink all enemy vessels to protect allied shores.</English>
+            <French>Des bâtiments de guerre et chalands de débarquement ennemis manœuvrent au large des côtes de Sahrani. Engagez vos armements antinavires et coulez l'ensemble des navires ennemis pour protéger le littoral allié.</French>
+            <Spanish>Navíos enemigos operan frente a la costa de Sahrani. Emplee misiles antibuque y hunda todas las embarcaciones enemigas.</Spanish>
+            <German>Feindliche Schiffe operieren vor der Küste von Sahrani. Setzen Sie Anti-Schiff-Waffen ein und versenken Sie alle feindlichen Schiffe.</German>
+            <Italian>Navi da guerra nemiche manovrano al largo di Sahrani. Utilizzate armamenti antinave e affondate tutte le imbarcazioni nemiche.</Italian>
+            <Polish>Okręty wojenne wroga operują u wybrzeży Sahrani. Użyj uzbrojenia przeciwokrętowego i zatop wszystkie jednostki wroga.</Polish>
+            <Portuguese>Embarcações inimigas operam ao largo da costa de Sahrani. Empregue armamento antinavio e afunde todos os alvos navais.</Portuguese>
+            <Russian>Вражеские военные суда маневрируют у берегов Сахрани. Примените противокорабельное вооружение и потопите все суда противника.</Russian>
+            <Czech>Nepřátelská plavidla operují u pobřeží Sahrani. Použijte protilodní výzbroj a potopte všechny nepřátelské lodě.</Czech>
+            <Korean>사하라니 해안 인근에서 적 전투함과 상륙정이 포착되었습니다. 대함 무장을 투하하여 모든 적 함선을 침몰시키십시오.</Korean>
+            <Japanese>サフラニ沖合に敵戦闘艦艇および上陸用舟艇を確認。対艦兵装を投下し、すべての敵艦艇を撃沈せよ。</Japanese>
+            <Chinese>敵軍作戰艦艇與登陸艇正於薩拉尼外海活動。請發射反艦飛彈並擊沉所有敵艦以保衛海岸線。</Chinese>
+            <Chinesesimp>敌军作战舰艇与登陆艇正于萨拉尼外海活动。请发射反舰导弹并击沉所有敌舰以保卫海岸线。</Chinesesimp>
+            <Turkish>Sahrani kıyılarında düşman hücum botları ve çıkarma gemileri tespit edildi. Gemisavar mühimmatı kullanarak tüm hedefleri batırın.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Sea_Marker">
+            <Original>Hostile Naval Flotilla</Original>
+            <English>Hostile Naval Flotilla</English>
+            <French>Flottille Navale Ennemie</French>
+            <Spanish>Flotilla naval enemiga</Spanish>
+            <German>Feindliche Flottille</German>
+            <Italian>Flottiglia navale nemica</Italian>
+            <Polish>Flotylla morska wroga</Polish>
+            <Portuguese>Flotilha Naval Inimiga</Portuguese>
+            <Russian>Вражеская флотилия</Russian>
+            <Czech>Nepřátelská flotila</Czech>
+            <Korean>적 함대</Korean>
+            <Japanese>敵艦隊集結地点</Japanese>
+            <Chinese>敵軍艦艇編隊</Chinese>
+            <Chinesesimp>敌军舰艇编队</Chinesesimp>
+            <Turkish>Düşman Deniz Filosu</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Sea_Order">
+            <Original>Victor-One, Overlord. Hostile naval surface combatants detected at grid %1. Intercept and sink all vessels.</Original>
+            <English>Victor-One, Overlord. Hostile naval surface combatants detected at grid %1. Intercept and sink all vessels.</English>
+            <French>Victor-One, ici Overlord. Bâtiments navals ennemis détectés sur la grille %1. Interceptez et coulez tous les navires.</French>
+            <Spanish>Victor-One, aquí Overlord. Navíos enemigos detectados en cuadrícula %1. Intercepte y hunda todos los barcos.</Spanish>
+            <German>Victor-One, hier Overlord. Feindliche Überwassereinheiten bei Gitter %1 entdeckt. Schiffe abfangen und versenken.</German>
+            <Italian>Victor-One, qui Overlord. Unità navali nemiche rilevate nella griglia %1. Intercettate e affondate tutte le navi.</Italian>
+            <Polish>Victor-One, tu Overlord. Wrogie jednostki nawodne na siatce %1. Przechwyć i zatop wszystkie okręty.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Combatentes navais inimigos na grade %1. Intercepte e afunde todas as embarcações.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Вражеские надводные силы на сетке %1. Перехватить и потопить все корабли.</Russian>
+            <Czech>Victor-One, zde Overlord. Nepřátelské hladinové lodě na síti %1. Přepadnout a potopit všechna plavidla.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 그리드 %1에 적 해상 전투함 포착. 모든 함선을 요격하고 격침하십시오.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。グリッド %1 に敵水上戦闘艦艇を確認。すべての艦艇を邀撃・撃沈せよ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。網格座標 %1 發現敵水面作戰艦艇。實施攔截並擊沉全數目標。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。网格坐标 %1 发现敌水面作战舰艇。实施拦截并击沉全数目标。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. %1 koordinatında düşman deniz hedefleri tespit edildi. Hepsini batırın.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Sea_Done">
+            <Original>Victor-One, Overlord. Splash one flotilla! All naval targets neutralized. Great work.</Original>
+            <English>Victor-One, Overlord. Splash one flotilla! All naval targets neutralized. Great work.</English>
+            <French>Victor-One, ici Overlord. Flottille anéantie ! Tous les navires cibles sont neutralisés. Excellent travail.</French>
+            <Spanish>Victor-One, aquí Overlord. ¡Flotilla hundida! Objetivos neutralizados. Excelente trabajo.</Spanish>
+            <German>Victor-One, hier Overlord. Feindliche Flottille vernichtet! Alle Schiffe neutralisiert. Gute Arbeit.</German>
+            <Italian>Victor-One, qui Overlord. Flottiglia affondata! Tutti i bersagli navali neutralizzati. Ottimo lavoro.</Italian>
+            <Polish>Victor-One, tu Overlord. Flotylla zniszczona! Wszystkie cele zatopione. Świetna robota.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Flotilha afundada! Todos os alvos neutralizados. Bom trabalho.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Вражеская флотилия уничтожена! Все морские цели поражены. Отличная работа.</Russian>
+            <Czech>Victor-One, zde Overlord. Flotila zničena! Všechny námořní cíle neutralizovány. Skvělá práce.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 적 함대 침몰 확인! 모든 해상 목표가 격침되었습니다. 훌륭합니다.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。敵艦隊沈没確認！すべての海上班を無力化した。見事な戦果だ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。敵軍艦艇全數擊沉！所有海上目標已被肅清。幹得好。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。敌军舰艇全数击沉！所有海上目标已被肃清。干得好。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Düşman filosu battı! Tüm deniz hedefleri etkisiz hale getirildi. Harika iş.</Turkish>
+        </Key>
+    </Package>
     <Package name="UI">
         <Key ID="STR_ORA_MENU_TITLE">
             <Original>OPERATION ROYAL ALLIANCE — AIR FORCE COMMAND PANEL</Original>
@@ -1360,9 +2010,9 @@
             <Turkish>TAKTİK SEÇENEKLER</Turkish>
         </Key>
         <Key ID="STR_ORA_OPT_GUIDANCE">
-            <Original>Weapon guidance assist (Aide de tir)</Original>
-            <English>Weapon guidance assist (Aide de tir)</English>
-            <French>Téléguidage des tirs (Aide de tir)</French>
+            <Original>Weapon guidance assist</Original>
+            <English>Weapon guidance assist</English>
+            <French>Téléguidage des tirs (aide au tir)</French>
             <Spanish>Asistencia de guiado de armas</Spanish>
             <German>Waffen-Zielhilfesystem (Zielführung)</German>
             <Italian>Assistenza di guida al tiro</Italian>
@@ -1545,6 +2195,23 @@
             <Chinese>Victor-One 已就位。已載入 %1 架次飛行計畫。祝獵運亨通。</Chinese>
             <Chinesesimp>Victor-One 已就位。已载入 %1 架次飞行计划。祝猎运亨通。</Chinesesimp>
             <Turkish>Victor-One kontrollerde. %1 sorti için uçuş planı devrede. İyi avlar.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_HEADER_DEFEAT_CONDITION">
+            <Original>CRITICAL FAILURE CONDITION</Original>
+            <English>CRITICAL FAILURE CONDITION</English>
+            <French>CONDITION DE DÉFAITE IMPÉRATIVE</French>
+            <Spanish>CONDICIÓN CRÍTICA DE DERROTA</Spanish>
+            <German>KRITISCHE NIEDERLAGE-BEDINGUNG</German>
+            <Italian>CONDIZIONE CRITICA DI SCONFITTA</Italian>
+            <Polish>KRYTYCZNY WARUNEK PORAŻKI</Polish>
+            <Portuguese>CONDIÇÃO CRÍTICA DE DERROTA</Portuguese>
+            <Russian>КРИТИЧЕСКОЕ УСЛОВИЕ ПОРАЖЕНИЯ</Russian>
+            <Czech>KRITICKÁ PODMÍNKA PORÁŽKY</Czech>
+            <Korean>임무 실패 절대 조건</Korean>
+            <Japanese>作戦失敗の絶対条件</Japanese>
+            <Chinese>任務失敗絕對條件</Chinese>
+            <Chinesesimp>任务失败绝对条件</Chinesesimp>
+            <Turkish>KRİTİK BAŞARISIZLIK ŞARTI</Turkish>
         </Key>
         <Key ID="STR_LL_Radio_Speaker_Drone">
             <Original>Drone Operator</Original>

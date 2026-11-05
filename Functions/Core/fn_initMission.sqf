@@ -25,6 +25,15 @@ missionNamespace setVariable ["ORA_currentAlertLevel", 1, true];
 // Initialisation des compétences tactiques des IA
 [] call ORA_fnc_initSkills;
 
+// Harmonisation de la dotation RACS (INFO_EDITOR.md) pour toutes les unités indépendantes
+[] call ORA_fnc_applyRACSLoadout;
+
+// Surveillance anti-noyade pour les fantassins à pied
+[] spawn ORA_fnc_preventWater;
+
+// Lancement du ravitailleur C-130J en vol perpétuel
+[] spawn ORA_fnc_airRefuel;
+
 diag_log "[ORA-CORE] [OK] Initialisation du serveur terminée.";
 
 true

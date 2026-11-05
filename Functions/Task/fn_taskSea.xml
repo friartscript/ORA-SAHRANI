@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_Task_Sea_Title">
+            <Original>Naval Strike - Intercept Hostile Flotilla</Original>
+            <English>Naval Strike - Intercept Hostile Flotilla</English>
+            <French>Frappe Navale - Intercepter la Flottille Ennemie</French>
+            <Spanish>Ataque naval - Interceptar flotilla enemiga</Spanish>
+            <German>Seeangriff - Feindliche Flottille abfangen</German>
+            <Italian>Attacco navale - Intercettare la flottiglia nemica</Italian>
+            <Polish>Uderzenie morskie - Przechwyć flotyllę wroga</Polish>
+            <Portuguese>Ataque Naval - Interceptar Flotilha Inimiga</Portuguese>
+            <Russian>Морской удар - Перехватить вражескую флотилию</Russian>
+            <Czech>Námořní úder - Přepadnout nepřátelskou flotilu</Czech>
+            <Korean>해상 타격 - 적 함대 요격</Korean>
+            <Japanese>対艦攻撃 - 敵小艦隊の邀撃</Japanese>
+            <Chinese>反艦作戰 - 攔截敵軍艦艇編隊</Chinese>
+            <Chinesesimp>反舰作战 - 拦截敌军舰艇编队</Chinesesimp>
+            <Turkish>Deniz Harekâtı - Düşman Filosunu Vurun</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Sea_Desc">
+            <Original>Hostile naval vessels and landing craft have been detected operating off the coast of Sahrani. Deliver anti-ship ordnance and sink all enemy vessels to protect allied shores.</Original>
+            <English>Hostile naval vessels and landing craft have been detected operating off the coast of Sahrani. Deliver anti-ship ordnance and sink all enemy vessels to protect allied shores.</English>
+            <French>Des bâtiments de guerre et chalands de débarquement ennemis manœuvrent au large des côtes de Sahrani. Engagez vos armements antinavires et coulez l'ensemble des navires ennemis pour protéger le littoral allié.</French>
+            <Spanish>Navíos enemigos operan frente a la costa de Sahrani. Emplee misiles antibuque y hunda todas las embarcaciones enemigas.</Spanish>
+            <German>Feindliche Schiffe operieren vor der Küste von Sahrani. Setzen Sie Anti-Schiff-Waffen ein und versenken Sie alle feindlichen Schiffe.</German>
+            <Italian>Navi da guerra nemiche manovrano al largo di Sahrani. Utilizzate armamenti antinave e affondate tutte le imbarcazioni nemiche.</Italian>
+            <Polish>Okręty wojenne wroga operują u wybrzeży Sahrani. Użyj uzbrojenia przeciwokrętowego i zatop wszystkie jednostki wroga.</Polish>
+            <Portuguese>Embarcações inimigas operam ao largo da costa de Sahrani. Empregue armamento antinavio e afunde todos os alvos navais.</Portuguese>
+            <Russian>Вражеские военные суда маневрируют у берегов Сахрани. Примените противокорабельное вооружение и потопите все суда противника.</Russian>
+            <Czech>Nepřátelská plavidla operují u pobřeží Sahrani. Použijte protilodní výzbroj a potopte všechny nepřátelské lodě.</Czech>
+            <Korean>사하라니 해안 인근에서 적 전투함과 상륙정이 포착되었습니다. 대함 무장을 투하하여 모든 적 함선을 침몰시키십시오.</Korean>
+            <Japanese>サフラニ沖合に敵戦闘艦艇および上陸用舟艇を確認。対艦兵装を投下し、すべての敵艦艇を撃沈せよ。</Japanese>
+            <Chinese>敵軍作戰艦艇與登陸艇正於薩拉尼外海活動。請發射反艦飛彈並擊沉所有敵艦以保衛海岸線。</Chinese>
+            <Chinesesimp>敌军作战舰艇与登陆艇正于萨拉尼外海活动。请发射反舰导弹并击沉所有敌舰以保卫海岸线。</Chinesesimp>
+            <Turkish>Sahrani kıyılarında düşman hücum botları ve çıkarma gemileri tespit edildi. Gemisavar mühimmatı kullanarak tüm hedefleri batırın.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Sea_Marker">
+            <Original>Hostile Naval Flotilla</Original>
+            <English>Hostile Naval Flotilla</English>
+            <French>Flottille Navale Ennemie</French>
+            <Spanish>Flotilla naval enemiga</Spanish>
+            <German>Feindliche Flottille</German>
+            <Italian>Flottiglia navale nemica</Italian>
+            <Polish>Flotylla morska wroga</Polish>
+            <Portuguese>Flotilha Naval Inimiga</Portuguese>
+            <Russian>Вражеская флотилия</Russian>
+            <Czech>Nepřátelská flotila</Czech>
+            <Korean>적 함대</Korean>
+            <Japanese>敵艦隊集結地点</Japanese>
+            <Chinese>敵軍艦艇編隊</Chinese>
+            <Chinesesimp>敌军舰艇编队</Chinesesimp>
+            <Turkish>Düşman Deniz Filosu</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Sea_Order">
+            <Original>Victor-One, Overlord. Hostile naval surface combatants detected at grid %1. Intercept and sink all vessels.</Original>
+            <English>Victor-One, Overlord. Hostile naval surface combatants detected at grid %1. Intercept and sink all vessels.</English>
+            <French>Victor-One, ici Overlord. Bâtiments navals ennemis détectés sur la grille %1. Interceptez et coulez tous les navires.</French>
+            <Spanish>Victor-One, aquí Overlord. Navíos enemigos detectados en cuadrícula %1. Intercepte y hunda todos los barcos.</Spanish>
+            <German>Victor-One, hier Overlord. Feindliche Überwassereinheiten bei Gitter %1 entdeckt. Schiffe abfangen und versenken.</German>
+            <Italian>Victor-One, qui Overlord. Unità navali nemiche rilevate nella griglia %1. Intercettate e affondate tutte le navi.</Italian>
+            <Polish>Victor-One, tu Overlord. Wrogie jednostki nawodne na siatce %1. Przechwyć i zatop wszystkie okręty.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Combatentes navais inimigos na grade %1. Intercepte e afunde todas as embarcações.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Вражеские надводные силы на сетке %1. Перехватить и потопить все корабли.</Russian>
+            <Czech>Victor-One, zde Overlord. Nepřátelské hladinové lodě na síti %1. Přepadnout a potopit všechna plavidla.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 그리드 %1에 적 해상 전투함 포착. 모든 함선을 요격하고 격침하십시오.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。グリッド %1 に敵水上戦闘艦艇を確認。すべての艦艇を邀撃・撃沈せよ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。網格座標 %1 發現敵水面作戰艦艇。實施攔截並擊沉全數目標。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。网格坐标 %1 发现敌水面作战舰艇。实施拦截并击沉全数目标。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. %1 koordinatında düşman deniz hedefleri tespit edildi. Hepsini batırın.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Sea_Done">
+            <Original>Victor-One, Overlord. Splash one flotilla! All naval targets neutralized. Great work.</Original>
+            <English>Victor-One, Overlord. Splash one flotilla! All naval targets neutralized. Great work.</English>
+            <French>Victor-One, ici Overlord. Flottille anéantie ! Tous les navires cibles sont neutralisés. Excellent travail.</French>
+            <Spanish>Victor-One, aquí Overlord. ¡Flotilla hundida! Objetivos neutralizados. Excelente trabajo.</Spanish>
+            <German>Victor-One, hier Overlord. Feindliche Flottille vernichtet! Alle Schiffe neutralisiert. Gute Arbeit.</German>
+            <Italian>Victor-One, qui Overlord. Flottiglia affondata! Tutti i bersagli navali neutralizzati. Ottimo lavoro.</Italian>
+            <Polish>Victor-One, tu Overlord. Flotylla zniszczona! Wszystkie cele zatopione. Świetna robota.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Flotilha afundada! Todos os alvos neutralizados. Bom trabalho.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Вражеская флотилия уничтожена! Все морские цели поражены. Отличная работа.</Russian>
+            <Czech>Victor-One, zde Overlord. Flotila zničena! Všechny námořní cíle neutralizovány. Skvělá práce.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 적 함대 침몰 확인! 모든 해상 목표가 격침되었습니다. 훌륭합니다.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。敵艦隊沈没確認！すべての海上班を無力化した。見事な戦果だ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。敵軍艦艇全數擊沉！所有海上目標已被肅清。幹得好。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。敌军舰艇全数击沉！所有海上目标已被肃清。干得好。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Düşman filosu battı! Tüm deniz hedefleri etkisiz hale getirildi. Harika iş.</Turkish>
+        </Key>
+</Keys>

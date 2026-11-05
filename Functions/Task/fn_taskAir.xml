@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_Task_Air_Title">
+            <Original>Air Superiority - Intercept Hostile Bandits</Original>
+            <English>Air Superiority - Intercept Hostile Bandits</English>
+            <French>Supériorité Aérienne - Intercepter les Chasseurs Ennemis</French>
+            <Spanish>Superioridad aérea - Interceptar cazas enemigos</Spanish>
+            <German>Luftüberlegenheit - Feindliche Abfangjäger bekämpfen</German>
+            <Italian>Superiorità aerea - Intercettare i caccia nemici</Italian>
+            <Polish>Przewaga w powietrzu - Przechwyć wrogie myśliwce</Polish>
+            <Portuguese>Superioridade Aérea - Interceptar Caças Inimigos</Portuguese>
+            <Russian>Господство в воздухе - Перехватить вражеские истребители</Russian>
+            <Czech>Vzdušná převaha - Přepadnout nepřátelské stíhačky</Czech>
+            <Korean>제공권 장악 - 적 전투기 요격</Korean>
+            <Japanese>制空戦闘 - 敵戦闘機隊の要撃</Japanese>
+            <Chinese>空中優勢 - 截擊敵軍戰機</Chinese>
+            <Chinesesimp>空中优势 - 截击敌军战机</Chinesesimp>
+            <Turkish>Hava Üstünlüğü - Düşman Avcı Uçaklarını İmha Edin</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Air_Desc">
+            <Original>Hostile strike aircraft have violated Sahrani airspace. Ingress, establish radar lock, and splash all hostile bandits to secure air superiority.</Original>
+            <English>Hostile strike aircraft have violated Sahrani airspace. Ingress, establish radar lock, and splash all hostile bandits to secure air superiority.</English>
+            <French>Des chasseurs de combat ennemis violent l'espace aérien de Sahrani. Accélérez, verrouillez les cibles au radar et abattez tous les bandits pour garantir la supériorité aérienne.</French>
+            <Spanish>Cazas enemigos han violado el espacio aéreo de Sahrani. Fije los blancos en el radar y derribe todos los aviones enemigos.</Spanish>
+            <German>Feindliche Kampfflugzeuge haben den Luftraum von Sahrani verletzt. Zielerfassung durchführen und alle feindlichen Flugzeuge abschießen.</German>
+            <Italian>Caccia nemici hanno violato lo spazio aereo di Sahrani. Agganciate i bersagli al radar e abbattete tutti i caccia ostili.</Italian>
+            <Polish>Myśliwce wroga naruszyły przestrzeń powietrzną Sahrani. Zablokuj cele na radarze i zestrzel wszystkie wrogie samoloty.</Polish>
+            <Portuguese>Caças de ataque inimigos violaram o espaço aéreo de Sahrani. Trave alvos no radar e abata todos os bandidos.</Portuguese>
+            <Russian>Боевые самолеты противника нарушили воздушное пространство Сахрани. Захватите цели радаром и сбейте все вражеские истребители.</Russian>
+            <Czech>Nepřátelské bojové letouny narušily vzdušný prostor Sahrani. Zaměřte radarem a sestřelte všechna nepřátelská letadla.</Czech>
+            <Korean>적 전투기가 사하라니 영공을 침범했습니다. 레이더 락온을 확보하고 모든 적기를 격추하여 제공권을 장악하십시오.</Korean>
+            <Japanese>敵戦闘機がサフラニ領空を侵犯した。レーダーロックを捕捉し、すべての敵機を撃墜して制空権を確保せよ。</Japanese>
+            <Chinese>敵軍戰機已侵入薩拉尼領空。請切入戰鬥空域，雷達鎖定並擊落所有敵機以奪取制空權。</Chinese>
+            <Chinesesimp>敌军战机已侵入萨拉尼领空。请切入战斗空域，雷达锁定并击落所有敌机以夺取制空权。</Chinesesimp>
+            <Turkish>Düşman savaş uçakları Sahrani hava sahasını ihlal etti. Radarla kilitlenin ve tüm düşman uçaklarını düşürün.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Air_Marker">
+            <Original>Hostile Air Intercept</Original>
+            <English>Hostile Air Intercept</English>
+            <French>Interception Aérienne Ennemie</French>
+            <Spanish>Intercepción aérea enemiga</Spanish>
+            <German>Feindlicher Luftkontakt</German>
+            <Italian>Intercettazione aerea nemica</Italian>
+            <Polish>Przechwycenie wrogiego lotnictwa</Polish>
+            <Portuguese>Intercepção Aérea Inimiga</Portuguese>
+            <Russian>Воздушный перехват</Russian>
+            <Czech>Vzdušný přepad</Czech>
+            <Korean>적기 요격 지점</Korean>
+            <Japanese>敵要撃空域</Japanese>
+            <Chinese>空中截擊空域</Chinese>
+            <Chinesesimp>空中截击空域</Chinesesimp>
+            <Turkish>Düşman Hava Önleme Noktası</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Air_Order">
+            <Original>Victor-One, Overlord. Bandits inbound at Angels 15, vector grid %1. Engage and destroy all hostile aircraft.</Original>
+            <English>Victor-One, Overlord. Bandits inbound at Angels 15, vector grid %1. Engage and destroy all hostile aircraft.</English>
+            <French>Victor-One, ici Overlord. Bandits en approche à 1500 mètres, cap sur la grille %1. Engagez et détruisez tous les aéronefs ennemis.</French>
+            <Spanish>Victor-One, aquí Overlord. Bandidos aproximándose a 1500 metros, rumbo a cuadrícula %1. Destruya todos los cazas.</Spanish>
+            <German>Victor-One, hier Overlord. Feindkontakte im Anflug auf 1500 Meter, Vektor Gitter %1. Feindflugzeuge vernichten.</German>
+            <Italian>Victor-One, qui Overlord. Banditi in avvicinamento a quota 1500, rotta sulla griglia %1. Distruggete tutti i velivoli ostili.</Italian>
+            <Polish>Victor-One, tu Overlord. Wrogie myśliwce zbliżają się na 1500m, kierunek siatka %1. Zniszcz wszystkie samoloty wroga.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Bandidos a caminho a 1500 metros, vetor grade %1. Destrua todas as aeronaves inimigas.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Бандиты на высоте 1500 метров, курс на сетку %1. Уничтожьте все вражеские самолеты.</Russian>
+            <Czech>Victor-One, zde Overlord. Nepřátelé se blíží ve výšce 1500 metrů, vektor síť %1. Zničte všechna nepřátelská letadla.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 고도 1500m에서 적기 접근 중, 벡터 그리드 %1. 모든 적 항공기를 격추하십시오.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。高度1500mにて敵戦闘機接近中、目標グリッド %1。全敵機を撃墜せよ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。敵機正於高度 1500 米接近，航向網格 %1。交戰並擊毀所有敵機。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。敌机正于高度 1500 米接近，航向网格 %1。交战并击毁所有敌机。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Düşman uçakları 1500 metre irtifada yaklaşıyor, rota %1. Hepsini imha edin.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_Air_Done">
+            <Original>Victor-One, Overlord. Scratch the bandits! Air threat eliminated. Skies are clear.</Original>
+            <English>Victor-One, Overlord. Scratch the bandits! Air threat eliminated. Skies are clear.</English>
+            <French>Victor-One, ici Overlord. Bandits au tapis ! Menace aérienne éliminée. Le ciel est dégagé.</French>
+            <Spanish>Victor-One, aquí Overlord. ¡Bandidos derribados! Amenaza aérea eliminada.</Spanish>
+            <German>Victor-One, hier Overlord. Feindflugzeuge abgeschossen! Luftraum ist gesichert.</German>
+            <Italian>Victor-One, qui Overlord. Banditi abbattuti! Minaccia aerea eliminata. Cieli liberi.</Italian>
+            <Polish>Victor-One, tu Overlord. Bandyci zestrzeleni! Zagrożenie zlikwidowane. Niebo jest czyste.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Bandidos abatidos! Ameaça eliminada. Céus limpos.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Бандиты сбиты! Воздушная угроза устранена. Небо чистое.</Russian>
+            <Czech>Victor-One, zde Overlord. Bandité sestřeleni! Vzdušná hrozba zlikvidována. Nebe je čisté.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 적기 격추 완료! 공중 위협이 제거되었습니다. 상공이 안전합니다.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。敵機撃墜！空中の脅威は排除された。空域の安全を確保。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。敵機已全數擊落！空中威脅肅清。空域已重獲安全。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。敌机已全数击落！空中威胁肃清。空域已重获安全。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Düşman düşürüldü! Hava tehdidi ortadan kaldırıldı. Gökyüzü temiz.</Turkish>
+        </Key>
+</Keys>

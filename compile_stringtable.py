@@ -46,7 +46,7 @@ def main():
                     try:
                         key_tree = ET.parse(xml_path)
                         root = key_tree.getroot()
-                        keys = root.findall('.//Key') if root.tag == 'Keys' else [root] if root.tag == 'Key' else []
+                        keys = root.findall('.//Key') if root.tag != 'Key' else [root]
                         for key in keys:
                             package.append(key)
                             keys_added = True

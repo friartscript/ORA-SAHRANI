@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_TANKER_CALLSIGN">
+        <Original>Tanker Rodeo-1</Original>
+        <English>Tanker Rodeo-1</English>
+        <French>Ravitailleur Rodeo-1</French>
+        <Spanish>Nodriza Rodeo-1</Spanish>
+        <German>Tanker Rodeo-1</German>
+        <Italian>Aerocisterna Rodeo-1</Italian>
+        <Polish>Tankowiec Rodeo-1</Polish>
+        <Portuguese>Reabastecedor Rodeo-1</Portuguese>
+        <Russian>Заправщик Родео-1</Russian>
+        <Czech>Tanker Rodeo-1</Czech>
+        <Korean>급유기 로데오-1</Korean>
+        <Japanese>給油機 ロデオ-1</Japanese>
+        <Chinese>加油機 Rodeo-1</Chinese>
+        <Chinesesimp>加油机 Rodeo-1</Chinesesimp>
+        <Turkish>İkmal Uçağı Rodeo-1</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TANKER_MARKER">
+        <Original>Refuel Tanker C-130J (2000m)</Original>
+        <English>Refuel Tanker C-130J (2000m)</English>
+        <French>Ravitailleur C-130J (2000m)</French>
+        <Spanish>Avión cisterna C-130J (2000m)</Spanish>
+        <German>Tankflugzeug C-130J (2000m)</German>
+        <Italian>Aerocisterna C-130J (2000m)</Italian>
+        <Polish>Tankowiec C-130J (2000m)</Polish>
+        <Portuguese>Reabastecedor C-130J (2000m)</Portuguese>
+        <Russian>Заправщик C-130J (2000м)</Russian>
+        <Czech>Tankovací C-130J (2000m)</Czech>
+        <Korean>공중급유기 C-130J (2000m)</Korean>
+        <Japanese>空中給油機 C-130J (2000m)</Japanese>
+        <Chinese>空中加油機 C-130J (2000公尺)</Chinese>
+        <Chinesesimp>空中加油机 C-130J (2000米)</Chinesesimp>
+        <Turkish>Yakıt İkmal C-130J (2000m)</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TANKER_APPROACH">
+        <Original>Tanker in visual range (%1m). Approach within 200m to refuel.</Original>
+        <English>Tanker in visual range (%1m). Approach within 200m to refuel.</English>
+        <French>Ravitailleur en visuel (%1m). Rapprochez-vous à moins de 200m.</French>
+        <Spanish>Nodriza a la vista (%1m). Acérquese a menos de 200m para repostar.</Spanish>
+        <German>Tanker in Sicht (%1m). Auf unter 200m nähern zum Auftanken.</German>
+        <Italian>Aerocisterna in vista (%1m). Avvicinati a meno di 200m per rifornire.</Italian>
+        <Polish>Tankowiec w zasięgu wzroku (%1m). Zbliż się na odległość poniżej 200m.</Polish>
+        <Portuguese>Reabastecedor à vista (%1m). Aproxime-se a menos de 200m para reabastecer.</Portuguese>
+        <Russian>Заправщик в поле зрения (%1м). Подойдите ближе 200м для дозаправки.</Russian>
+        <Czech>Tanker v dohledu (%1m). Přibližte se na méně než 200m pro doplnění.</Czech>
+        <Korean>급유기 시야 확보 (%1m). 200m 이내로 접근하여 보급을 받으십시오.</Korean>
+        <Japanese>給油機視認 (%1m)。補給のため200m以内に接近してください。</Japanese>
+        <Chinese>已目視加油機（%1公尺）。請接近至200公尺以內進行整補。</Chinese>
+        <Chinesesimp>已目视加油机（%1米）。请接近至200米以内进行整补。</Chinesesimp>
+        <Turkish>İkmal uçağı menzilde (%1m). İkmal için 200m altına yaklaşın.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TANKER_SUCCESS_MSG">
+        <Original>Contact established. Refueling and rearming complete! All systems 100%.</Original>
+        <English>Contact established. Refueling and rearming complete! All systems 100%.</English>
+        <French>Contact établi. Ravitaillement et réarmement terminés ! Systèmes à 100%.</French>
+        <Spanish>¡Contacto establecido! Repostaje y rearme completados al 100%.</Spanish>
+        <German>Kontakt hergestellt. Betankung und Aufmunitionierung abgeschlossen! 100%.</German>
+        <Italian>Contatto stabilito. Rifornimento e riarmo completati al 100%!</Italian>
+        <Polish>Kontakt nawiązany. Tankowanie i dozbrojenie ukończone na 100%!</Polish>
+        <Portuguese>Contato estabelecido. Reabastecimento e rearmamento concluídos a 100%!</Portuguese>
+        <Russian>Контакт установлен. Заправка и пополнение боезапаса завершены на 100%!</Russian>
+        <Czech>Spojení navázáno. Dotankování a přezbrojení dokončeno na 100%!</Czech>
+        <Korean>접촉 완료. 연료 보급 및 무장 재보급 100% 완료!</Korean>
+        <Japanese>コンタクト完了。燃料給油およびミサイル再装填完了（全系統100%）！</Japanese>
+        <Chinese>對接完成。加油與飛彈掛載補給完畢！全系統已恢復100%。</Chinese>
+        <Chinesesimp>对接完成。加油与导弹挂载补给完毕！全系统已恢复100%。</Chinesesimp>
+        <Turkish>Bağlantı kuruldu. İkmal ve yeniden silahlanma %100 tamamlandı!</Turkish>
+    </Key>
+    <Key ID="STR_ORA_TANKER_REPLENISHED">
+        <Original>REFUEL &amp; REARM COMPLETE: Fuel 100% | Armor 100% | Ordnance 100%</Original>
+        <English>REFUEL &amp; REARM COMPLETE: Fuel 100% | Armor 100% | Ordnance 100%</English>
+        <French>RAVITAILLEMENT TERMINÉ : Carburant 100% | Intégrité 100% | Missiles 100%</French>
+        <Spanish>REPOSTAJE COMPLETO: Combustible 100% | Blindaje 100% | Misiles 100%</Spanish>
+        <German>AUFTANKEN ABGESCHLOSSEN: Treibstoff 100% | Rumpf 100% | Waffen 100%</German>
+        <Italian>RIFORNIMENTO COMPLETATO: Carburante 100% | Integrità 100% | Missili 100%</Italian>
+        <Polish>UZUPEŁNIONO: Paliwo 100% | Kadłub 100% | Uzbrojenie 100%</Polish>
+        <Portuguese>REABASTECIMENTO CONCLUÍDO: Combustível 100% | Blindagem 100% | Mísseis 100%</Portuguese>
+        <Russian>ДОЗАПРАВКА ЗАВЕРШЕНА: Топливо 100% | Прочность 100% | Ракеты 100%</Russian>
+        <Czech>DOPLNĚNÍ DOKONČENO: Palivo 100% | Pancíř 100% | Munice 100%</Czech>
+        <Korean>보급 완료: 연료 100% | 기체 100% | 미사일 무장 100%</Korean>
+        <Japanese>補給完了: 燃料 100% | 機体耐久 100% | 兵装 100%</Japanese>
+        <Chinese>補給完成：燃油 100% | 機體完整度 100% | 飛彈武裝 100%</Chinese>
+        <Chinesesimp>补给完成：燃油 100% | 机体完整度 100% | 导弹武装 100%</Chinesesimp>
+        <Turkish>İKMAL TAMAMLANDI: Yakıt %100 | Gövde %100 | Mühimmat %100</Turkish>
+    </Key>
+</Keys>

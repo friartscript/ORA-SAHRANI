@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_RACS_LOADOUT_NAME">
+        <Original>RACS Standard Infantry Loadout</Original>
+        <English>RACS Standard Infantry Loadout</English>
+        <French>Dotation d'Infanterie Standard RACS</French>
+        <Spanish>Equipamiento Estándar de Infantería RACS</Spanish>
+        <German>RACS-Standard-Infanterieausrüstung</German>
+        <Italian>Dotazione Standard Fanteria RACS</Italian>
+        <Polish>Standardowe Wyposażenie Piechoty RACS</Polish>
+        <Portuguese>Equipamento Padrão de Infantaria RACS</Portuguese>
+        <Russian>Стандартное снаряжение пехоты RACS</Russian>
+        <Czech>Standardní výstroj pěchoty RACS</Czech>
+        <Korean>RACS 표준 보병 무장</Korean>
+        <Japanese>RACS標準歩兵装備</Japanese>
+        <Chinese>RACS 標準步兵裝備</Chinese>
+        <Chinesesimp>RACS 标准步兵装备</Chinesesimp>
+        <Turkish>RACS Standart Piyade Teçhizatı</Turkish>
+    </Key>
+    <Key ID="STR_ORA_RACS_LOADOUT_DESC">
+        <Original>Official combat uniform, Ops-Core helmet, JPC vest, night vision, and ammunition assigned to Kingdom of Sahrani ground units.</Original>
+        <English>Official combat uniform, Ops-Core helmet, JPC vest, night vision, and ammunition assigned to Kingdom of Sahrani ground units.</English>
+        <French>Treillis officiel, casque Ops-Core, gilet JPC, vision nocturne et munitions assignés aux unités au sol du Royaume de Sahrani.</French>
+        <Spanish>Uniforme oficial, casco Ops-Core, chaleco JPC, visión nocturna y municiones asignadas al ejército de Sahrani.</Spanish>
+        <German>Offizielle Uniform, Ops-Core-Helm, JPC-Weste, Nachtsichtgerät und Munition für die Sahrani-Bodentruppen.</German>
+        <Italian>Uniforme ufficiale, elmetto Ops-Core, giubbotto JPC, visore notturno e munizioni per le truppe di terra di Sahrani.</Italian>
+        <Polish>Oficjalny mundur, hełm Ops-Core, kamizelka JPC, noktowizja i amunicja dla wojsk lądowych Sahrani.</Polish>
+        <Portuguese>Farda oficial, capacete Ops-Core, colete JPC, visão noturna e munições atribuídas às tropas de Sahrani.</Portuguese>
+        <Russian>Официальная форма, шлем Ops-Core, бронежилет JPC, ПНВ и боеприпасы для сухопутных сил Сахрани.</Russian>
+        <Czech>Oficiální uniforma, přilba Ops-Core, vesta JPC, noční vidění a munice pro pozemní síly Sahrani.</Czech>
+        <Korean>사라니 왕국 지상군에 지급되는 공식 군복, 옵스코어 헬멧, JPC 방탄복, 야간투시경 및 탄약 세트.</Korean>
+        <Japanese>サフラニ王国地上部隊に支給される制式迷彩服、Ops-Coreヘルメット、JPCベスト、暗視装置および弾薬。</Japanese>
+        <Chinese>配發予薩赫拉尼王國軍地面部隊的制式作戰服、Ops-Core 頭盔、JPC 防彈背心、夜視鏡與彈藥。</Chinese>
+        <Chinesesimp>配发予萨赫拉尼王国军地面部队的制式作战服、Ops-Core 头盔、JPC 防弹背心、夜视镜与弹药。</Chinesesimp>
+        <Turkish>Sahrani Krallığı kara birliklerine tahsis edilen resmi muharebe üniforması, Ops-Core kask, JPC yelek ve mühimmat.</Turkish>
+    </Key>
+</Keys>
+

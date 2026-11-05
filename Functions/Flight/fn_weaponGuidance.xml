@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_GUIDANCE_ACTIVE">
+        <Original>Weapon Guidance Assist: Systems Online</Original>
+        <English>Weapon Guidance Assist: Systems Online</English>
+        <French>Aide de Tir : Systèmes de Guidage Actifs</French>
+        <Spanish>Asistencia de disparo: Sistemas activos</Spanish>
+        <German>Waffenführungshilfe: Systeme online</German>
+        <Italian>Assistenza di tiro: Sistemi attivi</Italian>
+        <Polish>Wspomaganie celowania: Systemy aktywne</Polish>
+        <Portuguese>Assistência de Disparo: Sistemas Ativos</Portuguese>
+        <Russian>Помощь в наведении оружия: Системы активны</Russian>
+        <Czech>Podpora navádění zbraní: Systémy aktivní</Czech>
+        <Korean>무기 유도 보조: 시스템 활성화</Korean>
+        <Japanese>兵装誘導アシスト: システム起動</Japanese>
+        <Chinese>武器導引輔助：系統已啟動</Chinese>
+        <Chinesesimp>武器导引辅助：系统已启动</Chinesesimp>
+        <Turkish>Silah Güdüm Desteği: Sistemler Devrede</Turkish>
+    </Key>
+    <Key ID="STR_ORA_GUIDANCE_ENGAGED">
+        <Original>Missile guidance initiated (5s post-drop curve)</Original>
+        <English>Missile guidance initiated (5s post-drop curve)</English>
+        <French>Guidage missile initié (inflexion douce après 5s)</French>
+        <Spanish>Guía de misil iniciada (curva suave tras 5 s)</Spanish>
+        <German>Raketenlenkung initiiert (sanfte Kurve nach 5s)</German>
+        <Italian>Guida missile avviata (curva graduale dopo 5s)</Italian>
+        <Polish>Naprowadzanie rakiety rozpoczęte (korekta po 5s)</Polish>
+        <Portuguese>Guiamento de míssil iniciado (curva suave após 5s)</Portuguese>
+        <Russian>Наведение ракеты активировано (плавная дуга после 5 с)</Russian>
+        <Czech>Navádění střely zahájeno (mírná křivka po 5 s)</Czech>
+        <Korean>미사일 유도 시작 (5초 후 완만한 궤적 수정)</Korean>
+        <Japanese>ミサイル誘導開始（投下後5秒・緩やかな弾道補正）</Japanese>
+        <Chinese>飛彈導引已啟動（投彈5秒後平滑修正軌跡）</Chinese>
+        <Chinesesimp>导弹导引已启动（投弹5秒后平滑修正轨迹）</Chinesesimp>
+        <Turkish>Füze güdümü başladı (5 sn sonra yumuşak kavis)</Turkish>
+    </Key>
+</Keys>
+

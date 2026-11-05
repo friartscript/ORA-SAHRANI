@@ -102,10 +102,9 @@ if (_mode isEqualTo "OPEN") exitWith {
     } forEach _countIDCs;
 
     // 5. Options Tactiques (cochables librement)
-    // 7120: Téléguidage des tirs | 7121: Autres alliés | 7122: Éjection = Perdu
+    // 7120: Téléguidage des tirs | 7121: Autres présences alliées
     (_display displayCtrl 7120) cbSetChecked false;
     (_display displayCtrl 7121) cbSetChecked true;
-    (_display displayCtrl 7122) cbSetChecked false;
 
     // 6. Environnement & Météo
     private _currentHour = date select 3;
@@ -145,7 +144,7 @@ if (_mode isEqualTo "OPEN") exitWith {
     private _mapCtrl = _display displayCtrl 7302;
     if (!isNull _mapCtrl) then {
         private _centerPos = if (!isNull _plane) then { getPosATL _plane } else { [10000, 10000, 0] };
-        _mapCtrl ctrlMapAnimAdd [0, 0.18, _centerPos];
+        _mapCtrl ctrlMapAnimAdd [0, 0.22, _centerPos];
         ctrlMapAnimCommit _mapCtrl;
     };
 
@@ -196,17 +195,15 @@ if (_mode isEqualTo "LAUNCH") exitWith {
     // Lecture des options tactiques
     private _optGuidance = cbChecked (_display displayCtrl 7120);
     private _optAllies   = cbChecked (_display displayCtrl 7121);
-    private _optNoEject  = cbChecked (_display displayCtrl 7122);
 
     // Enregistrement des paramètres dans l'état global de la mission
     missionNamespace setVariable ["ORA_setting_missionCount", _missionCount, true];
     missionNamespace setVariable ["ORA_setting_guidanceAssist", _optGuidance, true];
     missionNamespace setVariable ["ORA_setting_alliedPresence", _optAllies, true];
-    missionNamespace setVariable ["ORA_setting_noEjectFail", _optNoEject, true];
 
     diag_log format [
-        "[ORA-LAUNCH] Missions: %1 | Guidage: %2 | Alliés: %3 | Pas d'éjection: %4",
-        _missionCount, _optGuidance, _optAllies, _optNoEject
+        "[ORA-LAUNCH] Missions: %1 | Guidage: %2 | Alliés: %3",
+        _missionCount, _optGuidance, _optAllies
     ];
 
     // Fermeture du dialogue
@@ -228,20 +225,11 @@ if (_mode isEqualTo "LAUNCH") exitWith {
         player moveInDriver _plane;
         _plane engineOn true;
 
-        // Si l'option "Éjection interdite" est cochée, attacher l'interdiction
-        if (_optNoEject) then {
-            _plane addEventHandler ["GetOut", {
-                params ["_vehicle", "_role", "_unit", "_turret"];
-                if (_unit == player && {alive player}) then {
-                    [
-                        "COMMAND",
-                        localize "STR_ORA_ALERT_EJECT_FAILED_MSG"
-                    ] call ORA_fnc_radioMsg;
+        // Armement impératif de la surveillance de cockpit (Condition de défaite systématique)
+        [player, _plane] call ORA_fnc_cockpitEgressForfeit;
 
-                    ["EndPlaneLost", false, 4] spawn BIS_fnc_endMission;
-                };
-            }];
-        };
+        // Activation de l'aide au guidage d'armement selon le choix du joueur (IDC 7120)
+        [_plane, _optGuidance] call ORA_fnc_weaponGuidance;
     } else {
         diag_log "[ORA-LAUNCH] [AVERTISSEMENT] plane_0 est introuvable pour l'insertion en cockpit.";
     };
@@ -251,6 +239,13 @@ if (_mode isEqualTo "LAUNCH") exitWith {
         "ATC",
         format [localize "STR_ORA_RADIO_MISSION_LAUNCHED", _missionCount]
     ] call ORA_fnc_radioMsg;
+
+    // Démarrage automatique de la campagne de sorties opérationnelles
+    [_missionCount] spawn {
+        params ["_count"];
+        sleep 8;
+        ["RANDOM", _count] spawn ORA_fnc_taskLaunch;
+    };
 
     true
 };

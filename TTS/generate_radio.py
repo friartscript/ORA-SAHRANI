@@ -173,7 +173,7 @@ def generate_cfg_sounds(output_dir, cfg_path):
 
 def is_tts_key(key_id):
     # Clés liées aux messages radio et PNJ
-    prefixes = ("STR_Drone_", "STR_LL_Heli_", "STR_LL_Msg_", "STR_TAG_Msg_", "STR_LL_Radio_")
+    prefixes = ("STR_Drone_", "STR_LL_Heli_", "STR_LL_Msg_", "STR_TAG_Msg_", "STR_LL_Radio_", "STR_ORA_")
     if key_id.startswith(prefixes):
         return True
     # Clés liées aux dialogues (STR_LL_Task_XX_S1, etc.)

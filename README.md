@@ -14,14 +14,32 @@ Appuyées par des colonnes blindées lourdes (chars de combat MBT-52 Kuma, véhi
 - **Faction Alliée :** **RACS** (*Royal Army Corps of Sahrani*) & Escadre Aérienne **ORA**.
 - **Faction Ennemie :** **AAF** (*Altis Armed Forces*) — Force expéditionnaire d'invasion.
 - **Entité Joueur :** `player_0` — Capitaine 'Victor-One', pilote de combat titulaire de l'ORA Air Force.
-- **Vecteur Aérien Assigné :** `plane_0` — Chasseur polyvalent d'interception et d'attaque au sol.
+- **Vecteur Aérien Assigné :** `plane_0` — Chasseur polyvalent d'interception et d'attaque au sol (JAS-39 Gripen RACS).
+
+#### Dotations Officielles des Unités (Source de Vérité : [`INFO_EDITOR.md`](INFO_EDITOR.md))
+- **Unités Alliées au Sol (Infanterie RACS) :**
+  - *Uniformes :* Treillis de combat MCCUU désert (`CUP_U_B_USMC_MCCUU_des*` - manches longues, retroussées, avec ou sans gants/genouillères).
+  - *Gilets :* Gilets pare-balles tactiques JPC Coyote (`CUP_V_JPC_*_coy`).
+  - *Casques :* Casques modernes Ops-Core Tan et Grey (`CUP_H_OpsCore_Tan*`, `CUP_H_OpsCore_Grey*`).
+  - *Sacs à dos :* Sacs d'assaut et Kitbags Coyote (`CUP_B_AssaultPack_Coyote`, `B_assaultPack_cbr`, `B_Kitbag_cbr`).
+  - *Optiques & Équipements :* Vision nocturne `NVGogglesB_blk_F`, jumelles et télémètres (`CUP_LRTV`, `CUP_Vector21Nite`, `CUP_SOFLAM`), foulards et lunettes balistiques, trousses médicales, grenades M67 et fumigènes de signalisation.
+  - *Insigne Militaire :* Patch officiel du Royal Army Corps of Sahrani (`RACS_Badge`).
+  - *Armes Principales :* Préservation des armements de dotation initiaux des escouades avec approvisionnement en chargeurs compatibles.
+- **Pilote Joueur (`player_0`) :**
+  - Dotation de combat au sol issue de `INFO_EDITOR.md` (treillis MCCUU désert, gilet tactique JPC Coyote, binos, JVN, fumigènes CSAR, trousses de secours, grenades M67 et patch RACS).
+  - **Casque d'aviation de chasse exclusif :** `H_PilotHelmetFighter_I` (visière et masque à oxygène intégrés).
+  - **Parachute dorsal de sauvetage obligatoire :** `B_Parachute` (en lieu et place des sacs d'infanterie).
+  - **Arme de poing de survie en cabine :** Glock 17 (`CUP_hgun_Glock17`) avec chargeurs réservés dans le gilet.
+  - **Lunettes de vol compatibles :** `G_Aviator` (exclusion des foulards intégraux et barbes afin d'éviter tout conflit de clipping supprimant le casque).
+- **Unités Ennemies (AAF) :**
+  - Les forces d'invasion de l'AAF conservent leurs équipements, blindés et camouflages numériques réglementaires.
 
 ### C. Directives Opérationnelles & Conditions d'Échec
 1. **Protection des Troupes RACS au Sol :** Les garnisons territoriales du RACS luttent sous un feu nourri. Le joueur doit leur délivrer un appui aérien rapproché (CAS) chirurgical pour éviter l'anéantissement des avant-postes.
 2. **Survie et Retour à la Base (RTB) :** Préserver l'appareil `plane_0` et atterrir intact en zone sécurisée.
 3. **Préservation Maximale des Unités Alliées :** Accomplir les sorties avec aucune unité alliée tuée ou en veillant à la survie de l'écrasante majorité des forces amies.
 4. **Série de Sorties Dynamiques :** Le joueur choisit au départ d'exécuter de façon exclusive **1 à 5**, **1 à 10**, **1 à 15** ou **1 à 20** missions réparties aléatoirement sur les secteurs tactiques de Sahrani.
-5. **Règle Rouge - Intégrité du Cockpit :** L'abandon de l'appareil ou l'éjection en vol entraîne **l'échec immédiat et définitif de la mission**. Le pilote doit impérativement ramener son appareil.
+5. **Règle Rouge - Intégrité du Cockpit (Condition de Défaite Absolue) :** L'abandon de l'appareil ou l'éjection en vol **n'est pas une option facultative**, mais une **condition d'échec immédiat et définitif** de la mission gérée par `ORA_fnc_cockpitEgressForfeit`. Tout abandon enclenche une alarme d'urgence, un message radio de détresse de la tour de contrôle et l'écran de défaite `EndCockpitForfeit`.
 
 ---
 
@@ -32,7 +50,10 @@ Conformément aux normes du projet, ce document et ses fichiers satellites forme
 | Document | Rôle & Portée |
 | :--- | :--- |
 | **[`PROMPT.md`](PROMPT.md)** | Directives fondamentales, standards de codage SQF moderne, immersion et typage strict. |
-| **[`INFO_EDITOR.md`](INFO_EDITOR.md)** | Registre contractuel des identifiants placés dans l'Éditeur Eden (`player_0`, `plane_0`, marqueurs). |
+| **[`INFO_EDITOR.md`](INFO_EDITOR.md)** | Registre contractuel des identifiants placés dans l'Éditeur Eden (`player_0`, `plane_0`, marqueurs) et dotation alliée au sol. |
+| **[`INFO_ENNEMIS.md`](INFO_ENNEMIS.md)** | Registre des forces hostiles AAF (infanterie au sol, blindés, chars, navires, hélicoptères et avions de combat). |
+| **[`INFO_TASKS.md`](INFO_TASKS.md)** | Règles fondamentales de codage des missions solo (anti-glitch Z+0.2, distances de sécurité, cycle de vie des tâches). |
+| **[`INFO_TASK_DEV.md`](INFO_TASK_DEV.md)** | Spécifications d'ingénierie des 4 sorties dynamiques (Sol, Mer, Air, Héli), convergences alliées/ennemies et RTB. |
 | **[`INFO_STRINTABLE.md`](INFO_STRINTABLE.md)** | Guide de localisation multilingue (15 langues supportées) et compilation non destructive. |
 | **[`TTS.md`](TTS.md)** | Spécifications audio radio (modèle Kokoro TTS, filtres DSP, prononciation des coordonnées militaires). |
 | **[`README.md`](README.md)** | **Architecture logicielle globale, flux d'exécution, catalogue de fonctions et interfaces GUI.** |
@@ -49,9 +70,12 @@ ORA.sara/
 ├── initServer.sqf                 # Point d'entrée serveur (initialisation de l'état global)
 │
 ├── compile_stringtable.py         # Pipeline de compilation non destructive des clés XML (15 langues)
-├── stringtable.xml                # Dictionnaire de localisation unifié généré automatiquement
+├── stringtable.xml                # Dictionnaire de localisation unifié généré automatiquement (144 clés)
 │
-├── INFO_EDITOR.md                 # Registre contractuel des entités de l'éditeur Eden
+├── INFO_EDITOR.md                 # Registre contractuel des entités Eden et dotation au sol RACS
+├── INFO_ENNEMIS.md                # Registre des forces hostiles AAF (infanterie, blindés, air, mer)
+├── INFO_TASKS.md                  # Règles fondamentales de codage des missions (Single-Player)
+├── INFO_TASK_DEV.md               # Spécifications d'ingénierie des 4 sorties dynamiques et séquencement
 ├── INFO_STRINTABLE.md             # Guide de localisation et liste des 15 langues
 ├── PROMPT.md                      # Prompt maître et standards d'ingénierie SQF
 ├── README.md                      # Spécification architecturale du projet (ce fichier)
@@ -81,27 +105,48 @@ ORA.sara/
     │   ├── fn_radioMsg.sqf        # Moteur de transmissions radio diégétiques & sous-titres HUD
     │   └── fn_radioMsg.xml        # Clés de dialogue et codes radio multi-langues
     │
-    ├── Environment/               # ─── Météo dynamique et équilibrage des unités
+    ├── Environment/               # ─── Météo dynamique et gestion des unités de combat
     │   ├── fn_randomWeather.sqf   # Météo dynamique avancée adaptée aux opérations aéronautiques
-    │   └── fn_initSkills.sqf      # Équilibrage des compétences événementiel (EntityCreated, zéro polling)
+    │   ├── fn_initSkills.sqf      # Équilibrage des compétences événementiel (EntityCreated, zéro polling)
+    │   ├── fn_applyRACSLoadout.sqf# Dotation officielle RACS (INFO_EDITOR.md) pour les unités indépendantes
+    │   ├── fn_applyRACSLoadout.xml# Clés de désignation de la dotation RACS
+    │   └── fn_preventWater.sqf    # Sécurisation côtière anti-noyade (infanterie au sol à pied exclusivement)
     │
     ├── Flight/                    # ─── Dynamique de vol, modèle sensoriel & gestion des pannes
     │   ├── fn_flightEffects.sqf   # Facteurs de charge (G), secousses transsoniques & turbulences (EachFrame)
     │   ├── fn_flightEffects.xml   # Clés de retours de vol
     │   ├── fn_ejectionSystem.sqf  # Surveillance des avaries critiques, alarme éjection et CSAR
-    │   └── fn_ejectionSystem.xml  # Alertes avarie moteur et messages de détresse
+    │   ├── fn_ejectionSystem.xml  # Alertes avarie moteur et messages de détresse
+    │   ├── fn_cockpitEgressForfeit.sqf # Surveillance impérative d'abandon du cockpit (condition de défaite)
+    │   ├── fn_cockpitEgressForfeit.xml # Clés et débriefing d'échec par abandon de poste
+    │   ├── fn_weaponGuidance.sqf  # Assistance au guidage d'armement (délai 5s + acquisition tâche/proche + lead pursuit)
+    │   ├── fn_weaponGuidance.xml  # Clés multilingues du système de guidage d'armement
+    │   ├── fn_airRefuel.sqf       # Ravitailleur C-130J (vol perpétuel, invulnérable, invisible, ravitaillement à 200m)
+    │   └── fn_airRefuel.xml       # Clés multilingues du système de ravitaillement
     │
     ├── Player/                    # ─── Expérience pilote, dotation et immersion cockpit
     │   ├── fn_initLocal.sqf       # Orchestrateur client unifié (liaison des sous-systèmes)
     │   ├── fn_initLocal.xml       # Clés du client local
     │   ├── fn_initIdentity.sqf    # Identité militaire (Capitaine 'Victor-One', voix anglaise)
     │   ├── fn_initIdentity.xml    # Clés de désignation d'identité
-    │   ├── fn_initLoadout.sqf     # Dotation pilote (casque de vol, combinaison ignifugée, parachute)
+    │   ├── fn_initLoadout.sqf     # Dotation pilote (base MCCUU/JPC au sol, casque aviateur, parachute dorsal)
     │   ├── fn_initLoadout.xml     # Clés de notification d'équipement
     │   ├── fn_setupBriefing.sqf   # Génération de l'OPORD natif (défense de Sahrani vs AAF)
     │   ├── fn_setupBriefing.xml   # Textes du briefing natif (Situation, Mission, ROE, Radio)
     │   ├── fn_cockpitImmersion.sqf# Écouteurs cockpit natifs (Fired, IncomingMissile, GetIn)
     │   └── fn_cockpitImmersion.xml# Alertes RWR et statuts cockpit
+    │
+    ├── Task/                      # ─── Génération et supervision des sorties opérationnelles
+    │   ├── fn_taskLaunch.sqf      # Orchestrateur de campagne (enchaînement de 1 à 20 sorties, RTB à terme)
+    │   ├── fn_taskLaunch.xml      # Clés multilingues de l'orchestrateur et tâche de RTB
+    │   ├── fn_taskGround.sqf      # Tâche 1 : Frappe au sol (1-3 véhicules, infanterie, escouade RACS, fumigène vert)
+    │   ├── fn_taskGround.xml      # Clés et ordres radio TTS de frappe terrestre
+    │   ├── fn_taskSea.sqf         # Tâche 2 : Frappe navale (1-4 bateaux en mer, patrouille maritime, pas d'infanterie)
+    │   ├── fn_taskSea.xml         # Clés et ordres radio TTS de frappe navale
+    │   ├── fn_taskAir.sqf         # Tâche 3 : Interception aérienne (1-2 chasseurs en vol, pas d'infanterie)
+    │   ├── fn_taskAir.xml         # Clés et ordres radio TTS d'interception
+    │   ├── fn_taskHeli.sqf        # Tâche 4 : Frappe héliportée (1-3 hélicos basse altitude, alliés RACS et AAF au sol)
+    │   └── fn_taskHeli.xml        # Clés et ordres radio TTS de frappe anti-hélicoptère
     │
     └── UI/                        # ─── Interfaces graphiques et menus de mission
         ├── fn_mainMenu.sqf        # Panneau de lancement (objectifs RACS, choix 1-20 sorties, carte)
@@ -136,7 +181,7 @@ sequenceDiagram
 
     critical Initialisation du Pilote
         Ply->>Systems: ORA_fnc_initIdentity (Identité Capitaine 'Victor-One')
-        Ply->>Systems: ORA_fnc_initLoadout (Combinaison, casque de vol, parachute)
+        Ply->>Systems: ORA_fnc_initLoadout (Dotation sol MCCUU/JPC, casque aviateur, parachute)
         Ply->>Systems: ORA_fnc_setupBriefing (OPORD officiel de défense Sahrani vs AAF)
         Ply->>Systems: ORA_fnc_initBriefing (Manuel de Vol & Combat Aérien)
         Ply->>Systems: ORA_fnc_initContext (Contexte géopolitique & menaces AAF)
@@ -167,11 +212,11 @@ Le menu d'accueil (IDD `7000`) s'affiche dès l'entrée en jeu en fond d'écran 
      * **1 à 15 missions**
      * **1 à 20 missions**
 3. **Options Tactiques Libres :**
-   - **Téléguidage des tirs** (aide à l'acquisition et conduite de tir).
-   - **Autres présences alliées** (renforts et patrouilles d'escorte RACS).
-   - **Alerte Rouge - Abandon Interdit :** Affiche clairement l'avertissement stylisé en rouge stipulant que *l'extraction ou l'éjection du cockpit fait perdre la mission*.
+   - **Téléguidage des tirs (`CB_OptGuidance`, IDC 7120) :** Système d'aide au guidage d'armement (`ORA_fnc_weaponGuidance`). Respecte 5 secondes de vol balistique après le largage/tir avant de guider le missile ou la bombe vers la cible de la tâche ou l'ennemi le plus proche (véhicule air ou sol, même s'ils sont 2 ou plus) avec anticipation de trajectoire (*lead pursuit*) et ré-acquisition dynamique en vol si la cible est abattue.
+   - **Autres présences alliées (`CB_OptAllies`, IDC 7121) :** Renforts et patrouilles d'escorte RACS au sol et dans l'espace aérien.
+   - **Bannière d'Alerte Rouge - Condition de Défaite Impérative :** Encart d'avertissement non sélectionnable (sans case à cocher) stipulant clairement que *l'extraction ou l'éjection du cockpit fait perdre immédiatement la mission*.
 4. **Grande Carte Tactique de Sahrani :**
-   - Intègre un contrôle cartographique grand format (`RscMapControl`) permettant de visualiser l'archipel de Sahrani, la topographie et les secteurs d'opérations.
+   - Intègre un contrôle cartographique grand format (`RscMapControl`) calibré pour afficher la topographie et la couverture satellite de l'archipel sans écran noir, avec cadrage automatique centré sur `plane_0` et les aérodromes stratégiques.
 5. **Prévisualisation 3D Temps Réel de l'Appareil :**
    - Une caméra cinématique capture `plane_0` sur le tarmac et projette le flux vidéo en direct sur `rendertarget8` via un contrôle picture `#(argb,512,512,1)r2t(rendertarget8,1.0)`.
 6. **Insertion Directe Cockpit :**
@@ -194,6 +239,9 @@ Toutes les fonctions sont déclarées sous le tag **`ORA`** dans le [`descriptio
 | :--- | :--- | :--- | :--- |
 | `ORA_fnc_flightEffects` | [`fn_flightEffects.sqf`](Functions/Flight/fn_flightEffects.sqf) | Calcule les accélérations différentielles (G-Force) et turbulences de relief via `EachFrame`.<br/>*Params : `[_pilot, _plane]`* | Appelé par `ORA_fnc_initLocal`. |
 | `ORA_fnc_ejectionSystem` | [`fn_ejectionSystem.sqf`](Functions/Flight/fn_ejectionSystem.sqf) | Installe les Event Handlers `Dammaged` et `Killed` sur `plane_0` et `player_0`.<br/>*Params : `[_pilot, _plane]`* | Appelé par `ORA_fnc_initLocal`. |
+| `ORA_fnc_cockpitEgressForfeit` | [`fn_cockpitEgressForfeit.sqf`](Functions/Flight/fn_cockpitEgressForfeit.sqf) | Surveille les écouteurs `GetOutMan` et `GetOut` : toute éjection ou sortie du cockpit de `plane_0` déclenche immédiatement l'échec de la mission (`EndCockpitForfeit`).<br/>*Params : `[_pilot, _plane]`* | Appelé au lancement de la sortie dans `ORA_fnc_mainMenu`. |
+| `ORA_fnc_weaponGuidance` | [`fn_weaponGuidance.sqf`](Functions/Flight/fn_weaponGuidance.sqf) | Assistance au guidage d'armement : déclenche après 5 secondes de vol balistique une courbure progressive vers la cible radar, laser, la tâche active ou l'ennemi le plus proche (véhicule air ou sol, même multiples) avec anticipation *lead pursuit* et ré-acquisition dynamique.<br/>*Params : `[_plane, _enable]`* | Appelé au lancement dans `ORA_fnc_mainMenu` si l'option IDC 7120 est active. |
+| `ORA_fnc_airRefuel` | [`fn_airRefuel.sqf`](Functions/Flight/fn_airRefuel.sqf) | Gestionnaire de l'avion ravitailleur C-130J : vol en orbite perpétuelle à 2 000 m, invulnérable, invisible pour les ennemis, suivi permanent sur la carte et ravitaillement automatique (carburant, intégrité, missiles 100%) dès que le joueur est à moins de 200 m.<br/>*Params : `[_orbitCenter, _altitude, _radius]`* | Appelé au lancement serveur dans `ORA_fnc_initMission`. |
 
 ### C. Catégorie `Player` (`Functions\Player\`)
 | Fonction | Fichier source | Rôle & Paramètres | Déclenchement |
@@ -201,7 +249,7 @@ Toutes les fonctions sont déclarées sous le tag **`ORA`** dans le [`descriptio
 | `ORA_fnc_initLocal` | [`fn_initLocal.sqf`](Functions/Player/fn_initLocal.sqf) | Orchestrateur client : vérifie la conformité avec `INFO_EDITOR.md` et lie tous les sous-systèmes.<br/>*Params : `[_unit]`* | Appelé par `initPlayerLocal.sqf`. |
 | `ORA_fnc_setupBriefing` | [`fn_setupBriefing.sqf`](Functions/Player/fn_setupBriefing.sqf) | Génère les sections officielles du journal de bord (OPORD de défense du territoire de Sahrani contre l'invasion AAF, directives, règles d'engagement et signaux).<br/>*Sans arguments.* | Appelé par `ORA_fnc_initLocal`. |
 | `ORA_fnc_cockpitImmersion` | [`fn_cockpitImmersion.sqf`](Functions/Player/fn_cockpitImmersion.sqf) | Attache les écouteurs de tir (`Fired`), alerte missile entrant (`IncomingMissile`) et embarquement (`GetInMan`).<br/>*Params : `[_pilot, _plane]`* | Appelé par `ORA_fnc_initLocal`. |
-| `ORA_fnc_initLoadout` | [`fn_initLoadout.sqf`](Functions/Player/fn_initLoadout.sqf) | Équipe le pilote de chasse (casque de vol, combinaison ignifugée, parachute de survie, arme de poing CSAR).<br/>*Params : `[_pilot]`* | Appelé par `ORA_fnc_initLocal`. |
+| `ORA_fnc_initLoadout` | [`fn_initLoadout.sqf`](Functions/Player/fn_initLoadout.sqf) | Équipe le pilote de chasse : dotation de combat des unités terrestres RACS (treillis MCCUU désert, gilet JPC Coyote, Glock 17, binos, JVN, fumigènes CSAR, patch RACS) combinée au casque d'aviation de chasse (`H_PilotHelmetFighter_I`) et au parachute dorsal de sauvetage (`B_Parachute`).<br/>*Params : `[_pilot]`* | Appelé par `ORA_fnc_initLocal`. |
 | `ORA_fnc_applyLoadout` | [`fn_applyLoadout.sqf`](Functions/Player/fn_applyLoadout.sqf) | Interface modulaire d'application de chargement pilote.<br/>*Params : `[_unit]`* | Modulaire. |
 | `ORA_fnc_initIdentity` | [`fn_initIdentity.sqf`](Functions/Player/fn_initIdentity.sqf) | Configure l'identité militaire du pilote (Capitaine 'Victor-One', voix radio anglophone).<br/>*Params : `[_pilot]`* | Appelé par `ORA_fnc_initLocal`. |
 
@@ -216,18 +264,29 @@ Toutes les fonctions sont déclarées sous le tag **`ORA`** dans le [`descriptio
 | :--- | :--- | :--- | :--- |
 | `ORA_fnc_randomWeather` | [`fn_randomWeather.sqf`](Functions/Environment/fn_randomWeather.sqf) | Météo dynamique avancée adaptée aux opérations aéronautiques.<br/>*Sans arguments.* | Serveur. |
 | `ORA_fnc_initSkills` | [`fn_initSkills.sqf`](Functions/Environment/fn_initSkills.sqf) | Équilibre les compétences des alliés RACS et des menaces antiaériennes (zéro polling via `EntityCreated`).<br/>*Params : `[_targetUnit]`* | Appelé par `ORA_fnc_initMission`. |
+| `ORA_fnc_applyRACSLoadout` | [`fn_applyRACSLoadout.sqf`](Functions/Environment/fn_applyRACSLoadout.sqf) | Équipe les troupes indépendantes (RACS) selon la dotation de `INFO_EDITOR.md` (JPC, Ops-Core, MCCUU, JVN, fumigènes, badge RACS), exclut le joueur pilote et installe l'écouteur `EntityCreated`.<br/>*Params : `[_targetUnit]`* | Appelé par `ORA_fnc_initMission`. |
+| `ORA_fnc_preventWater` | [`fn_preventWater.sqf`](Functions/Environment/fn_preventWater.sqf) | Contrôle et sécurisation anti-noyade réservée exclusivement à l'infanterie au sol à pied (exclut équipages navals/véhicules et pilotes).<br/>*Sans arguments.* | Appelé par `ORA_fnc_initMission`. |
 
 ### F. Catégorie `UI` (`Functions\UI\`)
 | Fonction | Fichier source | Rôle & Paramètres | Déclenchement |
 | :--- | :--- | :--- | :--- |
 | `ORA_fnc_mainMenu` | [`fn_mainMenu.sqf`](Functions/UI/fn_mainMenu.sqf) | Panneau de lancement tactique (objectifs RACS, choix sorties 1-20, options de vol, grande carte et insertion cockpit).<br/>*Params : `[_mode, _args]`* | Appelé par `ORA_fnc_initLocal`. |
 
+### G. Catégorie `Task` (`Functions\Task\`)
+| Fonction | Fichier source | Rôle & Paramètres | Déclenchement |
+| :--- | :--- | :--- | :--- |
+| `ORA_fnc_taskLaunch` | [`fn_taskLaunch.sqf`](Functions/Task/fn_taskLaunch.sqf) | Orchestrateur maître des missions : enchaîne séquentiellement 1 à 20 sorties selon le choix du joueur, transmet les BDA TTS et gère la tâche finale de RTB avec débriefing de victoire.<br/>*Params : `[_taskType, _totalSorties]`* | Lancé après insertion cockpit dans `ORA_fnc_mainMenu`. |
+| `ORA_fnc_taskGround` | [`fn_taskGround.sqf`](Functions/Task/fn_taskGround.sqf) | Frappe au sol (CAS) : génère 1 à 3 véhicules ennemis (blindés/DCA), 5 à 15 fantassins AAF et 4 à 8 alliés RACS en convergence vers un point de contact avec fumigène vert. Destination de tâche et marqueur de carte rattachés dynamiquement aux véhicules ennemis en temps réel. Réussite = destruction des véhicules.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+| `ORA_fnc_taskSea` | [`fn_taskSea.sqf`](Functions/Task/fn_taskSea.sqf) | Frappe navale en haute mer : génère 1 à 4 bâtiments/navires en patrouille maritime (`CYCLE`). Pas d'infanterie. Destination de tâche et marqueur naval rattachés dynamiquement aux navires en temps réel. Réussite = destruction de tous les bateaux.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+| `ORA_fnc_taskAir` | [`fn_taskAir.sqf`](Functions/Task/fn_taskAir.sqf) | Interception aérienne : génère 1 à 2 chasseurs ennemis en vol à 1 500 m d'altitude (Buzzard, Gryphon, Harrier, L-39, Su-34). Pas d'infanterie. Destination de tâche et marqueur aérien rattachés dynamiquement aux chasseurs en vol en temps réel. Réussite = abattage des chasseurs.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+| `ORA_fnc_taskHeli` | [`fn_taskHeli.sqf`](Functions/Task/fn_taskHeli.sqf) | Chasse anti-hélicoptère : génère 1 à 3 hélicos de combat volant à basse altitude (30-80 m), 5 à 15 fantassins AAF et 4 à 8 alliés RACS au sol en convergence. Destination de tâche et marqueur aérien rattachés dynamiquement aux hélicoptères en temps réel. Réussite = abattage des hélicoptères.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+
 ---
 
 ## 7. Système de Localisation Multi-Langues (15 Langues)
 
 Chaque module affichant du texte en jeu s'accompagne d'un fichier XML jumeau (ex: `fn_mainMenu.sqf` ↔ `fn_mainMenu.xml`).
-La compilation est assurée par le script autonome [`compile_stringtable.py`](compile_stringtable.py) :
+La compilation est assurée par le script autonome [`compile_stringtable.py`](compile_stringtable.py) qui consolide **144 clés actives** couvrant les briefings, l'avionique, le panneau de commandement, l'assistance de tir, le ravitailleur C-130J et les 4 types de sorties opérationnelles :
 
 ```bash
 python compile_stringtable.py

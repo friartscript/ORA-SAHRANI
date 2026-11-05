@@ -205,9 +205,9 @@
         <Turkish>TAKTİK SEÇENEKLER</Turkish>
     </Key>
     <Key ID="STR_ORA_OPT_GUIDANCE">
-        <Original>Weapon guidance assist (Aide de tir)</Original>
-        <English>Weapon guidance assist (Aide de tir)</English>
-        <French>Téléguidage des tirs (Aide de tir)</French>
+        <Original>Weapon guidance assist</Original>
+        <English>Weapon guidance assist</English>
+        <French>Téléguidage des tirs (aide au tir)</French>
         <Spanish>Asistencia de guiado de armas</Spanish>
         <German>Waffen-Zielhilfesystem (Zielführung)</German>
         <Italian>Assistenza di guida al tiro</Italian>
@@ -390,6 +390,23 @@
         <Chinese>Victor-One 已就位。已載入 %1 架次飛行計畫。祝獵運亨通。</Chinese>
         <Chinesesimp>Victor-One 已就位。已载入 %1 架次飞行计划。祝猎运亨通。</Chinesesimp>
         <Turkish>Victor-One kontrollerde. %1 sorti için uçuş planı devrede. İyi avlar.</Turkish>
+    </Key>
+    <Key ID="STR_ORA_HEADER_DEFEAT_CONDITION">
+        <Original>CRITICAL FAILURE CONDITION</Original>
+        <English>CRITICAL FAILURE CONDITION</English>
+        <French>CONDITION DE DÉFAITE IMPÉRATIVE</French>
+        <Spanish>CONDICIÓN CRÍTICA DE DERROTA</Spanish>
+        <German>KRITISCHE NIEDERLAGE-BEDINGUNG</German>
+        <Italian>CONDIZIONE CRITICA DI SCONFITTA</Italian>
+        <Polish>KRYTYCZNY WARUNEK PORAŻKI</Polish>
+        <Portuguese>CONDIÇÃO CRÍTICA DE DERROTA</Portuguese>
+        <Russian>КРИТИЧЕСКОЕ УСЛОВИЕ ПОРАЖЕНИЯ</Russian>
+        <Czech>KRITICKÁ PODMÍNKA PORÁŽKY</Czech>
+        <Korean>임무 실패 절대 조건</Korean>
+        <Japanese>作戦失敗の絶対条件</Japanese>
+        <Chinese>任務失敗絕對條件</Chinese>
+        <Chinesesimp>任务失败绝对条件</Chinesesimp>
+        <Turkish>KRİTİK BAŞARISIZLIK ŞARTI</Turkish>
     </Key>
 </Keys>
 

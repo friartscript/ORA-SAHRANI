@@ -9,6 +9,10 @@ params ["_player", "_didJIP"];
 
 if (!hasInterface) exitWith {};
 
+// Verrouillage immédiat pour empêcher toute altération par des scripts d'équipement généralistes
+_player setVariable ["ORA_isPilot", true, true];
+player setVariable ["ORA_isPilot", true, true];
+
 // Attente que l'environnement local du joueur soit stabilisé
 waitUntil {!isNull player && {alive player}};
 

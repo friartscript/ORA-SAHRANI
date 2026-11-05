@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_ORA_Task_RTB_Title">
+            <Original>RTB - Return to Sahrani Airbase</Original>
+            <English>RTB - Return to Sahrani Airbase</English>
+            <French>RTB - Retour à la Base Aérienne de Sahrani</French>
+            <Spanish>RTB - Regreso a la base aérea de Sahrani</Spanish>
+            <German>RTB - Rückkehr zur Luftwaffenbasis Sahrani</German>
+            <Italian>RTB - Rientro alla base aerea di Sahrani</Italian>
+            <Polish>RTB - Powrót do bazy lotniczej Sahrani</Polish>
+            <Portuguese>RTB - Retorno à Base Aérea de Sahrani</Portuguese>
+            <Russian>RTB - Возвращение на авиабазу Сахрани</Russian>
+            <Czech>RTB - Návrat na leteckou základnu Sahrani</Czech>
+            <Korean>RTB - 사하라니 공군 기지 귀환</Korean>
+            <Japanese>RTB - サフラニ空軍基地への帰投</Japanese>
+            <Chinese>RTB - 返回萨拉尼空军基地</Chinese>
+            <Chinesesimp>RTB - 返回萨拉尼空军基地</Chinesesimp>
+            <Turkish>RTB - Sahrani Hava Üssüne Dönüş</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_RTB_Desc">
+            <Original>All assigned combat sortie objectives have been neutralized. Navigate back to Sahrani Airbase, configure your approach vector and land safely.</Original>
+            <English>All assigned combat sortie objectives have been neutralized. Navigate back to Sahrani Airbase, configure your approach vector and land safely.</English>
+            <French>Tous les objectifs de sortie de combat assignés ont été neutralisés. Rejoignez la base aérienne de Sahrani, configurez votre vecteur d'approche et atterrissez en toute sécurité.</French>
+            <Spanish>Todos los objetivos asignados han sido neutralizados. Regrese a la base de Sahrani y aterrice de forma segura.</Spanish>
+            <German>Alle zugewiesenen Kampfaufträge wurden neutralisiert. Fliegen Sie zur Basis Sahrani zurück und landen Sie sicher.</German>
+            <Italian>Tutti gli obiettivi assegnati sono stati neutralizzati. Tornate alla base di Sahrani e atterrate in sicurezza.</Italian>
+            <Polish>Wszystkie cele bojowe zostały zneutralizowane. Wróć do bazy Sahrani i bezpiecznie wyląduj.</Polish>
+            <Portuguese>Todos os objetivos de combate foram neutralizados. Retorne à Base de Sahrani e pouse com segurança.</Portuguese>
+            <Russian>Все назначенные боевые цели нейтрализованы. Возвращайтесь на авиабазу Сахрани и совершите безопасную посадку.</Russian>
+            <Czech>Všechny bojové cíle byly neutralizovány. Vraťte se na základnu Sahrani a bezpečně přistaňte.</Czech>
+            <Korean>할당된 모든 전투 목표가 무력화되었습니다. 사하라니 공군 기지로 복귀하여 안전하게 착륙하십시오.</Korean>
+            <Japanese>割り当てられたすべての戦闘目標は無力化されました。サフラニ空軍基地へ帰投し、安全に着陸してください。</Japanese>
+            <Chinese>所有指定戰鬥目標均已被摧毀。請返回薩拉尼空軍基地並安全降落。</Chinese>
+            <Chinesesimp>所有指定战斗目标均已被摧毁。请返回萨拉尼空军基地并安全降落。</Chinesesimp>
+            <Turkish>Verilen tüm muharebe hedefleri imha edildi. Sahrani Hava Üssüne dönün ve güvenli bir iniş yapın.</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_RTB_Marker">
+            <Original>Sahrani Airbase (RTB)</Original>
+            <English>Sahrani Airbase (RTB)</English>
+            <French>Base Aérienne de Sahrani (RTB)</French>
+            <Spanish>Base aérea de Sahrani (RTB)</Spanish>
+            <German>Luftwaffenbasis Sahrani (RTB)</German>
+            <Italian>Base aerea di Sahrani (RTB)</Italian>
+            <Polish>Baza lotnicza Sahrani (RTB)</Polish>
+            <Portuguese>Base Aérea de Sahrani (RTB)</Portuguese>
+            <Russian>Авиабаза Сахрани (RTB)</Russian>
+            <Czech>Letecká základna Sahrani (RTB)</Czech>
+            <Korean>사하라니 공군 기지 (RTB)</Korean>
+            <Japanese>サフラニ空軍基地 (RTB)</Japanese>
+            <Chinese>薩拉尼空軍基地 (RTB)</Chinese>
+            <Chinesesimp>萨拉尼空军基地 (RTB)</Chinesesimp>
+            <Turkish>Sahrani Hava Üssü (RTB)</Turkish>
+        </Key>
+        <Key ID="STR_ORA_Task_All_RTB">
+            <Original>Victor-One, Overlord. All operational sectors cleared. Outstanding performance. Return to base for debriefing.</Original>
+            <English>Victor-One, Overlord. All operational sectors cleared. Outstanding performance. Return to base for debriefing.</English>
+            <French>Victor-One, ici Overlord. Tous les secteurs opérationnels sont nettoyés. Performance remarquable. Retournez à la base pour le débriefing.</French>
+            <Spanish>Victor-One, aquí Overlord. Todos los sectores están despejados. Excelente trabajo. Regrese a la base.</Spanish>
+            <German>Victor-One, hier Overlord. Alle Einsatzsektoren gesichert. Hervorragende Leistung. Kehren Sie zur Basis zurück.</German>
+            <Italian>Victor-One, qui Overlord. Tutti i settori operativi sono liberi. Ottimo lavoro. Rientrate alla base.</Italian>
+            <Polish>Victor-One, tu Overlord. Wszystkie sektory operacyjne oczyszczone. Wspaniała robota. Wracajcie do bazy.</Polish>
+            <Portuguese>Victor-One, aqui Overlord. Todos os setores operacionais foram limpos. Excelente trabalho. Retorne à base.</Portuguese>
+            <Russian>Виктор-Один, я Оверлорд. Все секторы зачищены. Отличная работа. Возвращайтесь на базу.</Russian>
+            <Czech>Victor-One, zde Overlord. Všechny operační sektory vyčištěny. Skvělá práce. Návrat na základnu.</Czech>
+            <Korean>빅터-원, 여기는 오버로드. 모든 작전 구역이 정리되었습니다. 훌륭한 작전이었습니다. 기지로 귀환하십시오.</Korean>
+            <Japanese>ビクター1、こちらオーバーロード。全作戦空域を制圧した。見事な戦果だ。デブリーフィングのため帰投せよ。</Japanese>
+            <Chinese>勝利一號，這裡是霸王。所有作戰空域已肅清。表現優異。請返回基地接受任務彙報。</Chinese>
+            <Chinesesimp>胜利一号，这里是霸王。所有作战空域已肃清。表现优异。请返回基地接受任务汇报。</Chinesesimp>
+            <Turkish>Victor-One, ben Overlord. Tüm operasyon bölgeleri temizlendi. Mükemmel görev. Brifing için üsse dönün.</Turkish>
+        </Key>
+</Keys>

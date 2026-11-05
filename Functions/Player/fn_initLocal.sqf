@@ -20,12 +20,13 @@ if (!hasInterface) exitWith { false };
 // Écran noir initial le temps d'ouvrir le menu
 titleCut ["", "BLACK FADED", 999];
 
+// Marquage prioritaire de l'unité joueur comme pilote de chasse officiel
+_unit setVariable ["ORA_isPilot", true, true];
+
 // Vérification de conformité avec l'éditeur (INFO_EDITOR.md)
 private _expectedPlayer = missionNamespace getVariable ["player_0", objNull];
-if (!isNull _expectedPlayer && {_unit != _expectedPlayer}) exitWith {
-    diag_log format ["[ORA] [AVERTISSEMENT] L'unité locale (%1) diffère de player_0.", _unit];
-    titleCut ["", "BLACK IN", 1];
-    false
+if (!isNull _expectedPlayer && {!(_unit isEqualTo _expectedPlayer)}) then {
+    diag_log format ["[ORA] [INFO] L'unité locale (%1) diffère de la référence player_0 (%2). Poursuite de la dotation sur le joueur.", _unit, _expectedPlayer];
 };
 
 // Configuration de l'identité et dotation officielle de pilote de chasse

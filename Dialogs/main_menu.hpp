@@ -193,26 +193,26 @@ class RscMapControl
     type = 101;
     idc = -1;
     style = 48;
-    colorBackground[] = {0.969, 0.957, 0.949, 1};
-    colorOutside[] = {0, 0, 0, 1};
+    colorBackground[] = {0.92, 0.90, 0.85, 1};
+    colorOutside[] = {0.08, 0.12, 0.18, 1};
     colorText[] = {0, 0, 0, 1};
     font = "TahomaB";
     sizeEx = 0.04;
-    colorSea[] = {0.467, 0.631, 0.851, 0.5};
-    colorForest[] = {0.624, 0.78, 0.388, 0.5};
-    colorRocks[] = {0, 0, 0, 0.3};
-    colorCountlines[] = {0.572, 0.354, 0.188, 0.25};
-    colorMainCountlines[] = {0.572, 0.354, 0.188, 0.5};
-    colorCountlinesWater[] = {0.491, 0.577, 0.702, 0.3};
-    colorMainCountlinesWater[] = {0.491, 0.577, 0.702, 0.6};
-    colorForestBorder[] = {0, 0, 0, 0};
-    colorRocksBorder[] = {0, 0, 0, 0};
+    colorSea[] = {0.35, 0.58, 0.82, 1};
+    colorForest[] = {0.45, 0.68, 0.35, 1};
+    colorRocks[] = {0.55, 0.55, 0.55, 1};
+    colorCountlines[] = {0.572, 0.354, 0.188, 0.4};
+    colorMainCountlines[] = {0.572, 0.354, 0.188, 0.7};
+    colorCountlinesWater[] = {0.491, 0.577, 0.702, 0.5};
+    colorMainCountlinesWater[] = {0.491, 0.577, 0.702, 0.8};
+    colorForestBorder[] = {0.4, 0.6, 0.3, 1};
+    colorRocksBorder[] = {0.4, 0.4, 0.4, 1};
     colorPowerLines[] = {0.1, 0.1, 0.1, 1};
     colorRailWay[] = {0.8, 0.2, 0, 1};
     colorNames[] = {0.1, 0.1, 0.1, 0.9};
     colorInactive[] = {1, 1, 1, 0.5};
     colorLevels[] = {0.286, 0.177, 0.094, 0.5};
-    colorTracks[] = {0.84, 0.76, 0.65, 0.15};
+    colorTracks[] = {0.84, 0.76, 0.65, 0.4};
     colorRoads[] = {0.7, 0.7, 0.7, 1};
     colorMainRoads[] = {0.9, 0.5, 0.3, 1};
     colorTracksFill[] = {0.84, 0.76, 0.65, 1};
@@ -222,6 +222,23 @@ class RscMapControl
     colorGridMap[] = {0.1, 0.1, 0.1, 0.6};
     stickX[] = {0.2, {"Gamma", 1, 1.5}};
     stickY[] = {0.2, {"Gamma", 1, 1.5}};
+
+    ptsPerSquareSea = 5;
+    ptsPerSquareTxt = 3;
+    ptsPerSquareCLn = 10;
+    ptsPerSquareExp = 10;
+    ptsPerSquareCost = 10;
+    ptsPerSquareFor = 9;
+    ptsPerSquareForEdge = 9;
+    ptsPerSquareRoad = 6;
+    ptsPerSquareObj = 9;
+    showCountourInterval = 0;
+    scaleMin = 0.001;
+    scaleMax = 1.0;
+    scaleDefault = 0.18;
+    maxSatelliteAlpha = 0.95;
+    alphaFadeStartScale = 2.0;
+    alphaFadeEndScale = 2.0;
     class Legend
     {
         colorBackground[] = {1, 1, 1, 0.5};
@@ -756,7 +773,7 @@ class Refour_Main_Menu_Dialog
             font = "RobotoCondensedBold";
         };
 
-        // Option 1 : Téléguidage des tirs (aide de tir)
+        // Option 1 : Téléguidage des tirs
         class CB_OptGuidance: RscCheckBox {
             idc = 7120;
             x = safezoneX + (0.025 * safezoneW);
@@ -792,22 +809,16 @@ class Refour_Main_Menu_Dialog
             colorText[] = {0.2, 0.95, 0.4, 1};
         };
 
-        // Option 3 : L'extraction du cockpit fait perdre la mission (EN ROUGE VIF)
-        class CB_OptNoEject: RscCheckBox {
-            idc = 7122;
+        // CONDITION DE DÉFAITE IMPÉRATIVE (AUCUNE CHECKBOX)
+        class HeaderDefeatCondition: RscText {
+            idc = -1;
+            text = "$STR_ORA_HEADER_DEFEAT_CONDITION";
             x = safezoneX + (0.025 * safezoneW);
             y = safezoneY + (0.525 * safezoneH);
-            w = 0.014 * safezoneW;
-            h = 0.022 * safezoneH;
-        };
-        class Txt_OptNoEject: RscText {
-            idc = -1;
-            text = "$STR_ORA_OPT_NO_EJECT";
-            x = safezoneX + (0.045 * safezoneW);
-            y = safezoneY + (0.525 * safezoneH);
-            w = 0.265 * safezoneW;
-            h = 0.022 * safezoneH;
-            colorText[] = {1.0, 0.25, 0.25, 1}; // Rouge vif
+            w = 0.29 * safezoneW;
+            h = 0.026 * safezoneH;
+            colorBackground[] = {0.60, 0.10, 0.10, 1}; // Rouge vif de restriction
+            colorText[] = {1, 1, 1, 1};
             font = "RobotoCondensedBold";
         };
 
@@ -816,9 +827,9 @@ class Refour_Main_Menu_Dialog
             idc = 7130;
             text = "$STR_ORA_ALERT_NO_EJECT_INFO";
             x = safezoneX + (0.025 * safezoneW);
-            y = safezoneY + (0.560 * safezoneH);
+            y = safezoneY + (0.555 * safezoneH);
             w = 0.29 * safezoneW;
-            h = 0.070 * safezoneH;
+            h = 0.075 * safezoneH;
             colorBackground[] = {0.45, 0.05, 0.05, 0.85};
         };
 
@@ -826,7 +837,7 @@ class Refour_Main_Menu_Dialog
             idc = -1;
             text = "$STR_ORA_TACTICAL_DIRECTIVES_AIR";
             x = safezoneX + (0.025 * safezoneW);
-            y = safezoneY + (0.645 * safezoneH);
+            y = safezoneY + (0.640 * safezoneH);
             w = 0.29 * safezoneW;
             h = 0.220 * safezoneH;
             colorBackground[] = {0,0,0,0};
@@ -961,6 +972,13 @@ class Refour_Main_Menu_Dialog
             w = 0.34 * safezoneW;
             h = 0.662 * safezoneH;
             showMarkers = 1;
+            maxSatelliteAlpha = 0.95;
+            alphaFadeStartScale = 2.0;
+            alphaFadeEndScale = 2.0;
+            colorBackground[] = {0.92, 0.90, 0.85, 1};
+            colorSea[] = {0.35, 0.58, 0.82, 1};
+            colorForest[] = {0.45, 0.68, 0.35, 1};
+            colorRocks[] = {0.55, 0.55, 0.55, 1};
         };
 
         // ====================================================================
