@@ -1,6 +1,24 @@
+#ifndef db
+#define db 0
+#endif
+
 class CfgSounds
 {
     sounds[] = {};
+
+    class ORA_Radio_Click
+    {
+        name = "ORA_Radio_Click";
+        sound[] = {"\A3\Sounds_F\sfx\radio\click.wss", 1.2, 1};
+        titles[] = {};
+    };
+
+    class ORA_Warning_Beep
+    {
+        name = "ORA_Warning_Beep";
+        sound[] = {"\A3\Sounds_F\sfx\alarm_car.wss", 1.0, 1.2};
+        titles[] = {};
+    };
 
     class STR_Drone_Jammed
     {
@@ -392,6 +410,78 @@ class CfgSounds
         sound[] = {"TTS\output\STR_ORA_Radio_Scramble.ogg", db+5, 1.0};
         titles[] = {0, ""};
     };
+    class STR_ORA_SUPPORT_REFUEL_TITLE
+    {
+        name = "STR_ORA_SUPPORT_REFUEL_TITLE";
+        sound[] = {"TTS\output\STR_ORA_SUPPORT_REFUEL_TITLE.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_TANKER_APPROACH
+    {
+        name = "STR_ORA_TANKER_APPROACH";
+        sound[] = {"TTS\output\STR_ORA_TANKER_APPROACH.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_TANKER_BUSY_MSG
+    {
+        name = "STR_ORA_TANKER_BUSY_MSG";
+        sound[] = {"TTS\output\STR_ORA_TANKER_BUSY_MSG.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_TANKER_CALLSIGN
+    {
+        name = "STR_ORA_TANKER_CALLSIGN";
+        sound[] = {"TTS\output\STR_ORA_TANKER_CALLSIGN.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_TANKER_DISENGAGE
+    {
+        name = "STR_ORA_TANKER_DISENGAGE";
+        sound[] = {"TTS\output\STR_ORA_TANKER_DISENGAGE.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_TANKER_INBOUND_MSG
+    {
+        name = "STR_ORA_TANKER_INBOUND_MSG";
+        sound[] = {"TTS\output\STR_ORA_TANKER_INBOUND_MSG.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_TANKER_MARKER
+    {
+        name = "STR_ORA_TANKER_MARKER";
+        sound[] = {"TTS\output\STR_ORA_TANKER_MARKER.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_TANKER_MUST_BE_AIRBORNE
+    {
+        name = "STR_ORA_TANKER_MUST_BE_AIRBORNE";
+        sound[] = {"TTS\output\STR_ORA_TANKER_MUST_BE_AIRBORNE.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_TANKER_REPLENISHED
+    {
+        name = "STR_ORA_TANKER_REPLENISHED";
+        sound[] = {"TTS\output\STR_ORA_TANKER_REPLENISHED.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_TANKER_SUCCESS_MSG
+    {
+        name = "STR_ORA_TANKER_SUCCESS_MSG";
+        sound[] = {"TTS\output\STR_ORA_TANKER_SUCCESS_MSG.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_TANKER_WARN_1KM
+    {
+        name = "STR_ORA_TANKER_WARN_1KM";
+        sound[] = {"TTS\output\STR_ORA_TANKER_WARN_1KM.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_TANKER_WARN_500M
+    {
+        name = "STR_ORA_TANKER_WARN_500M";
+        sound[] = {"TTS\output\STR_ORA_TANKER_WARN_500M.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
     class STR_ORA_TASK_MAJORITY_SURVIVE
     {
         name = "STR_ORA_TASK_MAJORITY_SURVIVE";
@@ -510,6 +600,18 @@ class CfgSounds
     {
         name = "STR_ORA_Task_Heli_Title";
         sound[] = {"TTS\output\STR_ORA_Task_Heli_Title.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_Task_Objective
+    {
+        name = "STR_ORA_Task_Objective";
+        sound[] = {"TTS\output\STR_ORA_Task_Objective.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_ORA_Task_Objective_Desc
+    {
+        name = "STR_ORA_Task_Objective_Desc";
+        sound[] = {"TTS\output\STR_ORA_Task_Objective_Desc.ogg", db+5, 1.0};
         titles[] = {0, ""};
     };
     class STR_ORA_Task_RTB_Desc

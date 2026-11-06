@@ -10,12 +10,16 @@ params ["_player", "_didJIP"];
 if (!hasInterface) exitWith {};
 
 // ============================================================================
-// DÉSACTIVATION COMPLÈTE DU SYSTÈME DE CHAT ET DES LOGS DU JEU
+// DÉSACTIVATION DU CHAT AI ET ACTIVATION COMPLÈTE DU CANAL RADIO ET DES WAYPOINTS 3D
 // ============================================================================
 showChat false;
-enableRadio false;
+enableRadio true;
 enableSentences false;
-0 fadeRadio 0;
+0 fadeRadio 1;
+_player disableConversation true;
+
+showWaypoints true;
+showHUD [true, true, true, true, true, true, true, true, true];
 
 // Verrouillage immédiat pour empêcher toute altération par des scripts d'équipement généralistes
 _player setVariable ["ORA_isPilot", true, true];
@@ -26,4 +30,3 @@ waitUntil {!isNull player && {alive player}};
 
 // Lancement de l'initialisation du joueur
 [_player] spawn ORA_fnc_initLocal;
-

@@ -247,13 +247,13 @@ Toutes les fonctions sont déclarées sous le tag **`ORA`** dans le [`descriptio
 | `ORA_fnc_ejectionSystem` | [`fn_ejectionSystem.sqf`](Functions/Flight/fn_ejectionSystem.sqf) | Installe les Event Handlers `Dammaged` et `Killed` sur `plane_0` et `player_0`.<br/>*Params : `[_pilot, _plane]`* | Appelé par `ORA_fnc_initLocal`. |
 | `ORA_fnc_cockpitEgressForfeit` | [`fn_cockpitEgressForfeit.sqf`](Functions/Flight/fn_cockpitEgressForfeit.sqf) | Surveille les écouteurs `GetOutMan` et `GetOut` : toute éjection ou sortie du cockpit de `plane_0` déclenche immédiatement l'échec de la mission (`EndCockpitForfeit`).<br/>*Params : `[_pilot, _plane]`* | Appelé au lancement de la sortie dans `ORA_fnc_mainMenu`. |
 | `ORA_fnc_weaponGuidance` | [`fn_weaponGuidance.sqf`](Functions/Flight/fn_weaponGuidance.sqf) | Assistance au tir optimisée : séparation balistique 0.35s sous voilure, navigation proportionnelle (*PN Lead Pursuit*), taux de virage progressif aérodynamique (0.12 à 0.38), fusée de proximité radar terminale (<7.5m air, <4m sol/mer) et trajectoire balistique stabilisée si cible perdue.<br/>*Params : `[_plane, _enable]`* | Appelé au lancement dans `ORA_fnc_mainMenu` si l'option IDC 7120 est active. |
-| `ORA_fnc_airRefuel` | [`fn_airRefuel.sqf`](Functions/Flight/fn_airRefuel.sqf) | Gestionnaire de l'avion ravitailleur C-130J : vol en orbite à 2 000 m, invulnérable, invisible pour les ennemis, ravitaillement automatique (carburant, intégrité, munitions 100%) à moins de 200 m.<br/>*Params : `[_orbitCenter, _altitude, _radius]`* | Appelé au lancement serveur dans `ORA_fnc_initMission`. |
-| `ORA_fnc_callTanker` | [`fn_callTanker.sqf`](Functions/Flight/fn_callTanker.sqf) | Menu de support radio 0-8-1 : vecteur direct du C-130J vers la position du joueur avec maintien d'altitude de sécurité, avertissements à 1 000 m et 500 m, et retour automatique en orbite après ravitaillement.<br/>*Sans arguments.* | Appelé via le menu de communications (0-8-1). |
+| `ORA_fnc_airRefuel` | [`fn_airRefuel.sqf`](Functions/Flight/fn_airRefuel.sqf) | Gestionnaire de l'avion ravitailleur C-130J : vol en orbite à 2 000 m, invulnérable, invisible pour les ennemis, ravitaillement automatique (carburant, intégrité, munitions 100%) à moins de 200 m avec transmission vocale TTS (`STR_ORA_TANKER_SUCCESS_MSG`).<br/>*Params : `[_orbitCenter, _altitude, _radius]`* | Appelé au lancement serveur dans `ORA_fnc_initMission`. |
+| `ORA_fnc_callTanker` | [`fn_callTanker.sqf`](Functions/Flight/fn_callTanker.sqf) | Menu de support radio 0-8-1 : vecteur direct du C-130J vers la position du joueur avec maintien d'altitude de sécurité (+40m), messages vocaux d'alerte et guidage TTS à 1 000 m et 500 m, et retour automatique en orbite après ravitaillement.<br/>*Sans arguments.* | Appelé via le menu de communications (0-8-1). |
 
 ### C. Catégorie `Player` (`Functions\Player\`)
 | Fonction | Fichier source | Rôle & Paramètres | Déclenchement |
 | :--- | :--- | :--- | :--- |
-| `ORA_fnc_initLocal` | [`fn_initLocal.sqf`](Functions/Player/fn_initLocal.sqf) | Orchestrateur client unifié : désactive les canaux radio/chat moteurs, vérifie la conformité avec `INFO_EDITOR.md` et lie tous les sous-systèmes.<br/>*Params : `[_unit]`* | Appelé par `initPlayerLocal.sqf`. |
+| `ORA_fnc_initLocal` | [`fn_initLocal.sqf`](Functions/Player/fn_initLocal.sqf) | Orchestrateur client unifié : désactive les bavardages IA et chat textuel, maintient le canal radio actif (`0 fadeRadio 1`, `enableRadio true`), active les waypoints 3D HUD natifs, vérifie la conformité avec `INFO_EDITOR.md` et lie tous les sous-systèmes.<br/>*Params : `[_unit]`* | Appelé par `initPlayerLocal.sqf`. |
 | `ORA_fnc_setupBriefing` | [`fn_setupBriefing.sqf`](Functions/Player/fn_setupBriefing.sqf) | Génère les sections officielles du journal de bord (OPORD de défense du territoire de Sahrani contre l'invasion AAF, directives, règles d'engagement et signaux).<br/>*Sans arguments.* | Appelé par `ORA_fnc_initLocal`. |
 | `ORA_fnc_cockpitImmersion` | [`fn_cockpitImmersion.sqf`](Functions/Player/fn_cockpitImmersion.sqf) | Attache les écouteurs de tir (`Fired`), alerte missile entrant (`IncomingMissile`) et embarquement (`GetInMan`).<br/>*Params : `[_pilot, _plane]`* | Appelé par `ORA_fnc_initLocal`. |
 | `ORA_fnc_initLoadout` | [`fn_initLoadout.sqf`](Functions/Player/fn_initLoadout.sqf) | Équipe le pilote de chasse : dotation de combat des unités terrestres RACS (treillis MCCUU désert, gilet JPC Coyote, Glock 17, binos, JVN, fumigènes CSAR, patch RACS) combinée au casque d'aviation de chasse (`H_PilotHelmetFighter_I`) et au parachute dorsal de sauvetage (`B_Parachute`).<br/>*Params : `[_pilot]`* | Appelé par `ORA_fnc_initLocal`. |
@@ -277,17 +277,17 @@ Toutes les fonctions sont déclarées sous le tag **`ORA`** dans le [`descriptio
 ### F. Catégorie `UI` (`Functions\UI\`)
 | Fonction | Fichier source | Rôle & Paramètres | Déclenchement |
 | :--- | :--- | :--- | :--- |
-| `ORA_fnc_mainMenu` | [`fn_mainMenu.sqf`](Functions/UI/fn_mainMenu.sqf) | Panneau de lancement tactique (objectifs RACS, choix sorties 1-20, options de vol, grande carte et insertion cockpit).<br/>*Params : `[_mode, _args]`* | Appelé par `ORA_fnc_initLocal`. |
+| `ORA_fnc_mainMenu` | [`fn_mainMenu.sqf`](Functions/UI/fn_mainMenu.sqf) | Panneau de lancement tactique (objectifs RACS, choix sorties 1-20, options de vol, grande carte avec prévisualisation satellite et insertion cockpit).<br/>*Params : `[_mode, _args]`* | Appelé par `ORA_fnc_initLocal`. |
 
 ### G. Catégorie `Task` (`Functions\Task\`)
 | Fonction | Fichier source | Rôle & Paramètres | Déclenchement |
 | :--- | :--- | :--- | :--- |
-| `ORA_fnc_taskLaunch` | [`fn_taskLaunch.sqf`](Functions/Task/fn_taskLaunch.sqf) | Orchestrateur maître des sorties : pré-crée l'ensemble de l'arborescence des tâches à la base (Sortie 1 ASSIGNED, sorties suivantes et RTB CREATED), assure le suivi séquentiel multi-objectifs, et déclenche le RTB final.<br/>*Params : `[_taskType, _totalSorties]`* | Lancé après insertion cockpit dans `ORA_fnc_mainMenu`. |
-| `ORA_fnc_taskGround` | [`fn_taskGround.sqf`](Functions/Task/fn_taskGround.sqf) | Frappe au sol (CAS) : cibles positionnées exactement sur le réseau routier (`marker_blue_0` à `marker_blue_52`), en déplacement vers un point d'embuscade allié à plus de 950 m où des troupes RACS armées les attendent. Sous-tâches individuelles si $\ge 2$ cibles.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
-| `ORA_fnc_taskSea` | [`fn_taskSea.sqf`](Functions/Task/fn_taskSea.sqf) | Frappe navale en haute mer : circuit maritime strictement ordonné suivant la suite ascendante des marqueurs `marker_blue_0` à `marker_blue_39` en boucle perpétuelle sans demi-tour ni échouement. Alignement des vedettes en colonne à 45m. Sous-tâches si $\ge 2$ navires.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
-| `ORA_fnc_taskAir` | [`fn_taskAir.sqf`](Functions/Task/fn_taskAir.sqf) | Interception aérienne : apparition des chasseurs ennemis hors de l'espace aérien national sur les marqueurs `marker_red_0` à `marker_red_7`, en pénétration haute altitude. Sous-tâches individuelles si $\ge 2$ appareils.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
-| `ORA_fnc_taskHeli` | [`fn_taskHeli.sqf`](Functions/Task/fn_taskHeli.sqf) | Chasse hélicoptères : apparition sur les marqueurs `marker_orange_0` à `marker_orange_52` en vol tactique basse altitude, engagés contre des détachements alliés au sol. Sous-tâches individuelles si $\ge 2$ hélicos.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
-| `ORA_fnc_taskCleanup` | [`fn_taskCleanup.sqf`](Functions/Task/fn_taskCleanup.sqf) | Gestionnaire de nettoyage du théâtre d'opérations : après achèvement d'une sortie, supprime immédiatement les unités de la tâche situées à plus de 2 000 m du joueur, et met en veille les unités restantes jusqu'à ce que le joueur s'éloigne au-delà de 2 000 m.<br/>*Params : `[_units, _vehicles]`* | Appelé à la fin de chaque sortie. |
+| `ORA_fnc_taskLaunch` | [`fn_taskLaunch.sqf`](Functions/Task/fn_taskLaunch.sqf) | Orchestrateur maître des sorties : exécute les missions strictement une par une (aucun pré-lancement). Dans chaque sortie, les objectifs se succèdent séquentiellement. La tâche RTB (retour base) n'est créée qu'à la fin de la campagne.<br/>*Params : `[_taskType, _totalSorties]`* | Lancé après insertion cockpit dans `ORA_fnc_mainMenu`. |
+| `ORA_fnc_taskGround` | [`fn_taskGround.sqf`](Functions/Task/fn_taskGround.sqf) | Frappe au sol (CAS) : guidage exclusif par waypoint 3D HUD natif (`getPosATL`, `setSimpleTaskAlwaysVisible true`, sans marker rouge). Cibles routières (`marker_blue_0` à `marker_blue_52`) en marche vers une embuscade alliée à $\ge 950\text{ m}$. Sous-tâches créées une par une après chaque destruction.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+| `ORA_fnc_taskSea` | [`fn_taskSea.sqf`](Functions/Task/fn_taskSea.sqf) | Frappe navale en haute mer : guidage exclusif par waypoint 3D HUD natif (0 marqueur rouge parasite). Circuit maritime continu suivant `marker_blue_0` à `marker_blue_39`. Sous-tâches strictement séquentielles.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+| `ORA_fnc_taskAir` | [`fn_taskAir.sqf`](Functions/Task/fn_taskAir.sqf) | Interception aérienne : guidage 3D natif vers les chasseurs hostiles en haute altitude (1 800 - 2 200 m). Sous-objectifs séquentiels un par un.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+| `ORA_fnc_taskHeli` | [`fn_taskHeli.sqf`](Functions/Task/fn_taskHeli.sqf) | Chasse hélicoptères : guidage 3D natif vers les appareils en vol basse altitude (45 - 80 m) au-dessus de `marker_orange_0` à `marker_orange_52`. Sous-tâches séquentielles une par une.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+| `ORA_fnc_taskCleanup` | [`fn_taskCleanup.sqf`](Functions/Task/fn_taskCleanup.sqf) | Nettoyage optimisé du théâtre : supprime immédiatement les entités de la sortie située à $>2000\text{ m}$ du joueur, protège le joueur, `plane_0` et le C-130J, et purge en tâche de fond dès éloignement.<br/>*Params : `[_units, _vehicles]`* | Appelé à la fin de chaque sortie. |
 
 ---
 
@@ -321,9 +321,11 @@ python compile_stringtable.py
 ## 8. Pipeline Audio Radio & Synthèse Vocale (TTS)
 
 Pour garantir une immersion de haut niveau lors des ordres transmis par le QG en vol :
-- **Générateur Audio :** [`TTS/generate_radio.py`](TTS/generate_radio.py) alimenté par le modèle Kokoro TTS.
-- **Traitement DSP Militaire :** Filtrage passe-bande radio (300 Hz - 3400 Hz), compression dynamique, saturation analogique et bruit de fond HF avec beeps de transmission.
+- **Générateur Audio :** [`TTS/generate_radio.py`](TTS/generate_radio.py) alimenté par le modèle Kokoro TTS (voix `am_fenrir` rythmée à 1.08x).
+- **Catalogue de Sons Immersifs :** 107 classes vocales compilées dans [`CfgSounds.hpp`](CfgSounds.hpp), incluant les ordres de frappes (Sol, Mer, Air, Héli), les BDA d'Overlord et la suite complète de communications vocales du ravitailleur C-130J Rodeo-1 (`STR_ORA_TANKER_*`).
+- **Traitement DSP Militaire :** Filtrage passe-bande radio (300 Hz - 3400 Hz), bit-crushing, hard clipping, compression dynamique, instabilité VCO/wobble, micro-dropouts et bruit de fond HF avec beeps de transmission (Roger Beep).
 - **Formatage des Coordonnées Grilles :** Les ordres de mission dictent les positions militaires en séparant distinctement chaque chiffre (`1.1.2.3 2.6.6.7`) pour une phonétique radio claire et réaliste.
+- **Diffusion Multi-Bus Robuste :** Transmission via `playSound [_sound, true]` (canal radio forcé insensible à l'atténuation environnementale en cockpit) combinée à `playSound _sound` et `playSoundUI`.
 - Référence complète : [`TTS.md`](TTS.md).
 
 ---
@@ -332,13 +334,16 @@ Pour garantir une immersion de haut niveau lors des ordres transmis par le QG en
 
 1. **Aucun Polling Infini (`while {true}`) :**
    Tous les mécanismes sont pilotés par des événements du moteur (`EachFrame`, `EntityCreated`, `Fired`, `IncomingMissile`, `Dammaged`, `Killed`, `GetInMan`).
-2. **Silence Absolu des Canaux et Logs Moteurs :**
-   - Extinction complète du chat en jeu (`showChat false`, `enableRadio false`, `enableSentences false`, `0 fadeRadio 0`).
-   - Désactivation intégrale des canaux de communication (`disableChannels[]` dans `description.ext`).
+2. **Silence Absolu du Chat et Préservation Radio :**
+   - Extinction complète du chat textuel et des bavardages IA non sollicités (`showChat false; enableSentences false; player disableConversation true;`).
+   - Maintien opérationnel du canal audio radio officiel (`enableRadio true; 0 fadeRadio 1;`) pour la diffusion intégrale des messages vocaux TTS.
+   - Désactivation des canaux multijoueurs (`disableChannels[]` dans `description.ext`).
    - Suppression totale des appels de diagnostic (`diag_log`) et des messages système génériques (`systemChat`).
-3. **Typage Strict et Isolation :**
+3. **Guidage Tactique Épuré :**
+   - Guidage 3D assuré **exclusivement par le marqueur natif d'Arma 3** (`setSimpleTaskAlwaysVisible true`, `visibleIn3D = true`), sans marqueurs rouges textuels parasites.
+4. **Typage Strict et Isolation :**
    Toutes les fonctions utilisent `params` avec typage et valeurs par défaut. Les variables temporaires sont strictement privatisées (`private _var`).
-4. **Programmation Défensive & Anti-Glitch :**
+5. **Programmation Défensive & Anti-Glitch :**
    Vérification systématique de l'existence des objets (`isNull`, `alive`) avec sortie anticipée (`exitWith`), et élévation $Z + 0.2\text{ m}$ à l'apparition pour éviter toute collision géométrique avec le terrain.
-5. **Localisation Universelle :**
-   Aucun message, étiquette UI ou titre n'est hardcodé. Utilisation exclusive de `localize "STR_..."`.
+6. **Localisation Universelle :**
+   Aucun message, étiquette UI ou titre n'est hardcodé. Utilisation exclusive de `localize "STR_..."` sur 15 langues.

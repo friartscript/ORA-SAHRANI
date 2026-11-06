@@ -4,6 +4,8 @@
         Initialise le joueur local (player_0), lie le vecteur aérien (plane_0),
         active les modules d'immersion, configure le briefing et affiche le menu
         tactique au lancement conformément aux directives de PROMPT.md.
+        Intègre un système visuel Draw3D assurant le guidage du joueur par le marqueur
+        des tâches en temps réel (HUD et monde 3D).
     Paramètres:
         0: _unit - L'entité joueur local [Object]
     Retour:
@@ -18,18 +20,26 @@ params [
 if (!hasInterface) exitWith { false };
 
 // ============================================================================
-// DÉSACTIVATION COMPLÈTE DU SYSTÈME DE CHAT ET DES LOGS DU JEU
+// DÉSACTIVATION DU CHAT AI ET ACTIVATION COMPLÈTE DU CANAL RADIO ET DES WAYPOINTS 3D
 // ============================================================================
 showChat false;
-enableRadio false;
+enableRadio true;
 enableSentences false;
-0 fadeRadio 0;
+0 fadeRadio 1;
+_unit disableConversation true;
+
+showWaypoints true;
+showHUD [true, true, true, true, true, true, true, true, true];
 
 _unit addEventHandler ["Respawn", {
+    params ["_newUnit"];
     showChat false;
-    enableRadio false;
+    enableRadio true;
     enableSentences false;
-    0 fadeRadio 0;
+    0 fadeRadio 1;
+    _newUnit disableConversation true;
+    showWaypoints true;
+    showHUD [true, true, true, true, true, true, true, true, true];
 }];
 
 // Écran noir initial le temps d'ouvrir le menu
@@ -37,11 +47,6 @@ titleCut ["", "BLACK FADED", 999];
 
 // Marquage prioritaire de l'unité joueur comme pilote de chasse officiel
 _unit setVariable ["ORA_isPilot", true, true];
-
-// Vérification de conformité avec l'éditeur (INFO_EDITOR.md)
-private _expectedPlayer = missionNamespace getVariable ["player_0", objNull];
-if (!isNull _expectedPlayer && {!(_unit isEqualTo _expectedPlayer)}) then {
-};
 
 // Configuration de l'identité et dotation officielle de pilote de chasse
 [_unit] call ORA_fnc_initIdentity;

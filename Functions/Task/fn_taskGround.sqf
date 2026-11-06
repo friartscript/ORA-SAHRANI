@@ -13,6 +13,8 @@
           fusils, mitrailleuses) les attendent en position défensive / embuscade.
         - Signalement visuel : fumigène vert allié (SmokeShellGreen) dès l'engagement.
         - RÈGLE CONTRACTUELLE : La réussite se limite STRICTEMENT à l'élimination des véhicules.
+        - Asservissement complet des marqueurs 3D et HUD guidant le joueur directement
+          vers les cibles en mouvement (visibleIn3D = true + Draw3D).
         - Ordre radio QG (Overlord) avec coordonnées au format militaire et TTS.
 
     Paramètres:
@@ -21,15 +23,17 @@
 
     Retour:
         [Boolean] - true si la tâche a été accomplie avec succès
-
-    Exemple:
-        ["task_ground_1", 1] spawn ORA_fnc_taskGround;
 */
 
 params [
     ["_taskID", format ["task_ground_%1", round (random 9999)], [""]],
-    ["_orderNum", 1, [0]]
+    ["_orderNum", 1, [0]],
+    ["_totalOrders", 0, [0]]
 ];
+
+if (_totalOrders <= 0) then {
+    _totalOrders = missionNamespace getVariable ["ORA_totalSortiesCount", missionNamespace getVariable ["ORA_selectedMissionsCount", 1]];
+};
 
 if (!hasInterface) exitWith { false };
 
@@ -106,36 +110,12 @@ _roadDir = _spawnPos getDir _destPos;
 
 private _gridStr = mapGridPosition _spawnPos;
 
-// =============================================================================
-// 4. RATTACHEMENT OU CRÉATION DE LA TÂCHE OFFICIELLE
-// =============================================================================
-if (!([_taskID] call BIS_fnc_taskExists)) then {
-    [
-        true,
-        _taskID,
-        [
-            localize "STR_ORA_Task_Ground_Desc",
-            format ["[%1] %2", _orderNum, localize "STR_ORA_Task_Ground_Title"],
-            localize "STR_ORA_Task_Ground_Marker"
-        ],
-        _spawnPos,
-        "ASSIGNED",
-        5,
-        true,
-        "destroy",
-        false
-    ] call BIS_fnc_taskCreate;
-} else {
-    [_taskID, _spawnPos] call BIS_fnc_taskSetDestination;
-    [_taskID, "ASSIGNED", true] call BIS_fnc_taskSetState;
-};
-
 // Ordre radio Overlord via TTS
 private _radioOrder = format [localize "STR_ORA_Task_Ground_Order", _gridStr];
 ["OVERLORD", _radioOrder, "STR_ORA_Task_Ground_Order"] call ORA_fnc_radioMsg;
 
 // =============================================================================
-// 5. CATALOGUES DES UNITÉS ET BLINDÉS (INFO_ENNEMIS.md)
+// 4. CATALOGUES DES UNITÉS ET BLINDÉS (INFO_ENNEMIS.md)
 // =============================================================================
 private _vehicleClasses = [
     "I_LT_01_AA_F",
@@ -207,48 +187,6 @@ for "_i" from 1 to _numVehicles do {
 // Enregistrement des cibles de la tâche pour le guidage d'armement
 missionNamespace setVariable ["ORA_activeTaskTargets", _targetVehicles, true];
 
-// Rattachement immédiat de la tâche et création du marqueur dynamique de suivi
-private _mrkName = format ["mrk_tactical_%1", _taskID];
-private _currentTracked = if (_targetVehicles isNotEqualTo []) then { _targetVehicles select 0 } else { objNull };
-
-if (!isNull _currentTracked) then {
-    createMarkerLocal [_mrkName, getPos _currentTracked];
-    _mrkName setMarkerTypeLocal "o_armor";
-    _mrkName setMarkerColorLocal "ColorRed";
-    _mrkName setMarkerTextLocal (format [" %1", localize "STR_ORA_Task_Ground_Marker"]);
-};
-
-// Gestion multi-objectifs : si 2 objectifs ou plus, créer des sous-tâches dédiées
-private _objTaskData = [];
-if ((count _targetVehicles) >= 2) then {
-    for "_k" from 0 to ((count _targetVehicles) - 1) do {
-        private _tVeh = _targetVehicles select _k;
-        private _objID = format ["%1_obj_%2", _taskID, _k + 1];
-        private _objTitle = format ["%1 %2 : %3", localize "STR_ORA_Task_Objective", _k + 1, localize "STR_ORA_Task_Ground_Marker"];
-        private _objDesc = format ["%1 (%2 %3)", localize "STR_ORA_Task_Ground_Desc", localize "STR_ORA_Task_Objective", _k + 1];
-        private _objState = if (_k == 0) then { "ASSIGNED" } else { "CREATED" };
-
-        [
-            true,
-            [_objID, _taskID],
-            [_objDesc, _objTitle, ""],
-            _tVeh,
-            _objState,
-            5,
-            (_k == 0),
-            "destroy",
-            false
-        ] call BIS_fnc_taskCreate;
-
-        _objTaskData pushBack [_tVeh, _objID, false];
-    };
-    [format ["%1_obj_1", _taskID]] call BIS_fnc_taskSetCurrent;
-} else {
-    if (!isNull _currentTracked) then {
-        [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
-    };
-};
-
 // Ordre de déplacement du convoi ennemi vers la position d'embuscade alliée (>= 950m)
 private _wpEnemyMove = _enemyVehGroup addWaypoint [_destPos, 0];
 _wpEnemyMove setWaypointType "MOVE";
@@ -260,7 +198,7 @@ private _wpEnemySAD = _enemyVehGroup addWaypoint [_destPos, 60];
 _wpEnemySAD setWaypointType "SAD";
 
 // =============================================================================
-// 7. UNITÉS ALLIÉES RACS ATTENDANT AVEC LEURS ARMES À LA DESTINATION (>= 950m)
+// 6. UNITÉS ALLIÉES RACS ATTENDANT AVEC LEURS ARMES À LA DESTINATION (>= 950m)
 // =============================================================================
 private _alliedGroup = createGroup [independent, true];
 private _numAllies = 4 + floor (random 5); // 4 à 8 soldats alliés RACS armés
@@ -305,7 +243,7 @@ if (missionNamespace getVariable ["ORA_setting_alliedPresence", false]) then {
     _createdEntities append (crew _alliedVeh);
 };
 
-// Déclenchement automatique du fumigène vert allié et message radio dès que les ennemis approchent
+// Déclenchement automatique du fumigène vert allié dès que les ennemis approchent
 [_alliedGroup, _targetVehicles, _destPos] spawn {
     params ["_allyGrp", "_enemyVehs", "_pos"];
     waitUntil {
@@ -322,80 +260,81 @@ if (missionNamespace getVariable ["ORA_setting_alliedPresence", false]) then {
 };
 
 // =============================================================================
-// 8. SURVEILLANCE ET SUIVI EN TEMPS RÉEL (MARQUEUR ET DESTINATION DYNAMIQUES)
+// 7. GESTION SÉQUENTIELLE STRICTE : UNE TÂCHE APRÈS L'AUTRE (JAMAIS ENSEMBLE)
 // =============================================================================
-if (_objTaskData isNotEqualTo []) then {
-    private _activeIdx = 0;
-    private _activeObjTask = _objTaskData select 0 select 1;
-
-    while { ({ alive (_x select 0) } count _objTaskData) > 0 } do {
-        {
-            _x params ["_tVeh", "_tID", "_done"];
-            if (!_done && {!alive _tVeh}) then {
-                _x set [2, true];
-                [_tID, "SUCCEEDED", true] call BIS_fnc_taskSetState;
-                // Recherche et assignation immédiate de l'autre objectif !
-                private _nextIdx = _objTaskData findIf { !(_x select 2) && {alive (_x select 0)} };
-                if (_nextIdx != -1) then {
-                    private _nextData = _objTaskData select _nextIdx;
-                    _activeIdx = _nextIdx;
-                    _activeObjTask = _nextData select 1;
-
-                    [_activeObjTask, "ASSIGNED", true] call BIS_fnc_taskSetState;
-                    [_activeObjTask] call BIS_fnc_taskSetCurrent;
-
-                };
-            };
-        } forEach _objTaskData;
-
-        private _curData = _objTaskData select _activeIdx;
-        if (_curData select 2 || {!alive (_curData select 0)}) then {
-            private _nextIdx = _objTaskData findIf { !(_x select 2) && {alive (_x select 0)} };
-            if (_nextIdx != -1) then {
-                _activeIdx = _nextIdx;
-                _curData = _objTaskData select _activeIdx;
-            };
-        };
-
-        private _curTarget = _curData select 0;
-        if (!isNull _curTarget && {alive _curTarget}) then {
-            _mrkName setMarkerPosLocal (getPos _curTarget);
-        };
-
-        private _livingTargets = (_objTaskData select { !(_x select 2) && {alive (_x select 0)} }) apply { _x select 0 };
-        missionNamespace setVariable ["ORA_activeTaskTargets", _livingTargets, true];
-
-        sleep 0.5;
+for "_k" from 0 to ((count _targetVehicles) - 1) do {
+    private _target = _targetVehicles select _k;
+    private _subTaskID = if ((count _targetVehicles) > 1) then {
+        format ["%1_obj_%2", _taskID, _k + 1]
+    } else {
+        _taskID
     };
-} else {
-    while { ({ alive _x } count _targetVehicles) > 0 } do {
-        private _livingVehs = _targetVehicles select { alive _x };
-        if (_livingVehs isNotEqualTo []) then {
-            if (isNull _currentTracked || {!alive _currentTracked}) then {
-                _currentTracked = _livingVehs select 0;
-                [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
-            };
-            if (!isNull _currentTracked && {alive _currentTracked}) then {
-                _mrkName setMarkerPosLocal (getPos _currentTracked);
-            };
+
+    private _taskTitle = if ((count _targetVehicles) > 1) then {
+        format ["[%1/%2] %3 (%4/%5)", _orderNum, _totalOrders, localize "STR_ORA_Task_Ground_Title", _k + 1, count _targetVehicles]
+    } else {
+        format ["[%1/%2] %3", _orderNum, _totalOrders, localize "STR_ORA_Task_Ground_Title"]
+    };
+
+    // Révélation impérative au joueur et activation des waypoints 3D HUD natifs
+    player reveal [_target, 4];
+    (group player) reveal [_target, 4];
+    showWaypoints true;
+
+    // Création et assignation de CETTE TÂCHE SEULEMENT (la suivante n'existe pas encore !)
+    [
+        player,
+        _subTaskID,
+        [localize "STR_ORA_Task_Ground_Desc", _taskTitle, ""],
+        getPosATL _target,
+        "ASSIGNED",
+        5,
+        true,
+        "destroy",
+        true // Marqueur 3D actif natif Arma 3
+    ] call BIS_fnc_taskCreate;
+
+    [_subTaskID, true] call BIS_fnc_taskSetAlwaysVisible;
+    [_subTaskID] call BIS_fnc_taskSetCurrent;
+
+    private _realTask = _subTaskID call BIS_fnc_taskReal;
+    if (!isNull _realTask) then {
+        _realTask setSimpleTaskDestination (getPosATL _target);
+        _realTask setSimpleTaskAlwaysVisible true;
+        player setCurrentTask _realTask;
+    };
+
+    // Enregistrement de la cible active pour l'aide au tir
+    missionNamespace setVariable ["ORA_activeTaskTargets", [_target], true];
+
+    // Suivi dynamique en temps réel jusqu'à destruction de la cible
+    while { alive _target && {!isNull _target} } do {
+        private _tPos = getPosATL _target;
+        player reveal [_target, 4];
+        (group player) reveal [_target, 4];
+        [_subTaskID, _tPos] call BIS_fnc_taskSetDestination;
+        private _rt = _subTaskID call BIS_fnc_taskReal;
+        if (!isNull _rt) then {
+            _rt setSimpleTaskDestination _tPos;
+            _rt setSimpleTaskAlwaysVisible true;
         };
-        sleep 0.5;
+        sleep 0.25;
+    };
+
+    // Validation immédiate de cette sous-tâche
+    [_subTaskID, "SUCCEEDED", true] call BIS_fnc_taskSetState;
+    missionNamespace setVariable ["ORA_activeTaskTargets", [], true];
+
+    if (_k < ((count _targetVehicles) - 1)) then {
+        playSoundUI ["ORA_Warning_Beep", 0.6, 1.2, false];
+        sleep 1.0;
     };
 };
-
-// Suppression propre du marqueur tactique de suivi
-deleteMarkerLocal _mrkName;
-
-// Validation de la tâche
-[_taskID, "SUCCEEDED", true] call BIS_fnc_taskSetState;
-missionNamespace setVariable ["ORA_activeTaskTargets", [], true];
 
 // Message radio BDA QG Overlord
 ["OVERLORD", localize "STR_ORA_Task_Ground_Done", "STR_ORA_Task_Ground_Done"] call ORA_fnc_radioMsg;
 
-// Nettoyage automatique après fin de tâche :
-// Toutes les unités au sol et épaves créées disparaissent immédiatement si à plus de 2000m du joueur,
-// ou dès que le joueur s'éloigne à plus de 2000m.
+// Nettoyage automatique après fin de tâche
 [_createdEntities, [_enemyVehGroup, _alliedGroup], 2000] spawn ORA_fnc_taskCleanup;
 
 true

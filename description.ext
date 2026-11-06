@@ -148,26 +148,9 @@ class CfgCommunicationMenu
 };
 
 // ============================================================================
-// SONS PERSONNALISÉS (CfgSounds)
+// SONS PERSONNALISÉS ET SYNTHÈSE VOCALE TTS (CfgSounds)
 // ============================================================================
-class CfgSounds
-{
-    sounds[] = {};
-
-    class ORA_Radio_Click
-    {
-        name = "ORA_Radio_Click";
-        sound[] = {"\A3\Sounds_F\sfx\radio\click.wss", 1.2, 1};
-        titles[] = {};
-    };
-
-    class ORA_Warning_Beep
-    {
-        name = "ORA_Warning_Beep";
-        sound[] = {"\A3\Sounds_F\sfx\alarm_car.wss", 1.0, 1.2};
-        titles[] = {};
-    };
-};
+#include "CfgSounds.hpp"
 
 // ============================================================================
 // DÉBRIEFINGS ET FINS DE MISSION (CfgDebriefing)

@@ -416,8 +416,8 @@
             <Turkish>Bağlantı kuruldu. İkmal ve yeniden silahlanma %100 tamamlandı!</Turkish>
         </Key>
         <Key ID="STR_ORA_TANKER_REPLENISHED">
-            <Original>REFUEL &amp; REARM COMPLETE: Fuel 100% | Armor 100% | Ordnance 100%</Original>
-            <English>REFUEL &amp; REARM COMPLETE: Fuel 100% | Armor 100% | Ordnance 100%</English>
+            <Original>REFUEL + REARM COMPLETE: Fuel 100% | Armor 100% | Ordnance 100%</Original>
+            <English>REFUEL + REARM COMPLETE: Fuel 100% | Armor 100% | Ordnance 100%</English>
             <French>RAVITAILLEMENT TERMINÉ : Carburant 100% | Intégrité 100% | Missiles 100%</French>
             <Spanish>REPOSTAJE COMPLETO: Combustible 100% | Blindaje 100% | Misiles 100%</Spanish>
             <German>AUFTANKEN ABGESCHLOSSEN: Treibstoff 100% | Rumpf 100% | Waffen 100%</German>

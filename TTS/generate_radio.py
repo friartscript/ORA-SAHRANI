@@ -31,7 +31,7 @@ AudioSegment.converter = os.path.join(ffmpeg_bin_path, "ffmpeg.exe")
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 XML_PATH = os.path.join(ROOT_DIR, "stringtable.xml")
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
-FORCE_REGENERATE = True  # Mettre à True pour écraser et régénérer tous les fichiers avec Kokoro
+FORCE_REGENERATE = False  # False: génère uniquement les fichiers manquants (ex: Tanker C-130J)
 
 def clean_text(text):
     if not text:
@@ -158,7 +158,9 @@ def generate_cfg_sounds(output_dir, cfg_path):
             sounds.append(file[:-4])
             
     with open(cfg_path, "w", encoding="utf-8") as f:
-        f.write('class CfgSounds\n{\n    sounds[] = {};\n\n')
+        f.write('#ifndef db\n#define db 0\n#endif\n\nclass CfgSounds\n{\n    sounds[] = {};\n\n')
+        f.write('    class ORA_Radio_Click\n    {\n        name = "ORA_Radio_Click";\n        sound[] = {"\\A3\\Sounds_F\\sfx\\radio\\click.wss", 1.2, 1};\n        titles[] = {};\n    };\n\n')
+        f.write('    class ORA_Warning_Beep\n    {\n        name = "ORA_Warning_Beep";\n        sound[] = {"\\A3\\Sounds_F\\sfx\\alarm_car.wss", 1.0, 1.2};\n        titles[] = {};\n    };\n\n')
         for key_id in sorted(sounds):
             f.write(f'    class {key_id}\n    {{\n')
             f.write(f'        name = "{key_id}";\n')

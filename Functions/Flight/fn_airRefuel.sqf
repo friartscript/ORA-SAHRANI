@@ -170,7 +170,7 @@ _markerName setMarkerTextLocal (format [" %1", localize "STR_ORA_TANKER_MARKER"]
                     [
                         localize "STR_ORA_TANKER_CALLSIGN",
                         localize "STR_ORA_TANKER_SUCCESS_MSG",
-                        ""
+                        "STR_ORA_TANKER_SUCCESS_MSG"
                     ] call ORA_fnc_radioMsg;
 
                     // Message HUD en vert vif à l'écran

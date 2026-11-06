@@ -6,6 +6,8 @@
         - L'ENSEMBLE DES TÂCHES EST CRÉÉ ET ASSIGNÉ À LA BASE dès le démarrage.
         - Planifie le nombre de sorties choisi par le joueur (1 à 20).
         - Chaque sortie est enregistrée dans le journal de mission (Sortie 1 ASSIGNED, Sorties 2..N CREATED, RTB CREATED).
+        - Les marqueurs 3D (visibleIn3D = true) et l'asservissement HUD guident le joueur
+          en permanence vers l'objectif actif.
         - S'il y a 2 objectifs dans une tâche, deux sous-tâches sont créées : l'une est assignée,
           et dès qu'elle est terminée, l'autre est immédiatement assignée.
         - À la complétion de la dernière sortie, assigne la tâche de RTB (Retour à la base de Sahrani).
@@ -42,8 +44,11 @@ private _plane = missionNamespace getVariable ["plane_0", player];
 private _airbasePos = getPos _plane;
 
 // =============================================================================
-// 1. PLANIFICATION OPÉRATIONNELLE ET CRÉATION DE TOUTES LES TÂCHES À LA BASE
+// 1. PLANIFICATION OPÉRATIONNELLE SÉQUENTIELLE
 // =============================================================================
+missionNamespace setVariable ["ORA_totalSortiesCount", _totalSorties, true];
+missionNamespace setVariable ["ORA_sortiesCompleted", 0, true];
+
 private _sortiePlan = [];
 for "_i" from 1 to _totalSorties do {
     private _type = _taskType;
@@ -53,80 +58,23 @@ for "_i" from 1 to _totalSorties do {
     _sortiePlan pushBack _type;
 };
 
-// Création immédiate à la base de chaque tâche de sortie
-for "_i" from 1 to _totalSorties do {
-    private _sType = _sortiePlan select (_i - 1);
-    private _sID = format ["task_sortie_%1", _i];
-
-    private _title = switch (_sType) do {
-        case "GROUND": { format ["[%1/%2] %3", _i, _totalSorties, localize "STR_ORA_Task_Ground_Title"] };
-        case "SEA":    { format ["[%1/%2] %3", _i, _totalSorties, localize "STR_ORA_Task_Sea_Title"] };
-        case "AIR":    { format ["[%1/%2] %3", _i, _totalSorties, localize "STR_ORA_Task_Air_Title"] };
-        case "HELI":   { format ["[%1/%2] %3", _i, _totalSorties, localize "STR_ORA_Task_Heli_Title"] };
-        default        { format ["[%1/%2] Sortie %3", _i, _totalSorties, _sType] };
-    };
-
-    private _desc = switch (_sType) do {
-        case "GROUND": { localize "STR_ORA_Task_Ground_Desc" };
-        case "SEA":    { localize "STR_ORA_Task_Sea_Desc" };
-        case "AIR":    { localize "STR_ORA_Task_Air_Desc" };
-        case "HELI":   { localize "STR_ORA_Task_Heli_Desc" };
-        default        { "Sortie opérationnelle programmée par Overlord." };
-    };
-
-    private _initialState = if (_i == 1) then { "ASSIGNED" } else { "CREATED" };
-
-    [
-        true,
-        _sID,
-        [_desc, _title, ""],
-        objNull,
-        _initialState,
-        5,
-        (_i == 1),
-        "attack",
-        false
-    ] call BIS_fnc_taskCreate;
-};
-
-// Pré-création de la tâche de retour à la base (RTB)
-[
-    true,
-    "task_rtb",
-    [
-        localize "STR_ORA_Task_RTB_Desc",
-        localize "STR_ORA_Task_RTB_Title",
-        localize "STR_ORA_Task_RTB_Marker"
-    ],
-    _airbasePos,
-    "CREATED",
-    1,
-    false,
-    "takeoff",
-    false
-] call BIS_fnc_taskCreate;
-
 // =============================================================================
-// 2. EXÉCUTION SÉQUENTIELLE DES SORTIES OPÉRATIONNELLES
+// 2. EXÉCUTION SÉQUENTIELLE DES SORTIES OPÉRATIONNELLES (UNE SEULE TÂCHE ACTIVE)
 // =============================================================================
 for "_sortieIndex" from 1 to _totalSorties do {
     private _selectedType = _sortiePlan select (_sortieIndex - 1);
     private _taskID = format ["task_sortie_%1", _sortieIndex];
 
-    // S'assurer que la sortie en cours est assignée
-    [_taskID, "ASSIGNED", true] call BIS_fnc_taskSetState;
-    [_taskID] call BIS_fnc_taskSetCurrent;
-
-    // Déclenchement de la fonction de tâche spécifique
+    // Déclenchement de la fonction de tâche spécifique (création dynamique à la volée)
     private _scriptHandle = switch (_selectedType) do {
-        case "GROUND": { [_taskID, _sortieIndex] spawn ORA_fnc_taskGround };
-        case "SEA":    { [_taskID, _sortieIndex] spawn ORA_fnc_taskSea };
-        case "AIR":    { [_taskID, _sortieIndex] spawn ORA_fnc_taskAir };
-        case "HELI":   { [_taskID, _sortieIndex] spawn ORA_fnc_taskHeli };
-        default        { [_taskID, _sortieIndex] spawn ORA_fnc_taskGround };
+        case "GROUND": { [_taskID, _sortieIndex, _totalSorties] spawn ORA_fnc_taskGround };
+        case "SEA":    { [_taskID, _sortieIndex, _totalSorties] spawn ORA_fnc_taskSea };
+        case "AIR":    { [_taskID, _sortieIndex, _totalSorties] spawn ORA_fnc_taskAir };
+        case "HELI":   { [_taskID, _sortieIndex, _totalSorties] spawn ORA_fnc_taskHeli };
+        default        { [_taskID, _sortieIndex, _totalSorties] spawn ORA_fnc_taskGround };
     };
 
-    // Attente active de la complétion de la sortie en cours
+    // Attente active de la complétion complète de la sortie en cours
     waitUntil { scriptDone _scriptHandle };
 
     missionNamespace setVariable ["ORA_sortiesCompleted", _sortieIndex, true];
@@ -138,16 +86,39 @@ for "_sortieIndex" from 1 to _totalSorties do {
 };
 
 // =============================================================================
-// 3. FIN DES SORTIES : ORDRE ET TÂCHE DE RETOUR À LA BASE (RTB)
+// 3. FIN DE TOUTES LES SORTIES : CRÉATION ET ASSIGNATION DE LA TÂCHE RTB (ATTERRISSAGE)
 // =============================================================================
 sleep 4;
 
 // Ordre radio de fin de campagne par Overlord
 ["OVERLORD", localize "STR_ORA_Task_All_RTB", "STR_ORA_Task_All_RTB"] call ORA_fnc_radioMsg;
 
-// Assignation de la tâche de retour à la base (RTB)
-["task_rtb", "ASSIGNED", true] call BIS_fnc_taskSetState;
+// Création officielle et assignation de la tâche de retour à la base (RTB) UNIQUEMENT MAINTENANT
+[
+    player,
+    "task_rtb",
+    [
+        localize "STR_ORA_Task_RTB_Desc",
+        localize "STR_ORA_Task_RTB_Title",
+        ""
+    ],
+    _airbasePos,
+    "ASSIGNED",
+    1,
+    true,
+    "land",
+    true // Marqueur 3D actif natif pour guidage d'atterrissage
+] call BIS_fnc_taskCreate;
+
+["task_rtb", true] call BIS_fnc_taskSetAlwaysVisible;
 ["task_rtb"] call BIS_fnc_taskSetCurrent;
+
+private _rtbTask = "task_rtb" call BIS_fnc_taskReal;
+if (!isNull _rtbTask) then {
+    _rtbTask setSimpleTaskDestination _airbasePos;
+    _rtbTask setSimpleTaskAlwaysVisible true;
+    player setCurrentTask _rtbTask;
+};
 
 // Surveillance de l'atterrissage en sécurité sur la base aérienne
 waitUntil {

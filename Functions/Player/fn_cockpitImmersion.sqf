@@ -40,7 +40,7 @@ _plane addEventHandler ["IncomingMissile", {
     [
         "SYSTEM",
         localize "STR_ORA_Alert_MissileInbound",
-        "ORA_Warning_Beep"
+        "STR_ORA_Alert_MissileInbound"
     ] call ORA_fnc_radioMsg;
 }];
 
@@ -48,7 +48,7 @@ _plane addEventHandler ["IncomingMissile", {
 _pilot addEventHandler ["GetInMan", {
     params ["_unit", "_role", "_vehicle", "_turret"];
     if (_vehicle == (missionNamespace getVariable ["plane_0", objNull])) then {
-        ["ATC", localize "STR_ORA_Radio_CockpitReady"] call ORA_fnc_radioMsg;
+        ["ATC", localize "STR_ORA_Radio_CockpitReady", "STR_ORA_Radio_CockpitReady"] call ORA_fnc_radioMsg;
     };
 }];
 

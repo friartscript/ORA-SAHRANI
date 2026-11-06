@@ -533,7 +533,7 @@ class RscMapControl
     idcMarkerColor = -1;
     idcMarkerIcon = -1;
 
-    class power
+    class Power
     {
         icon = "\A3\ui_f\data\map\mapcontrol\power_CA.paa";
         size = 24;
@@ -542,7 +542,8 @@ class RscMapControl
         coefMax = 1;
         color[] = {1, 1, 1, 1};
     };
-    class powersolar
+
+    class PowerSolar
     {
         icon = "\A3\ui_f\data\map\mapcontrol\powersolar_CA.paa";
         size = 24;
@@ -551,7 +552,8 @@ class RscMapControl
         coefMax = 1;
         color[] = {1, 1, 1, 1};
     };
-    class powerwave
+
+    class PowerWave
     {
         icon = "\A3\ui_f\data\map\mapcontrol\powerwave_CA.paa";
         size = 24;
@@ -560,7 +562,8 @@ class RscMapControl
         coefMax = 1;
         color[] = {1, 1, 1, 1};
     };
-    class powerwind
+
+    class PowerWind
     {
         icon = "\A3\ui_f\data\map\mapcontrol\powerwind_CA.paa";
         size = 24;

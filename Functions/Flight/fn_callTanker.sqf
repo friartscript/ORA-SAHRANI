@@ -28,7 +28,7 @@ if (_playerVeh == player || {!(_playerVeh isKindOf "Air")}) exitWith {
     [
         localize "STR_ORA_TANKER_CALLSIGN",
         localize "STR_ORA_TANKER_MUST_BE_AIRBORNE",
-        "ORA_Radio_Click"
+        "STR_ORA_TANKER_MUST_BE_AIRBORNE"
     ] call ORA_fnc_radioMsg;
     false
 };
@@ -47,7 +47,7 @@ if (_tanker getVariable ["ORA_tankerInbound", false]) exitWith {
     [
         localize "STR_ORA_TANKER_CALLSIGN",
         localize "STR_ORA_TANKER_BUSY_MSG",
-        "ORA_Radio_Click"
+        "STR_ORA_TANKER_BUSY_MSG"
     ] call ORA_fnc_radioMsg;
     false
 };
@@ -58,7 +58,7 @@ _tanker setVariable ["ORA_tankerInbound", true, true];
 [
     localize "STR_ORA_TANKER_CALLSIGN",
     localize "STR_ORA_TANKER_INBOUND_MSG",
-    "ORA_Radio_Click"
+    "STR_ORA_TANKER_INBOUND_MSG"
 ] call ORA_fnc_radioMsg;
 
 // 5. Sécurité anti-collision matérielle absolue
@@ -98,7 +98,7 @@ _playerVeh disableCollisionWith _tanker;
             [
                 localize "STR_ORA_TANKER_CALLSIGN",
                 localize "STR_ORA_TANKER_WARN_1KM",
-                "ORA_Radio_Click"
+                "STR_ORA_TANKER_WARN_1KM"
             ] call ORA_fnc_radioMsg;
             titleText [
                 format ["<t color='#ffcc00' size='1.15'>[%1] %2</t>", localize "STR_ORA_TANKER_CALLSIGN", localize "STR_ORA_TANKER_WARN_1KM"],
@@ -115,7 +115,7 @@ _playerVeh disableCollisionWith _tanker;
             [
                 localize "STR_ORA_TANKER_CALLSIGN",
                 localize "STR_ORA_TANKER_WARN_500M",
-                "ORA_Radio_Click"
+                "STR_ORA_TANKER_WARN_500M"
             ] call ORA_fnc_radioMsg;
             titleText [
                 format ["<t color='#00e5ff' size='1.2'>[%1] %2</t>", localize "STR_ORA_TANKER_CALLSIGN", localize "STR_ORA_TANKER_WARN_500M"],
@@ -147,7 +147,7 @@ _playerVeh disableCollisionWith _tanker;
         [
             localize "STR_ORA_TANKER_CALLSIGN",
             localize "STR_ORA_TANKER_DISENGAGE",
-            "ORA_Radio_Click"
+            "STR_ORA_TANKER_DISENGAGE"
         ] call ORA_fnc_radioMsg;
     };
 

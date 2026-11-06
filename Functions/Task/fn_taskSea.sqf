@@ -1,17 +1,18 @@
 /*
     Auteur: ORA SQF Architect
     Description:
-        Génère et supervise une mission de frappe navale en haute mer.
+        Génère et supervise une mission de frappe navale (Anti-Navires / Mer).
         Conforme aux spécifications :
-        - Les missions en mer s'effectuent STRICTEMENT le long du chapelet de balises
-          maritimes : marker_blue_0 à marker_blue_39.
-        - Ces marqueurs respectent un ordre cohérent de déplacement circulaire
-          autour de Sahrani pour éviter que les bateaux ne s'échouent ou se coincent.
-        - Fait apparaître 1 à 3 bateaux/navires de combat (LCAC, LCVP, Speedboats armés).
-        - Les navires reçoivent des waypoints consécutifs suivant l'ordre des marqueurs.
+        - Les missions en mer s'effectuent STRICTEMENT sur les marqueurs :
+          marker_blue_0 à marker_blue_39 (ordre croissant cohérent de déplacement).
+        - Ces balises forment un circuit maritime complet évitant tout échouement.
+        - Fait apparaître 1 à 4 bâtiments/navires de guerre ennemis.
+        - Les navires respectent rigoureusement le sens séquentiel (0 -> 1 -> 2 ... -> 39 -> 0).
         - RÈGLE CONTRACTUELLE : Aucune infanterie au sol.
-        - Se limite strictement à la destruction des bateaux cibles.
-        - Diffuse l'ordre radio QG (Overlord) avec coordonnées au format militaire et TTS.
+        - Se limite strictement à la destruction de la flottille ennemie.
+        - Asservissement complet des marqueurs 3D et HUD guidant le joueur directement
+          vers les navires en mer (visibleIn3D = true + Draw3D).
+        - Ordre radio QG (Overlord) avec coordonnées au format militaire et TTS.
 
     Paramètres:
         0: _taskID   - Identifiant unique de la tâche [String, défaut: "task_sea_1"]
@@ -19,22 +20,24 @@
 
     Retour:
         [Boolean] - true si la tâche a été accomplie avec succès
-
-    Exemple:
-        ["task_sea_1", 1] spawn ORA_fnc_taskSea;
 */
 
 params [
     ["_taskID", format ["task_sea_%1", round (random 9999)], [""]],
-    ["_orderNum", 1, [0]]
+    ["_orderNum", 1, [0]],
+    ["_totalOrders", 0, [0]]
 ];
+
+if (_totalOrders <= 0) then {
+    _totalOrders = missionNamespace getVariable ["ORA_totalSortiesCount", missionNamespace getVariable ["ORA_selectedMissionsCount", 1]];
+};
 
 if (!hasInterface) exitWith { false };
 
 private _plane = missionNamespace getVariable ["plane_0", player];
 
 // =============================================================================
-// 1. SÉLECTION DU MARQUEUR DE DÉPART PARMI marker_blue_0 À marker_blue_39
+// 1. RECHERCHE DE BALISES MARITIMES VALIDES (marker_blue_0 à marker_blue_39)
 // =============================================================================
 private _seaMarkers = [];
 for "_i" from 0 to 39 do {
@@ -48,38 +51,15 @@ if (_seaMarkers isEqualTo []) exitWith {
     false
 };
 
-// Choix aléatoire d'un point d'insertion maritime parmi les balises valides
-private _selectedEntry = selectRandom _seaMarkers;
-private _startIdx = _selectedEntry select 0;
-private _startMrk = _selectedEntry select 1;
-private _targetPos = getMarkerPos _startMrk;
+// Sélection aléatoire d'une balise maritime de départ
+private _selectedPair = selectRandom _seaMarkers;
+private _startIdx = _selectedPair select 0;
+private _spawnMrk = _selectedPair select 1;
+
+private _targetPos = getMarkerPos _spawnMrk;
 _targetPos set [2, 0];
 
 private _gridStr = mapGridPosition _targetPos;
-
-// =============================================================================
-// 2. RATTACHEMENT OU CRÉATION DE LA TÂCHE OFFICIELLE
-// =============================================================================
-if (!([_taskID] call BIS_fnc_taskExists)) then {
-    [
-        true,
-        _taskID,
-        [
-            localize "STR_ORA_Task_Sea_Desc",
-            format ["[%1] %2", _orderNum, localize "STR_ORA_Task_Sea_Title"],
-            localize "STR_ORA_Task_Sea_Marker"
-        ],
-        _targetPos,
-        "ASSIGNED",
-        5,
-        true,
-        "destroy",
-        false
-    ] call BIS_fnc_taskCreate;
-} else {
-    [_taskID, _targetPos] call BIS_fnc_taskSetDestination;
-    [_taskID, "ASSIGNED", true] call BIS_fnc_taskSetState;
-};
 
 // Ordre radio Overlord via TTS
 private _radioOrder = format [localize "STR_ORA_Task_Sea_Order", _gridStr];
@@ -111,7 +91,7 @@ private _targetBoats = [];
 private _createdEntities = [];
 private _enemySeaGroup = createGroup [east, true];
 
-// L'ordre des balises est STRICTEMENT séquentiel croissant (0 -> 1 -> 2 -> ... -> 39 -> 0)
+// L'ordre des balises est STRICTEMENT séquentiel croissant (0 -> 1 -> 2 ... -> 39 -> 0)
 // Calcul du cap vers la balise suivante pour aligner les bateaux immédiatement dans le bon sens
 private _nextIdx1 = (_startIdx + 1) mod 40;
 private _firstWaypointPos = getMarkerPos (format ["marker_blue_%1", _nextIdx1]);
@@ -147,51 +127,6 @@ _enemySeaGroup setSpeedMode "NORMAL";
 _enemySeaGroup setBehaviour "AWARE";
 _enemySeaGroup setCombatMode "RED";
 
-// Enregistrement des cibles de la tâche pour le guidage d'armement
-missionNamespace setVariable ["ORA_activeTaskTargets", _targetBoats, true];
-
-// Rattachement immédiat de la tâche et création du marqueur dynamique de suivi
-private _mrkName = format ["mrk_tactical_%1", _taskID];
-private _currentTracked = if (_targetBoats isNotEqualTo []) then { _targetBoats select 0 } else { objNull };
-
-if (!isNull _currentTracked) then {
-    createMarkerLocal [_mrkName, getPos _currentTracked];
-    _mrkName setMarkerTypeLocal "o_naval";
-    _mrkName setMarkerColorLocal "ColorRed";
-    _mrkName setMarkerTextLocal (format [" %1", localize "STR_ORA_Task_Sea_Marker"]);
-};
-
-// Gestion multi-objectifs : si 2 objectifs ou plus, créer des sous-tâches dédiées
-private _objTaskData = [];
-if ((count _targetBoats) >= 2) then {
-    for "_k" from 0 to ((count _targetBoats) - 1) do {
-        private _tBoat = _targetBoats select _k;
-        private _objID = format ["%1_obj_%2", _taskID, _k + 1];
-        private _objTitle = format ["%1 %2 : %3", localize "STR_ORA_Task_Objective", _k + 1, localize "STR_ORA_Task_Sea_Marker"];
-        private _objDesc = format ["%1 (%2 %3)", localize "STR_ORA_Task_Sea_Desc", localize "STR_ORA_Task_Objective", _k + 1];
-        private _objState = if (_k == 0) then { "ASSIGNED" } else { "CREATED" };
-
-        [
-            true,
-            [_objID, _taskID],
-            [_objDesc, _objTitle, ""],
-            _tBoat,
-            _objState,
-            5,
-            (_k == 0),
-            "destroy",
-            false
-        ] call BIS_fnc_taskCreate;
-
-        _objTaskData pushBack [_tBoat, _objID, false];
-    };
-    [format ["%1_obj_1", _taskID]] call BIS_fnc_taskSetCurrent;
-} else {
-    if (!isNull _currentTracked) then {
-        [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
-    };
-};
-
 // =============================================================================
 // 5. WAYPOINTS CONSECUTIFS SUIVANT STRICTEMENT L'ORDRE DES BALISES (0 À 39)
 // =============================================================================
@@ -222,80 +157,81 @@ if (getMarkerColor _loopMrk != "") then {
 };
 
 // =============================================================================
-// 6. SURVEILLANCE ET SUIVI EN TEMPS RÉEL (MARQUEUR ET DESTINATION DYNAMIQUES)
+// 6. GESTION SÉQUENTIELLE STRICTE : UNE TÂCHE APRÈS L'AUTRE (JAMAIS ENSEMBLE)
 // =============================================================================
-if (_objTaskData isNotEqualTo []) then {
-    private _activeIdx = 0;
-    private _activeObjTask = _objTaskData select 0 select 1;
-
-    while { ({ alive (_x select 0) } count _objTaskData) > 0 } do {
-        {
-            _x params ["_tBoat", "_tID", "_done"];
-            if (!_done && {!alive _tBoat}) then {
-                _x set [2, true];
-                [_tID, "SUCCEEDED", true] call BIS_fnc_taskSetState;
-                // Recherche et assignation immédiate de l'autre objectif !
-                private _nextIdx = _objTaskData findIf { !(_x select 2) && {alive (_x select 0)} };
-                if (_nextIdx != -1) then {
-                    private _nextData = _objTaskData select _nextIdx;
-                    _activeIdx = _nextIdx;
-                    _activeObjTask = _nextData select 1;
-
-                    [_activeObjTask, "ASSIGNED", true] call BIS_fnc_taskSetState;
-                    [_activeObjTask] call BIS_fnc_taskSetCurrent;
-
-                };
-            };
-        } forEach _objTaskData;
-
-        private _curData = _objTaskData select _activeIdx;
-        if (_curData select 2 || {!alive (_curData select 0)}) then {
-            private _nextIdx = _objTaskData findIf { !(_x select 2) && {alive (_x select 0)} };
-            if (_nextIdx != -1) then {
-                _activeIdx = _nextIdx;
-                _curData = _objTaskData select _activeIdx;
-            };
-        };
-
-        private _curTarget = _curData select 0;
-        if (!isNull _curTarget && {alive _curTarget}) then {
-            _mrkName setMarkerPosLocal (getPos _curTarget);
-        };
-
-        private _livingTargets = (_objTaskData select { !(_x select 2) && {alive (_x select 0)} }) apply { _x select 0 };
-        missionNamespace setVariable ["ORA_activeTaskTargets", _livingTargets, true];
-
-        sleep 0.5;
+for "_k" from 0 to ((count _targetBoats) - 1) do {
+    private _target = _targetBoats select _k;
+    private _subTaskID = if ((count _targetBoats) > 1) then {
+        format ["%1_obj_%2", _taskID, _k + 1]
+    } else {
+        _taskID
     };
-} else {
-    while { ({ alive _x } count _targetBoats) > 0 } do {
-        private _livingBoats = _targetBoats select { alive _x };
-        if (_livingBoats isNotEqualTo []) then {
-            if (isNull _currentTracked || {!alive _currentTracked}) then {
-                _currentTracked = _livingBoats select 0;
-                [_taskID, _currentTracked] call BIS_fnc_taskSetDestination;
-            };
-            if (!isNull _currentTracked && {alive _currentTracked}) then {
-                _mrkName setMarkerPosLocal (getPos _currentTracked);
-            };
+
+    private _taskTitle = if ((count _targetBoats) > 1) then {
+        format ["[%1/%2] %3 (%4/%5)", _orderNum, _totalOrders, localize "STR_ORA_Task_Sea_Title", _k + 1, count _targetBoats]
+    } else {
+        format ["[%1/%2] %3", _orderNum, _totalOrders, localize "STR_ORA_Task_Sea_Title"]
+    };
+
+    // Révélation impérative au joueur et activation des waypoints 3D HUD natifs
+    player reveal [_target, 4];
+    (group player) reveal [_target, 4];
+    showWaypoints true;
+
+    // Création et assignation de CETTE TÂCHE SEULEMENT (la suivante n'existe pas encore !)
+    [
+        player,
+        _subTaskID,
+        [localize "STR_ORA_Task_Sea_Desc", _taskTitle, ""],
+        getPosATL _target,
+        "ASSIGNED",
+        5,
+        true,
+        "destroy",
+        true // Marqueur 3D actif natif Arma 3
+    ] call BIS_fnc_taskCreate;
+
+    [_subTaskID, true] call BIS_fnc_taskSetAlwaysVisible;
+    [_subTaskID] call BIS_fnc_taskSetCurrent;
+
+    private _realTask = _subTaskID call BIS_fnc_taskReal;
+    if (!isNull _realTask) then {
+        _realTask setSimpleTaskDestination (getPosATL _target);
+        _realTask setSimpleTaskAlwaysVisible true;
+        player setCurrentTask _realTask;
+    };
+
+    // Enregistrement de la cible active pour l'aide au tir
+    missionNamespace setVariable ["ORA_activeTaskTargets", [_target], true];
+
+    // Suivi dynamique en temps réel jusqu'à destruction de la cible
+    while { alive _target && {!isNull _target} } do {
+        private _tPos = getPosATL _target;
+        player reveal [_target, 4];
+        (group player) reveal [_target, 4];
+        [_subTaskID, _tPos] call BIS_fnc_taskSetDestination;
+        private _rt = _subTaskID call BIS_fnc_taskReal;
+        if (!isNull _rt) then {
+            _rt setSimpleTaskDestination _tPos;
+            _rt setSimpleTaskAlwaysVisible true;
         };
-        sleep 0.5;
+        sleep 0.25;
+    };
+
+    // Validation immédiate de cette sous-tâche
+    [_subTaskID, "SUCCEEDED", true] call BIS_fnc_taskSetState;
+    missionNamespace setVariable ["ORA_activeTaskTargets", [], true];
+
+    if (_k < ((count _targetBoats) - 1)) then {
+        playSoundUI ["ORA_Warning_Beep", 0.6, 1.2, false];
+        sleep 1.0;
     };
 };
-
-// Suppression propre du marqueur tactique de suivi
-deleteMarkerLocal _mrkName;
-
-// Validation de la tâche
-[_taskID, "SUCCEEDED", true] call BIS_fnc_taskSetState;
-missionNamespace setVariable ["ORA_activeTaskTargets", [], true];
 
 // Message radio BDA QG Overlord
 ["OVERLORD", localize "STR_ORA_Task_Sea_Done", "STR_ORA_Task_Sea_Done"] call ORA_fnc_radioMsg;
 
-// Nettoyage automatique après fin de tâche :
-// Toutes les unités maritimes et épaves disparaissent immédiatement si à plus de 2000m du joueur,
-// ou dès que le joueur s'éloigne à plus de 2000m.
+// Nettoyage automatique après fin de tâche
 [_createdEntities, [_enemySeaGroup], 2000] spawn ORA_fnc_taskCleanup;
 
 true

@@ -230,7 +230,8 @@ if (_mode isEqualTo "LAUNCH") exitWith {
     // Notification radio de début de mission
     [
         "ATC",
-        format [localize "STR_ORA_RADIO_MISSION_LAUNCHED", _missionCount]
+        format [localize "STR_ORA_RADIO_MISSION_LAUNCHED", _missionCount],
+        "STR_ORA_RADIO_MISSION_LAUNCHED"
     ] call ORA_fnc_radioMsg;
 
     // Démarrage automatique de la campagne de sorties opérationnelles

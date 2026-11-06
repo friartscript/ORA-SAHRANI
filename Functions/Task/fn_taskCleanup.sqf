@@ -94,7 +94,6 @@ private _fnc_collect = {
     if (isNull _playerObj) then { _playerObj = player; };
 
     private _remaining = [];
-    private _immediatePurged = 0;
 
     {
         private _ent = _x;
@@ -102,7 +101,6 @@ private _fnc_collect = {
             private _dist = _playerObj distance _ent;
             if (_dist > _minDist) then {
                 deleteVehicle _ent;
-                _immediatePurged = _immediatePurged + 1;
             } else {
                 _remaining pushBack _ent;
             };
@@ -123,25 +121,28 @@ private _fnc_collect = {
         } forEach _groups;
     };
 
-    // 3. Surveillance continue des entités restantes
+    // 3. Surveillance continue des entités restantes (utilisation d'un forEach sécurisé)
     while { _remaining isNotEqualTo [] } do {
         sleep _interval;
 
         _playerObj = vehicle player;
         if (isNull _playerObj) then { _playerObj = player; };
 
-        _remaining = _remaining select {
-            private _ent = _x;
-            if (isNull _ent) exitWith { false };
+        private _stillAlive = [];
 
-            private _dist = _playerObj distance _ent;
-            if (_dist > _minDist) then {
-                deleteVehicle _ent;
-                false
-            } else {
-                true
+        {
+            private _ent = _x;
+            if (!isNull _ent && {!(_ent in _protectedList)}) then {
+                private _dist = _playerObj distance _ent;
+                if (_dist > _minDist) then {
+                    deleteVehicle _ent;
+                } else {
+                    _stillAlive pushBack _ent;
+                };
             };
-        };
+        } forEach _remaining;
+
+        _remaining = _stillAlive;
     };
 
     // 4. Suppression des groupes orphelins devenus vides
@@ -155,6 +156,4 @@ private _fnc_collect = {
             };
         };
     } forEach _groups;
-
 };
-
