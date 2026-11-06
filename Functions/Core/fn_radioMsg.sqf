@@ -21,21 +21,9 @@ params [
 if (!hasInterface) exitWith { false };
 if (_message isEqualTo "") exitWith { false };
 
-// Bip d'ouverture radio diégétique et diffusion vocale TTS
+// Diffusion sonore unique et propre (aucun doublon ni écho)
 if (_sound != "") then {
-    if (_sound == "ORA_Radio_Click") then {
-        playSound "ORA_Radio_Click";
-        playSoundUI ["ORA_Radio_Click", 1.2, 1.0, false];
-    } else {
-        // Clic d'ouverture radio immédiat
-        playSound "ORA_Radio_Click";
-        playSoundUI ["ORA_Radio_Click", 0.8, 1.0, false];
-        
-        // Diffusion robuste de la voix de synthèse TTS (canal radio forcé + 2D direct)
-        playSound [_sound, true];
-        playSound _sound;
-        playSoundUI [_sound, 2.5, 1.0, false];
-    };
+    playSoundUI [_sound, 1.2, 1.0, false];
 };
 
 // Choix chromatique selon l'émetteur pour lisibilité militaire

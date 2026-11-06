@@ -129,76 +129,70 @@ _wp setWaypointBehaviour "COMBAT";
 _wp setWaypointCombatMode "RED";
 
 // =============================================================================
-// 5. GESTION SÉQUENTIELLE STRICTE : UNE TÂCHE APRÈS L'AUTRE (JAMAIS ENSEMBLE)
+// 5. GESTION DE LA TÂCHE UNIQUE DE SORTIE AVEC GUIDAGE 3D NATIF
 // =============================================================================
-for "_k" from 0 to ((count _targetPlanes) - 1) do {
-    private _target = _targetPlanes select _k;
-    private _subTaskID = if ((count _targetPlanes) > 1) then {
-        format ["%1_obj_%2", _taskID, _k + 1]
-    } else {
-        _taskID
-    };
+private _taskTitle = format ["[%1/%2] %3", _orderNum, _totalOrders, localize "STR_ORA_Task_Air_Title"];
+private _currentTarget = _targetPlanes select 0;
 
-    private _taskTitle = if ((count _targetPlanes) > 1) then {
-        format ["[%1/%2] %3 (%4/%5)", _orderNum, _totalOrders, localize "STR_ORA_Task_Air_Title", _k + 1, count _targetPlanes]
-    } else {
-        format ["[%1/%2] %3", _orderNum, _totalOrders, localize "STR_ORA_Task_Air_Title"]
-    };
+// Révélation impérative au joueur et activation des waypoints 3D HUD natifs
+player reveal [_currentTarget, 4];
+(group player) reveal [_currentTarget, 4];
+showWaypoints true;
 
-    // Révélation impérative au joueur et activation des waypoints 3D HUD natifs
-    player reveal [_target, 4];
-    (group player) reveal [_target, 4];
-    showWaypoints true;
+// Création d'une tâche unique par sortie, guidée par le marqueur 3D natif
+[
+    player,
+    _taskID,
+    [localize "STR_ORA_Task_Air_Desc", _taskTitle, " "],
+    _currentTarget,
+    "ASSIGNED",
+    5,
+    true,
+    "target",
+    true
+] call BIS_fnc_taskCreate;
 
-    // Création et assignation de CETTE TÂCHE SEULEMENT (la suivante n'existe pas encore !)
-    [
-        player,
-        _subTaskID,
-        [localize "STR_ORA_Task_Air_Desc", _taskTitle, ""],
-        getPosATL _target,
-        "ASSIGNED",
-        5,
-        true,
-        "destroy",
-        true // Marqueur 3D actif natif Arma 3
-    ] call BIS_fnc_taskCreate;
+[_taskID, true] call BIS_fnc_taskSetAlwaysVisible;
+[_taskID] call BIS_fnc_taskSetCurrent;
 
-    [_subTaskID, true] call BIS_fnc_taskSetAlwaysVisible;
-    [_subTaskID] call BIS_fnc_taskSetCurrent;
-
-    private _realTask = _subTaskID call BIS_fnc_taskReal;
-    if (!isNull _realTask) then {
-        _realTask setSimpleTaskDestination (getPosATL _target);
-        _realTask setSimpleTaskAlwaysVisible true;
-        player setCurrentTask _realTask;
-    };
-
-    // Enregistrement de la cible active pour l'aide au tir
-    missionNamespace setVariable ["ORA_activeTaskTargets", [_target], true];
-
-    // Suivi dynamique en temps réel jusqu'à destruction de la cible
-    while { alive _target && {!isNull _target} } do {
-        private _tPos = getPosATL _target;
-        player reveal [_target, 4];
-        (group player) reveal [_target, 4];
-        [_subTaskID, _tPos] call BIS_fnc_taskSetDestination;
-        private _rt = _subTaskID call BIS_fnc_taskReal;
-        if (!isNull _rt) then {
-            _rt setSimpleTaskDestination _tPos;
-            _rt setSimpleTaskAlwaysVisible true;
-        };
-        sleep 0.25;
-    };
-
-    // Validation immédiate de cette sous-tâche
-    [_subTaskID, "SUCCEEDED", true] call BIS_fnc_taskSetState;
-    missionNamespace setVariable ["ORA_activeTaskTargets", [], true];
-
-    if (_k < ((count _targetPlanes) - 1)) then {
-        playSoundUI ["ORA_Warning_Beep", 0.6, 1.2, false];
-        sleep 1.0;
-    };
+private _realTask = _taskID call BIS_fnc_taskReal;
+if (!isNull _realTask) then {
+    _realTask setSimpleTaskTarget [_currentTarget, true];
+    _realTask setSimpleTaskAlwaysVisible true;
+    player setCurrentTask _realTask;
 };
+
+// Enregistrement de la cible active pour l'aide au tir
+missionNamespace setVariable ["ORA_activeTaskTargets", [_currentTarget], true];
+
+// Suivi et réassignation automatique de cible jusqu'à destruction de toutes les cibles
+while { ({ alive _x && {!isNull _x} } count _targetPlanes) > 0 } do {
+    if (!alive _currentTarget || {isNull _currentTarget}) then {
+        private _living = _targetPlanes select { alive _x && {!isNull _x} };
+        if (_living isNotEqualTo []) then {
+            _currentTarget = _living select 0;
+            [_taskID, _currentTarget] call BIS_fnc_taskSetDestination;
+            private _rt = _taskID call BIS_fnc_taskReal;
+            if (!isNull _rt) then {
+                _rt setSimpleTaskTarget [_currentTarget, true];
+                _rt setSimpleTaskAlwaysVisible true;
+            };
+            playSoundUI ["ORA_Warning_Beep", 0.6, 1.2, false];
+        };
+    };
+
+    if (!isNull _currentTarget && {alive _currentTarget}) then {
+        player reveal [_currentTarget, 4];
+        (group player) reveal [_currentTarget, 4];
+        missionNamespace setVariable ["ORA_activeTaskTargets", [_currentTarget], true];
+    };
+
+    sleep 0.5;
+};
+
+// Validation de la tâche de sortie
+[_taskID, "SUCCEEDED", true] call BIS_fnc_taskSetState;
+missionNamespace setVariable ["ORA_activeTaskTargets", [], true];
 
 // Message radio BDA QG Overlord
 ["OVERLORD", localize "STR_ORA_Task_Air_Done", "STR_ORA_Task_Air_Done"] call ORA_fnc_radioMsg;

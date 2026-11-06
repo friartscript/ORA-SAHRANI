@@ -197,7 +197,7 @@ sequenceDiagram
     Ply->>UI: ["OPEN"] spawn ORA_fnc_mainMenu
     Note over UI: Rendu 3D temps réel sur rendertarget8<br/>Carte stratégique complète de Sahrani (RscMapControl)<br/>Configuration du nombre de sorties (1 à 20)
     UI->>Plane: Validation "SCRAMBLE / LAUNCH SORTIE" -> player moveInDriver plane_0
-    UI->>Task: Pré-création de toutes les sorties à la base (Sortie 1 ASSIGNED, autres CREATED)
+    UI->>Task: Lancement séquentiel strict des sorties (Sortie 1 ASSIGNED, sorties suivantes créées dynamiquement à la volée, RTB final)
 ```
 
 ---
@@ -222,7 +222,7 @@ Le menu d'accueil (IDD `7000`) s'affiche dès l'entrée en jeu en fond d'écran 
    - **Bannière d'Alerte Rouge - Condition de Défaite Impérative :** Encart d'avertissement non sélectionnable (sans case à cocher) stipulant clairement que *l'extraction ou l'éjection du cockpit fait perdre immédiatement la mission*.
    - **Directives de Vol & Support Ravitailleur :** Rappel de la disponibilité du support radio `0-8-1` pour appeler le C-130J en cas de besoin, avec guidage sans collision et alertes de maintien de cap à 1 000 m et 500 m.
 4. **Grande Carte Tactique de Sahrani :**
-   - Intègre un contrôle cartographique grand format (`RscMapControl`) calibré pour afficher la topographie et la couverture satellite de l'archipel sans écran noir, avec intégration des sous-classes d'infrastructures énergétiques (`powersolar`, `power`, `powerwind`, `powerwave`, `Shipwreck`) évitant toute erreur de configuration.
+   - Intègre un contrôle cartographique grand format héritant du `RscMapControl` natif du moteur Arma 3 via déclaration anticipée propre (`class RscMapControl;`), éliminant tout conflit de redéfinition de membre (`power/powersolar`) et affichant la topographie et la couverture satellite de l'archipel sans écran noir.
 5. **Prévisualisation 3D Temps Réel de l'Appareil :**
    - Une caméra cinématique capture `plane_0` sur le tarmac et projette le flux vidéo en direct sur `rendertarget8` via un contrôle picture `#(argb,512,512,1)r2t(rendertarget8,1.0)`.
 6. **Insertion Directe Cockpit :**
@@ -238,7 +238,7 @@ Toutes les fonctions sont déclarées sous le tag **`ORA`** dans le [`descriptio
 | Fonction | Fichier source | Rôle & Paramètres | Déclenchement |
 | :--- | :--- | :--- | :--- |
 | `ORA_fnc_initMission` | [`fn_initMission.sqf`](Functions/Core/fn_initMission.sqf) | Initialise les variables globales de mission et l'environnement serveur.<br/>*Sans arguments.* | Appelé par `initServer.sqf`. |
-| `ORA_fnc_radioMsg` | [`fn_radioMsg.sqf`](Functions/Core/fn_radioMsg.sqf) | Affiche un message radio stylisé avec indicatif, couleur tactique et son natif (0 chat, 0 log).<br/>*Params : `[_sender, _message, _sound]`* | À la demande (système, ATC, AWACS). |
+| `ORA_fnc_radioMsg` | [`fn_radioMsg.sqf`](Functions/Core/fn_radioMsg.sqf) | Diffuse un message radio stylisé avec indicatif, couleur tactique et son natif 2D direct (`playSoundUI`) sans aucun doublon ni écho.<br/>*Params : `[_sender, _message, _sound]`* | À la demande (système, ATC, AWACS, Overlord). |
 
 ### B. Catégorie `Flight` (`Functions\Flight\`)
 | Fonction | Fichier source | Rôle & Paramètres | Déclenchement |
@@ -282,11 +282,11 @@ Toutes les fonctions sont déclarées sous le tag **`ORA`** dans le [`descriptio
 ### G. Catégorie `Task` (`Functions\Task\`)
 | Fonction | Fichier source | Rôle & Paramètres | Déclenchement |
 | :--- | :--- | :--- | :--- |
-| `ORA_fnc_taskLaunch` | [`fn_taskLaunch.sqf`](Functions/Task/fn_taskLaunch.sqf) | Orchestrateur maître des sorties : exécute les missions strictement une par une (aucun pré-lancement). Dans chaque sortie, les objectifs se succèdent séquentiellement. La tâche RTB (retour base) n'est créée qu'à la fin de la campagne.<br/>*Params : `[_taskType, _totalSorties]`* | Lancé après insertion cockpit dans `ORA_fnc_mainMenu`. |
-| `ORA_fnc_taskGround` | [`fn_taskGround.sqf`](Functions/Task/fn_taskGround.sqf) | Frappe au sol (CAS) : guidage exclusif par waypoint 3D HUD natif (`getPosATL`, `setSimpleTaskAlwaysVisible true`, sans marker rouge). Cibles routières (`marker_blue_0` à `marker_blue_52`) en marche vers une embuscade alliée à $\ge 950\text{ m}$. Sous-tâches créées une par une après chaque destruction.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
-| `ORA_fnc_taskSea` | [`fn_taskSea.sqf`](Functions/Task/fn_taskSea.sqf) | Frappe navale en haute mer : guidage exclusif par waypoint 3D HUD natif (0 marqueur rouge parasite). Circuit maritime continu suivant `marker_blue_0` à `marker_blue_39`. Sous-tâches strictement séquentielles.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
-| `ORA_fnc_taskAir` | [`fn_taskAir.sqf`](Functions/Task/fn_taskAir.sqf) | Interception aérienne : guidage 3D natif vers les chasseurs hostiles en haute altitude (1 800 - 2 200 m). Sous-objectifs séquentiels un par un.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
-| `ORA_fnc_taskHeli` | [`fn_taskHeli.sqf`](Functions/Task/fn_taskHeli.sqf) | Chasse hélicoptères : guidage 3D natif vers les appareils en vol basse altitude (45 - 80 m) au-dessus de `marker_orange_0` à `marker_orange_52`. Sous-tâches séquentielles une par une.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+| `ORA_fnc_taskLaunch` | [`fn_taskLaunch.sqf`](Functions/Task/fn_taskLaunch.sqf) | Orchestrateur maître des sorties : exécute les missions strictement une par une (aucun pré-lancement). Dans chaque sortie, une tâche unique est créée et le marqueur 3D natif bascule automatiquement sur les cibles vivantes. La tâche RTB (retour base) n'est créée qu'à la fin de la campagne.<br/>*Params : `[_taskType, _totalSorties]`* | Lancé après insertion cockpit dans `ORA_fnc_mainMenu`. |
+| `ORA_fnc_taskGround` | [`fn_taskGround.sqf`](Functions/Task/fn_taskGround.sqf) | Frappe au sol (CAS) : guidage exclusif par waypoint 3D HUD natif (`target`, `setSimpleTaskTarget`, texte épuré sans marqueur rouge). Cibles routières (`marker_blue_0` à `marker_blue_52`) en marche vers une embuscade alliée à $\ge 950\text{ m}$. Bascule dynamique du guidage vers chaque véhicule vivant.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+| `ORA_fnc_taskSea` | [`fn_taskSea.sqf`](Functions/Task/fn_taskSea.sqf) | Frappe navale en haute mer : guidage exclusif par waypoint 3D HUD natif (type `target`, 0 marqueur rouge parasite). Circuit maritime continu suivant `marker_blue_0` à `marker_blue_39`. Tâche unique par sortie avec bascule dynamique sur chaque bâtiment de guerre.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+| `ORA_fnc_taskAir` | [`fn_taskAir.sqf`](Functions/Task/fn_taskAir.sqf) | Interception aérienne : guidage 3D natif vers les chasseurs hostiles en haute altitude (1 800 - 2 200 m). Tâche unique avec asservissement direct de la cible vivante.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
+| `ORA_fnc_taskHeli` | [`fn_taskHeli.sqf`](Functions/Task/fn_taskHeli.sqf) | Chasse hélicoptères : guidage 3D natif vers les appareils en vol basse altitude (45 - 80 m) au-dessus de `marker_orange_0` à `marker_orange_52`. Tâche unique avec guidage successif épuré.<br/>*Params : `[_taskID, _orderNum]`* | Appelé par `ORA_fnc_taskLaunch`. |
 | `ORA_fnc_taskCleanup` | [`fn_taskCleanup.sqf`](Functions/Task/fn_taskCleanup.sqf) | Nettoyage optimisé du théâtre : supprime immédiatement les entités de la sortie située à $>2000\text{ m}$ du joueur, protège le joueur, `plane_0` et le C-130J, et purge en tâche de fond dès éloignement.<br/>*Params : `[_units, _vehicles]`* | Appelé à la fin de chaque sortie. |
 
 ---

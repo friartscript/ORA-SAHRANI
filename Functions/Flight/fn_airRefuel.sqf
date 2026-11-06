@@ -163,9 +163,6 @@ _markerName setMarkerTextLocal (format [" %1", localize "STR_ORA_TANKER_MARKER"]
                 if ((time - _lastRefuelTime) > 12) then {
                     _lastRefuelTime = time;
 
-                    // Son de confirmation radio
-                    playSoundUI ["ORA_Radio_Click", 1.2, 1];
-
                     // Transmission radio de confirmation du ravitailleur
                     [
                         localize "STR_ORA_TANKER_CALLSIGN",
